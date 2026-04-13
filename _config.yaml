@@ -1,0 +1,10 @@
+title: Instalator Autorizat Panouri Fotovoltaice
+email: contact@domeniultau.ro
+description: Servicii profesionale de montaj panouri fotovoltaice și instalații electrice.
+baseurl: "" # lasă gol pentru domeniul principal
+url: "https://alexaraducristian.github.io"
+
+# Setări temă (Minima este tema default, sigură și rapidă)
+theme: minima
+plugins:
+  - jekyll-feed
