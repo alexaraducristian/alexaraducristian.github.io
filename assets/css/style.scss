@@ -1,0 +1,13 @@
+---
+---
+@import "{{ site.theme }}";
+
+// Adăugăm culori de accent pentru energie (galben/portocaliu)
+.btn {
+  background-color: #f1c40f !important; // Galben "electric"
+  color: #2c3e50 !important;
+}
+
+header {
+  background-image: linear-gradient(120deg, #2c3e50, #2980b9) !important; // Albastru închis/profesional
+}
