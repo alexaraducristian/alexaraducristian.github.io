@@ -3,6 +3,9 @@ layout: default
 title: Portofoliu Lucrări
 ---
 
+[Acasă]({{ site.baseurl }}/) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
+
+---
 # Proiecte Realizate
 
 Aici poți vedea o selecție a lucrărilor executate recent de echipa PFA Alexa Marius.
@@ -16,3 +19,7 @@ Aici poți vedea o selecție a lucrărilor executate recent de echipa PFA Alexa 
 * **Descriere:** Instalare panouri monocristaline și configurare invertor pentru autoconsum.
 ![Sistem de panouri fotovoltaice (poza 1)](assets/img/portofoliu-fotovoltaice-1.jpg)
 ![Sistem de panouri fotovoltaice (poza 2)](assets/img/portofoliu-fotovoltaice-2.jpg)
+
+--- 
+
+[Acasă]({{ site.baseurl }}/) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)

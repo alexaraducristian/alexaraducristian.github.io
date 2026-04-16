@@ -3,6 +3,9 @@ layout: default
 title: Contact
 ---
 
+[Acasă]({{ site.baseurl }}/) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
+
+---
 # Solicită o Ofertă
 
 Ești gata să îți securizezi instalația electrică sau să treci la energia solară? Completează formularul de mai jos.
@@ -44,3 +47,7 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
 ### Date de contact rapide:
 - **Email:** alexaraducristian@gmail.com
 - **Autorizație:** ANRE Electrice
+
+---
+
+[Acasă]({{ site.baseurl }}/) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)

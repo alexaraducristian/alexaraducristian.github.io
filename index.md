@@ -3,6 +3,9 @@ layout: default
 title: Prezentare
 ---
 
+**Acasă** | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
+
+---
 # Soluții Energetice de Elită: Siguranță Electrică și Independență Solară
 
 Expertiză certificată **ANRE** pentru proiecte care pun siguranța familiei tale și eficiența tehnologică pe primul loc. Transformăm modul în care locuința ta consumă și produce energie.
@@ -16,10 +19,6 @@ Expertiză certificată **ANRE** pentru proiecte care pun siguranța familiei ta
 * ✅ **Garanția Performanței:** Optimizăm sistemele fotovoltaice pentru un randament maxim, nu doar pentru montaj.
 
 > **"Energia verde nu este doar o investiție în viitor, ci o decizie inteligentă pentru confortul tău de astăzi."**
-
----
-
-[Vezi Portofoliul meu]({{ site.baseurl }}/portofoliu) | [Contactează-mă]({{ site.baseurl }}/contact)
 
 ---
 
@@ -66,4 +65,4 @@ Un sistem fotovoltaic este eficient doar dacă este configurat corect din punct 
 
 ---
 
-[Vezi Portofoliul meu]({{ site.baseurl }}/portofoliu) | [Contactează-mă]({{ site.baseurl }}/contact)
+**Acasă** | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
