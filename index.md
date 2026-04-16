@@ -3,9 +3,19 @@ layout: default
 title: Prezentare
 ---
 
-# PFA Alexa Marius - Expertul tău în Energie
+# Soluții Energetice de Elită: Siguranță Electrică și Independență Solară
 
-Suntem autorizați **ANRE** pentru a oferi soluții complete în domeniul instalațiilor electrice. Siguranța și eficiența energetică a casei tale sunt prioritățile noastre principale.
+Expertiză certificată **ANRE** pentru proiecte care pun siguranța familiei tale și eficiența tehnologică pe primul loc. Transformăm modul în care locuința ta consumă și produce energie.
+
+---
+
+### De ce să alegi un specialist autorizat ANRE?
+În domeniul electric, diferența dintre o lucrare "făcută" și una **corect executată** este siguranța casei tale împotriva incendiilor și a electrocutării.
+* ✅ **Conformitate Legală:** Proiecte executate strict conform normativului I7.
+* ✅ **Echipamente Premium:** Lucrăm exclusiv cu branduri de top (**Schneider Electric**) pentru fiabilitate garantată.
+* ✅ **Garanția Performanței:** Optimizăm sistemele fotovoltaice pentru un randament maxim, nu doar pentru montaj.
+
+> **"Energia verde nu este doar o investiție în viitor, ci o decizie inteligentă pentru confortul tău de astăzi."**
 
 ---
 
