@@ -1,0 +1,6 @@
+title: PFA Alexa Marius - Servicii Electrice
+email: alexaraducristian@gmail.com
+description: Instalatii electrice, Panouri Fotovoltaice si Mentenanta in siguranta.
+remote_theme: pages-themes/cayman@v0.2.0 # O temă profesională și curată
+plugins:
+  - jekyll-remote-theme
