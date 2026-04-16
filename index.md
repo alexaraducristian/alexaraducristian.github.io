@@ -9,6 +9,10 @@ Suntem autorizați **ANRE** pentru a oferi soluții complete în domeniul instal
 
 ---
 
+[Vezi Portofoliul meu]({{ site.baseurl }}/portofoliu) | [Contactează-mă]({{ site.baseurl }}/contact)
+
+---
+
 ## ⚡ Instalații Electrice de Joasă Tensiune (Apartamente, Case și Vile)
 
 Siguranța locuinței tale începe de la o infrastructură electrică proiectată și executată corect. În calitate de electrician autorizat **ANRE**, ofer servicii complete de proiectare, execuție și mentenanță pentru instalații electrice rezidențiale, respectând cu strictețe normativul **I7/2011**.
