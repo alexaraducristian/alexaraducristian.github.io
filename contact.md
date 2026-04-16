@@ -10,40 +10,14 @@ title: Contact
 
 Ești gata să îți securizezi instalația electrică sau să treci la energia solară? Completează formularul de mai jos.
 
-<form action="https://formspree.io/f/meevqgbw" method="POST" style="display: flex; flex-direction: column; max-width: 500px; gap: 15px; margin-top: 20px;">
-  
-  <input type="hidden" name="_next" value="https://alexaraducristian.github.io/alexaraducristian.github.io/succes">
-
-  <label>Nume Complet:
-    <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-  </label>
-  
-  <label>Adresa de Email:
-    <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-  </label>
-
-  <input type="hidden" name="_cc" value="alexamarius1977@gmail.com">
-  
-  <label>Serviciul Solicitat:
-    <select name="service" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-      <option value="tablou">Tablou Electric / Instalații</option>
-      <option value="fotovoltaice">Panouri Fotovoltaice</option>
-      <option value="mentenanta">Mentenanță / Reparații</option>
-    </select>
-  </label>
-  
-  <label>Mesajul tău:
-    <textarea name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
-  </label>
-
-  <div style="display:none;">
-    <label>Anti-spam: <input name="_gotcha"></label>
-  </div>
-
-  <button type="submit" style="background-color: #054a91; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 4px; font-weight: bold;">Trimite Mesajul</button>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="66d36f0d-7188-4d9a-9a68-735610b6e2fe">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
 </form>
 
-alexamarius
 ---
 ### 📞 Date de contact rapide
 
