@@ -14,7 +14,7 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
   </label>
   
   <label>Adresa de Email:
-    <input type="email" name="_replyto" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+    <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
   </label>
   
   <label>Serviciul Solicitat:
@@ -29,11 +29,15 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
     <textarea name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
   </label>
 
-  <input type="text" name="_gotcha" style="display:none" />
+  <div style="display:none;">
+    <label>Nu completa acest câmp dacă ești om: <input name="_gotcha"></label>
+  </div>
 
   <button type="submit" style="background-color: #054a91; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 4px; font-weight: bold;">Trimite Mesajul</button>
   
-  <p style="font-size: 0.8em; color: #666;">* Protejat împotriva spam-ului prin tehnologie Honeypot.</p>
+  <p style="font-size: 0.8em; color: #666; margin-top: 10px;">
+    * Mesajele sunt verificate anti-spam. Vă vom contacta în cel mai scurt timp posibil.
+  </p>
 </form>
 
 ---
