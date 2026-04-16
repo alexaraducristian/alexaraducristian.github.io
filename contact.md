@@ -4,6 +4,7 @@ title: Contact
 ---
 
 [Acasă]({{ site.baseurl }}/) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
+
 ---
 # Solicită o Ofertă
 
