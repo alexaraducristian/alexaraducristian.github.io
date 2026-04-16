@@ -12,6 +12,8 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
 
 <form action="https://formspree.io/f/meevqgbw" method="POST" style="display: flex; flex-direction: column; max-width: 500px; gap: 15px; margin-top: 20px;">
   
+  <input type="hidden" name="_next" value="https://alexaraducristian.github.io/alexaraducristian.github.io/succes">
+
   <label>Nume Complet:
     <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
   </label>
