@@ -1,3 +1,8 @@
+---
+layout: default
+title: Prezentare
+---
+
 # PFA Alexa Marius - Expertul tău în Energie
 
 Suntem autorizați **ANRE** pentru a oferi soluții complete în domeniul instalațiilor electrice. Siguranța și eficiența energetică a casei tale sunt prioritățile noastre principale.
@@ -12,7 +17,7 @@ Oferim servicii profesionale de montare, configurare și reparare a panourilor e
 
 
 
-![Tablou Electric Schneider](https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800)
+![Tablou Electric cu sigurante de calitate Schneider](http://googleusercontent.com/image_collection/image_retrieval/15652945053179920014_0)
 *Exemplu de montaj profesional cu componente Schneider pentru siguranță sporită.*
 
 ---
