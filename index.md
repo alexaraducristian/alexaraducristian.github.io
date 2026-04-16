@@ -17,7 +17,7 @@ Oferim servicii profesionale de montare, configurare și reparare a panourilor e
 
 
 
-![Tablou Electric cu sigurante de calitate Schneider](http://googleusercontent.com/image_collection/image_retrieval/15652945053179920014_0)
+![Tablou Electric cu sigurante de calitate Schneider](assets/img/tablou.jpg)
 *Exemplu de montaj profesional cu componente Schneider pentru siguranță sporită.*
 
 ---
@@ -31,7 +31,7 @@ Treci la energia verde cu ajutorul sistemelor fotovoltaice performante. Gestion�
 
 
 
-![Sistem Fotovoltaic și Invertor](https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800)
+![Sistem Fotovoltaic și Invertor](assets/img/fotovoltaice.jpeg)
 *Instalații fotovoltaice eficiente pentru un consum redus și facturi minime.*
 
 ---
