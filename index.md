@@ -31,17 +31,24 @@ O instalație veche reprezintă un risc major de incendiu. Serviciile noastre de
 
 ---
 
-## ☀️ Panouri Fotovoltaice și Invertoare
-Treci la energia verde cu ajutorul sistemelor fotovoltaice performante. Gestionăm întreg procesul de montare și punere în funcțiune.
+## ☀️ Sisteme de Energie Regenerabilă: Panouri Fotovoltaice și Invertoare
 
-* **Instalare Panouri:** Montaj pe acoperiș sau structuri solare.
-* **Configurare Invertoare:** Optimizarea consumului și stocării energiei.
-* **Punere în funcțiune:** Verificarea randamentului sistemului.
+Independența energetică nu mai este un obiectiv de viitor, ci o soluție accesibilă astăzi. În calitate de instalator autorizat, oferim soluții "la cheie" pentru sisteme fotovoltaice, optimizate pentru a maximiza rata de autoconsum și pentru a reduce drastic costurile facturilor de utilități.
 
+### 🔌 Soluții Complete de Infrastructură Solară
+Abordarea noastră este una riguroasă, asigurându-ne că fiecare componentă a sistemului funcționează la randament maxim pe întreaga durată de viață a investiției:
+* **Proiectare și Consultanță Tehnică:** Analizăm profilul tău de consum și particularitățile locației pentru a dimensiona corect numărul de panouri și capacitatea de stocare.
+* **Montaj Profesional:** Instalăm module fotovoltaice pe diverse tipuri de învelitori (țiglă ceramică, tablă, acoperiș tip terasă) sau pe structuri metalice dedicate la sol, garantând etanșeitatea și rezistența mecanică la intemperii.
+* **Echipamente de Top:** Lucrăm cu tehnologii de ultimă generație (panouri monocristaline, invertoare hibride sau on-grid) care asigură o rată de conversie ridicată chiar și în condiții de lumină difuză.
 
+### ⚙️ Integrarea Sistemului și Managementul Energiei
+Un sistem fotovoltaic este eficient doar dacă este configurat corect din punct de vedere electric și software:
+* **Configurare Inveroare:** Setăm parametrii de funcționare ai invertorului pentru un management inteligent al fluxurilor de energie între panouri, baterii (opțional) și rețeaua națională.
+* **Sisteme de Monitorizare:** Implementăm soluții de monitorizare în timp real (prin aplicații mobile), permițându-ți să urmărești producția de energie și consumul instantaneu de oriunde te-ai afla.
+* **Punere în funcțiune și Testare:** Efectuăm măsurători riguroase ale parametrilor de ieșire și verificăm integritatea cablajelor de curent continuu (DC) și curent alternativ (AC) înainte de predarea sistemului.
 
 ![Sistem Fotovoltaic și Invertor](assets/img/fotovoltaice.jpeg)
-*Instalații fotovoltaice eficiente pentru un consum redus și facturi minime.*
+*Eficiență maximă prin tehnologie solară de ultimă oră și montaj certificat.*
 
 ---
 
