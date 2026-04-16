@@ -5,14 +5,12 @@ title: Portofoliu Lucrări
 
 # Proiecte Realizate
 
-Aici poți vedea o selecție a lucrărilor executate recent de echipa noastră.
+Aici poți vedea o selecție a lucrărilor executate recent de echipa PFA Alexa Marius.
 
 ### 🏠 Sisteme Rezidențiale
-* **Locație:** București / Județul Ilfov
-* **Descriere:** Înlocuire completă tablou electric vechi cu unul modern, echipat cu protecții la supratensiune.
+* **Locație:** Iasi
+* **Descriere:** Modernizare tablou electric cu protecții Schneider și refacere circuite iluminat.
 
 ### 🏭 Sisteme Fotovoltaice 5kW
 * **Locație:** Casă individuală
-* **Descriere:** Instalare 12 panouri fotovoltaice și invertor hibrid pentru independență energetică.
-
-> *Notă: Această secțiune este în curs de actualizare cu poze de la ultimele intervenții.*
+* **Descriere:** Instalare panouri monocristaline și configurare invertor pentru autoconsum.

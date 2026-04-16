@@ -12,8 +12,8 @@ Oferim servicii profesionale de montare, configurare și reparare a panourilor e
 
 
 
-[Image of a modern electrical panel installation]
-
+![Tablou Electric Schneider](https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800)
+*Exemplu de montaj profesional cu componente Schneider pentru siguranță sporită.*
 
 ---
 
@@ -26,8 +26,8 @@ Treci la energia verde cu ajutorul sistemelor fotovoltaice performante. Gestion�
 
 
 
-[Image of solar panels on a house roof with an inverter]
-
+![Sistem Fotovoltaic și Invertor](https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800)
+*Instalații fotovoltaice eficiente pentru un consum redus și facturi minime.*
 
 ---
 

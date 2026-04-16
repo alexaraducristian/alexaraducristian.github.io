@@ -3,23 +3,31 @@ layout: page
 title: Contact
 ---
 
-# Hai să lucrăm împreună!
+# Solicită o Ofertă
 
-Completează formularul de mai jos pentru o ofertă personalizată sau pentru a programa o intervenție.
+Ești gata să îți securizezi instalația electrică sau să treci la energia solară? Completează formularul de mai jos.
 
-<form action="https://formspree.io/f/alexaraducristian@gmail.com" method="POST" style="display: flex; flex-direction: column; max-width: 400px; gap: 10px;">
-  <label>Numele tău:
-    <input type="text" name="name" required style="width: 100%; padding: 8px;">
+<form action="https://formspree.io/f/alexaraducristian@gmail.com" method="POST" style="display: flex; flex-direction: column; max-width: 500px; gap: 15px; margin-top: 20px;">
+  <label>Nume Complet:
+    <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
   </label>
-  <label>Email-ul tău:
-    <input type="email" name="_replyto" required style="width: 100%; padding: 8px;">
+  <label>Adresa de Email:
+    <input type="email" name="_replyto" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+  </label>
+  <label>Serviciul Solicitat:
+    <select name="service" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+      <option value="tablou">Tablou Electric / Instalații</option>
+      <option value="fotovoltaice">Panouri Fotovoltaice</option>
+      <option value="mentenanta">Mentenanță / Reparații</option>
+    </select>
   </label>
   <label>Mesajul tău:
-    <textarea name="message" rows="5" required style="width: 100%; padding: 8px;"></textarea>
+    <textarea name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
   </label>
-  <button type="submit" style="background-color: #007bff; color: white; border: none; padding: 10px; cursor: pointer;">Trimite Mesaj</button>
+  <button type="submit" style="background-color: #054a91; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 4px; font-weight: bold;">Trimite Mesajul</button>
 </form>
 
-### Detalii de contact rapide:
+---
+### Date de contact rapide:
 - **Email:** alexaraducristian@gmail.com
-- **Autorizație:** ANRE
+- **Autorizație:** ANRE Electrice
