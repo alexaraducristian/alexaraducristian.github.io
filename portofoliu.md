@@ -8,7 +8,7 @@ title: Portofoliu Lucrări
 ---
 # Proiecte Realizate
 
-Aici poți vedea o selecție a lucrărilor executate recent de echipa PFA Alexa Marius.
+Aici poți vedea o selecție a lucrărilor executate recent de echipa noastra.
 
 ### 🏠 Sisteme Rezidențiale
 * **Locație:** Iasi

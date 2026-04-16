@@ -41,10 +41,21 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
   <button type="submit" style="background-color: #054a91; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 4px; font-weight: bold;">Trimite Mesajul</button>
 </form>
 
+alexamarius
 ---
-### Date de contact rapide:
-- **Email:** alexamarius1977@gmail.com
-- **Autorizație:** ANRE Electrice
+### 📞 Date de contact rapide
+
+Dacă preferi să ne contactezi direct sau ai o urgență electrică, folosește butoanele de mai jos:
+
+* **Telefon:** [+40 745 539 432](tel:+40745539432)  
+    [📞 Sună Acum](tel:+40745539432) | [💬 Mesaj WhatsApp](https://wa.me/40745539432)
+
+* **Email:** [alexamarius1977@gmail.com](mailto:alexamarius1977@gmail.com)  
+    [✉️ Trimite Email](mailto:alexamarius1977@gmail.com)
+
+---
+**Program de lucru:** Luni - Vineri: 16:00 - 20:00  
+Sâmbătă: 09:00 - 18:00
 
 ---
 
