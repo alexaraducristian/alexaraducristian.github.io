@@ -17,7 +17,7 @@ Oferim servicii profesionale de montare, configurare și reparare a panourilor e
 
 
 
-![Tablou Electric cu sigurante de calitate Schneider](assets/img/tablou.jpg)
+![Tablou Electric cu sigurante de calitate Schneider](assets/img/tablou.jpeg)
 *Exemplu de montaj profesional cu componente Schneider pentru siguranță sporită.*
 
 ---
