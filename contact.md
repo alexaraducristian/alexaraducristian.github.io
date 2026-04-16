@@ -3,8 +3,7 @@ layout: default
 title: Contact
 ---
 
-[Acasă]({{ site.baseurl }}/) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
-
+[Acasă]({{ site.baseurl }}/) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
 ---
 # Solicită o Ofertă
 
@@ -19,6 +18,8 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
   <label>Adresa de Email:
     <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
   </label>
+
+  <input type="hidden" name="_cc" value="alexamarius1977@gmail.com">
   
   <label>Serviciul Solicitat:
     <select name="service" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
@@ -33,21 +34,17 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
   </label>
 
   <div style="display:none;">
-    <label>Nu completa acest câmp dacă ești om: <input name="_gotcha"></label>
+    <label>Anti-spam: <input name="_gotcha"></label>
   </div>
 
   <button type="submit" style="background-color: #054a91; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 4px; font-weight: bold;">Trimite Mesajul</button>
-  
-  <p style="font-size: 0.8em; color: #666; margin-top: 10px;">
-    * Mesajele sunt verificate anti-spam. Vă vom contacta în cel mai scurt timp posibil.
-  </p>
 </form>
 
 ---
 ### Date de contact rapide:
-- **Email:** alexaraducristian@gmail.com
+- **Email:** alexamarius1977@gmail.com
 - **Autorizație:** ANRE Electrice
 
 ---
 
-[Acasă]({{ site.baseurl }}/) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
+[Acasă]({{ site.baseurl }}/) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
