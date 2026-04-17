@@ -5,8 +5,6 @@ title: Economisește Inteligent cu Energia Solară
 
 **Acasă** | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
 
----
-
 # Te-ai întrebat câți bani pierzi în fiecare zi în care nu ai Panouri Fotovoltaice? ☀️
 
 Prețul energiei electrice este într-o continuă fluctuație, dar soarele trimite energie gratis în fiecare zi. Dacă acoperișul tău este gol, **pierzi bani în fiecare oră cu lumină.**
@@ -14,32 +12,44 @@ Prețul energiei electrice este într-o continuă fluctuație, dar soarele trimi
 ---
 
 ## 📉 Cât te costă INACȚIUNEA?
-Fără un sistem fotovoltaic, ești dependent de rețea. Iată ce înseamnă asta anual:
-* **Facturi lunare:** 300 - 800 RON (sau mai mult pentru case mari).
-* **Dependență:** Ești expus la orice creștere de tarif anunțată de furnizori.
-* **Valoarea Casei:** O casă fără independență energetică se vinde mai greu și la un preț mai mic.
-
-## 📈 Cât CÂȘTIGI cu un sistem instalat de PFA Alexa Marius?
-* **Factură Zero:** Poți acoperi până la 90-100% din consumul propriu.
-* **Amortizare Rapidă:** Sistemul se plătește singur din facturile pe care NU le mai plătești.
-* **Profit:** Energia produsă în plus poate fi livrată în rețea (devenind prosumator).
-
----
+Fără un sistem fotovoltaic, ești dependent de rețea și expus la costuri pe care nu le poți controla:
+* **Facturi lunare:** Sute de lei care se duc către furnizori, în loc să rămână în bugetul familiei tale.
+* **Inflația energetică:** Ești vulnerabil la orice creștere de tarif anunțată pe piață.
+* **Deprecierea activelor:** O casă fără independență energetică devine mai puțin atractivă pe piața imobiliară modernă.
 
 ## 🚗 Ai mașină electrică? Încarcă GRATIS!
-Dacă deții o mașină electrică (sau planifici să cumperi una), un sistem fotovoltaic este obligatoriu.
-* **La stațiile publice:** Plătești tarife mari și pierzi timp la coadă.
-* **Acasă cu panouri:** Încarci bateria mașinii folosind doar lumina soarelui. **Cost per kilometru: 0 RON.** Este ca și cum ai avea propria benzinărie gratis în curte.
+Un sistem fotovoltaic îți transformă acoperișul în propria "benzinărie":
+* **Cost per kilometru: 0 RON.** Încarci bateria mașinii folosind exclusiv lumina soarelui.
+* **Independență totală:** Nu mai depinzi de stațiile publice și de tarifele lor de încărcare rapidă.
 
 ## 🏠 Nu ai mașină electrică? Iată unde pleacă banii tăi:
-Chiar și fără o mașină, consumatorii mari din casă "înghit" bugete serioase. Vezi cât poți economisi la:
-1. **Aer Condiționat:** Vara, când soarele arde mai tare, panourile produc maximul de energie exact când ai nevoie de răcoare.
-2. **Boiler/Mașină de spălat:** Mută consumul greu în timpul zilei și folosește soarele pentru apă caldă și haine curate.
-3. **Frigidere și Electronice:** Consumul de fundal (care merge 24/7) este acoperit integral de lumina zilei.
+Consumatorii mari din locuință generează costuri uriașe pe care le poți elimina aproape complet:
+
+* **Aer Condiționat (1.5 kW):** Vara, panourile produc maximul de energie exact când ai nevoie de răcoare.
+    * *Consum estimat (6h funcționare):* **9 kWh/zi**
+* **Boiler Electric (2 kW):** Încălzește apa menajeră la prânz, folosind doar energia solară.
+    * *Consum estimat:* **4 kWh/zi**
+* **Mașină de spălat rufe/vase:** Programează-le ziua și spală haine sau vase fără costuri de rețea.
+    * *Consum estimat (1 ciclu fiecare):* **2.5 kWh/zi**
+* **Frigidere și Electronice:** Consumul de fundal (stand-by, router, frigider) este acoperit integral.
+    * *Consum estimat (pe timpul zilei):* **1.5 kWh/zi**
+
+### 📊 Impact Financiar:
+* **Total Economie Zilnică:** **~17 kWh**
+* **Economie Estimată:** Salvezi între **15 - 22 RON în fiecare zi** cu soare.
+* **Anual:** Acești consumatori te pot costa peste **5.500 RON** dacă rămâi dependent de rețeaua clasică.
 
 ---
 
-### [👉 Află cine suntem și ce experiență avem](prezentare) | [📞 Solicită o ofertă personalizată](contact)
+### 🛠️ Gata să oprești pierderile financiare?
+
+Suntem autorizați **ANRE** și folosim echipamente de top (**Schneider Electric**) pentru a-ți garanta o instalație sigură și eficientă pe termen lung.
+
+[👉 Vezi cine suntem și ce autorizații avem]({{ site.baseurl }}/prezentare) | [📞 Solicită o ofertă de preț]({{ site.baseurl }}/contact)
+
+---
+![Sistem Fotovoltaic și Invertor](assets/img/fotovoltaice.jpeg)
+*Investește în tehnologie care se plătește singură.*
 
 ---
 
