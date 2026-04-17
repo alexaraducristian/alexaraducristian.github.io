@@ -2,7 +2,27 @@
 layout: default
 title: Economisește Inteligent cu Energia Solară
 ---
-
+<style>
+  /* Personalizarea Header-ului pentru impact maxim */
+  header.page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/fotovoltaice.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  }
+  .project-name { 
+    font-size: 2.5rem !important; 
+    font-weight: 800 !important;
+    text-transform: uppercase;
+  }
+  .project-tagline { 
+    font-size: 1.5rem !important; 
+    opacity: 1 !important;
+    color: #ffcc00 !important; /* Un galben "solar" pentru contrast */
+    font-weight: bold;
+  }
+</style>
 **Acasă** | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
 
 # Te-ai întrebat câți bani pierzi în fiecare zi în care nu ai Panouri Fotovoltaice? ☀️
