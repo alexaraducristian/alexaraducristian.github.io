@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Economisește Inteligent cu Energia Solară
 ---
 
