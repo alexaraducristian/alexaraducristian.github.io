@@ -43,9 +43,13 @@ Consumatorii mari din locuință generează costuri uriașe pe care le poți eli
 
 ### 🛠️ Gata să oprești pierderile financiare?
 
-Suntem autorizați **ANRE** și folosim echipamente de top (**Schneider Electric**) pentru a-ți garanta o instalație sigură și eficientă pe termen lung.
+Nu facem compromisuri când vine vorba de calitatea execuției. Suntem autorizați **ANRE** și configurăm sisteme de elită utilizând exclusiv tehnologie de vârf:
 
-[👉 Vezi cine suntem și ce autorizații avem]({{ site.baseurl }}/prezentare) | [📞 Solicită o ofertă de preț]({{ site.baseurl }}/contact)
+* **Sisteme de Distribuție și Protecție:** Utilizăm soluții **Schneider Electric** (gama Acti9 sau Resi9) pentru tablourile electrice, oferind cele mai sigure siguranțe automate și protecții diferențiale (RCD/SPD) de pe piață.
+* **Module Fotovoltaice de Înaltă Performanță:** Lucrăm cu panouri monocristaline de tip **N-Type** sau **Bifaciale** de la producători Tier 1 precum **Longi Solar** sau **Canadian Solar**, garantând o eficiență de peste 22% și garanții extinse de producție.
+* **Invertoare Inteligente și Stocare:** Inima sistemului tău este asigurată de invertoare hibride de la **Huawei** sau **Fronius**, lideri mondiali recunoscuți pentru fiabilitatea software-ului de monitorizare și managementul optim al fluxului de energie.
+
+[👉 Vezi detalii tehnice și autorizații]({{ site.baseurl }}/prezentare) | [📞 Solicită o ofertă de preț]({{ site.baseurl }}/contact)
 
 ---
 ![Sistem Fotovoltaic și Invertor](assets/img/fotovoltaice.jpeg)
