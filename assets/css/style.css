@@ -1,0 +1,42 @@
+/* assets/css/style.css */
+
+header.page-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/fotovoltaice.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.project-name { 
+  font-size: 2.5rem !important; 
+  font-weight: 800 !important;
+  text-transform: uppercase;
+}
+
+.project-tagline { 
+  font-size: 1.5rem !important; 
+  opacity: 1 !important;
+  color: #ffcc00 !important;
+  font-weight: bold;
+}
+
+/* Stil pentru meniul de navigare să arate mai bine pe fundalul alb */
+nav {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #054a91;
+  font-weight: 500;
+}
+
+nav strong {
+  margin-right: 15px;
+  color: #333;
+  border-bottom: 2px solid #ffcc00;
+}
