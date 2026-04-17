@@ -1,68 +1,48 @@
 ---
-layout: default
-title: Prezentare
+layout: page
+title: Economisește Inteligent cu Energia Solară
 ---
 
-**Acasă** | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
-
----
-# Soluții Energetice de Elită: Siguranță Electrică și Independență Solară
-
-Expertiză certificată **ANRE** pentru proiecte care pun siguranța familiei tale și eficiența tehnologică pe primul loc. Transformăm modul în care locuința ta consumă și produce energie.
+**Acasă** | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
 
 ---
 
-### De ce să alegi un specialist autorizat ANRE?
-În domeniul electric, diferența dintre o lucrare "făcută" și una **corect executată** este siguranța casei tale împotriva incendiilor și a electrocutării.
-* ✅ **Conformitate Legală:** Proiecte executate strict conform normativului I7.
-* ✅ **Echipamente Premium:** Lucrăm exclusiv cu branduri de top (**Schneider Electric**) pentru fiabilitate garantată.
-* ✅ **Garanția Performanței:** Optimizăm sistemele fotovoltaice pentru un randament maxim, nu doar pentru montaj.
+# Te-ai întrebat câți bani pierzi în fiecare zi în care nu ai Panouri Fotovoltaice? ☀️
 
-> **"Energia verde nu este doar o investiție în viitor, ci o decizie inteligentă pentru confortul tău de astăzi."**
+Prețul energiei electrice este într-o continuă fluctuație, dar soarele trimite energie gratis în fiecare zi. Dacă acoperișul tău este gol, **pierzi bani în fiecare oră cu lumină.**
 
 ---
 
-## ⚡ Instalații Electrice de Joasă Tensiune (Apartamente, Case și Vile)
+## 📉 Cât te costă INACȚIUNEA?
+Fără un sistem fotovoltaic, ești dependent de rețea. Iată ce înseamnă asta anual:
+* **Facturi lunare:** 300 - 800 RON (sau mai mult pentru case mari).
+* **Dependență:** Ești expus la orice creștere de tarif anunțată de furnizori.
+* **Valoarea Casei:** O casă fără independență energetică se vinde mai greu și la un preț mai mic.
 
-Siguranța locuinței tale începe de la o infrastructură electrică proiectată și executată corect. În calitate de electrician autorizat **ANRE**, ofer servicii complete de proiectare, execuție și mentenanță pentru instalații electrice rezidențiale, respectând cu strictețe normativul **I7/2011**.
-
-### 🛠️ Proiectare și Montaj Tablouri Electrice
-Tabloul electric este "inima" casei tale. Nu ne limităm doar la montarea unor siguranțe, ci configurăm un sistem de protecție inteligent:
-* **Aparataj Schneider Electric:** Utilizăm exclusiv componente de top pentru o fiabilitate pe termen lung.
-* **Protecție Diferențială (RCD):** Indispensabilă pentru prevenirea electrocutării și protejarea vieții membrilor familiei.
-* **Protecție la Supratensiune (SPD):** Protejăm echipamentele electronice sensibile (TV, PC, electrocasnice) împotriva fluctuațiilor de tensiune din rețea sau a descărcărilor atmosferice.
-* **Echilibrare Fazelor:** Pentru instalațiile trifazate, asigurăm o distribuție optimă a sarcinii pentru a preveni supraîncălzirea conductorilor.
-
-### 🔍 Mentenanță, Diagnostic și Modernizare
-O instalație veche reprezintă un risc major de incendiu. Serviciile noastre de mentenanță includ:
-* **Verificări Periodice:** Inspectarea contactelor (strângerea bornelor) și testarea pragurilor de declanșare a protecțiilor.
-* **Modernizarea Instalațiilor Vechi:** Înlocuirea panourilor cu siguranțe fuzibile (tip vechi) cu tablouri moderne, sigure și estetic integrate.
-* **Remedierea Defectelor:** Diagnosticare rapidă pentru circuite întrerupte, scurtcircuite sau consumatori care "sar" siguranțele în mod repetat.
-
-![Instalatie Profesionala Schneider](assets/img/tablou-schneider.jpg)
-*Calitatea execuției și ordinea în tabloul electric sunt cărțile noastre de vizită.*
+## 📈 Cât CÂȘTIGI cu un sistem instalat de PFA Alexa Marius?
+* **Factură Zero:** Poți acoperi până la 90-100% din consumul propriu.
+* **Amortizare Rapidă:** Sistemul se plătește singur din facturile pe care NU le mai plătești.
+* **Profit:** Energia produsă în plus poate fi livrată în rețea (devenind prosumator).
 
 ---
 
-## ☀️ Sisteme de Energie Regenerabilă: Panouri Fotovoltaice și Invertoare
+## 🚗 Ai mașină electrică? Încarcă GRATIS!
+Dacă deții o mașină electrică (sau planifici să cumperi una), un sistem fotovoltaic este obligatoriu.
+* **La stațiile publice:** Plătești tarife mari și pierzi timp la coadă.
+* **Acasă cu panouri:** Încarci bateria mașinii folosind doar lumina soarelui. **Cost per kilometru: 0 RON.** Este ca și cum ai avea propria benzinărie gratis în curte.
 
-Independența energetică nu mai este un obiectiv de viitor, ci o soluție accesibilă astăzi. În calitate de instalator autorizat, oferim soluții "la cheie" pentru sisteme fotovoltaice, optimizate pentru a maximiza rata de autoconsum și pentru a reduce drastic costurile facturilor de utilități.
-
-### 🔌 Soluții Complete de Infrastructură Solară
-Abordarea noastră este una riguroasă, asigurându-ne că fiecare componentă a sistemului funcționează la randament maxim pe întreaga durată de viață a investiției:
-* **Proiectare și Consultanță Tehnică:** Analizăm profilul tău de consum și particularitățile locației pentru a dimensiona corect numărul de panouri și capacitatea de stocare.
-* **Montaj Profesional:** Instalăm module fotovoltaice pe diverse tipuri de învelitori (țiglă ceramică, tablă, acoperiș tip terasă) sau pe structuri metalice dedicate la sol, garantând etanșeitatea și rezistența mecanică la intemperii.
-* **Echipamente de Top:** Lucrăm cu tehnologii de ultimă generație (panouri monocristaline, invertoare hibride sau on-grid) care asigură o rată de conversie ridicată chiar și în condiții de lumină difuză.
-
-### ⚙️ Integrarea Sistemului și Managementul Energiei
-Un sistem fotovoltaic este eficient doar dacă este configurat corect din punct de vedere electric și software:
-* **Configurare Inveroare:** Setăm parametrii de funcționare ai invertorului pentru un management inteligent al fluxurilor de energie între panouri, baterii (opțional) și rețeaua națională.
-* **Sisteme de Monitorizare:** Implementăm soluții de monitorizare în timp real (prin aplicații mobile), permițându-ți să urmărești producția de energie și consumul instantaneu de oriunde te-ai afla.
-* **Punere în funcțiune și Testare:** Efectuăm măsurători riguroase ale parametrilor de ieșire și verificăm integritatea cablajelor de curent continuu (DC) și curent alternativ (AC) înainte de predarea sistemului.
-
-![Sistem Fotovoltaic și Invertor](assets/img/fotovoltaice.jpeg)
-*Eficiență maximă prin tehnologie solară de ultimă oră și montaj certificat.*
+## 🏠 Nu ai mașină electrică? Iată unde pleacă banii tăi:
+Chiar și fără o mașină, consumatorii mari din casă "înghit" bugete serioase. Vezi cât poți economisi la:
+1. **Aer Condiționat:** Vara, când soarele arde mai tare, panourile produc maximul de energie exact când ai nevoie de răcoare.
+2. **Boiler/Mașină de spălat:** Mută consumul greu în timpul zilei și folosește soarele pentru apă caldă și haine curate.
+3. **Frigidere și Electronice:** Consumul de fundal (care merge 24/7) este acoperit integral de lumina zilei.
 
 ---
 
-**Acasă** | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
+### [👉 Află cine suntem și ce experiență avem](prezentare) | [📞 Solicită o ofertă personalizată](contact)
+
+---
+
+**Acasă** | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
+
+---

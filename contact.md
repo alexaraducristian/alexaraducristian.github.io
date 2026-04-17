@@ -3,9 +3,10 @@ layout: default
 title: Contact
 ---
 
-[Acasă]({{ site.baseurl }}/) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
+[Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
 
 ---
+
 # Solicită o Ofertă
 
 Ești gata să îți securizezi instalația electrică sau să treci la energia solară? Completează formularul de mai jos.
@@ -60,4 +61,6 @@ Sâmbătă: 09:00 - 18:00
 
 ---
 
-[Acasă]({{ site.baseurl }}/) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
+[Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
+
+---

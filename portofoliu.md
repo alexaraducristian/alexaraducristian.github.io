@@ -3,7 +3,7 @@ layout: default
 title: Portofoliu Lucrări
 ---
 
-[Acasă]({{ site.baseurl }}/) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
+[Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
 
 ---
 # Proiecte Realizate
@@ -22,4 +22,6 @@ Aici poți vedea o selecție a lucrărilor executate recent de echipa noastra.
 
 --- 
 
-[Acasă]({{ site.baseurl }}/) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
+[Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
+
+---
