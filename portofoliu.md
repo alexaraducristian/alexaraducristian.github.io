@@ -8,17 +8,44 @@ title: Portofoliu Lucrări
 ---
 # Proiecte Realizate
 
-Aici poți vedea o selecție a lucrărilor executate recent de echipa noastra.
+Echipa noastră pune accent pe siguranță, eficiență și o execuție tehnică ireproșabilă. Mai jos puteți vizualiza o selecție a lucrărilor noastre recente, atât în domeniul instalațiilor electrice rezidențiale, cât și al sistemelor de energie regenerabilă.
 
-### 🏠 Sisteme Rezidențiale
-* **Locație:** Iasi
-* **Descriere:** Modernizare tablou electric cu protecții Schneider și refacere circuite iluminat.
+---
 
-### 🏭 Sisteme Fotovoltaice 5kW
-* **Locație:** Casă individuală
-* **Descriere:** Instalare panouri monocristaline și configurare invertor pentru autoconsum.
-![Sistem de panouri fotovoltaice (poza 1)](assets/img/portofoliu-fotovoltaice-1.jpg)
-![Sistem de panouri fotovoltaice (poza 2)](assets/img/portofoliu-fotovoltaice-2.jpg)
+### ⚡ 1. Modernizare Tablou Electric Rezidențial (Standard Schneider)
+**Locație:** Iași
+**Descriere:** Proiect de intervenție pentru înlocuirea unui tablou electric vechi cu siguranțe fuzibile. S-a optat pentru o soluție modernă, configurată conform normativului I7.
+
+**Detalii Tehnice:**
+* Echipare completă cu aparataj premium **Schneider Electric** (gamele Acti9/Resi9).
+* Implementarea protecțiilor diferențiale (RCBO) pe circuitele critice (priză baie, bucătărie) pentru prevenirea electrocutării.
+* Reorganizarea și etichetarea clară a circuitelor de iluminat și prize.
+* Execuție îngrijită a managementului cablurilor pentru o mentenanță ușoară și sigură.
+
+![Modernizare Tablou Electric cu protecții Schneider - PFA Alexa Marius]({{ site.baseurl }}/assets/img/tablou-electric.jpg)
+*Vedere detaliată a tabloului electric echipat: organizare profesională și utilizarea exclusivă a componentelor Schneider.*
+
+---
+
+### ☀️ 2. Sistem Fotovoltaic Hibrid 5.5kW
+**Locație:** Zonă Rezidențială (Casă Individuală)
+**Descriere:** Instalare "la cheie" a unui sistem fotovoltaic hibrid conceput pentru a maximiza autoconsumul și a asigura backup energetic.
+
+**Detalii Tehnice:**
+* **Panouri:** Putere totală instalată de 5.5kWp (panouri monocristaline de înaltă eficiență).
+* **Invertor:** Configurare invertor hibrid de ultimă generație cu management inteligent al fluxurilor de energie (Panouri -> Baterie -> Casă -> Rețea).
+* **Monitorizare:** Implementarea unui sistem de monitorizare avansat (Smart Meter **Eastron** integrat) care permite vizualizarea în timp real, prin aplicație mobilă, a producției, consumului și stării de încărcare a bateriei (SOC).
+* **Cofret DC/AC:** Echipat cu descărcătoare de supratensiune și protecții dedicate pentru siguranța echipamentelor.
+
+| Parametru Sistem (captură monitorizare) | Valoare Detectată |
+| :--- | :--- |
+| Putere PV Instantanee | ~633W |
+| Producție Zilnică | 9.6kWh |
+| Monitorizare Tensiune/Curent (MPPT) | Activă și Stabilă |
+
+![Captură a interfeței de monitorizare, arătând producția PV și datele MPPT. Dreapta: Cofretul tehnic cu Smart Meter Eastron și organizarea cablajului DC/AC.]({{ site.baseurl }}/assets/img/invertor-app.jpg)
+
+
 
 --- 
 
