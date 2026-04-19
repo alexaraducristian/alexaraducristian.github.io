@@ -52,12 +52,8 @@ Dacă preferi să ne contactezi direct sau ai o urgență electrică, folosește
 * **Telefon:** [+40 745 539 432](tel:+40745539432)  
     [📞 Sună Acum](tel:+40745539432) | [💬 Mesaj WhatsApp](https://wa.me/40745539432)
 
-* **Email:** [alexamarius1977@gmail.com](mailto:alexamarius1977@gmail.com)  
-    [✉️ Trimite Email](mailto:alexamarius1977@gmail.com)
-
----
-**Program de lucru:** Luni - Vineri: 16:00 - 20:00  
-Sâmbătă: 09:00 - 18:00
+* **Email:** [alexamarius@yahoo.com](mailto:alexamarius@yahoo.com)  
+    [✉️ Trimite Email](mailto:alexamarius@yahoo.com)
 
 ---
 

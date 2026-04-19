@@ -35,9 +35,12 @@ Consumatorii mari din locuință generează costuri uriașe pe care le poți eli
     * *Consum estimat (pe timpul zilei):* **1.5 kWh/zi**
 
 ### 📊 Impact Financiar:
-* **Total Economie Zilnică:** **~17 kWh**
-* **Economie Estimată:** Salvezi între **15 - 22 RON în fiecare zi** cu soare.
-* **Anual:** Acești consumatori te pot costa peste **5.500 RON** dacă rămâi dependent de rețeaua clasică.
+#### Vrei o simulare personalizată pentru casa ta?
+[📞 Solicită un raport tehnic complet]({{ site.baseurl }}/contact)
+
+![Simulare Producție Solară]({{ site.baseurl }}/assets/img/1.bmp)
+*Exemplu de raport de dimensionare generat pentru unul dintre clienții noștri.*
+
 
 ---
 
