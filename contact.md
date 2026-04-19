@@ -19,8 +19,8 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
     <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
   </label>
   
-  <label>Adresa de Email:
-    <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+  <label>Adresa de Email (Opțional):
+    <input type="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
   </label>
 
   <label>Număr de Telefon:
