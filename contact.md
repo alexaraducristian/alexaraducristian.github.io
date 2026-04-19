@@ -23,7 +23,7 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
     <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
   </label>
 
-  <input type="hidden" name="_cc" value="alexamarius1977@gmail.com">
+  <input type="hidden" name="_cc" value="alexamarius@yahoo.com">
   
   <label>Serviciul Solicitat:
     <select name="service" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
