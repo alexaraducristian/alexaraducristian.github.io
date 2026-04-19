@@ -34,12 +34,45 @@ Consumatorii mari din locuință generează costuri uriașe pe care le poți eli
 * **Frigidere și Electronice:** Consumul de fundal (stand-by, router, frigider) este acoperit integral.
     * *Consum estimat (pe timpul zilei):* **1.5 kWh/zi**
 
-### 📊 Impact Financiar:
-#### Vrei o simulare personalizată pentru casa ta?
-[📞 Solicită un raport tehnic complet]({{ site.baseurl }}/contact)
+## 📈 Analiză de Eficiență și Recuperare a Investiției
 
-![Simulare Producție Solară]({{ site.baseurl }}/assets/img/1.bmp)
-*Exemplu de raport de dimensionare generat pentru unul dintre clienții noștri.*
+Nu instalăm doar panouri, ci proiectăm soluții de independență energetică. Folosim software de simulare de precizie (**Cool-PV PRO**) pentru a calcula randamentul real al sistemului tău, luând în calcul radiația solară locală, orientarea acoperișului și degradarea naturală a celulelor fotovoltaice.
+
+---
+
+### 📊 Studiu de Caz: Sistem Fotovoltaic Rezidențial
+Conform simulărilor noastre bazate pe datele tehnice (vezi graficul de mai jos), rezultatele financiare sunt incontestabile:
+
+* **💰 Investiție Inițială:** `16.827 RON`
+    *(Include echipamente Tier 1, montaj autorizat ANRE și întocmirea dosarului de prosumator)*
+* **⏱️ Perioada de Amortizare:** **Doar 5 ani**
+    *(După acest punct, energia electrică produsă este 100% profit net)*
+* **🚀 Profit Net (Anul 10):** **20.978 RON**
+    *(Bani economisiți care rămân în bugetul familiei tale)*
+* **🛡️ Siguranță Tehnică:** Proiectăm cu marjă de eroare calculată, utilizând conductori de **6 mmp** pentru pierderi minime de tensiune.
+
+---
+
+### 🔍 Vrei o simulare personalizată pentru casa ta?
+Fiecare proiect este unic. Îți oferim un raport tehnic complet care îți va arăta exact:
+1. **Simularea producției** lună de lună, adaptată locației tale.
+2. **Analiza fluxului de numerar** pe 20 de ani.
+3. **Dimensionarea exactă** a cablurilor și protecțiilor pentru siguranță maximă.
+
+[📞 Solicită un raport tehnic gratuit acum]({{ site.baseurl }}/contact)
+
+---
+
+![Simulare Producție Solară]({{ site.baseurl }}/assets/images/1.bmp)
+*Imagine 1: Analiza randamentului și a fluxului de numerar (Cash Flow) pe durata de viață a sistemului.*
+
+---
+
+### 🛠️ Detalii Tehnice de Proiectare
+Așa cum se vede în planul nostru de proiectare (*Imaginea 3*), configurăm șirurile de panouri (strings) pentru a lucra în plaja optimă de tensiune a invertorului, garantând un start rapid al producției chiar și în condiții de lumină slabă (dimineața devreme sau zile înnorate).
+
+![Configurare Stringuri]({{ site.baseurl }}/assets/images/3.bmp)
+*Imagine 2: Schema de interconectare și calculul secțiunii cablurilor pentru eficiență maximă.*
 
 
 ---
