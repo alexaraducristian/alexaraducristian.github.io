@@ -36,13 +36,13 @@ Consumatorii mari din locuință generează costuri uriașe pe care le poți eli
 
 ## 📈 Analiză de Eficiență și Recuperare a Investiției
 
-Nu instalăm doar panouri, ci proiectăm soluții de independență energetică. Folosim software de simulare de precizie (**Cool-PVT**) pentru a calcula randamentul real al sistemului tău, luând în calcul radiația solară locală, orientarea acoperișului și degradarea naturală a celulelor fotovoltaice.
+Nu instalăm doar panouri, ci proiectăm soluții de independență energetică. Folosim software de simulare de precizie <span style="color: #f39c12; font-weight: bold; border: 1px solid #f39c12; padding: 2px 5px; border-radius: 4px;">(Cool-PVT)</span> pentru a calcula randamentul real al sistemului tău, luând în calcul radiația solară locală, orientarea acoperișului și degradarea naturală a celulelor fotovoltaice.
 
 ---
 
 ## 🎓 Expertiză Academică și Validare Tehnică
 
-Proiectarea sistemelor noastre nu se bazează pe estimări generice, ci pe rigurozitate științifică. Software-ul de simulare utilizat (**Cool-PV PRO**) este rezultatul unui proces avansat de dezvoltare desfășurat în cadrul **Universității Tehnice „Gheorghe Asachi” din Iași**.
+Proiectarea sistemelor noastre nu se bazează pe estimări generice, ci pe rigurozitate științifică. Software-ul de simulare utilizat <span style="color: #f39c12; font-weight: bold;">(Cool-PV PRO)</span> este rezultatul unui proces avansat de dezvoltare desfășurat în cadrul **Universității Tehnice „Gheorghe Asachi” din Iași**.
 
 Algoritmii de calcul și modelele matematice de predicție au fost riguros revizuite și validate de către cadre didactice și profesori cu o vastă experiență în ingineria electrică și sistemele de energie regenerabilă. Această colaborare strânsă cu mediul academic din Iași ne permite să garantăm o precizie de proiectare la standarde europene, eliminând riscurile de subdimensionare sau pierderi tehnice neprevăzute.
 
@@ -50,7 +50,7 @@ Algoritmii de calcul și modelele matematice de predicție au fost riguros reviz
 Conform simulărilor noastre bazate pe datele tehnice (vezi graficul de mai jos), rezultatele financiare sunt incontestabile:
 
 * **💰 Investiție Inițială:** `16.827 RON`
-    *(Include echipamente Tier 1, montaj autorizat ANRE și întocmirea dosarului de prosumator)*
+    *(Include echipamente Tier 1, montaj autorizat <span style="background-color: #003366; color: white; padding: 2px 6px; border-radius: 3px; font-weight: bold; font-size: 0.9em;">ANRE</span> și întocmirea dosarului de prosumator)*
 * **⏱️ Perioada de Amortizare:** **Doar 5 ani**
     *(După acest punct, energia electrică produsă este 100% profit net)*
 * **🚀 Profit Net (Anul 10):** **20.978 RON**
@@ -85,16 +85,14 @@ Așa cum se vede în planul nostru de proiectare (*Imaginea 3*), configurăm și
 
 ### 🛠️ Gata să oprești pierderile financiare?
 
-Nu facem compromisuri când vine vorba de calitatea execuției. Suntem autorizați **ANRE** și configurăm sisteme de elită utilizând exclusiv tehnologie de vârf:
+Nu facem compromisuri când vine vorba de calitatea execuției. Suntem <span style="background-color: #003366; color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold;">autorizați ANRE</span> și configurăm sisteme de elită utilizând exclusiv tehnologie de vârf:
 
 * **Sisteme de Distribuție și Protecție:** Utilizăm soluții **Schneider Electric** (gama Acti9 sau Resi9) pentru tablourile electrice, oferind cele mai sigure siguranțe automate și protecții diferențiale (RCD/SPD) de pe piață.
 * **Module Fotovoltaice de Înaltă Performanță:** Lucrăm cu panouri monocristaline de tip **N-Type** sau **Bifaciale** de la producători Tier 1 precum **Longi Solar** sau **Canadian Solar**, garantând o eficiență de peste 22% și garanții extinse de producție.
 * **Invertoare Inteligente și Stocare:** Inima sistemului tău este asigurată de invertoare hibride de la **Huawei** sau **Fronius**, lideri mondiali recunoscuți pentru fiabilitatea software-ului de monitorizare și managementul optim al fluxului de energie.
 
-[👉 Vezi detalii tehnice și autorizații]({{ site.baseurl }}/prezentare) | [📞 Solicită o ofertă de preț]({{ site.baseurl }}/contact)
+[👉 Vezi detalii tehnice și autorizații <span style="color: #003366; font-weight: bold;">ANRE</span>]({{ site.baseurl }}/prezentare) | [📞 Solicită o ofertă de preț]({{ site.baseurl }}/contact)
 
 ---
 
 **Acasă** | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
-
----
