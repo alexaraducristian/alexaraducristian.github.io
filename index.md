@@ -36,7 +36,7 @@ Consumatorii mari din locuință generează costuri uriașe pe care le poți eli
 
 ## 📈 Analiză de Eficiență și Recuperare a Investiției
 
-Nu instalăm doar panouri, ci proiectăm soluții de independență energetică. Folosim software de simulare de precizie (**Cool-PV PRO**) pentru a calcula randamentul real al sistemului tău, luând în calcul radiația solară locală, orientarea acoperișului și degradarea naturală a celulelor fotovoltaice.
+Nu instalăm doar panouri, ci proiectăm soluții de independență energetică. Folosim software de simulare de precizie (**Cool-PVT**) pentru a calcula randamentul real al sistemului tău, luând în calcul radiația solară locală, orientarea acoperișului și degradarea naturală a celulelor fotovoltaice.
 
 ---
 

@@ -23,25 +23,29 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
     <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
   </label>
 
+  <label>Număr de Telefon:
+    <input type="tel" name="phone" placeholder="07xx xxx xxx" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+  </label>
+
   <input type="hidden" name="_cc" value="alexamarius@yahoo.com">
   
   <label>Serviciul Solicitat:
     <select name="service" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-      <option value="tablou">Tablou Electric / Instalații</option>
-      <option value="fotovoltaice">Panouri Fotovoltaice</option>
+      <option value="tablou">Tablou Electric / Instalații (Schneider)</option>
+      <option value="fotovoltaice">Sisteme Fotovoltaice / Invertor</option>
       <option value="mentenanta">Mentenanță / Reparații</option>
     </select>
   </label>
   
   <label>Mesajul tău:
-    <textarea name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+    <textarea name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" placeholder="Detaliați proiectul dumneavoastră..."></textarea>
   </label>
 
-  <div style="display:none;">
-    <label>Anti-spam: <input name="_gotcha"></label>
-  </div>
+  <input type="text" name="_gotcha" style="display:none">
 
   <button type="submit" style="background-color: #054a91; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 4px; font-weight: bold;">Trimite Mesajul</button>
+  
+  <p style="font-size: 0.8rem; color: #666;">* Prin trimiterea acestui formular, sunteți de acord să fiți contactat pentru oferta solicitată.</p>
 </form>
 
 ---
