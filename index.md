@@ -71,7 +71,7 @@ Fiecare proiect este unic. Îți oferim un raport tehnic complet care îți va a
 ### 🛠️ Detalii Tehnice de Proiectare
 Așa cum se vede în planul nostru de proiectare (*Imaginea 3*), configurăm șirurile de panouri (strings) pentru a lucra în plaja optimă de tensiune a invertorului, garantând un start rapid al producției chiar și în condiții de lumină slabă (dimineața devreme sau zile înnorate).
 
-![Configurare Stringuri]({{ site.baseurl }}/assets/images/3.bmp)
+![Configurare Stringuri]({{ site.baseurl }}/assets/img/1.bmp)
 *Imagine 2: Schema de interconectare și calculul secțiunii cablurilor pentru eficiență maximă.*
 
 
