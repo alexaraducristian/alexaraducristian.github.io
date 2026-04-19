@@ -42,7 +42,7 @@ Nu instalăm doar panouri, ci proiectăm soluții de independență energetică.
 
 ## 🎓 Expertiză Academică și Validare Tehnică
 
-Proiectarea sistemelor noastre nu se bazează pe estimări generice, ci pe rigurozitate științifică. Software-ul de simulare utilizat <span style="color: #f39c12; font-weight: bold;">(Cool-PV PRO)</span> este rezultatul unui proces avansat de dezvoltare desfășurat în cadrul **Universității Tehnice „Gheorghe Asachi” din Iași**.
+Proiectarea sistemelor noastre nu se bazează pe estimări generice, ci pe rigurozitate științifică. Software-ul de simulare utilizat <span style="color: #f39c12; font-weight: bold;">(Cool-PVT)</span> este rezultatul unui proces avansat de dezvoltare desfășurat în cadrul **Universității Tehnice „Gheorghe Asachi” din Iași**.
 
 Algoritmii de calcul și modelele matematice de predicție au fost riguros revizuite și validate de către cadre didactice și profesori cu o vastă experiență în ingineria electrică și sistemele de energie regenerabilă. Această colaborare strânsă cu mediul academic din Iași ne permite să garantăm o precizie de proiectare la standarde europene, eliminând riscurile de subdimensionare sau pierderi tehnice neprevăzute.
 
