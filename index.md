@@ -40,6 +40,12 @@ Nu instalăm doar panouri, ci proiectăm soluții de independență energetică.
 
 ---
 
+## 🎓 Expertiză Academică și Validare Tehnică
+
+Proiectarea sistemelor noastre nu se bazează pe estimări generice, ci pe rigurozitate științifică. Software-ul de simulare utilizat (**Cool-PV PRO**) este rezultatul unui proces avansat de dezvoltare desfășurat în cadrul **Universității Tehnice „Gheorghe Asachi” din Iași**.
+
+Algoritmii de calcul și modelele matematice de predicție au fost riguros revizuite și validate de către cadre didactice și profesori cu o vastă experiență în ingineria electrică și sistemele de energie regenerabilă. Această colaborare strânsă cu mediul academic din Iași ne permite să garantăm o precizie de proiectare la standarde europene, eliminând riscurile de subdimensionare sau pierderi tehnice neprevăzute.
+
 ### 📊 Studiu de Caz: Sistem Fotovoltaic Rezidențial
 Conform simulărilor noastre bazate pe datele tehnice (vezi graficul de mai jos), rezultatele financiare sunt incontestabile:
 
@@ -86,10 +92,6 @@ Nu facem compromisuri când vine vorba de calitatea execuției. Suntem autoriza�
 * **Invertoare Inteligente și Stocare:** Inima sistemului tău este asigurată de invertoare hibride de la **Huawei** sau **Fronius**, lideri mondiali recunoscuți pentru fiabilitatea software-ului de monitorizare și managementul optim al fluxului de energie.
 
 [👉 Vezi detalii tehnice și autorizații]({{ site.baseurl }}/prezentare) | [📞 Solicită o ofertă de preț]({{ site.baseurl }}/contact)
-
----
-![Sistem Fotovoltaic și Invertor](assets/img/fotovoltaice.jpeg)
-*Investește în tehnologie care se plătește singură.*
 
 ---
 
