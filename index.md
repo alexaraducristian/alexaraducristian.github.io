@@ -36,7 +36,7 @@ Consumatorii mari din locuință generează costuri uriașe pe care le poți eli
 
 ## 📈 Analiză de Eficiență și Recuperare a Investiției
 
-Nu instalăm doar panouri, ci proiectăm soluții de independență energetică. Folosim software de simulare de precizie <span style="color: #f39c12; font-weight: bold; border: 1px solid #f39c12; padding: 2px 5px; border-radius: 4px;">(Cool-PVT)</span> pentru a calcula randamentul real al sistemului tău, luând în calcul radiația solară locală, orientarea acoperișului și degradarea naturală a celulelor fotovoltaice.
+Nu instalăm doar panouri, ci proiectăm soluții de independență energetică. Folosim software de simulare de precizie <span style="color: #f39c12; font-weight: bold;">(Cool-PVT)</span> pentru a calcula randamentul real al sistemului tău, luând în calcul radiația solară locală, orientarea acoperișului și degradarea naturală a celulelor fotovoltaice.
 
 ---
 
@@ -65,7 +65,7 @@ Fiecare proiect este unic. Îți oferim un raport tehnic complet, bazat pe calcu
 2. **Analiza fluxului de numerar** pe urmatorii 20 de ani.
 3. **Dimensionarea exactă** a cablurilor și protecțiilor pentru siguranță maximă.
 
-[📞 Solicită ACUM un raport tehnic gratuit acum]({{ site.baseurl }}/contact)
+[📞 Solicită ACUM un raport tehnic gratuit]({{ site.baseurl }}/contact)
 
 ---
 
