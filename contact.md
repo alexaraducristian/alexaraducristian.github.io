@@ -7,7 +7,12 @@ title: Contact
 
 ---
 
-# Solicită o Ofertă
+## 📋 De Ce Să Lucrăm Împreună?
+* **Siguranță înainte de toate:** Respectarea strictă a normativelor în vigoare (I7).
+* **Echipamente Premium:** Utilizarea de componente certificate (ex: Schneider, Legrand, Victron).
+* **Suport Tehnic:** Consultanță în alegerea corectă a puterii instalate.
+
+## Solicită o Ofertă
 
 Ești gata să îți securizezi instalația electrică sau să treci la energia solară? Completează formularul de mai jos.
 
