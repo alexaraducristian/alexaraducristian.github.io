@@ -60,12 +60,12 @@ Conform simulărilor noastre bazate pe datele tehnice (vezi graficul de mai jos)
 ---
 
 ### 🔍 Vrei o simulare personalizată pentru casa ta?
-Fiecare proiect este unic. Îți oferim un raport tehnic complet care îți va arăta exact:
+Fiecare proiect este unic. Îți oferim un raport tehnic complet, bazat pe calcule precise pe care le obtinem cu ajutorul aplicatiei <span style="color: #f39c12; font-weight: bold;">(Cool-PVT)</span>, care îți va arăta exact:
 1. **Simularea producției** lună de lună, adaptată locației tale.
-2. **Analiza fluxului de numerar** pe 20 de ani.
+2. **Analiza fluxului de numerar** pe urmatorii 20 de ani.
 3. **Dimensionarea exactă** a cablurilor și protecțiilor pentru siguranță maximă.
 
-[📞 Solicită un raport tehnic gratuit acum]({{ site.baseurl }}/contact)
+[📞 Solicită ACUM un raport tehnic gratuit acum]({{ site.baseurl }}/contact)
 
 ---
 
@@ -75,7 +75,7 @@ Fiecare proiect este unic. Îți oferim un raport tehnic complet care îți va a
 ---
 
 ### 🛠️ Detalii Tehnice de Proiectare
-Așa cum se vede în planul nostru de proiectare (*Imaginea 3*), configurăm șirurile de panouri (strings) pentru a lucra în plaja optimă de tensiune a invertorului, garantând un start rapid al producției chiar și în condiții de lumină slabă (dimineața devreme sau zile înnorate).
+Așa cum se vede în planul nostru de proiectare (*Imaginea 2 mai jos*), configurăm șirurile de panouri (strings) pentru a lucra în plaja optimă de tensiune a invertorului, garantând un start rapid al producției chiar și în condiții de lumină slabă (dimineața devreme sau zile înnorate).
 
 ![Configurare Stringuri]({{ site.baseurl }}/assets/img/3.bmp)
 *Imagine 2: Schema de interconectare și calculul secțiunii cablurilor pentru eficiență maximă.*
