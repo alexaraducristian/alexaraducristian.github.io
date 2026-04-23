@@ -59,11 +59,18 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
 
 Dacă preferi să ne contactezi direct sau ai o urgență electrică, folosește butoanele de mai jos:
 
-* **Telefon:** [+40 745 539 432](tel:+40745539432)  
+* **Telefon 1:**
+    [+40 745 539 432](tel:+40745539432)  
     [📞 Sună Acum](tel:+40745539432) | [💬 Mesaj WhatsApp](https://wa.me/40745539432)
+* **Telefon 2:**
+  (dupa 17:30 sau oricand in weekend):
+    [+40 742 069 533](tel:+40742069533)  
+    [📞 Sună Acum](tel:+40742069533) | [💬 Mesaj WhatsApp](https://wa.me/40742069533)
 
-* **Email:** [alexamarius@yahoo.com](mailto:alexamarius@yahoo.com)  
-    [✉️ Trimite Email](mailto:alexamarius@yahoo.com)
+* **Email 1:**
+    [alexamarius@yahoo.com](mailto:alexamarius@yahoo.com)  [✉️ Trimite Email](mailto:alexamarius@yahoo.com)
+* **Email 2:**
+    [alexaraducristian@gmail.com](mailto:alexaraducristian@gmail.com)  [✉️ Trimite Email](mailto:alexaraducristian@gmail.com)
 
 ---
 
