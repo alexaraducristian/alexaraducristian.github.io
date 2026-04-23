@@ -94,7 +94,7 @@ Nu facem compromisuri când vine vorba de calitatea execuției. Suntem <span sty
 * **Module Fotovoltaice de Înaltă Performanță:** Lucrăm cu panouri monocristaline de tip **N-Type** sau **Bifaciale** de la producători Tier 1 precum **Longi Solar** sau **Canadian Solar**, garantând o eficiență de peste 22% și garanții extinse de producție.
 * **Invertoare Inteligente și Stocare:** Inima sistemului tău este asigurată de invertoare hibride de la **Huawei** sau **Fronius**, lideri mondiali recunoscuți pentru fiabilitatea software-ului de monitorizare și managementul optim al fluxului de energie.
 
-[👉 Vezi detalii tehnice și autorizații <span style="color: #003366; font-weight: bold;">ANRE</span>]({{ site.baseurl }}/prezentare) | [📞 Solicită o ofertă de preț]({{ site.baseurl }}/contact)
+[📞 Solicită acum o ofertă de preț]({{ site.baseurl }}/contact)
 
 ---
 
