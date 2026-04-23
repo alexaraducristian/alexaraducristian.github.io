@@ -3,10 +3,11 @@ layout: default
 title: Contact
 ---
 
+{% include google-analytics.html %}
+
 [Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
 
 ---
-
 ## 📋 De Ce Să Lucrăm Împreună?
 * **Siguranță înainte de toate:** Respectarea strictă a normativelor în vigoare (I7).
 * **Echipamente Premium:** Utilizarea de componente certificate (ex: Schneider, Legrand, Victron).

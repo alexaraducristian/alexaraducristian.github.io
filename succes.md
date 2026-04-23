@@ -3,6 +3,8 @@ layout: default
 title: Mesaj Trimis
 ---
 
+{% include google-analytics.html %}
+
 # 🗸 Mesajul dumneavoastră a fost recepționat!
 
 Vă mulțumim pentru interesul acordat serviciilor noastre*. 

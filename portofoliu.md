@@ -3,6 +3,8 @@ layout: default
 title: Portofoliu Lucrări
 ---
 
+{% include google-analytics.html %}
+
 [Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
 
 ---

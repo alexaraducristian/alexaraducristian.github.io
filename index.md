@@ -7,6 +7,7 @@ title: Economisește Inteligent cu Energia Solară
 
 **Acasă** | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
 
+---
 # Te-ai întrebat câți bani pierzi în fiecare zi în care nu ai Panouri Fotovoltaice? ☀️
 
 Prețul energiei electrice este într-o continuă fluctuație, dar soarele trimite energie gratis în fiecare zi. Dacă acoperișul tău este gol, **pierzi bani în fiecare oră cu lumină.**

@@ -3,10 +3,11 @@ layout: default
 title: Prezentare
 ---
 
+{% include google-analytics.html %}
+
 [Acasă]({{ site.baseurl }}/) | **Prezentare** | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
 
 ---
-
 # Soluții Energetice de Elită: Siguranță Electrică și Independență Solară
 
 Expertiză certificată **ANRE** pentru proiecte care pun siguranța familiei tale și eficiența tehnologică pe primul loc. Transformăm modul în care locuința ta consumă și produce energie.
