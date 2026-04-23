@@ -59,10 +59,19 @@ Ești gata să îți securizezi instalația electrică sau să treci la energia 
 
 Dacă preferi să ne contactezi direct sau ai o urgență electrică, folosește butoanele de mai jos:
 
-| Contact | Telefon & WhatsApp | Email |
-| :--- | :--- | :--- |
-| **Principal** | [+40 745 539 432](tel:+40745539432) <br> [📞 Sună Acum](tel:+40745539432) <br> [💬 WhatsApp](https://wa.me/40745539432) | [alexamarius@yahoo.com](mailto:alexamarius@yahoo.com) / [✉️ Trimite Email](mailto:alexamarius@yahoo.com) |
-| **Secundar** <br> *(După ora 17:30)* | [+40 742 069 533](tel:+40742069533) <br> [📞 Sună Acum](tel:+40742069533) <br> [💬 WhatsApp](https://wa.me/40742069533) | [alexaraducristian@gmail.com](mailto:alexaraducristian@gmail.com) / [✉️ Trimite Email](mailto:alexaraducristian@gmail.com) |
+### 📱 Contact Principal
+* 📞 **Telefon:** [+40 745 539 432](tel:+40745539432)
+* 💬 **WhatsApp:** [Trimite Mesaj](https://wa.me/40745539432)
+* ✉️ **Email:** [alexamarius@yahoo.com](mailto:alexamarius@yahoo.com)
+
+---
+
+### 🕒 *după ora 17:30*
+* 📞 **Telefon:** [+40 742 069 533](tel:+40742069533)
+* 💬 **WhatsApp:** [Trimite Mesaj](https://wa.me/40742069533)
+* ✉️ **Email:** [alexaraducristian@gmail.com](mailto:alexaraducristian@gmail.com)
+
+---
 
 ---
 [Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
