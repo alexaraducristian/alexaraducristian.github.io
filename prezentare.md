@@ -33,7 +33,6 @@ Tabloul electric este "inima" casei tale. Nu ne limităm doar la montarea unor s
 * **Aparataj Schneider Electric:** Utilizăm exclusiv componente de top pentru o fiabilitate pe termen lung.
 * **Protecție Diferențială (RCD):** Indispensabilă pentru prevenirea electrocutării și protejarea vieții membrilor familiei.
 * **Protecție la Supratensiune (SPD):** Protejăm echipamentele electronice sensibile (TV, PC, electrocasnice) împotriva fluctuațiilor de tensiune din rețea sau a descărcărilor atmosferice.
-* **Echilibrare Fazelor:** Pentru instalațiile trifazate, asigurăm o distribuție optimă a sarcinii pentru a preveni supraîncălzirea conductorilor.
 
 ### 🔍 Mentenanță, Diagnostic și Modernizare
 O instalație veche reprezintă un risc major de incendiu. Serviciile noastre de mentenanță includ:
