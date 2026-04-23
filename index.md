@@ -3,6 +3,8 @@ layout: default
 title: Economisește Inteligent cu Energia Solară
 ---
 
+{% include google-analytics.html %}
+
 **Acasă** | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
 
 # Te-ai întrebat câți bani pierzi în fiecare zi în care nu ai Panouri Fotovoltaice? ☀️
