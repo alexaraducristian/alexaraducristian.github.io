@@ -53,7 +53,7 @@ Algoritmii de calcul și modelele matematice de predicție au fost riguros reviz
 Conform simulărilor noastre bazate pe datele tehnice (vezi graficul de mai jos), rezultatele financiare sunt incontestabile:
 
 * **💰 Investiție Inițială:** `16.827 RON`
-    *(Include echipamente Tier 1, montaj autorizat <span style="background-color: #003366; color: white; padding: 2px 6px; border-radius: 3px; font-weight: bold; font-size: 0.9em;">ANRE</span> și întocmirea dosarului de prosumator)*
+    *(Include echipamente Tier 1, montaj <span style="background-color: #003366; color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold;">autorizat ANRE</span> și întocmirea dosarului de prosumator)*
 * **⏱️ Perioada de Amortizare:** **Doar 5 ani**
     *(După acest punct, energia electrică produsă este 100% profit net)*
 * **🚀 Profit Net (Anul 10):** **20.978 RON**
