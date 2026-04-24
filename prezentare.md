@@ -6,6 +6,7 @@ title: Prezentare
 {% include google-analytics.html %}
 
 **[Acasă]({{ site.baseurl }}/)** | **[Energie Verde]({{ site.baseurl }}/energie-verde)** | **Prezentare** | **[Portofoliu]({{ site.baseurl }}/portofoliu)** | **[Contact]({{ site.baseurl }}/contact)**
+
 ---
 # Soluții Energetice de Elită: Siguranță Electrică și Independență Solară
 
