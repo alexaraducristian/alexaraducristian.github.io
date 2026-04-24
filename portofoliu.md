@@ -53,10 +53,4 @@ Echipa noastră pune accent pe siguranță, eficiență și o execuție tehnică
 
 ![Captură a interfeței de monitorizare, arătând producția PV și datele MPPT. Dreapta: Cofretul tehnic cu Smart Meter Eastron și organizarea cablajului DC/AC.]({{ site.baseurl }}/assets/img/invertor-app.jpg)
 
-
-
---- 
-
-[Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | **Portofoliu** | [Contact]({{ site.baseurl }}/contact)
-
 ---
