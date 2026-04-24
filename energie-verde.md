@@ -103,5 +103,3 @@ Nu facem compromisuri când vine vorba de calitatea execuției. Suntem <span sty
 [📞 Solicită acum o ofertă de preț]({{ site.baseurl }}/contact)
 
 ---
-
-**Acasă** | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
