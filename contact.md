@@ -10,7 +10,8 @@ title: Contact
     <a href="{{ site.baseurl }}/energie-verde" style="text-decoration: none; color: #333; font-weight: bold;">☀️ Energie Verde</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
     <a href="{{ site.baseurl }}/prezentare" style="text-decoration: none; color: #333; font-weight: bold;">📄 Prezentare</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
     <a href="{{ site.baseurl }}/portofoliu" style="text-decoration: none; color: #333; font-weight: bold;">📂 Portofoliu</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-    <a href="{{ site.baseurl }}/contact" style="text-decoration: none; color: #333; font-weight: bold;">📞 Contact</a>
+    <span style="background: #007bff; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">📞 Contact</span> &nbsp;&nbsp;|&nbsp;&nbsp;
+
 </div>
 
 ---
