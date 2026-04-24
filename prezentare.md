@@ -71,7 +71,3 @@ Un sistem fotovoltaic este eficient doar dacă este configurat corect din punct 
 *Eficiență maximă prin tehnologie solară de ultimă oră și montaj certificat.*
 
 ---
-
-[Acasă]({{ site.baseurl }}/) | **Prezentare** | [Portofoliu]({{ site.baseurl }}/portofoliu) | [Contact]({{ site.baseurl }}/contact)
-
----
