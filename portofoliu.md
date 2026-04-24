@@ -68,7 +68,7 @@ Echipa noastră pune accent pe siguranță, eficiență și o execuție tehnică
 * Protecție avansată la supratensiuni atmosferice prin descărcătoare specializate.
 * Echipare cu aparataj de protecție **Noark** și relee de monitorizare tensiune **Schrack**.
 
-![Tablou electric cu Smart Power Sensor și protecții Noark/Schrack]({{ site.baseurl }}/assets/img/portofoliu-tablou-electric-2.jpg)
+![Tablou electric cu Smart Power Sensor și protecții Noark/Schrack]({{ site.baseurl }}/assets/img/portofoliu-tablou-electric-2.jpeg)
 *Configurație cu afișaj digital pentru monitorizarea parametrilor de rețea și protecții diferențiale dedicate.*
 
 ---
@@ -82,7 +82,7 @@ Echipa noastră pune accent pe siguranță, eficiență și o execuție tehnică
 * Organizare estetică a traseelor de cablu prin canale de mascare dedicate.
 * Tablouri de protecție DC/AC separate pentru separarea circuitelor de curent continuu de cele de curent alternativ.
 
-![Sistem complet cu invertor Huawei și tablouri de protecție]({{ site.baseurl }}/assets/img/portofoliu-tablou-electric-5-plus-invertor.jpg)
+![Sistem complet cu invertor Huawei și tablouri de protecție]({{ site.baseurl }}/assets/img/portofoliu-tablou-electric-5-plus-invertor.jpeg)
 *Ansamblu tehnic complet: Invertor Huawei, tablou de siguranțe și spațiu de conexiuni pregătit pentru punerea în funcțiune.*
 
 ---
@@ -95,6 +95,6 @@ Calitatea unei lucrări electrice este dată de micile detalii care asigură dur
 * **Intrări etanșe:** Cablurile de putere sunt introduse în tablouri prin presetupe care asigură gradul de protecție necesar (IP65) pentru mediile exterioare.
 * **Organizare:** Separarea clară între circuitele de curent continuu (venite de la panouri) și cele de curent alternativ (spre casă/rețea).
 
-![Vedere interioară tablou distribuție]({{ site.baseurl }}/assets/img/portofoliu-tablou-electric-4.jpg)
+![Vedere interioară tablou distribuție]({{ site.baseurl }}/assets/img/portofoliu-tablou-electric-4.jpeg)
 ![Detalii presetupe și ieșiri cabluri]({{ site.baseurl }}/assets/img/portofoliu-tablou-electric-3.jpeg)
 *Management profesional al cablajului: ordine, etichetare și protecție mecanică sporită.*
