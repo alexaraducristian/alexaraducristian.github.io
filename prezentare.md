@@ -69,4 +69,5 @@ Un sistem fotovoltaic este eficient doar dacă este configurat corect din punct 
 
 ![Sistem Fotovoltaic și Invertor](assets/img/fotovoltaice.jpeg)
 *Eficiență maximă prin tehnologie solară de ultimă oră și montaj certificat.*
+
 ---
