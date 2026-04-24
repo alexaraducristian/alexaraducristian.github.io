@@ -8,7 +8,7 @@ title: Prezentare
 <div style="background-color: #f8f9fa; padding: 15px; border-radius: 10px; border-bottom: 3px solid #007bff; text-align: center; margin-bottom: 20px; font-family: sans-serif;">
     <a href="{{ site.baseurl }}/" style="text-decoration: none; color: #333; font-weight: bold;">🏠 Acasă</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
     <a href="{{ site.baseurl }}/energie-verde" style="text-decoration: none; color: #333; font-weight: bold;">☀️ Energie Verde</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-    <a href="{{ site.baseurl }}/prezentare" style="text-decoration: none; color: #333; font-weight: bold;">📄 Prezentare</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <span style="background: #007bff; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">📄 Prezentare</span> &nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="{{ site.baseurl }}/portofoliu" style="text-decoration: none; color: #333; font-weight: bold;">📂 Portofoliu</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
     <a href="{{ site.baseurl }}/contact" style="text-decoration: none; color: #333; font-weight: bold;">📞 Contact</a>
 </div>
