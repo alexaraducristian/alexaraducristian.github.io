@@ -5,7 +5,13 @@ title: Economisește Inteligent cu Energia Solară
 
 {% include google-analytics.html %}
 
-**[Acasă]({{ site.baseurl }}/)** | **Energie Verde** | **[Prezentare]({{ site.baseurl }}/prezentare)** | **[Portofoliu]({{ site.baseurl }}/portofoliu)** | **[Contact]({{ site.baseurl }}/contact)**
+<div style="background-color: #f8f9fa; padding: 15px; border-radius: 10px; border-bottom: 3px solid #007bff; text-align: center; margin-bottom: 20px; font-family: sans-serif;">
+    <a href="{{ site.baseurl }}/" style="text-decoration: none; color: #333; font-weight: bold;">🏠 Acasă</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a href="{{ site.baseurl }}/energie-verde" style="text-decoration: none; color: #333; font-weight: bold;">☀️ Energie Verde</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a href="{{ site.baseurl }}/prezentare" style="text-decoration: none; color: #333; font-weight: bold;">📄 Prezentare</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a href="{{ site.baseurl }}/portofoliu" style="text-decoration: none; color: #333; font-weight: bold;">📂 Portofoliu</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a href="{{ site.baseurl }}/contact" style="text-decoration: none; color: #333; font-weight: bold;">📞 Contact</a>
+</div>
 
 ---
 # Te-ai întrebat câți bani pierzi în fiecare zi în care nu ai Panouri Fotovoltaice? ☀️
