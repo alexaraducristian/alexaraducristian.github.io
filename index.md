@@ -5,7 +5,11 @@ title: Servicii Instalații Electrice Profesionale | AlexaVolt
 
 {% include google-analytics.html %}
 
-**Acasă** | **[Energie Verde]({{ site.baseurl }}/energie-verde)** | **[Prezentare]({{ site.baseurl }}/prezentare)** | **[Portofoliu]({{ site.baseurl }}/portofoliu)** | **[Contact]({{ site.baseurl }}/contact)**
+<div style="background-color: #f8f9fa; padding: 15px; border-radius: 10px; border-bottom: 3px solid #007bff; text-align: center; margin-bottom: 20px;">
+
+[🏠 **Acasă**]({{ site.baseurl }}/) &nbsp;&nbsp;|&nbsp;&nbsp; [☀️ **Energie Verde**]({{ site.baseurl }}/energie-verde) &nbsp;&nbsp;|&nbsp;&nbsp; [📄 **Prezentare**]({{ site.baseurl }}/prezentare) &nbsp;&nbsp;|&nbsp;&nbsp; [📂 **Portofoliu**]({{ site.baseurl }}/portofoliu) &nbsp;&nbsp;|&nbsp;&nbsp; [📞 **Contact**]({{ site.baseurl }}/contact)
+
+</div>
 
 ---
 # Instalații Electrice Profesionale & Siguranță Totală
@@ -58,4 +62,4 @@ Suntem specializați în configurarea tablourilor electrice de ultimă generați
 ---
 
 ## 📞 Contactează-ne pentru o evaluare
-Nu lăsa siguranța familiei tale pe mâna amatorilor. Un tablou electric corect instalat salvează vieți. [Contacteaza-ne acum](/contact/)
+Nu lăsa siguranța familiei tale pe mâna amatorilor. Un tablou electric corect instalat salvează vieți. [Contacteaza-ne acum](/contact)
