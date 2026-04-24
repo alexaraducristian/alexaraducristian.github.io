@@ -65,3 +65,5 @@ Suntem specializați în configurarea tablourilor electrice de ultimă generați
 
 ## 📞 Contactează-ne pentru o evaluare
 Nu lăsa siguranța familiei tale pe mâna amatorilor. Un tablou electric corect instalat salvează vieți. [Contacteaza-ne acum](/contact)
+
+---
