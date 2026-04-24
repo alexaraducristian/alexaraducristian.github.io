@@ -4,7 +4,8 @@ title: Servicii Instalații Electrice Profesionale | AlexaVolt
 description: Electrician autorizat ANRE. Execuție instalații electrice de la zero, modernizare tablouri electrice și mentenanță în Iași și împrejurimi.
 ---
 
-**Acasă** | **[Energie Verde]({{ site.baseurl }}/energie-verde)** | **[Prezentare]({{ site.baseurl }}/prezentare)** || **[Portofoliu]({{ site.baseurl }}/portofoliu)** | **[Contact]({{ site.baseurl }}/contact)**
+**[Acasă]({{ site.baseurl }}/)** | **[Energie Verde]({{ site.baseurl }}/energie-verde)** | **[Prezentare]({{ site.baseurl }}/prezentare)** | **[Portofoliu]({{ site.baseurl }}/portofoliu)** | **[Contact]({{ site.baseurl }}/contact)**
+
 ---
 
 
