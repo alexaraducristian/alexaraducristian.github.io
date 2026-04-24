@@ -59,7 +59,7 @@ Suntem specializați în configurarea tablourilor electrice de ultimă generați
 
 > ### 💡 Vrei să treci la Energie Verde?
 > Pe lângă instalațiile electrice clasice, suntem experți în sisteme fotovoltaice proiectate prin aplicația **Cool-PVT**.
-> [Vezi aici oferta noastră de Panouri Fotovoltaice →](/energie-verde/)
+> [Vezi aici oferta noastră de Panouri Fotovoltaice →](/energie-verde)
 
 ---
 
