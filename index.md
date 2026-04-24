@@ -5,10 +5,12 @@ title: Servicii Instalații Electrice Profesionale | AlexaVolt
 
 {% include google-analytics.html %}
 
-<div style="background-color: #f8f9fa; padding: 15px; border-radius: 10px; border-bottom: 3px solid #007bff; text-align: center; margin-bottom: 20px;">
-
-[🏠 **Acasă**]({{ site.baseurl }}/) &nbsp;&nbsp;|&nbsp;&nbsp; [☀️ **Energie Verde**]({{ site.baseurl }}/energie-verde) &nbsp;&nbsp;|&nbsp;&nbsp; [📄 **Prezentare**]({{ site.baseurl }}/prezentare) &nbsp;&nbsp;|&nbsp;&nbsp; [📂 **Portofoliu**]({{ site.baseurl }}/portofoliu) &nbsp;&nbsp;|&nbsp;&nbsp; [📞 **Contact**]({{ site.baseurl }}/contact)
-
+<div style="background-color: #f8f9fa; padding: 15px; border-radius: 10px; border-bottom: 3px solid #007bff; text-align: center; margin-bottom: 20px; font-family: sans-serif;">
+    <a href="{{ site.baseurl }}/" style="text-decoration: none; color: #333; font-weight: bold;">🏠 Acasă</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a href="{{ site.baseurl }}/energie-verde" style="text-decoration: none; color: #333; font-weight: bold;">☀️ Energie Verde</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a href="{{ site.baseurl }}/prezentare" style="text-decoration: none; color: #333; font-weight: bold;">📄 Prezentare</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a href="{{ site.baseurl }}/portofoliu" style="text-decoration: none; color: #333; font-weight: bold;">📂 Portofoliu</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a href="{{ site.baseurl }}/contact" style="text-decoration: none; color: #333; font-weight: bold;">📞 Contact</a>
 </div>
 
 ---
