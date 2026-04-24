@@ -5,7 +5,7 @@ title: Contact
 
 {% include google-analytics.html %}
 
-[Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
+**[Acasă]({{ site.baseurl }}/)** | **Energie Verde** | **[Prezentare]({{ site.baseurl }}/prezentare)** | **[Portofoliu]({{ site.baseurl }}/portofoliu)** | **Contact**
 
 ---
 ## 📋 De Ce Să Lucrăm Împreună?
