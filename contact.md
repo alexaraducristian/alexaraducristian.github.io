@@ -78,8 +78,3 @@ Dacă preferi să ne contactezi direct sau ai o urgență electrică, folosește
 * ✉️ **Email:** [alexaraducristian@gmail.com](mailto:alexaraducristian@gmail.com)
 
 ---
-
----
-[Acasă]({{ site.baseurl }}/) | [Prezentare]({{ site.baseurl }}/prezentare) | [Portofoliu]({{ site.baseurl }}/portofoliu) | **Contact**
-
----
