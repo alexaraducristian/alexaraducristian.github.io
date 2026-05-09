@@ -9,10 +9,11 @@ const { pathname } = Astro.url;
 <header class="p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-50">
   <a href={import.meta.env.BASE_URL} class="flex-shrink-0">
     <Image 
-      src={logoImg} 
-      alt="AlexaVolt Logo" 
-      class="h-16 md:h-20 w-auto transition-transform hover:scale-105" 
-    />
+        src={logoImg} 
+        alt="AlexaVolt Logo" 
+        class="h-24 md:h-32 w-auto transition-transform duration-300 group-hover:scale-105"
+        inferSize={true}
+      />
   </a>
   
   <nav>
