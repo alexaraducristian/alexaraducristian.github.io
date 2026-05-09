@@ -1,17 +1,13 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwindvite from '@tailwindcss/vite';
 
-// Check if we are building for production (GitHub Pages)
-const isProd = import.meta.env.PROD;
-
+// Astro handles the environment automatically with import.meta.env
 export default defineConfig({
-  // In production, use your domain. Locally, Astro handles the URL automatically.
   site: 'https://www.alexavolt.ro',
-  
-  // Base path: Only apply '/playground2' when in production
-  base: isProd ? '/' : '/playground2',
-  
-  trailingSlash: 'always',
-  
-  integrations: [tailwind()],
+  // This logic is crucial for GitHub Pages subfolders
+  base: process.env.NODE_ENV === 'production' ? '/playground2' : '/',
+  // trailingSlash: 'always',
+  vite: {
+    plugins: [tailwindvite()],
+  },
 });

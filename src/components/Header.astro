@@ -1,34 +1,43 @@
 ---
-// Import the image from assets
+import { Image } from 'astro:assets';
 import logoImg from '../assets/images/logo1.svg';
 import { headerData } from '../data/navigation';
-import logoSvg from '../assets/images/logo1.svg?raw';
-const base = import.meta.env.BASE_URL;
+
+const { pathname } = Astro.url;
 ---
 
-<header class="flex justify-between items-center py-4 px-6 bg-white shadow-sm">
-  <a href={base} class="flex items-center w-32 h-auto text-blue-600">
-    <Fragment set:html={logoSvg} />
+<header class="p-4 bg-white shadow-md flex justify-between items-center sticky top-0 z-50">
+  <a href={import.meta.env.BASE_URL} class="flex-shrink-0">
+    <Image 
+      src={logoImg} 
+      alt="AlexaVolt Logo" 
+      class="h-16 md:h-20 w-auto transition-transform hover:scale-105" 
+    />
   </a>
-
+  
   <nav>
-    <ul class="flex gap-6">
-      {headerData.links.map(link => (
-        <li>
-          <a href={link.href} class="hover:text-blue-600">
-            {link.text}
-          </a>
-        </li>
-      ))}
+    <ul class="flex flex-wrap gap-2 md:gap-4 items-center">
+      {headerData.links.map((link) => {
+        const normalizedPath = pathname.replace(/\/$/, "");
+        const normalizedHref = link.href.replace(/\/$/, "");
+        const isActive = normalizedPath === normalizedHref || (link.href === import.meta.env.BASE_URL && (normalizedPath === "" || normalizedPath === "/playground2"));
+        
+        return (
+          <li>
+            <a 
+              href={link.href} 
+              class:list={[
+                "transition-all duration-200 px-4 py-2 rounded-xl text-sm md:text-base flex items-center gap-2",
+                isActive 
+                  ? "bg-blue-600 text-white font-bold shadow-md" 
+                  : "text-slate-600 hover:text-blue-600 hover:bg-blue-50"
+              ]}
+            >
+              {link.text}
+            </a>
+          </li>
+        );
+      })}
     </ul>
   </nav>
 </header>
-
-<style is:global>
-  /* 3. Ensure the injected SVG behaves well */
-  header svg {
-    width: 100%;
-    height: auto;
-    max-height: 40px; /* Adjust this to your preferred logo size */
-  }
-</style>
