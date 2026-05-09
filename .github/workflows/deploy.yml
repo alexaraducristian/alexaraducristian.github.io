@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Permite pornirea manuală din interfața GitHub
   workflow_dispatch:
 
 permissions:
@@ -16,15 +17,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: 'npm'
+
       - name: Install dependencies
+        # Am păstrat flag-ul pentru a evita erorile de compatibilitate Astro 6 / Tailwind
         run: npm install --legacy-peer-deps
+
       - name: Build Astro
         run: npm run build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
