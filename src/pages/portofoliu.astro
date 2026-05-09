@@ -3,116 +3,123 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import { Image } from 'astro:assets';
 
-// Importuri imagini - Verifică extensiile (.jpg vs .jpeg vs .bmp)
+// Importuri imagini
 import tablouSchneider from '../assets/images/tablou-electric.jpg';
 import invertorApp from '../assets/images/invertor-app.jpg';
 import tablouNoark from '../assets/images/portofoliu-tablou-electric-2.jpeg';
 import sistemHuawei from '../assets/images/portofoliu-tablou-electric-5-plus-invertor.jpeg';
 import tablouDetaliu from '../assets/images/portofoliu-tablou-electric-4.jpeg';
 import presetupeImg from '../assets/images/portofoliu-tablou-electric-3.jpeg';
+import foto1 from '../assets/images/portofoliu-fotovoltaice-1.jpg';
+import foto2 from '../assets/images/portofoliu-fotovoltaice-2.jpg';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Organizare Proiecte pe Categorii
+const proiecteFotovoltaice = [
+  { src: foto1, alt: "Sistem rezidențial", descriere: "Sistem rezidențial" },
+  { src: foto2, alt: "Sistem rezidențial", descriere: "Sistem rezidențial" },
+  { src: invertorApp, alt: "Monitorizare Huawei", descriere: "Monitorizare Smart Energy" },
+  { src: sistemHuawei, alt: "Hibrid Huawei", descriere: "Centrală Huawei" }
+];
+
+const proiecteElectrice = [
+  { src: tablouSchneider, alt: "Modernizare Schneider", descriere: "Tablou Sigurante Schneider" },
+  { src: tablouNoark, alt: "Monitorizare Noark", descriere: "Sistem Noark" },
+  { src: tablouDetaliu, alt: "Detalii Executie", descriere: "Management Cablaj Premium" },
+  { src: presetupeImg, alt: "Etanșeitate IP65", descriere: "Protecție IP65" }
+];
 ---
 
 <Layout title="Proiecte Realizate | AlexaVolt Portofoliu">
   <Header />
 
-  <main class="max-w-5xl mx-auto px-6 py-12 font-sans text-slate-800">
-    <section class="mb-16 text-center">
-      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-				<span class="text-emerald-600">Proiecte Realizate</span>
-			</h1>
-      <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-        Echipa noastră pune accent pe siguranță, eficiență și o execuție tehnică ireproșabilă. Mai jos puteți vizualiza o selecție a lucrărilor noastre recente.
+  <main class="max-w-7xl mx-auto px-6 py-12 font-sans text-slate-800">
+    
+    <section class="mb-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-black text-slate-900 mb-6 uppercase tracking-tighter">
+        Proiecte <span class="text-blue-600">Realizate</span>
+      </h1>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
+        Echipa noastră pune accent pe siguranță, eficiență și o execuție tehnică ireproșabilă.
       </p>
     </section>
 
-    <div class="space-y-24">
+    <div class="space-y-32">
       
-      <section class="grid lg:grid-cols-2 gap-12 items-start">
-        <div class="order-2 lg:order-1">
-          <h2 class="text-2xl font-bold text-blue-700 mb-4">⚡ 1. Modernizare Tablou Electric Rezidențial</h2>
-          <p class="mb-4"><strong>Locație:</strong> Iași</p>
-          <p class="text-slate-600 mb-6 italic">Înlocuirea unui tablou vechi cu siguranțe fuzibile cu o soluție modernă Schneider Electric.</p>
-          <ul class="space-y-2 text-sm border-l-4 border-blue-100 pl-4">
-            <li>• Echipare premium <strong>Acti9/Resi9</strong>.</li>
-            <li>• Protecții diferențiale (RCBO) pentru baie și bucătărie.</li>
-            <li>• Etichetare clară și management riguros al cablurilor.</li>
-          </ul>
-        </div>
-        <div class="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
-          <Image src={tablouSchneider} alt="Tablou Schneider" inferSize={true} class="w-full h-auto" />
-        </div>
-      </section>
-
-      <section class="grid lg:grid-cols-2 gap-12 items-center bg-slate-50 p-8 rounded-[2rem]">
-        <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
-          <Image src={invertorApp} alt="Monitorizare Fotovoltaice" inferSize={true} class="w-full h-auto" />
-        </div>
-        <div>
-          <h2 class="text-2xl font-bold text-emerald-700 mb-4">☀️ 2. Sistem Fotovoltaic Hibrid 5.5kW</h2>
-          <p class="text-slate-600 mb-6">Instalare "la cheie" pentru maximizarea autoconsumului și backup energetic.</p>
-          
-          <div class="overflow-x-auto mb-6">
-            <table class="w-full text-sm text-left border-collapse bg-white rounded-lg overflow-hidden">
-              <thead class="bg-emerald-600 text-white">
-                <tr>
-                  <th class="px-4 py-2 italic font-medium">Parametru (Smart Meter)</th>
-                  <th class="px-4 py-2 italic font-medium">Valoare</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-100">
-                <tr><td class="px-4 py-2">Putere PV Instantanee</td><td class="px-4 py-2 font-bold">~633W</td></tr>
-                <tr><td class="px-4 py-2">Producție Zilnică</td><td class="px-4 py-2 font-bold">9.6kWh</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <div class="grid md:grid-cols-2 gap-12">
-        <div class="space-y-6">
-          <div class="rounded-xl overflow-hidden shadow-lg aspect-square lg:aspect-video">
-            <Image src={tablouNoark} alt="Tablou Noark Schrack" inferSize={true} class="w-full h-full object-cover" />
-          </div>
-          <h3 class="text-xl font-bold">⚡ 3. Monitorizare Noark & Schrack</h3>
-          <p class="text-sm text-slate-600">Sisteme trifazate cu Smart Power Sensor pentru controlul precis al exportului în rețea.</p>
-        </div>
-
-        <div class="space-y-6">
-          <div class="rounded-xl overflow-hidden shadow-lg aspect-square lg:aspect-video">
-            <Image src={sistemHuawei} alt="Invertor Huawei" inferSize={true} class="w-full h-full object-cover" />
-          </div>
-          <h3 class="text-xl font-bold">☀️ 4. Centrală Huawei FusionSolar</h3>
-          <p class="text-sm text-slate-600">Configurare hibridă Huawei cu tablouri de protecție DC/AC separate pentru siguranță maximă.</p>
-        </div>
-      </div>
-
-      <section class="pt-16 border-t border-slate-100">
-        <h2 class="text-3xl font-bold mb-10 text-center italic">🛠️ 5. Detalii de Execuție și Management Cablaj</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="space-y-4">
-             <Image src={tablouDetaliu} alt="Vedere interioara" inferSize={true} class="rounded-2xl shadow-md" />
-             <p class="text-xs italic text-center text-slate-500">Conexiuni sigure prin reglete de distribuție.</p>
-          </div>
-          <div class="space-y-4">
-             <Image src={presetupeImg} alt="Presetupe IP65" inferSize={true} class="rounded-2xl shadow-md" />
-             <p class="text-xs italic text-center text-slate-500">Intrări etanșe (IP65) și protecție mecanică.</p>
-          </div>
-        </div>
+      <section id="panouri-fotovoltaice">
+        <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-12 border-l-[12px] border-emerald-500 pl-6 uppercase tracking-tight">
+          ☀️ Sisteme Fotovoltaice
+        </h2>
         
-        <div class="mt-12 bg-blue-50 p-8 rounded-2xl">
-            <div class="grid md:grid-cols-3 gap-6 text-center">
-                <div><h4 class="font-bold text-blue-800">IP65</h4><p class="text-xs">Etanșeitate garantată</p></div>
-                <div><h4 class="font-bold text-blue-800">Terminalele Sertizate</h4><p class="text-xs">Fără contacte imperfecte</p></div>
-                <div><h4 class="font-bold text-blue-800">Management DC/AC</h4><p class="text-xs">Circuite separate clar</p></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {proiecteFotovoltaice.map((item) => (
+            <div class="group relative overflow-hidden rounded-[2.5rem] bg-slate-100 shadow-2xl transition-all duration-500 hover:-translate-y-3">
+              <Image 
+                src={item.src} 
+                alt={item.alt}
+                class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 via-emerald-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
+                <p class="text-white font-black text-2xl uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  {item.descriere}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="tablouri-electrice">
+        <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-12 border-l-[12px] border-blue-600 pl-6 uppercase tracking-tight">
+          ⚡ Tablouri & Instalații
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {proiecteElectrice.map((item) => (
+            <div class="group relative overflow-hidden rounded-[2.5rem] bg-slate-100 shadow-2xl transition-all duration-500 hover:-translate-y-3">
+              <Image 
+                src={item.src} 
+                alt={item.alt}
+                class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
+                <p class="text-white font-black text-2xl uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  {item.descriere}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="bg-slate-900 text-white rounded-[3rem] p-10 md:p-20 shadow-3xl">
+        <h2 class="text-3xl md:text-4xl font-black mb-12 text-center uppercase tracking-widest">
+          Standarde de Execuție <span class="text-blue-400">AlexaVolt</span>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-12 text-center">
+            <div class="space-y-4">
+                <div class="text-5xl">🛡️</div>
+                <h4 class="text-2xl font-bold text-blue-400">IP65 / IP67</h4>
+                <p class="text-slate-400 font-medium">Etanșeitate absolută pentru toate montajele exterioare.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="text-5xl">⚙️</div>
+                <h4 class="text-2xl font-bold text-blue-400">Sertizare Pro</h4>
+                <p class="text-slate-400 font-medium">Terminalele sunt sertizate mecanic pentru a elimina riscul contactelor imperfecte.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="text-5xl">📊</div>
+                <h4 class="text-2xl font-bold text-blue-400">Management DC/AC</h4>
+                <p class="text-slate-400 font-medium">Separare fizică strictă între circuitele de curent continuu și alternativ.</p>
             </div>
         </div>
       </section>
+
     </div>
 
-    <section class="mt-24 text-center">
-      <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl">
+    <section class="mt-32 text-center pb-20">
+      <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-12 py-6 rounded-2xl text-2xl font-black uppercase tracking-tighter hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl shadow-blue-200">
         Vrei un sistem similar? Contactează-ne!
       </a>
     </section>
