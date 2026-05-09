@@ -1,12 +1,14 @@
 import { defineConfig } from 'astro/config';
 import tailwindvite from '@tailwindcss/vite';
 
-// Astro handles the environment automatically with import.meta.env
 export default defineConfig({
+  // URL-ul tău final (asigură-te că domeniul alexavolt.ro este legat la acest repo)
   site: 'https://www.alexavolt.ro',
-  // This logic is crucial for GitHub Pages subfolders
-  base: process.env.NODE_ENV === 'production' ? '/playground2' : '/',
-  // trailingSlash: 'always',
+  
+  // Schimbăm baza la '/' pentru că acum site-ul stă la rădăcină, 
+  // nu mai este într-un subfolder precum /playground2
+  base: '/',
+
   vite: {
     plugins: [tailwindvite()],
   },
