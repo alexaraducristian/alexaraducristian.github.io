@@ -5,64 +5,47 @@ import { headerData } from '../data/navigation';
 
 const { pathname } = Astro.url;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-
-// Împărțim link-urile în două grupuri pentru layout-ul cu logo la mijloc
-const middleIndex = Math.ceil(headerData.links.length / 2);
-const leftLinks = headerData.links.slice(0, 2); // Acasă, Energie Verde
-const rightLinks = headerData.links.slice(2);    // Prezentare, Portofoliu, Contact
 ---
 
 <header class="bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm">
-  <div class="max-w-7xl mx-auto px-4 py-4">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
-      
-      <nav class="order-2 md:order-1 w-full md:w-auto">
-        <ul class="flex flex-wrap justify-center md:justify-start gap-2 md:gap-4">
-          {leftLinks.map((link) => {
-            const isActive = pathname.replace(/\/$/, "") === link.href.replace(/\/$/, "");
-            return (
-              <li class="whitespace-nowrap">
-                <a href={link.href} class:list={[
-                  "transition-all duration-300 px-3 py-2 md:px-5 md:py-3 rounded-xl text-sm md:text-lg font-black uppercase flex items-center gap-2",
-                  isActive ? "bg-blue-600 text-white shadow-md" : "text-slate-700 hover:bg-slate-50 hover:text-blue-600"
-                ]}>
-                  {link.text}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-
-      <div class="order-1 md:order-2 flex-shrink-0">
-        <a href={import.meta.env.BASE_URL} class="block transition-transform active:scale-95">
-          <Image 
-            src={logoImg} 
-            alt="AlexaVolt Logo" 
-            class="h-16 md:h-24 w-auto"
-            inferSize={true}
-          />
-        </a>
-      </div>
-
-      <nav class="order-3 w-full md:w-auto">
-        <ul class="flex flex-wrap justify-center md:justify-end gap-2 md:gap-4">
-          {rightLinks.map((link) => {
-            const isActive = pathname.replace(/\/$/, "") === link.href.replace(/\/$/, "");
-            return (
-              <li class="whitespace-nowrap">
-                <a href={link.href} class:list={[
-                  "transition-all duration-300 px-3 py-2 md:px-5 md:py-3 rounded-xl text-sm md:text-lg font-black uppercase flex items-center gap-2",
-                  isActive ? "bg-blue-600 text-white shadow-md" : "text-slate-700 hover:bg-slate-50 hover:text-blue-600"
-                ]}>
-                  {link.text}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-
-    </div>
+  <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between py-4 md:py-6 gap-4 md:gap-0">
+    
+    <a href={import.meta.env.BASE_URL} class="flex-shrink-0 transition-transform active:scale-95 mb-2 md:mb-0">
+      <Image 
+        src={logoImg} 
+        alt="AlexaVolt Logo" 
+        class="h-16 md:h-24 w-auto"
+        inferSize={true}
+      />
+    </a>
+    
+    <nav class="w-full md:w-auto">
+      <ul class="flex flex-wrap md:flex-nowrap items-center justify-center md:justify-end gap-2 md:gap-3">
+        {headerData.links.map((link) => {
+          const normalizedPath = pathname.replace(/\/$/, "");
+          const normalizedHref = link.href.replace(/\/$/, "");
+          // Verificare isActive robustă pentru domeniu principal și subfolder
+          const isActive = normalizedPath === normalizedHref || 
+                           (link.href === import.meta.env.BASE_URL && (normalizedPath === "" || normalizedPath === base));
+          
+          return (
+            <li class="whitespace-nowrap py-1">
+              <a 
+                href={link.href} 
+                class:list={[
+                  // Fonturi mari, font-black și pastilă rotunjită
+                  "transition-all duration-300 px-4 py-2.5 md:px-5 md:py-3 rounded-xl text-base md:text-xl font-black uppercase tracking-tight flex items-center gap-2",
+                  isActive 
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-100 scale-105" 
+                    : "text-slate-700 hover:bg-slate-100 hover:text-blue-600 border border-transparent"
+                ]}
+              >
+                {link.text}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   </div>
 </header>
