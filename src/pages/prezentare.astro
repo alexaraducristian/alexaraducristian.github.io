@@ -1,12 +1,131 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import { Image } from 'astro:assets';
+
+// Importuri de imagini - Asigură-te că fișierele există în src/assets/images/
+// Dacă nu ai aceste fișiere încă, Astro va da eroare la build.
+import tablouImg from '../assets/images/tablou-schneider.jpg';
+import solarImg from '../assets/images/fotovoltaice.jpeg';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
-<Layout title="AlexaVolt">
+<Layout title="Prezentare Servicii | AlexaVolt">
   <Header />
-  <main class="p-20 text-center">
-    <h1 class="text-5xl font-bold text-blue-600">Prezentare</h1>
-    <p>Prezentare!</p>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+    <section class="mb-16 border-b border-slate-100 pb-12">
+      <h1 class="text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+        Soluții Energetice de Elită: <span class="text-blue-600">Siguranță Electrică</span> și Independență Solară
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed">
+        Expertiză certificată <strong class="text-blue-700">ANRE</strong> pentru proiecte care pun siguranța familiei tale și eficiența tehnologică pe primul loc. Transformăm modul în care locuința ta consumă și produce energie.
+      </p>
+    </section>
+
+    <section class="mb-16 grid md:grid-cols-2 gap-8 items-center">
+      <div class="space-y-4">
+        <h3 class="text-2xl font-bold text-slate-900">De ce să alegi un specialist autorizat ANRE?</h3>
+        <p class="text-slate-600 italic">
+          În domeniul electric, diferența dintre o lucrare "făcută" și una <strong>corect executată</strong> este siguranța casei tale împotriva incendiilor.
+        </p>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-2 text-slate-700 font-medium">
+            <span class="text-emerald-500">✅</span> Conformitate Legală (Normativ I7)
+          </li>
+          <li class="flex items-center gap-2 text-slate-700 font-medium">
+            <span class="text-emerald-500">✅</span> Echipamente Premium (Schneider)
+          </li>
+          <li class="flex items-center gap-2 text-slate-700 font-medium">
+            <span class="text-emerald-500">✅</span> Garanția Performanței Solare
+          </li>
+        </ul>
+      </div>
+      <div class="bg-blue-600 p-8 rounded-3xl text-white shadow-xl">
+        <blockquote class="text-xl italic font-light">
+          "Energia verde nu este doar o investiție în viitor, ci o decizie inteligentă pentru confortul tău de astăzi."
+        </blockquote>
+      </div>
+    </section>
+
+    <hr class="border-slate-100 mb-16" />
+
+    <section class="mb-20">
+      <h2 class="text-3xl font-bold mb-8 text-slate-900 flex items-center gap-3">
+        ⚡ Instalații Electrice de Joasă Tensiune
+      </h2>
+      
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-xl font-bold text-blue-700 mb-2">🛠️ Proiectare și Montaj Tablouri</h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Configurăm sisteme de protecție inteligente folosind aparataj <strong>Schneider Electric</strong>, protecții diferențiale (RCD) și descărcătoare de supratensiune (SPD).
+            </p>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-blue-700 mb-2">🔍 Mentenanță și Diagnostic</h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Inspectarea contactelor, testarea pragurilor de declanșare și modernizarea tablourilor vechi pentru a elimina riscul de incendiu.
+            </p>
+          </div>
+        </div>
+        
+        <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+          <Image 
+            src={tablouImg} 
+            alt="Instalatie Profesionala Schneider" 
+            class="w-full h-auto object-cover"
+            inferSize={true}
+          />
+          <p class="p-3 text-xs text-center italic text-slate-500 bg-slate-50">
+            Calitatea execuției Schneider - Carte de vizită AlexaVolt
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-20 bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100">
+      <h2 class="text-3xl font-bold mb-8 text-slate-900">☀️ Sisteme de Energie Regenerabilă</h2>
+      
+      <div class="grid md:grid-cols-2 gap-10 flex-row-reverse">
+        <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 order-2 md:order-1">
+          <Image 
+            src={solarImg} 
+            alt="Sistem Fotovoltaic și Invertor" 
+            class="w-full h-auto object-cover"
+            inferSize={true}
+          />
+          <p class="p-3 text-xs text-center italic text-slate-500 bg-white">
+            Eficiență maximă prin tehnologie solară de ultimă oră.
+          </p>
+        </div>
+
+        <div class="space-y-6 order-1 md:order-2">
+          <div>
+            <h4 class="text-xl font-bold text-emerald-700 mb-2">🔌 Infrastructură Solară la Cheie</h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Dimensionare corectă, montaj pe orice tip de învelitoare și utilizarea de panouri monocristaline de înaltă eficiență.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-emerald-700 mb-2">⚙️ Managementul Energiei</h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Configurăm invertoare hibride și sisteme de monitorizare în timp real direct pe telefonul tău.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center py-12">
+      <a 
+        href={`${base}/contact`} 
+        class="inline-block bg-slate-900 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-600 transition-all shadow-xl"
+      >
+        Solicită o Consultanță Tehnică
+      </a>
+    </section>
   </main>
 </Layout>
