@@ -1,0 +1,253 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum să alegi un tablou electric potrivit pentru casa ta | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Cum să alegi un tablou electric</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum să alegi un <span class="text-blue-600">tablou electric</span> potrivit pentru casa ta
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Tabloul electric este „creierul" întregii instalații din locuința ta. O alegere corectă înseamnă siguranță, flexibilitate pentru viitor și conformitate cu normativele în vigoare.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🎯</span> De ce contează alegerea tabloului?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Un tablou electric subdimensionat sau de calitate slabă poate duce la:
+        </p>
+        <ul class="space-y-3 text-slate-600">
+          <li class="flex items-start gap-3">
+            <span class="text-red-500 font-bold mt-1">✗</span>
+            <span>Supraîncălzirea conexiunilor și risc de incendiu</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-500 font-bold mt-1">✗</span>
+            <span>Imposibilitatea de a adăuga circuite noi (AC, încărcător EV, plită)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-500 font-bold mt-1">✗</span>
+            <span>Declanșări false care îți opresc curentul în toată casa</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📋</span> Pași pentru alegerea tabloului electric
+        </h2>
+
+        <div class="space-y-8">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h3 class="text-xl font-bold text-blue-700 mb-3">1. Numără circuitele necesare</h3>
+            <p class="text-slate-600 mb-4">
+              Fiecare zonă din casă și fiecare consumator mare are nevoie de un circuit separat, protejat individual. Un apartament cu 2 camere are de regulă 6-8 circuite, o casă mare poate depăși 16-20.
+            </p>
+            <div class="bg-white p-4 rounded-xl border border-slate-200">
+              <p class="text-sm font-semibold text-slate-700 mb-2">Exemplu de circuite tipice:</p>
+              <ul class="grid sm:grid-cols-2 gap-2 text-sm text-slate-600">
+                <li>• Prize cameră de zi</li>
+                <li>• Prize dormitoare</li>
+                <li>• Iluminat general</li>
+                <li>• Bucătărie (prize dedicate)</li>
+                <li>• Plită electrică (circuit dedicat)</li>
+                <li>• Aer condiționat</li>
+                <li>• Mașină de spălat</li>
+                <li>• Boiler electric</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h3 class="text-xl font-bold text-blue-700 mb-3">2. Alege dimensiunea (număr de module)</h3>
+            <p class="text-slate-600 mb-4">
+              Tablourile se măsoară în „module" (un modul = 18 mm lățime). Un disjunctor simplu ocupă 1 modul, un diferențial (RCD) ocupă 2 module.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm border-collapse">
+                <thead>
+                  <tr class="bg-blue-50 text-blue-800">
+                    <th class="p-3 text-left rounded-tl-lg">Tip locuință</th>
+                    <th class="p-3 text-left">Nr. circuite</th>
+                    <th class="p-3 text-left rounded-tr-lg">Tablou recomandat</th>
+                  </tr>
+                </thead>
+                <tbody class="text-slate-600">
+                  <tr class="border-t border-slate-100">
+                    <td class="p-3">Garsonieră / Studio</td>
+                    <td class="p-3">4–6</td>
+                    <td class="p-3 font-semibold">12 module (1 rând)</td>
+                  </tr>
+                  <tr class="border-t border-slate-100 bg-slate-25">
+                    <td class="p-3">Apartament 2-3 camere</td>
+                    <td class="p-3">8–12</td>
+                    <td class="p-3 font-semibold">24 module (2 rânduri)</td>
+                  </tr>
+                  <tr class="border-t border-slate-100">
+                    <td class="p-3">Casă / Vilă</td>
+                    <td class="p-3">14–24+</td>
+                    <td class="p-3 font-semibold">36–54 module (3–4 rânduri)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-sm text-emerald-700 mt-4 font-medium">
+              💡 Recomandare: Alege întotdeauna un tablou cu 20-30% spații libere pentru extinderi viitoare.
+            </p>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h3 class="text-xl font-bold text-blue-700 mb-3">3. Alege producătorul și gama</h3>
+            <p class="text-slate-600 mb-4">
+              Nu toate tablourile sunt create egale. Un tablou ieftin poate avea probleme de calitate: șine slabe, plastice inferioare, spațiere insuficientă.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="bg-white p-4 rounded-xl border border-blue-100">
+                <h4 class="font-bold text-blue-700 mb-2">✅ Recomandate</h4>
+                <ul class="text-sm text-slate-600 space-y-1">
+                  <li>• <strong>Schneider Pragma / Kaedra</strong></li>
+                  <li>• <strong>Schneider Resi9</strong> (rezidențial premium)</li>
+                  <li>• <strong>Hager Gamma / Volta</strong></li>
+                  <li>• <strong>ABB Mistral</strong></li>
+                </ul>
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-red-100">
+                <h4 class="font-bold text-red-700 mb-2">⚠️ De evitat</h4>
+                <ul class="text-sm text-slate-600 space-y-1">
+                  <li>• Tablouri no-name de pe piețe online</li>
+                  <li>• Carcase metalice fără certificare IP</li>
+                  <li>• Produse fără marcaj CE</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h3 class="text-xl font-bold text-blue-700 mb-3">4. Protecțiile obligatorii</h3>
+            <p class="text-slate-600 mb-4">
+              Conform normativului I7 și standardelor actuale, un tablou rezidențial corect echipat trebuie să conțină:
+            </p>
+            <div class="grid sm:grid-cols-3 gap-4">
+              <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
+                <div class="text-2xl mb-2">🛡️</div>
+                <h4 class="font-bold text-sm mb-1">Întreruptor general</h4>
+                <p class="text-xs text-slate-500">Deconectare completă a locuinței</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
+                <div class="text-2xl mb-2">⚡</div>
+                <h4 class="font-bold text-sm mb-1">RCD (Diferențial)</h4>
+                <p class="text-xs text-slate-500">Protecție la electrocutare (30mA)</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
+                <div class="text-2xl mb-2">🌩️</div>
+                <h4 class="font-bold text-sm mb-1">SPD (Descărcător)</h4>
+                <p class="text-xs text-slate-500">Protecție la supratensiuni</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h3 class="text-xl font-bold text-blue-700 mb-3">5. Interior vs. Exterior (gradul IP)</h3>
+            <p class="text-slate-600 mb-3">
+              Dacă tabloul va fi montat în exterior (garaj deschis, curte), ai nevoie de un grad de protecție IP mai mare:
+            </p>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li class="flex items-start gap-2"><span class="font-bold text-blue-600">IP30:</span> Montaj interior standard (hol, debara)</li>
+              <li class="flex items-start gap-2"><span class="font-bold text-blue-600">IP55:</span> Zone cu umiditate (subsol, baie tehnică)</li>
+              <li class="flex items-start gap-2"><span class="font-bold text-emerald-600">IP65:</span> Montaj exterior / expunere la apă</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-blue-50 p-8 rounded-3xl border border-blue-100">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4 flex items-center gap-2">
+          <span>📐</span> Checklist rapid
+        </h2>
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex items-center gap-3">
+            <input type="checkbox" disabled class="w-4 h-4 accent-blue-600" />
+            <span>Am numărat toate circuitele necesare (inclusiv consumatori viitori)</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <input type="checkbox" disabled class="w-4 h-4 accent-blue-600" />
+            <span>Am ales un tablou cu minim 20% spații libere</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <input type="checkbox" disabled class="w-4 h-4 accent-blue-600" />
+            <span>Producătorul are certificare și suport tehnic în România</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <input type="checkbox" disabled class="w-4 h-4 accent-blue-600" />
+            <span>Am prevăzut RCD (diferențial) pentru fiecare grup de circuite</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <input type="checkbox" disabled class="w-4 h-4 accent-blue-600" />
+            <span>Am prevăzut SPD (protecție supratensiune)</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <input type="checkbox" disabled class="w-4 h-4 accent-blue-600" />
+            <span>Gradul IP corespunde locului de montaj</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 md:p-10 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+          <span>⚠️</span> Greșeli frecvente
+        </h2>
+        <ul class="space-y-4 text-slate-300">
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold mt-0.5">1.</span>
+            <span><strong class="text-white">Supradimensionarea disjunctoarelor</strong> — un disjunctor de 32A pe un circuit de prize de 16A nu protejează, ci permite supraîncălzirea cablului.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold mt-0.5">2.</span>
+            <span><strong class="text-white">Un singur diferențial pentru toată casa</strong> — la prima declanșare, rămâi complet fără curent. Soluția: RCD-uri separate pe grupe.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold mt-0.5">3.</span>
+            <span><strong class="text-white">Lipsa spațiului de rezervă</strong> — când vei dori să adaugi AC sau un punct de încărcare EV, nu vei mai avea loc în tablou.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold mt-0.5">4.</span>
+            <span><strong class="text-white">Montaj fără etichetare</strong> — fără etichete clare pe fiecare circuit, depanarea devine un coșmar.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai nevoie de un tablou electric configurat profesional?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          Echipa AlexaVolt proiectează și montează tablouri electrice conform normativului I7, cu aparataj Schneider și garanția unei execuții impecabile.
+        </p>
+        <a 
+          href={`${base}/contact`} 
+          class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1"
+        >
+          Solicită o ofertă personalizată
+        </a>
+      </section>
+    </article>
+
+  </main>
+</Layout>

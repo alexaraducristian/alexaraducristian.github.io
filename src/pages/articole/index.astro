@@ -1,0 +1,52 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const articole = [
+  {
+    titlu: "Cum să alegi un tablou electric potrivit pentru casa ta",
+    descriere: "Ghid complet de dimensionare: număr de module, protecții obligatorii, producători recomandați și greșeli frecvente.",
+    href: `${base}/articole/cum-sa-alegi-un-tablou-electric`,
+    categorie: "Tablouri Electrice",
+    emoji: "⚡"
+  }
+];
+---
+
+<Layout title="Articole & Ghiduri | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <section class="mb-12 border-b border-slate-100 pb-10">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+        📚 Articole & <span class="text-blue-600">Ghiduri Practice</span>
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed">
+        Instrucțiuni pas cu pas despre instalații electrice și sisteme fotovoltaice — scrise de specialiști autorizați ANRE.
+      </p>
+    </section>
+
+    <div class="space-y-6">
+      {articole.map((art) => (
+        <a href={art.href} class="block bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <span class="text-3xl">{art.emoji}</span>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-1 block">{art.categorie}</span>
+              <h2 class="text-xl font-bold text-slate-900 mb-2">{art.titlu}</h2>
+              <p class="text-sm text-slate-600">{art.descriere}</p>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <section class="mt-16 text-center border-t border-slate-100 pt-10">
+      <p class="text-slate-500 italic">Mai multe articole vor fi adăugate în curând.</p>
+    </section>
+
+  </main>
+</Layout>
