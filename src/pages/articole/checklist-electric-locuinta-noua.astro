@@ -1,0 +1,133 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Checklist electric când preiei o locuință nouă | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Checklist electric locuință nouă</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          <span class="text-blue-600">Checklist electric</span> când preiei o locuință nouă
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ce verificări să faci la instalația electrică înainte sau imediat după mutare.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>✅</span> Checklist complet
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <div class="flex items-start gap-3">
+              <input type="checkbox" disabled class="w-5 h-5 mt-0.5 accent-blue-600" />
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Verifică tabloul electric</h3>
+                <p class="text-sm text-slate-600">Are disjunctoare automate? Diferențial? SPD? Sau are siguranțe vechi cu fir?</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <div class="flex items-start gap-3">
+              <input type="checkbox" disabled class="w-5 h-5 mt-0.5 accent-blue-600" />
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Testează butonul T de pe RCD</h3>
+                <p class="text-sm text-slate-600">Apasă butonul „T" — dacă nu declanșează, diferențialul e defect.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <div class="flex items-start gap-3">
+              <input type="checkbox" disabled class="w-5 h-5 mt-0.5 accent-blue-600" />
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Verifică tipul de cablu</h3>
+                <p class="text-sm text-slate-600">Deschide o doză și verifică: aluminiu (gri, fragil) sau cupru (roșu-portocaliu)?</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <div class="flex items-start gap-3">
+              <input type="checkbox" disabled class="w-5 h-5 mt-0.5 accent-blue-600" />
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Verifică împământarea</h3>
+                <p class="text-sm text-slate-600">Prizele au 3 pini (L, N, PE)? Firul galben-verde este prezent și conectat?</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <div class="flex items-start gap-3">
+              <input type="checkbox" disabled class="w-5 h-5 mt-0.5 accent-blue-600" />
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Testează toate prizele</h3>
+                <p class="text-sm text-slate-600">Conectează un aparat mic în fiecare priză. Verifică dacă sunt fixe, fără joc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <div class="flex items-start gap-3">
+              <input type="checkbox" disabled class="w-5 h-5 mt-0.5 accent-blue-600" />
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Verifică starea întrerupătoarelor</h3>
+                <p class="text-sm text-slate-600">Se aud arcuri electrice (pocnituri) la acționare? Sunt fixate corect?</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <div class="flex items-start gap-3">
+              <input type="checkbox" disabled class="w-5 h-5 mt-0.5 accent-blue-600" />
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Caută semne de supraîncălzire</h3>
+                <p class="text-sm text-slate-600">Urme de înnegrire pe prize, întrerupătoare sau perete în jurul tabloului?</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <div class="flex items-start gap-3">
+              <input type="checkbox" disabled class="w-5 h-5 mt-0.5 accent-blue-600" />
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Solicită documentația (dacă există)</h3>
+                <p class="text-sm text-slate-600">Schema tabloului, buletin de verificare PRAM, aviz de racordare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-red-50 p-6 rounded-2xl border border-red-100">
+        <h2 class="text-xl font-bold text-red-800 mb-3">🚨 Când să chemi un specialist urgent</h2>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li>• Tabloul are siguranțe cu fir (nu disjunctoare)</li>
+          <li>• Cablajul este din aluminiu</li>
+          <li>• Nu există niciun RCD (diferențial)</li>
+          <li>• Miros de ars sau urme de ardere</li>
+          <li>• Prizele nu au împământare (doar 2 contacte)</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Te-ai mutat recent?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          Solicită o inspecție electrică profesională de la AlexaVolt — identificăm problemele înainte să devină periculoase.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită inspecție
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

@@ -1,0 +1,100 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Panouri monocristaline vs. policristaline — diferențe | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Monocristaline vs. Policristaline</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Panouri <span class="text-emerald-600">monocristaline</span> vs. <span class="text-blue-600">policristaline</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Care sunt diferențele reale și ce tip să alegi pentru casa ta?
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Comparație directă</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Criteriu</th>
+                <th class="p-3 text-left text-emerald-700">Monocristaline</th>
+                <th class="p-3 text-left text-blue-700 rounded-tr-lg">Policristaline</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Eficiență</td>
+                <td class="p-3">20–23%</td>
+                <td class="p-3">15–18%</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Aspect</td>
+                <td class="p-3">Negru uniform, estetic</td>
+                <td class="p-3">Albastru cu reflexii</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Performanță la căldură</td>
+                <td class="p-3">Mai bună (coeficient termic mai mic)</td>
+                <td class="p-3">Pierderi mai mari la temperaturi ridicate</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Preț</td>
+                <td class="p-3">Cu 10-15% mai scumpe</td>
+                <td class="p-3">Mai ieftine per panou</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Suprafață necesară</td>
+                <td class="p-3">Mai puțin spațiu (eficiență mai mare)</td>
+                <td class="p-3">Necesită mai mult acoperiș</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Garanție tipică</td>
+                <td class="p-3">25-30 ani producție</td>
+                <td class="p-3">25 ani producție</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🏆</span> Verdict AlexaVolt
+        </h2>
+        <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+          <p class="text-slate-700 leading-relaxed">
+            În 2024-2025, <strong>monocristalinele domină piața</strong>. Diferența de preț s-a redus dramatic, iar eficiența superioară înseamnă mai puțin spațiu pe acoperiș și producție mai bună pe tot parcursul anului. Policristalinele sunt în declin și tot mai greu de găsit la furnizori de calitate.
+          </p>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei panouri de ultimă generație?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt lucrează exclusiv cu panouri Tier 1 monocristaline de înaltă eficiență.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-emerald-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-emerald-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

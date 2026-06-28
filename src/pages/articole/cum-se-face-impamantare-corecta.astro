@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum se face o împământare corectă | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Împământare corectă</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum se face o <span class="text-blue-600">împământare corectă</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Împământarea este fundația siguranței electrice. Fără ea, RCD-urile nu funcționează corect și riscul de electrocutare crește dramatic.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🎯</span> De ce e importantă?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Împământarea oferă un drum preferențial pentru curentul de defect (scurgere) — direct în pământ, în loc de prin corpul tău. Este obligatorie conform normativului I7.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+            <h4 class="font-bold text-sm text-emerald-800 mb-1">Cu împământare</h4>
+            <p class="text-xs text-slate-600">Curentul de defect → pământ → RCD detectează → deconectare în 30ms</p>
+          </div>
+          <div class="bg-red-50 p-4 rounded-xl border border-red-100">
+            <h4 class="font-bold text-sm text-red-800 mb-1">Fără împământare</h4>
+            <p class="text-xs text-slate-600">Curentul de defect → corpul uman → electrocutare → RCD-ul poate nu detecta</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔧</span> Componente principale
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Electrodul de pământare</h3>
+            <p class="text-sm text-slate-600">Tije de oțel zincat (1.5–3m) sau bandă OL-Zn îngropată la min. 60cm adâncime.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Conductorul de protecție (PE)</h3>
+            <p class="text-sm text-slate-600">Firul galben-verde din cablul electric, care conectează fiecare priză/echipament la bara de pământare.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Bara de echipotențializare</h3>
+            <p class="text-sm text-slate-600">Punct central unde se interconectează: electrod, PE, țevi metalice, cadă, robineți.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📏</span> Valori corecte
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <p class="text-slate-700 mb-2">Rezistența de dispersie trebuie să fie:</p>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li><strong>≤ 4Ω</strong> — pentru locuințe individuale (ideal)</li>
+            <li><strong>≤ 1Ω</strong> — pentru instalații cu echipamente sensibile (IT, medical)</li>
+          </ul>
+          <p class="text-xs text-slate-500 mt-3 italic">Se măsoară cu un terometru (megohmetru de pământare) de către un electrician autorizat.</p>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai nevoie de o priză de pământ?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt execută sisteme de împământare conforme, cu măsurătorile certificate necesare.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

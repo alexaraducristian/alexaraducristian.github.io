@@ -1,0 +1,121 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Ce secțiune de cablu ai nevoie pentru fiecare electrocasnic | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Secțiune cablu pe electrocasnic</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Ce <span class="text-blue-600">secțiune de cablu</span> ai nevoie pentru fiecare electrocasnic
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Tabel practic cu secțiuni de cablu, amperaj disjunctor și tip de circuit pentru fiecare consumator din casă.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">📋 Tabel rapid</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-blue-50 text-blue-800">
+                <th class="p-3 text-left rounded-tl-lg">Electrocasnic</th>
+                <th class="p-3 text-left">Putere</th>
+                <th class="p-3 text-left">Secțiune cablu</th>
+                <th class="p-3 text-left rounded-tr-lg">Disjunctor</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3">Iluminat</td>
+                <td class="p-3">< 1 kW</td>
+                <td class="p-3 font-semibold">1.5 mmp</td>
+                <td class="p-3">10A curba B</td>
+              </tr>
+              <tr class="border-t border-slate-100 bg-slate-25">
+                <td class="p-3">Prize standard</td>
+                <td class="p-3">< 3.5 kW</td>
+                <td class="p-3 font-semibold">2.5 mmp</td>
+                <td class="p-3">16A curba C</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">Mașină de spălat</td>
+                <td class="p-3">2–2.5 kW</td>
+                <td class="p-3 font-semibold">2.5 mmp</td>
+                <td class="p-3">16A curba C</td>
+              </tr>
+              <tr class="border-t border-slate-100 bg-slate-25">
+                <td class="p-3">Boiler electric</td>
+                <td class="p-3">2–3 kW</td>
+                <td class="p-3 font-semibold">2.5 mmp</td>
+                <td class="p-3">16A curba C</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">Aer condiționat</td>
+                <td class="p-3">2.5–4 kW</td>
+                <td class="p-3 font-semibold">4 mmp</td>
+                <td class="p-3">20A curba C</td>
+              </tr>
+              <tr class="border-t border-slate-100 bg-slate-25">
+                <td class="p-3">Plită electrică</td>
+                <td class="p-3">5–7.5 kW</td>
+                <td class="p-3 font-semibold">6 mmp</td>
+                <td class="p-3">32A curba C</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">Cuptor electric</td>
+                <td class="p-3">2.5–3.5 kW</td>
+                <td class="p-3 font-semibold">2.5 mmp</td>
+                <td class="p-3">16A curba C</td>
+              </tr>
+              <tr class="border-t border-slate-100 bg-slate-25">
+                <td class="p-3">Încărcător EV (7 kW)</td>
+                <td class="p-3">7.4 kW</td>
+                <td class="p-3 font-semibold">6 mmp</td>
+                <td class="p-3">32A curba C</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">Încărcător EV (11 kW)</td>
+                <td class="p-3">11 kW (trifazat)</td>
+                <td class="p-3 font-semibold">4 mmp (3F)</td>
+                <td class="p-3">16A trifazat</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-red-50 p-6 rounded-2xl border border-red-100">
+        <h2 class="text-xl font-bold text-red-800 mb-3">⚠️ Regulă de aur</h2>
+        <p class="text-slate-700">
+          Disjunctorul protejează <strong>cablul</strong>, nu echipamentul! Un disjunctor de 32A pe un cablu de 2.5 mmp nu va declanșa la suprasarcină — cablul se va supraîncălzi și poate lua foc.
+        </p>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei o instalație dimensionată corect?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt proiectează circuite cu secțiuni conforme normativului I7.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

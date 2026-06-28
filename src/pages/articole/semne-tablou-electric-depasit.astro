@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Semne că tabloul tău electric e depășit și trebuie modernizat | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Semne că tabloul tău e depășit</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Semne că tabloul tău electric e <span class="text-red-600">depășit</span> și trebuie modernizat
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Un tablou electric vechi nu este doar un inconvenient — este un risc real de incendiu. Iată cum recunoști semnele de alarmă.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🚨</span> Checklist vizual — semne de alarmă
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100 flex items-start gap-4">
+            <span class="text-2xl">1️⃣</span>
+            <div>
+              <h3 class="font-bold text-red-800 mb-1">Siguranțe fuzibile (cu fir) în loc de disjunctoare</h3>
+              <p class="text-sm text-slate-600">Dacă tabloul tău are „dopuri" ceramice cu fir, instalația are probabil 30+ ani și nu oferă protecție reală la suprasarcină.</p>
+            </div>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100 flex items-start gap-4">
+            <span class="text-2xl">2️⃣</span>
+            <div>
+              <h3 class="font-bold text-red-800 mb-1">Miros de ars sau urme de înnegrire</h3>
+              <p class="text-sm text-slate-600">Semnul unor conexiuni slăbite care se supraîncălzesc. Necesită intervenție urgentă.</p>
+            </div>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100 flex items-start gap-4">
+            <span class="text-2xl">3️⃣</span>
+            <div>
+              <h3 class="font-bold text-red-800 mb-1">Declanșări frecvente fără cauză aparentă</h3>
+              <p class="text-sm text-slate-600">Disjunctoarele „sar" regulat — semn de circuite supraîncărcate sau aparataj uzat.</p>
+            </div>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100 flex items-start gap-4">
+            <span class="text-2xl">4️⃣</span>
+            <div>
+              <h3 class="font-bold text-red-800 mb-1">Lipsa oricărui diferențial (RCD)</h3>
+              <p class="text-sm text-slate-600">Fără protecție la electrocutare — risc letal la orice defect de izolație.</p>
+            </div>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100 flex items-start gap-4">
+            <span class="text-2xl">5️⃣</span>
+            <div>
+              <h3 class="font-bold text-red-800 mb-1">Cabluri de aluminiu vizibile</h3>
+              <p class="text-sm text-slate-600">Aluminiul se oxidează și se fragilizează în timp, creând puncte de rezistență care generează căldură.</p>
+            </div>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100 flex items-start gap-4">
+            <span class="text-2xl">6️⃣</span>
+            <div>
+              <h3 class="font-bold text-red-800 mb-1">Tablou plin — fără spații libere</h3>
+              <p class="text-sm text-slate-600">Nu mai poți adăuga AC, încărcător EV sau alte circuite noi fără a înlocui tabloul.</p>
+            </div>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100 flex items-start gap-4">
+            <span class="text-2xl">7️⃣</span>
+            <div>
+              <h3 class="font-bold text-red-800 mb-1">Zgomote (bâzâit) din tablou</h3>
+              <p class="text-sm text-slate-600">Un contactor sau disjunctor care vibrează indică un contact imperfect sau un arc electric intern.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
+        <h2 class="text-2xl font-bold text-emerald-800 mb-4">✅ Cum arată un tablou modern și sigur?</h2>
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Disjunctoare automate calibrate pe secțiunea cablului</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> RCD-uri (diferențiale) pe fiecare grup de circuite</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> SPD (descărcător de supratensiune)</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Etichetare clară a fiecărui circuit</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Minim 20% spații libere pentru extinderi</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Aparataj de marcă (Schneider, Hager, ABB)</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai recunoscut 2+ semne din lista de mai sus?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          Solicită o inspecție gratuită de la AlexaVolt. Evaluăm starea tabloului și propunem soluția optimă.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită inspecție gratuită
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

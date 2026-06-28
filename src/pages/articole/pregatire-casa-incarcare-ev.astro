@@ -1,0 +1,93 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum să pregătești casa pentru instalarea unui punct de încărcare EV | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Pregătire încărcare EV</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum să pregătești casa pentru <span class="text-emerald-600">încărcarea mașinii electrice</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ce cerințe electrice trebuie îndeplinite și ce modificări sunt necesare în tabloul tău.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔌</span> Opțiuni de încărcare acasă
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Monofazat 7.4 kW</h3>
+            <p class="text-sm text-slate-600">Cablu 6 mmp, disjunctor 32A, RCD tip A. Încarcă ~40 km/oră. Suficient pentru uz zilnic.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Trifazat 11 kW</h3>
+            <p class="text-sm text-slate-600">Cablu 5×4 mmp, disjunctor 3P 16A, RCD tip A/B. Încarcă ~65 km/oră. Ideal cu panouri solare.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📋</span> Ce trebuie pregătit
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">1. Verifică puterea disponibilă</h3>
+            <p class="text-sm text-slate-600">Un încărcător de 7.4 kW necesită ca puterea contractată cu furnizorul să fie suficientă (min. 8-10 kW monofazat).</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">2. Circuit dedicat de la tablou</h3>
+            <p class="text-sm text-slate-600">Încărcătorul NU se conectează la un circuit existent. Necesită cablu nou, direct de la tabloul principal.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">3. Protecție diferențială specială</h3>
+            <p class="text-sm text-slate-600">RCD tip A minim, tip B recomandat (detectează și curent continuu generat de încărcător).</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">4. Împământare conformă</h3>
+            <p class="text-sm text-slate-600">Încărcătorul verifică prezența împământării la pornire. Fără ea, refuză să încarce.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">5. Locație și traseu cablu</h3>
+            <p class="text-sm text-slate-600">Ideal: perete garaj/carport, la max. 10m de tablou. Traseul trebuie protejat (tub rigid/flexibil).</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+        <h2 class="text-xl font-bold text-emerald-800 mb-3">💡 Sfat: Combină cu panouri fotovoltaice</h2>
+        <p class="text-slate-700">
+          Cu un sistem fotovoltaic de 5-6 kW, poți încărca mașina electric <strong>gratis</strong> în timpul zilei. Investiția în panouri se recuperează și mai repede când elimini și costul „combustibilului".
+        </p>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei să instalezi un wallbox acasă?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt pregătește instalația electrică complet — de la tablou până la punctul de încărcare.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

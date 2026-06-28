@@ -121,17 +121,64 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <h2 class="text-3xl font-bold mb-8 text-slate-900 flex items-center gap-3">
         📚 Ghiduri Practice
       </h2>
-      <div class="space-y-4">
-        <a href={`${base}/articole/cum-sa-alegi-un-tablou-electric`} class="block bg-slate-50 p-5 rounded-2xl border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all">
-          <div class="flex items-center gap-4">
-            <span class="text-2xl">⚡</span>
-            <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-0.5 block">Tablouri Electrice</span>
-              <h3 class="text-lg font-bold text-slate-900">Cum să alegi un tablou electric potrivit pentru casa ta</h3>
-            </div>
-          </div>
+
+      <h3 class="text-lg font-bold text-slate-700 mb-3">⚡ Tablouri Electrice</h3>
+      <div class="space-y-3 mb-8">
+        <a href={`${base}/articole/cum-sa-alegi-un-tablou-electric`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Cum să alegi un tablou electric potrivit pentru casa ta</h4>
+        </a>
+        <a href={`${base}/articole/ce-este-un-rcd-diferential`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Ce este un RCD (diferențial) și de ce ai nevoie de el</h4>
+        </a>
+        <a href={`${base}/articole/cum-functioneaza-un-spd`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Cum funcționează un SPD (descărcător de supratensiune)</h4>
+        </a>
+        <a href={`${base}/articole/semne-tablou-electric-depasit`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Semne că tabloul tău electric e depășit și trebuie modernizat</h4>
+        </a>
+        <a href={`${base}/articole/cum-se-citeste-schema-tablou-electric`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Cum se citește schema unui tablou electric</h4>
         </a>
       </div>
+
+      <h3 class="text-lg font-bold text-slate-700 mb-3">☀️ Panouri Fotovoltaice</h3>
+      <div class="space-y-3 mb-8">
+        <a href={`${base}/articole/cum-sa-calculezi-panouri-fotovoltaice`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Cum să calculezi câte panouri fotovoltaice ai nevoie</h4>
+        </a>
+        <a href={`${base}/articole/cum-functioneaza-invertor-hibrid`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Cum funcționează un invertor hibrid și ce avantaje are</h4>
+        </a>
+        <a href={`${base}/articole/verificari-inainte-montaj-panouri`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Ce trebuie să verifici înainte de a monta panouri pe acoperiș</h4>
+        </a>
+        <a href={`${base}/articole/monitorizare-panouri-fotovoltaice-telefon`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Cum să monitorizezi producția panourilor din telefon</h4>
+        </a>
+        <a href={`${base}/articole/panouri-monocristaline-vs-policristaline`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Panouri monocristaline vs. policristaline — diferențe</h4>
+        </a>
+      </div>
+
+      <h3 class="text-lg font-bold text-slate-700 mb-3">🔧 Instalații Electrice Generale</h3>
+      <div class="space-y-3 mb-6">
+        <a href={`${base}/articole/de-ce-e-periculos-cablajul-din-aluminiu`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">De ce e periculos cablajul din aluminiu și când trebuie înlocuit</h4>
+        </a>
+        <a href={`${base}/articole/cum-se-face-impamantare-corecta`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Cum se face o împământare corectă</h4>
+        </a>
+        <a href={`${base}/articole/sectiune-cablu-electrocasnice`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Ce secțiune de cablu ai nevoie pentru fiecare electrocasnic</h4>
+        </a>
+        <a href={`${base}/articole/pregatire-casa-incarcare-ev`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Cum să pregătești casa pentru încărcarea mașinii electrice</h4>
+        </a>
+        <a href={`${base}/articole/checklist-electric-locuinta-noua`} class="block bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:-translate-y-0.5 transition-all">
+          <h4 class="font-bold text-slate-900 text-sm">Checklist electric când preiei o locuință nouă</h4>
+        </a>
+      </div>
+
       <div class="mt-6">
         <a href={`${base}/articole`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
           Vezi toate articolele →

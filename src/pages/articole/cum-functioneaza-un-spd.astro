@@ -1,0 +1,141 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum funcționează un SPD (descărcător de supratensiune) | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Cum funcționează un SPD</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum funcționează un <span class="text-blue-600">SPD (descărcător de supratensiune)</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Un singur trăsnet sau o supratensiune din rețea poate distruge electrocasnice de mii de euro. SPD-ul este „para-trăsnetul" din tabloul tău electric.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🌩️</span> Ce este o supratensiune?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Tensiunea normală în rețeaua din România este de 230V. O supratensiune este orice vârf care depășește semnificativ această valoare — poate ajunge la mii de volți pentru câteva microsecunde.
+        </p>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="bg-red-50 p-4 rounded-xl border border-red-100 text-center">
+            <div class="text-2xl mb-2">⛈️</div>
+            <h4 class="font-bold text-sm mb-1">Trăsnete</h4>
+            <p class="text-xs text-slate-500">Directe sau induse în rețea</p>
+          </div>
+          <div class="bg-red-50 p-4 rounded-xl border border-red-100 text-center">
+            <div class="text-2xl mb-2">🔌</div>
+            <h4 class="font-bold text-sm mb-1">Comutații în rețea</h4>
+            <p class="text-xs text-slate-500">Pornirea motoarelor industriale</p>
+          </div>
+          <div class="bg-red-50 p-4 rounded-xl border border-red-100 text-center">
+            <div class="text-2xl mb-2">⚡</div>
+            <h4 class="font-bold text-sm mb-1">Defecte la furnizor</h4>
+            <p class="text-xs text-slate-500">Erori pe linia de medie tensiune</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🛡️</span> Cum protejează SPD-ul?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          SPD-ul conține un element (varistor MOV) care, în condiții normale, nu conduce curent. Când tensiunea depășește pragul de protecție, varistorul devine conductor și „absoarbe" energia excedentară, deviind-o către împământare.
+        </p>
+        <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+          <p class="text-sm text-emerald-800">
+            <strong>Rezultat:</strong> Echipamentele tale (TV, PC, frigider, centrală) văd maximum 1.5 kV în loc de 6-10 kV — suficient de puțin pentru a nu fi deteriorate.
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📊</span> Tipuri de SPD (Clase)
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-blue-50 text-blue-800">
+                <th class="p-3 text-left rounded-tl-lg">Clasă</th>
+                <th class="p-3 text-left">Unde se montează</th>
+                <th class="p-3 text-left rounded-tr-lg">Protecție contra</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-bold">Tip 1 (T1)</td>
+                <td class="p-3">La intrarea în clădire (după contor)</td>
+                <td class="p-3">Trăsnet direct (10/350 μs)</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-bold">Tip 2 (T2)</td>
+                <td class="p-3">În tabloul principal</td>
+                <td class="p-3">Supratensiuni induse (8/20 μs)</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-bold">Tip 3 (T3)</td>
+                <td class="p-3">Lângă echipament sensibil</td>
+                <td class="p-3">Supratensiuni reziduale fine</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-emerald-700 mt-4 font-medium">
+          💡 Pentru o locuință, combinația T1+T2 (sau T2 singur dacă nu ai paratrăsnet) este soluția standard.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>💰</span> Ce protejezi cu un SPD de 150-300 lei?
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li>• TV Smart (2.000–5.000 lei)</li>
+              <li>• PC / Laptop (3.000–8.000 lei)</li>
+              <li>• Centrală termică (4.000–10.000 lei)</li>
+            </ul>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li>• Frigider side-by-side (3.000–7.000 lei)</li>
+              <li>• Invertor fotovoltaic (5.000–15.000 lei)</li>
+              <li>• Sistem de alarmă / smart home</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Protejează-ți investițiile cu un SPD corect instalat</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt montează descărcătoare Schneider iPRD dimensionate pe tipul instalației tale.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită o ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

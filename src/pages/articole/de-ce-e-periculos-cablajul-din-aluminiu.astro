@@ -1,0 +1,91 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="De ce e periculos cablajul din aluminiu | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Pericole cablaj aluminiu</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          De ce e periculos <span class="text-red-600">cablajul din aluminiu</span> și când trebuie înlocuit
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Instalațiile din aluminiu din blocurile vechi sunt un risc de incendiu. Află cum recunoști semnele și ce soluții ai.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚠️</span> Problemele aluminiului
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Oxidare și rezistență crescută</h3>
+            <p class="text-sm text-slate-600">Aluminiul se oxidează în contact cu aerul. Stratul de oxid crește rezistența electrică, generând căldură locală la conexiuni.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Fragilizare în timp</h3>
+            <p class="text-sm text-slate-600">Aluminiul devine casant după cicluri repetate de încălzire-răcire. Firele se rup la cea mai mică mișcare.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Dilatare termică excesivă</h3>
+            <p class="text-sm text-slate-600">Aluminiul se dilată de 2× mai mult decât cuprul. Conexiunile se slăbesc progresiv la fiecare ciclu de sarcină.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Secțiune insuficientă pentru consumul modern</h3>
+            <p class="text-sm text-slate-600">Instalațiile vechi au fost proiectate pentru 1-2 kW. Astăzi, un apartament consumă 5-10 kW (AC, plită, mașină de spălat).</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔍</span> Semne de degradare
+        </h2>
+        <ul class="space-y-3 text-slate-600">
+          <li class="flex items-start gap-3"><span class="text-red-500 font-bold">•</span> Prize care se încălzesc la utilizare</li>
+          <li class="flex items-start gap-3"><span class="text-red-500 font-bold">•</span> Miros de plastic ars în jurul prizelor/întrerupătoarelor</li>
+          <li class="flex items-start gap-3"><span class="text-red-500 font-bold">•</span> Lumini care pâlpâie fără motiv</li>
+          <li class="flex items-start gap-3"><span class="text-red-500 font-bold">•</span> Disjunctoare care declanșează frecvent</li>
+          <li class="flex items-start gap-3"><span class="text-red-500 font-bold">•</span> Urme de înnegrire pe prize sau perete</li>
+        </ul>
+      </section>
+
+      <section class="mb-12 bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
+        <h2 class="text-2xl font-bold text-emerald-800 mb-4">✅ Soluția: Înlocuire cu cupru</h2>
+        <p class="text-slate-700 mb-4">
+          Singura soluție sigură și permanentă este înlocuirea completă a cablajului cu <strong>conductor de cupru</strong> cu secțiunile corespunzătoare consumului actual.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li>• Prize: cablu 2.5 mmp Cu (protecție 16A)</li>
+          <li>• Iluminat: cablu 1.5 mmp Cu (protecție 10A)</li>
+          <li>• Plită/AC: cablu 4-6 mmp Cu (protecție 20-32A)</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Locuiești într-un apartament vechi?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt modernizează instalații din aluminiu cu impact minim structural, folosind scule profesionale de carotare.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită evaluare gratuită
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

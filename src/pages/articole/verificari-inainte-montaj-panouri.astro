@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Ce trebuie să verifici înainte de a monta panouri pe acoperiș | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Verificări înainte de montaj panouri</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Ce trebuie să verifici <span class="text-emerald-600">înainte de a monta panouri</span> pe acoperiș
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Orientare, înclinare, umbrire și starea acoperișului — totul contează pentru randamentul maxim.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🧭</span> 1. Orientarea acoperișului
+        </h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100 text-center">
+            <p class="font-bold text-emerald-800">SUD ☀️</p>
+            <p class="text-xs text-slate-600 mt-1">100% randament — ideal</p>
+          </div>
+          <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 text-center">
+            <p class="font-bold text-blue-800">EST / VEST</p>
+            <p class="text-xs text-slate-600 mt-1">80-85% randament — bun</p>
+          </div>
+          <div class="bg-red-50 p-4 rounded-xl border border-red-100 text-center">
+            <p class="font-bold text-red-800">NORD ❌</p>
+            <p class="text-xs text-slate-600 mt-1">50-60% — nerecomandat</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📐</span> 2. Înclinarea optimă
+        </h2>
+        <p class="text-slate-600 mb-4">
+          Pentru România (latitudine ~44-47°), înclinarea optimă este între <strong>30° și 35°</strong>. Acoperișurile cu pantă naturală de 30° sunt ideale fără structură suplimentară.
+        </p>
+        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+          <p class="text-sm text-slate-700">
+            <strong>Acoperiș plat (terasă)?</strong> Se montează pe structuri metalice cu unghi de 25-30°. Costul este ușor mai mare dar permite orientare optimă.
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🌳</span> 3. Umbrirea — inamicul #1
+        </h2>
+        <p class="text-slate-600 mb-4">
+          O umbră care acoperă chiar și 10% dintr-un panou poate reduce producția cu 30-50%. Verifică:
+        </p>
+        <ul class="space-y-2 text-slate-600">
+          <li class="flex items-start gap-2"><span class="text-red-500">•</span> Copaci înalți (mai ales iarna când soarele e jos)</li>
+          <li class="flex items-start gap-2"><span class="text-red-500">•</span> Coșuri de fum, antene, stâlpi</li>
+          <li class="flex items-start gap-2"><span class="text-red-500">•</span> Clădiri vecine mai înalte</li>
+          <li class="flex items-start gap-2"><span class="text-red-500">•</span> Alte rânduri de panouri (inter-umbrire)</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🏗️</span> 4. Starea acoperișului
+        </h2>
+        <ul class="space-y-3 text-slate-600">
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 font-bold">✓</span>
+            <span>Structura trebuie să suporte greutatea (25+ kg/panou × nr. panouri)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 font-bold">✓</span>
+            <span>Învelitoarea să fie în stare bună (panourile stau 25+ ani)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 font-bold">✓</span>
+            <span>Hidroizolația să fie intactă (nu montezi pe un acoperiș care curge)</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei o evaluare profesională a acoperișului?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt verifică gratuit orientarea, umbrirea și structura — înainte de a propune orice soluție.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-emerald-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-emerald-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită evaluare gratuită
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

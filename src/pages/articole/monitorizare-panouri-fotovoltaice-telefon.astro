@@ -1,0 +1,113 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum să monitorizezi producția panourilor fotovoltaice din telefon | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Monitorizare panouri din telefon</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum să <span class="text-emerald-600">monitorizezi producția</span> panourilor fotovoltaice din telefon
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Tutorial pas cu pas pentru aplicația Huawei FusionSolar — vezi în timp real cât produci, consumi și economisești.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📱</span> Aplicații populare de monitorizare
+        </h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100 text-center">
+            <div class="text-2xl mb-2">🟢</div>
+            <h4 class="font-bold text-sm">Huawei FusionSolar</h4>
+            <p class="text-xs text-slate-500 mt-1">Pentru invertoare Huawei SUN2000</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 text-center">
+            <div class="text-2xl mb-2">🔵</div>
+            <h4 class="font-bold text-sm">SolarEdge mySolarEdge</h4>
+            <p class="text-xs text-slate-500 mt-1">Monitorizare la nivel de panou</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 text-center">
+            <div class="text-2xl mb-2">🟠</div>
+            <h4 class="font-bold text-sm">Fronius Solar.web</h4>
+            <p class="text-xs text-slate-500 mt-1">Dashboard complet web + mobil</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📋</span> Pași de configurare (Huawei FusionSolar)
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Pasul 1: Descarcă aplicația</h3>
+            <p class="text-sm text-slate-600">Caută „FusionSolar" pe App Store (iOS) sau Google Play (Android). Este gratuită.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Pasul 2: Creează cont</h3>
+            <p class="text-sm text-slate-600">Instalatorul (AlexaVolt) îți oferă credențialele instalatorului sau te invită ca „proprietar al plantei".</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Pasul 3: Conectare WiFi</h3>
+            <p class="text-sm text-slate-600">Invertorul se conectează la routerul tău prin dongle WiFi integrat. Datele se sincronizează în cloud.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Pasul 4: Dashboard live</h3>
+            <p class="text-sm text-slate-600">Vei vedea: producție curentă (W), energie zilnică (kWh), consum casă, export rețea, nivel baterie.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📊</span> Ce indicatori să urmărești
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+            <h4 class="font-bold text-sm text-emerald-800 mb-1">Producție zilnică (kWh)</h4>
+            <p class="text-xs text-slate-600">Compară cu estimarea inițială. Variații de ±15% sunt normale sezonier.</p>
+          </div>
+          <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+            <h4 class="font-bold text-sm text-emerald-800 mb-1">Rata de autoconsum (%)</h4>
+            <p class="text-xs text-slate-600">Cât din ce produci consumi direct. Ideal: peste 70%.</p>
+          </div>
+          <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+            <h4 class="font-bold text-sm text-emerald-800 mb-1">Export vs. Import rețea</h4>
+            <p class="text-xs text-slate-600">Cât vinzi vs. cât cumperi. Obiectiv: import minim.</p>
+          </div>
+          <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+            <h4 class="font-bold text-sm text-emerald-800 mb-1">Nivel baterie (SoC)</h4>
+            <p class="text-xs text-slate-600">State of Charge — arată câtă energie ai în rezervă.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei un sistem cu monitorizare completă?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt configurează complet aplicația de monitorizare și te învață cum să o folosești.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-emerald-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-emerald-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

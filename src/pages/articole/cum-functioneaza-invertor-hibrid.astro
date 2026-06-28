@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum funcționează un invertor hibrid și ce avantaje are | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Cum funcționează un invertor hibrid</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum funcționează un <span class="text-emerald-600">invertor hibrid</span> și ce avantaje are
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Invertorul hibrid este „creierul" unui sistem fotovoltaic modern — gestionează panouri, baterii și rețeaua simultan.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔄</span> Ce face un invertor?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Panourile fotovoltaice produc curent continuu (DC). Toate electrocasnicele din casă funcționează pe curent alternativ (AC). Invertorul convertește DC → AC și reglează tensiunea la 230V/50Hz.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚡</span> Ce înseamnă „hibrid"?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Un invertor hibrid poate gestiona simultan <strong>3 surse de energie</strong>:
+        </p>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100 text-center">
+            <div class="text-2xl mb-2">☀️</div>
+            <h4 class="font-bold text-sm">Panouri solare</h4>
+            <p class="text-xs text-slate-500 mt-1">Producție proprie</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100 text-center">
+            <div class="text-2xl mb-2">🔋</div>
+            <h4 class="font-bold text-sm">Baterie de stocare</h4>
+            <p class="text-xs text-slate-500 mt-1">Energie pentru noapte</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 text-center">
+            <div class="text-2xl mb-2">🔌</div>
+            <h4 class="font-bold text-sm">Rețeaua electrică</h4>
+            <p class="text-xs text-slate-500 mt-1">Backup sau export surplus</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>✅</span> Avantaje față de un invertor simplu (on-grid)
+        </h2>
+        <ul class="space-y-3 text-slate-600">
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-500 font-bold mt-1">1.</span>
+            <span><strong>Independență la pene de curent</strong> — bateria preia alimentarea instant</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-500 font-bold mt-1">2.</span>
+            <span><strong>Autoconsum maxim</strong> — stochezi surplusul din zi pentru consum nocturn</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-500 font-bold mt-1">3.</span>
+            <span><strong>Programare inteligentă</strong> — încarci bateria noaptea la tarif redus, consumi ziua</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-500 font-bold mt-1">4.</span>
+            <span><strong>Monitorizare în timp real</strong> — aplicație pe telefon cu flux energetic live</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4">🏆 Branduri recomandate</h2>
+        <div class="grid sm:grid-cols-3 gap-6 text-center">
+          <div>
+            <p class="text-blue-400 font-bold text-lg">Huawei SUN2000</p>
+            <p class="text-slate-400 text-sm">Cel mai popular în România</p>
+          </div>
+          <div>
+            <p class="text-blue-400 font-bold text-lg">SolarEdge</p>
+            <p class="text-slate-400 text-sm">Optimizare la nivel de panou</p>
+          </div>
+          <div>
+            <p class="text-blue-400 font-bold text-lg">Fronius Symo</p>
+            <p class="text-slate-400 text-sm">Fiabilitate austriacă</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei un sistem hibrid dimensionat corect?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt configurează invertoare hibride Huawei cu baterii LiFePO4 pentru autoconsum maxim.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-emerald-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-emerald-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

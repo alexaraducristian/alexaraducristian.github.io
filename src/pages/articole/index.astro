@@ -4,13 +4,96 @@ import Header from '../../components/Header.astro';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const articole = [
+const categorii = [
   {
-    titlu: "Cum să alegi un tablou electric potrivit pentru casa ta",
-    descriere: "Ghid complet de dimensionare: număr de module, protecții obligatorii, producători recomandați și greșeli frecvente.",
-    href: `${base}/articole/cum-sa-alegi-un-tablou-electric`,
-    categorie: "Tablouri Electrice",
-    emoji: "⚡"
+    titlu: "⚡ Tablouri Electrice",
+    articole: [
+      {
+        titlu: "Cum să alegi un tablou electric potrivit pentru casa ta",
+        descriere: "Ghid de dimensionare: număr de module, protecții obligatorii, producători recomandați.",
+        href: `${base}/articole/cum-sa-alegi-un-tablou-electric`,
+      },
+      {
+        titlu: "Ce este un RCD (diferențial) și de ce ai nevoie de el",
+        descriere: "Explicație accesibilă despre protecția la electrocutare.",
+        href: `${base}/articole/ce-este-un-rcd-diferential`,
+      },
+      {
+        titlu: "Cum funcționează un SPD (descărcător de supratensiune)",
+        descriere: "De ce protejează electrocasnicele scumpe și cum să-l alegi.",
+        href: `${base}/articole/cum-functioneaza-un-spd`,
+      },
+      {
+        titlu: "Semne că tabloul tău electric e depășit și trebuie modernizat",
+        descriere: "Checklist vizual cu semnalele de alarmă.",
+        href: `${base}/articole/semne-tablou-electric-depasit`,
+      },
+      {
+        titlu: "Cum se citește schema unui tablou electric",
+        descriere: "Ghid pentru înțelegerea etichetelor și circuitelor.",
+        href: `${base}/articole/cum-se-citeste-schema-tablou-electric`,
+      },
+    ]
+  },
+  {
+    titlu: "☀️ Panouri Fotovoltaice",
+    articole: [
+      {
+        titlu: "Cum să calculezi câte panouri fotovoltaice ai nevoie",
+        descriere: "Calcul simplu pe baza consumului lunar.",
+        href: `${base}/articole/cum-sa-calculezi-panouri-fotovoltaice`,
+      },
+      {
+        titlu: "Cum funcționează un invertor hibrid și ce avantaje are",
+        descriere: "Explicație simplă: panouri + baterie + rețea.",
+        href: `${base}/articole/cum-functioneaza-invertor-hibrid`,
+      },
+      {
+        titlu: "Ce trebuie să verifici înainte de a monta panouri pe acoperiș",
+        descriere: "Orientare, înclinare, umbrire și starea acoperișului.",
+        href: `${base}/articole/verificari-inainte-montaj-panouri`,
+      },
+      {
+        titlu: "Cum să monitorizezi producția panourilor din telefon",
+        descriere: "Tutorial aplicație Huawei FusionSolar și altele.",
+        href: `${base}/articole/monitorizare-panouri-fotovoltaice-telefon`,
+      },
+      {
+        titlu: "Panouri monocristaline vs. policristaline — diferențe",
+        descriere: "Comparație practică și recomandare.",
+        href: `${base}/articole/panouri-monocristaline-vs-policristaline`,
+      },
+    ]
+  },
+  {
+    titlu: "🔧 Instalații Electrice Generale",
+    articole: [
+      {
+        titlu: "De ce e periculos cablajul din aluminiu și când trebuie înlocuit",
+        descriere: "Semne de degradare și soluția cu cupru.",
+        href: `${base}/articole/de-ce-e-periculos-cablajul-din-aluminiu`,
+      },
+      {
+        titlu: "Cum se face o împământare corectă",
+        descriere: "Importanța și pașii de bază.",
+        href: `${base}/articole/cum-se-face-impamantare-corecta`,
+      },
+      {
+        titlu: "Ce secțiune de cablu ai nevoie pentru fiecare electrocasnic",
+        descriere: "Tabel practic cu secțiuni și disjunctoare.",
+        href: `${base}/articole/sectiune-cablu-electrocasnice`,
+      },
+      {
+        titlu: "Cum să pregătești casa pentru încărcarea mașinii electrice",
+        descriere: "Cerințe electrice pentru wallbox EV.",
+        href: `${base}/articole/pregatire-casa-incarcare-ev`,
+      },
+      {
+        titlu: "Checklist electric când preiei o locuință nouă",
+        descriere: "Ce verificări să faci la mutare.",
+        href: `${base}/articole/checklist-electric-locuinta-noua`,
+      },
+    ]
   }
 ];
 ---
@@ -29,24 +112,19 @@ const articole = [
       </p>
     </section>
 
-    <div class="space-y-6">
-      {articole.map((art) => (
-        <a href={art.href} class="block bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all">
-          <div class="flex items-start gap-4">
-            <span class="text-3xl">{art.emoji}</span>
-            <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-1 block">{art.categorie}</span>
-              <h2 class="text-xl font-bold text-slate-900 mb-2">{art.titlu}</h2>
+    {categorii.map((cat) => (
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">{cat.titlu}</h2>
+        <div class="space-y-4">
+          {cat.articole.map((art) => (
+            <a href={art.href} class="block bg-slate-50 p-5 rounded-2xl border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+              <h3 class="text-lg font-bold text-slate-900 mb-1">{art.titlu}</h3>
               <p class="text-sm text-slate-600">{art.descriere}</p>
-            </div>
-          </div>
-        </a>
-      ))}
-    </div>
-
-    <section class="mt-16 text-center border-t border-slate-100 pt-10">
-      <p class="text-slate-500 italic">Mai multe articole vor fi adăugate în curând.</p>
-    </section>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
 
   </main>
 </Layout>

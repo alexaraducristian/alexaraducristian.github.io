@@ -1,0 +1,117 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Ce este un RCD (diferențial) și de ce ai nevoie de el | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Ce este un RCD (diferențial)</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Ce este un <span class="text-blue-600">RCD (diferențial)</span> și de ce ai nevoie de el
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          RCD-ul (Residual Current Device) este dispozitivul care îți salvează viața în cazul unui defect de izolație. Află cum funcționează și de ce este obligatoriu în orice locuință modernă.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔬</span> Cum funcționează un RCD?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Un RCD compară permanent curentul care „pleacă" pe faza activă cu cel care „se întoarce" pe neutru. Dacă diferența depășește un prag (de obicei 30 mA), dispozitivul deconectează circuitul în mai puțin de 30 milisecunde.
+        </p>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <p class="text-sm text-blue-800">
+            <strong>Traducere simplă:</strong> Dacă curentul „fuge" prin corpul tău sau prin apă în loc să se întoarcă pe firul neutru, RCD-ul oprește totul instantaneu — înainte să simți mai mult decât un mic șoc.
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚡</span> Tipuri de RCD
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Tip AC</h3>
+            <p class="text-sm text-slate-600">Detectează curenți reziduali sinusoidali. Potrivit pentru circuite clasice de iluminat și prize simple.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Tip A</h3>
+            <p class="text-sm text-slate-600">Detectează și curenți pulsatori (DC). Obligatoriu pentru circuite cu invertoare, mașini de spălat cu variator, încărcătoare EV.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Tip F</h3>
+            <p class="text-sm text-slate-600">Versiune avansată de Tip A, cu protecție suplimentară la frecvențe mixte. Ideal pentru aer condiționat și pompe de căldură.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">Tip B</h3>
+            <p class="text-sm text-slate-600">Detectează și componente de curent continuu pur. Folosit la stații de încărcare EV și sisteme fotovoltaice.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🏠</span> Câte RCD-uri ai nevoie?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Recomandarea modernă este să ai <strong>minimum un RCD per grup de circuite</strong>, nu un singur diferențial pentru toată casa. Avantajele:
+        </p>
+        <ul class="space-y-3 text-slate-600">
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-500 font-bold mt-1">✓</span>
+            <span>Dacă declanșează un RCD, restul casei rămâne cu curent</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-500 font-bold mt-1">✓</span>
+            <span>Identifici mai ușor circuitul cu problemă</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-500 font-bold mt-1">✓</span>
+            <span>Selectivitate: RCD-ul de 300 mA (general) nu declanșează dacă cel de 30 mA (local) a acționat deja</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+          <span>🧪</span> Testarea lunară — obligatorie!
+        </h2>
+        <p class="text-slate-300 mb-4">
+          Fiecare RCD are un buton marcat „T" (Test). Apasă-l lunar pentru a verifica că mecanismul funcționează corect.
+        </p>
+        <div class="bg-slate-800 p-4 rounded-xl">
+          <p class="text-sm text-slate-400">
+            <strong class="text-white">Procedură:</strong> Apasă butonul T → RCD-ul trebuie să declanșeze instant → Rearmează manual. Dacă NU declanșează, contactează un electrician autorizat imediat.
+          </p>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei un tablou cu protecție diferențială corectă?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          Echipa AlexaVolt configurează tablouri cu RCD-uri selectate pe tipul consumatorilor din casa ta.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită o ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

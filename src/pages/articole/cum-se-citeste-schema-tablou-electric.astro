@@ -1,0 +1,114 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum se citește schema unui tablou electric | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <nav class="mb-8 text-sm text-slate-500">
+      <a href={`${base}/`} class="hover:text-blue-600">Acasă</a>
+      <span class="mx-2">›</span>
+      <a href={`${base}/articole`} class="hover:text-blue-600">Articole</a>
+      <span class="mx-2">›</span>
+      <span class="text-slate-700">Cum se citește schema unui tablou electric</span>
+    </nav>
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum se citește <span class="text-blue-600">schema unui tablou electric</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ghid pentru înțelegerea etichetelor, simbolurilor și circuitelor din tabloul casei tale.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔤</span> Simboluri de bază
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-2">Întreruptor general (IG)</h4>
+            <p class="text-xs text-slate-600">Deconectează întreaga locuință. De obicei 40A sau 63A.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-2">Disjunctor (MCB)</h4>
+            <p class="text-xs text-slate-600">Protecție la suprasarcină/scurtcircuit. Valorile tipice: 10A, 16A, 20A, 32A.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-2">Diferențial (RCD)</h4>
+            <p class="text-xs text-slate-600">Protecție la electrocutare. Marcat cu sensibilitatea: 30mA sau 300mA.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-2">SPD (Descărcător)</h4>
+            <p class="text-xs text-slate-600">Protecție la supratensiuni. Are indicator vizual verde/roșu.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🏷️</span> Citirea etichetelor
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Un tablou bine organizat are etichete pe fiecare poziție. Iată ce informații găsești:
+        </p>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <div class="grid sm:grid-cols-3 gap-4 text-sm">
+            <div>
+              <p class="font-bold text-blue-800 mb-1">Numele circuitului</p>
+              <p class="text-slate-600">Ex: „Prize living", „Iluminat etaj"</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-800 mb-1">Amperajul</p>
+              <p class="text-slate-600">Ex: „C16" = curba C, 16 Amperi</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-800 mb-1">Secțiunea cablului</p>
+              <p class="text-slate-600">Ex: „2.5 mmp" sau „4 mmp"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📐</span> Structura tipică a unui tablou rezidențial
+        </h2>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+          <ol class="space-y-3 text-sm text-slate-700">
+            <li><strong>Rândul 1:</strong> Întreruptor general + SPD + RCD general (300mA)</li>
+            <li><strong>Rândul 2:</strong> RCD 30mA (Grup 1) + Disjunctoare (prize living, dormitor, bucătărie)</li>
+            <li><strong>Rândul 3:</strong> RCD 30mA (Grup 2) + Disjunctoare (iluminat, boiler, AC)</li>
+            <li><strong>Rândul 4:</strong> Circuite dedicate (plită 32A, încărcător EV) + spații rezervă</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
+        <h2 class="text-2xl font-bold text-emerald-800 mb-4">💡 Sfaturi practice</h2>
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Fotografiază schema tabloului și păstreaz-o în telefon — util în caz de urgență</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Dacă o etichetă lipsește, identifică circuitul oprind disjunctoarele pe rând</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Verifică lunar butonul „T" de pe fiecare RCD</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai nevoie de o reorganizare a tabloului?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt etichetează și documentează fiecare circuit conform standardelor profesionale.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită o ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>
