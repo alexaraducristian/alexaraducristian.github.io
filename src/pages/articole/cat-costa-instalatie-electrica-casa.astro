@@ -1,0 +1,152 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cât costă o instalație electrică completă pentru o casă nouă | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Cât costă instalația electrică" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cât costă o <span class="text-blue-600">instalație electrică</span> completă pentru o casă nouă
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Deviz estimativ pe tipuri de locuințe — materiale, manoperă și ce influențează prețul final.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>💰</span> Factori care influențează costul
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-1">Suprafața locuinței</h4>
+            <p class="text-xs text-slate-600">Mai mulți m² = trasee mai lungi = mai mult cablu</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-1">Număr de circuite</h4>
+            <p class="text-xs text-slate-600">Fiecare circuit = cablu + protecție în tablou</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-1">Calitatea materialelor</h4>
+            <p class="text-xs text-slate-600">Schneider vs. no-name = diferență 30-50%</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-1">Complexitate (etaje, exterior)</h4>
+            <p class="text-xs text-slate-600">Trasee verticale, iluminat grădină, garaj</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📊</span> Estimări orientative (2025)
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-blue-50 text-blue-800">
+                <th class="p-3 text-left rounded-tl-lg">Tip locuință</th>
+                <th class="p-3 text-left">Suprafață</th>
+                <th class="p-3 text-left">Cost materiale</th>
+                <th class="p-3 text-left">Cost manoperă</th>
+                <th class="p-3 text-left rounded-tr-lg">Total estimat</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3">Garsonieră / Studio</td>
+                <td class="p-3">35-50 m²</td>
+                <td class="p-3">2.000-3.500 lei</td>
+                <td class="p-3">1.500-2.500 lei</td>
+                <td class="p-3 font-bold">3.500-6.000 lei</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">Apartament 2-3 camere</td>
+                <td class="p-3">50-80 m²</td>
+                <td class="p-3">4.000-7.000 lei</td>
+                <td class="p-3">3.000-5.000 lei</td>
+                <td class="p-3 font-bold">7.000-12.000 lei</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">Casă P+1 (120-180 m²)</td>
+                <td class="p-3">120-180 m²</td>
+                <td class="p-3">8.000-15.000 lei</td>
+                <td class="p-3">6.000-10.000 lei</td>
+                <td class="p-3 font-bold">14.000-25.000 lei</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">Vilă mare (200+ m²)</td>
+                <td class="p-3">200-350 m²</td>
+                <td class="p-3">15.000-30.000 lei</td>
+                <td class="p-3">10.000-18.000 lei</td>
+                <td class="p-3 font-bold">25.000-48.000 lei</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-slate-500 mt-3 italic">
+          * Prețuri orientative cu materiale de calitate (Schneider/Hager), cablu cupru conform normativ I7. Nu includ corpuri de iluminat decorative.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📋</span> Ce include prețul?
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h4 class="font-bold text-emerald-800 mb-2">✅ Inclus de obicei</h4>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>• Tablou electric complet echipat</li>
+              <li>• Cablu cupru (NYM/CYY) pe toate traseele</li>
+              <li>• Doze, tuburi PVC, cleme</li>
+              <li>• Prize și întrerupătoare (gamă standard)</li>
+              <li>• Împământare (priză de pământ)</li>
+              <li>• Manoperă montaj + verificare</li>
+            </ul>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h4 class="font-bold text-slate-800 mb-2">💡 Opțional (cost suplimentar)</h4>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>• Corpuri de iluminat decorative</li>
+              <li>• Sistem smart home (Shelly, KNX)</li>
+              <li>• Circuit dedicat încărcător EV</li>
+              <li>• Iluminat exterior / grădină</li>
+              <li>• Sistem de supraveghere video</li>
+              <li>• Buletin PRAM (verificare oficială)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4">⚠️ Unde NU trebuie să economisești</h2>
+        <ul class="space-y-3 text-slate-300">
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">•</span> <strong class="text-white">Secțiunea cablului</strong> — subcalibrat = risc de incendiu</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">•</span> <strong class="text-white">Aparataj tablou</strong> — un RCD ieftin poate să nu declanșeze la nevoie</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">•</span> <strong class="text-white">Manopera</strong> — un neautorizat nu oferă garanție și nici conformitate legală</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei un deviz exact pentru casa ta?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt oferă deviz transparent — știi exact ce plătești înainte de a începe lucrarea.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită deviz gratuit
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

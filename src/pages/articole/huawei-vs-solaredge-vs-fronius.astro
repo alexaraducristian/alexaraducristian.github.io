@@ -1,0 +1,174 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Huawei vs SolarEdge vs Fronius — ce invertor fotovoltaic să alegi | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Huawei vs SolarEdge vs Fronius" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          <span class="text-red-600">Huawei</span> vs <span class="text-emerald-600">SolarEdge</span> vs
+          <span class="text-blue-600">Fronius</span> — ce invertor fotovoltaic să alegi
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Comparație detaliată între cele trei branduri de invertoare fotovoltaice
+          cele mai populare pe piața din România.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">📊 Tabel comparativ</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Criteriu</th>
+                <th class="p-3 text-left text-red-700">Huawei</th>
+                <th class="p-3 text-left text-emerald-700">SolarEdge</th>
+                <th class="p-3 text-left text-blue-700 rounded-tr-lg">Fronius</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Origine</td>
+                <td class="p-3">China 🇨🇳</td>
+                <td class="p-3">Israel 🇮🇱</td>
+                <td class="p-3">Austria 🇦🇹</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Tip principal</td>
+                <td class="p-3">Hibrid (string)</td>
+                <td class="p-3">Optimizat (per panou)</td>
+                <td class="p-3">String (on-grid)</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Gamă rezidențială</td>
+                <td class="p-3">SUN2000 (3-10 kW)</td>
+                <td class="p-3">SE3000-SE10000H</td>
+                <td class="p-3">Primo / Symo GEN24</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Compatibil baterie</td>
+                <td class="p-3">✅ Da (LUNA2000)</td>
+                <td class="p-3">✅ Da (SolarEdge Home Battery)</td>
+                <td class="p-3">✅ Da (BYD HVS/HVM)</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Monitorizare</td>
+                <td class="p-3">FusionSolar app</td>
+                <td class="p-3">mySolarEdge app</td>
+                <td class="p-3">Fronius Solar.web</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Garanție</td>
+                <td class="p-3">10 ani (ext. 15/20)</td>
+                <td class="p-3">12 ani (ext. 20/25)</td>
+                <td class="p-3">10 ani (ext. 15/20)</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Preț orientativ (5kW)</td>
+                <td class="p-3">~4,500-5,500 lei</td>
+                <td class="p-3">~6,500-8,000 lei*</td>
+                <td class="p-3">~6,000-7,500 lei</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Disponibilitate RO</td>
+                <td class="p-3">⭐⭐⭐⭐⭐</td>
+                <td class="p-3">⭐⭐⭐⭐</td>
+                <td class="p-3">⭐⭐⭐</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-slate-500 mt-3">
+          * SolarEdge necesită și optimizatoare per panou (~200-300 lei/buc), ceea ce crește costul total.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">🏆 Puncte forte per brand</h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-700 mb-3">Huawei</h3>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>✓ Cel mai bun raport calitate/preț</li>
+              <li>✓ Hibrid nativ (baterie ușor de adăugat)</li>
+              <li>✓ Aplicație mobilă excelentă</li>
+              <li>✓ Cel mai popular în RO (piese, service)</li>
+              <li>✓ Eficiență 98.6%</li>
+            </ul>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-700 mb-3">SolarEdge</h3>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>✓ Optimizare per panou (anti-umbrire)</li>
+              <li>✓ Ideal pentru acoperișuri complexe</li>
+              <li>✓ Monitorizare la nivel de panou</li>
+              <li>✓ Siguranță SafeDC (tensiune 0 la oprire)</li>
+              <li>✓ Garanție extinsă generoasă</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-700 mb-3">Fronius</h3>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>✓ Fiabilitate legendară (fabricat în Austria)</li>
+              <li>✓ Cel mai scăzut procent de defecte</li>
+              <li>✓ Platformă web foarte detaliată</li>
+              <li>✓ Suport tehnic european</li>
+              <li>✓ Ideal pentru sisteme on-grid simple</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🎯</span> Recomandare per situație
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Acoperiș simplu, buget optim → Huawei SUN2000</h3>
+            <p class="text-sm text-slate-600">Acoperiș orientat sud fără umbrire, vrei posibilitatea de a adăuga baterie ulterior. Cel mai bun preț pentru un invertor hibrid performant.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Acoperiș complex, umbrire parțială → SolarEdge + Optimizatoare</h3>
+            <p class="text-sm text-slate-600">Coș de fum, antene, copaci care fac umbră pe unele panouri. Optimizatoarele permit fiecărui panou să producă independent. Costă mai mult, dar recuperezi prin producție superioară.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Fiabilitate maximă, sistem simplu on-grid → Fronius</h3>
+            <p class="text-sm text-slate-600">Vrei un invertor care „merge și uiți de el" 20 de ani. Nu ai nevoie de baterie. Calitate austriacă dovedită pe piață de 30+ ani.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4">⚠️ Greșeli de evitat</h2>
+        <ul class="space-y-3 text-slate-300">
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Nu alege invertor doar după preț — eficiența și garanția contează pe termen lung</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Nu lua invertor on-grid dacă știi că vei vrea baterie — costul conversiei e mare</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Nu ignora disponibilitatea locală — un invertor fără piese de schimb în RO e o problemă</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Nu dimensiona invertorul exact pe puterea panourilor — lasă 10-20% marjă</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Nu ești sigur ce invertor ți se potrivește?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt analizează acoperișul, consumul și bugetul tău și recomandă soluția optimă cu calcul de ROI.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

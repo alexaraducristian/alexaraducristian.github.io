@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Ce este autorizarea ANRE și de ce contează pentru tine | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Ce este autorizarea ANRE" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Ce este <span class="text-blue-600">autorizarea ANRE</span> și de ce contează pentru tine
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          De ce ar trebui să te intereseze dacă electricianul tău e autorizat ANRE
+          și ce riscuri implică lucrul cu personal neautorizat.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🏛️</span> Ce este ANRE?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          <strong>ANRE</strong> (Autoritatea Națională de Reglementare în domeniul Energiei) este
+          instituția statului român care reglementează sectorul energetic. Printre atribuțiile sale
+          se numără și <strong>autorizarea electricienilor</strong> care au dreptul legal să
+          proiecteze, execute și verifice instalații electrice.
+        </p>
+        <p class="text-slate-600 leading-relaxed">
+          Fără autorizare ANRE, un electrician nu are dreptul legal să execute lucrări la
+          instalații electrice care se racordează la rețeaua publică.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📋</span> Tipuri de autorizări ANRE
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Tip</th>
+                <th class="p-3 text-left">Competențe</th>
+                <th class="p-3 text-left rounded-tr-lg">Exemple lucrări</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold text-blue-700">Tip A</td>
+                <td class="p-3">Proiectare instalații electrice</td>
+                <td class="p-3">Proiecte tehnice, scheme electrice, dimensionare</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold text-blue-700">Tip B</td>
+                <td class="p-3">Executare instalații electrice</td>
+                <td class="p-3">Montaj tablouri, trasare cabluri, racordări</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold text-blue-700">Tip C1</td>
+                <td class="p-3">Verificare instalații electrice</td>
+                <td class="p-3">Buletine PRAM, verificări periodice</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold text-blue-700">Tip C2</td>
+                <td class="p-3">Expertizare instalații electrice</td>
+                <td class="p-3">Expertiză post-incendiu, evaluare conformitate</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-slate-500 mt-3">
+          Fiecare tip are grade (I-IV) în funcție de tensiunea și complexitatea instalațiilor.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>⚠️</span> Riscuri ale lucrului cu electrician neautorizat
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Nu poți deveni prosumator</h3>
+            <p class="text-sm text-slate-600">Pentru a te racorda ca prosumator fotovoltaic, ai nevoie de dosar tehnic semnat de electrician autorizat ANRE tip B. Fără autorizare = fără racordare legală.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Asigurarea nu acoperă daunele</h3>
+            <p class="text-sm text-slate-600">În caz de incendiu sau daună electrică, asigurătorul poate refuza plata dacă instalația a fost executată de personal neautorizat. Ai pierderi totale nesigurabile.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Fără garanție pe lucrare</h3>
+            <p class="text-sm text-slate-600">Un electrician neautorizat nu poate emite proces-verbal de recepție sau garanție cu valoare juridică. Dacă apar probleme, nu ai pe cine trage la răspundere legal.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Riscuri de siguranță</h3>
+            <p class="text-sm text-slate-600">Fără pregătire formală, greșelile sunt frecvente: secțiuni greșite, protecții absente, legări în neregulă. Consecințe: electrocutare, incendiu, deteriorarea echipamentelor.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Probleme la vânzarea imobilului</h3>
+            <p class="text-sm text-slate-600">La vânzare, cumpărătorul va cere buletin PRAM. Dacă instalația nu e conformă (executată neautorizat), va trebui refăcută — cost dublu.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔍</span> Cum verifici dacă un electrician e autorizat
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <ol class="space-y-4 text-slate-700">
+            <li><strong>1.</strong> Cere legitimația ANRE — are serie, număr, tip autorizare și data expirării</li>
+            <li><strong>2.</strong> Verifică online pe site-ul ANRE → secțiunea „Registrul autorizărilor"</li>
+            <li><strong>3.</strong> Verifică dacă autorizarea e valabilă (se reînnoiește periodic)</li>
+            <li><strong>4.</strong> Verifică tipul — pentru execuție ai nevoie de <strong>tip B</strong></li>
+            <li><strong>5.</strong> Cere și asigurarea de răspundere civilă profesională</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
+        <h2 class="text-2xl font-bold text-emerald-800 mb-4">✅ Ce primești de la un electrician autorizat</h2>
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Proces-verbal de recepție</strong> — documentul care atestă conformitatea lucrării</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Garanție pe manoperă</strong> — minim 2 ani conform legislației</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Dosar tehnic complet</strong> — necesar la racordare, recepție sau control ISU</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Asigurare profesională</strong> — dacă apare o daună, ești acoperit</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Conformitate normativ I7</strong> — instalația respectă standardele în vigoare</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei să lucrezi cu un electrician autorizat ANRE?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt deține autorizare ANRE tip B pentru execuția instalațiilor electrice. Verifică legitimația noastră și lucrează în siguranță.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Verifică autorizarea noastră
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

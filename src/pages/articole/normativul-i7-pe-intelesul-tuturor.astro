@@ -1,0 +1,181 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Normativul I7 pe înțelesul tuturor | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Normativul I7 simplificat" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          <span class="text-blue-600">Normativul I7</span> pe înțelesul tuturor
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Regulile de bază ale instalațiilor electrice din România, explicate simplu
+          — fără jargon tehnic inutil.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📖</span> Ce este Normativul I7?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          <strong>Normativul I7/2011</strong> este documentul tehnic care stabilește regulile
+          de proiectare, execuție și verificare a instalațiilor electrice pentru clădiri
+          civile și industriale din România. E echivalentul românesc al standardelor IEC/HD.
+        </p>
+        <p class="text-slate-600 leading-relaxed">
+          Orice electrician autorizat ANRE trebuie să respecte acest normativ. Dacă instalația
+          ta nu e conformă I7, nu trece de verificarea PRAM.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📏</span> Secțiuni minime de cablu
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Circuit</th>
+                <th class="p-3 text-left">Secțiune minimă</th>
+                <th class="p-3 text-left">Protecție (disjunctor)</th>
+                <th class="p-3 text-left rounded-tr-lg">Observații</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Iluminat</td>
+                <td class="p-3">1.5 mm² Cu</td>
+                <td class="p-3">10A</td>
+                <td class="p-3">Max 10 puncte/circuit</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Prize generale</td>
+                <td class="p-3">2.5 mm² Cu</td>
+                <td class="p-3">16A</td>
+                <td class="p-3">Max 5 prize duble/circuit</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Cuptor electric</td>
+                <td class="p-3">4 mm² Cu</td>
+                <td class="p-3">20A</td>
+                <td class="p-3">Circuit dedicat obligatoriu</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Plită electrică</td>
+                <td class="p-3">6 mm² Cu</td>
+                <td class="p-3">32A</td>
+                <td class="p-3">Circuit dedicat obligatoriu</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Boiler electric</td>
+                <td class="p-3">2.5-4 mm² Cu</td>
+                <td class="p-3">16-20A</td>
+                <td class="p-3">Circuit dedicat, funcție de putere</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Aer condiționat</td>
+                <td class="p-3">2.5 mm² Cu</td>
+                <td class="p-3">16A</td>
+                <td class="p-3">Circuit dedicat per unitate</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🛡️</span> Protecții obligatorii
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Protecție diferențială (RCD) 30 mA</h3>
+            <p class="text-sm text-slate-600">Obligatorie pe TOATE circuitele din locuință. Protejează împotriva electrocutării. Recomandat: un RCD per 2-3 circuite (nu unul singur pe tot).</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Disjunctor (protecție la supracurent)</h3>
+            <p class="text-sm text-slate-600">Fiecare circuit trebuie protejat individual. Calibrul trebuie corelat cu secțiunea cablului (nu mai mare!).</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">SPD (descărcător supratensiune)</h3>
+            <p class="text-sm text-slate-600">Obligatoriu în zonele cu risc de trăsnet sau pentru clădiri cu instalație fotovoltaică. Protejează echipamentele de supratensiunile atmosferice.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Împământare (priză de pământ)</h3>
+            <p class="text-sm text-slate-600">Obligatorie pentru orice instalație. Rezistența de dispersie max 4Ω. Fără împământare funcțională, RCD-ul nu te protejează complet.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📐</span> Reguli de trasare și distanțe
+        </h2>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Traseele se fac doar orizontal și vertical</strong> — niciodată diagonal (pentru a putea fi localizate ulterior)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Prizele la minim 30 cm de pardoseală</strong> (standard: 30-40 cm)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Întrerupătoarele la 100-120 cm</strong> de pardoseală</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Minim 60 cm distanță</strong> între prize/întrerupătoare și surse de apă (chiuvetă, duș)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Nu se trec cabluri prin zone cu umiditate</strong> fără protecție adecvată (tub IPX4+)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Separarea circuitelor de forță de cele de curenți slabi</strong> (minim 30 cm sau barieră)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🏷️</span> Etichetare și documentație
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Etichetarea circuitelor</h3>
+            <p class="text-sm text-slate-600">Fiecare disjunctor din tablou trebuie etichetat clar: „Iluminat living", „Prize dormitor", „Cuptor bucătărie". Ajută la identificarea rapidă în caz de urgență.</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Schema tabloului electric</h3>
+            <p class="text-sm text-slate-600">Normativul cere existența schemei electrice a tabloului — fie lipită pe ușa tabloului, fie în dosarul tehnic al locuinței.</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Coduri de culoare</h3>
+            <p class="text-sm text-slate-600">Maro/Negru/Gri = faze, Albastru = neutru, Galben-verde = protecție (PE). Nerespectarea codurilor e periculoasă la intervenții ulterioare.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4">❌ Încălcări frecvente ale normativului I7</h2>
+        <ul class="space-y-3 text-slate-300">
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Un singur RCD pe toată casa (trebuie minim 2-3)</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Cuptor electric pe circuitul general de prize</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Cabluri fără tub de protecție în tavan/perete</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Lipsa conductorului de protecție (PE) la prize</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Doze de conexiune inaccesibile (zidite, ascunse)</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Disjunctor de 32A pe cablu de 2.5mm² (protecție ineficientă)</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei o instalație conformă normativului I7?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt proiectează și execută instalații electrice 100% conforme cu normativul I7, cu documentație completă inclusă.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită instalație conformă I7
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

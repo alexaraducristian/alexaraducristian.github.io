@@ -1,0 +1,154 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Subvenții fotovoltaice 2025-2026: ce programe mai sunt disponibile | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Subvenții fotovoltaice 2025" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Subvenții fotovoltaice <span class="text-emerald-600">2025-2026</span>: ce programe mai sunt disponibile
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ghid actualizat cu toate opțiunile de finanțare pentru panouri solare în România — ce s-a schimbat și ce alternative ai.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📋</span> Situația Casa Verde AFM în 2025
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Programul Casa Verde Fotovoltaice, administrat de AFM (Administrația Fondului pentru Mediu), a fost principalul motor al adopției solare în România. Însă în 2025-2026, <strong>programul nu mai finanțează instalații fotovoltaice noi</strong> pentru persoane fizice.
+        </p>
+        <div class="bg-amber-50 p-6 rounded-2xl border border-amber-200 mb-6">
+          <h3 class="font-bold text-amber-800 mb-2">⚠️ Ce s-a schimbat</h3>
+          <p class="text-sm text-slate-700">
+            România a trecut de la subvenții pentru panouri solare la <strong>subvenții pentru sisteme de stocare (baterii)</strong> destinate prosumatorilor existenți. Acest lucru reflectă faptul că piața fotovoltaică s-a maturizat, iar prioritatea e acum stabilizarea rețelei prin stocare.
+          </p>
+        </div>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Concret, dacă ai deja un sistem fotovoltaic și ești prosumator, poți aplica pentru finanțarea unei baterii de stocare. Dacă nu ai panouri încă, va trebui să explorezi alte opțiuni de finanțare.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>💰</span> Alternative de finanțare disponibile
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">1. TVA 0% pentru instalații sub 50 kW</h3>
+            <p class="text-sm text-slate-600">
+              Cea mai concretă „subvenție" activă: achiziția de panouri fotovoltaice, invertoare și componente aferente pentru sisteme sub 50 kW beneficiază de <strong>TVA 0%</strong>. Asta înseamnă o economie reală de 19% din costul echipamentelor.
+            </p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">2. Credite verzi bancare</h3>
+            <p class="text-sm text-slate-600">
+              Majoritatea băncilor din România oferă credite dedicate investițiilor verzi cu dobânzi preferențiale (cu 1-3% mai mici decât creditele de consum standard). BRD, BCR, Banca Transilvania și ING au produse specifice pentru fotovoltaice.
+            </p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">3. Rate la furnizor / finanțare prin instalator</h3>
+            <p class="text-sm text-slate-600">
+              Unii instalatori oferă sisteme în rate prin parteneriate cu instituții financiare (TBI, BRD Finance). Avantajul: un singur interlocutor și proces simplificat.
+            </p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">4. Fonduri europene (pentru firme)</h3>
+            <p class="text-sm text-slate-600">
+              IMM-urile și firmele pot accesa fonduri prin PNRR sau programul Electric Up pentru instalarea de sisteme fotovoltaice pe clădiri comerciale/industriale.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📊</span> Comparație opțiuni de finanțare
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Opțiune</th>
+                <th class="p-3 text-left">Economie</th>
+                <th class="p-3 text-left">Eligibilitate</th>
+                <th class="p-3 text-left rounded-tr-lg">Status 2025</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Casa Verde (baterii)</td>
+                <td class="p-3">Până la 30,000 lei</td>
+                <td class="p-3">Prosumatori existenți</td>
+                <td class="p-3"><span class="text-emerald-600 font-bold">Activ</span></td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">TVA 0%</td>
+                <td class="p-3">~19% din echipamente</td>
+                <td class="p-3">Oricine, sub 50 kW</td>
+                <td class="p-3"><span class="text-emerald-600 font-bold">Activ</span></td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Credit verde</td>
+                <td class="p-3">Dobândă redusă 1-3%</td>
+                <td class="p-3">Cu scoring bancar</td>
+                <td class="p-3"><span class="text-emerald-600 font-bold">Activ</span></td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Casa Verde (panouri noi)</td>
+                <td class="p-3">—</td>
+                <td class="p-3">—</td>
+                <td class="p-3"><span class="text-red-600 font-bold">Suspendat</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔑</span> Sfaturi practice
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Nu aștepta subvenții care poate nu vor veni.</strong> Cu TVA 0% și prețurile actuale ale energiei, amortizarea e deja de 3-4 ani fără nicio subvenție.</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Verifică dacă instalatorul aplică corect TVA 0%.</strong> E nevoie de declarație pe proprie răspundere și respectarea plafonului de 50 kW.</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Compară creditele verzi de la 3-4 bănci.</strong> Diferențele de dobândă pot însemna mii de lei pe durata creditului.</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Investiția se justifică și fără subvenție</strong> — energia scumpă face ca ROI-ul să fie excelent oricum.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4">📅 Timeline estimat 2025-2026</h2>
+        <ul class="space-y-3 text-slate-300">
+          <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold">→</span> <strong class="text-white">2025 S1:</strong> TVA 0% activ, Casa Verde baterii activ</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold">→</span> <strong class="text-white">2025 S2:</strong> Posibilă nouă sesiune Casa Verde baterii</li>
+          <li class="flex items-start gap-3"><span class="text-amber-400 font-bold">→</span> <strong class="text-white">2026:</strong> Incert — monitorizăm anunțurile AFM</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei să afli ce opțiune e optimă pentru tine?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt te ajută să navighezi opțiunile financiare și să alegi soluția cu cel mai bun ROI pentru situația ta.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită consultanță financiară
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

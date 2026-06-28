@@ -1,0 +1,115 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Ghid prosumator 2025: tot ce trebuie să știi | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Ghid prosumator 2025" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Ghid <span class="text-emerald-600">prosumator</span> 2025: tot ce trebuie să știi
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ce înseamnă să fii prosumator în România, cum funcționează compensarea și ce pași trebuie urmați.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔌</span> Ce este un prosumator?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Un <strong>prosumator</strong> este un consumator casnic care produce și energie electrică (de obicei din panouri fotovoltaice) și o injectează în rețea atunci când nu o consumă. Legislația românească permite prosumatorilor cu instalații de până la <strong>400 kW</strong> să beneficieze de compensare.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📋</span> Pași pentru a deveni prosumator
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">1. Dimensionare sistem</h3>
+            <p class="text-sm text-slate-600">Calculează consumul anual și alege puterea instalației. Ideal: sistem care acoperă 100-120% din consum.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">2. Certificat de racordare (ATR)</h3>
+            <p class="text-sm text-slate-600">Depui cerere la operatorul de distribuție (Distribuție Energie Oltenia, E-Distribuție, etc.) pentru Aviz Tehnic de Racordare.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">3. Instalare sistem fotovoltaic</h3>
+            <p class="text-sm text-slate-600">Montaj realizat de firmă autorizată ANRE. Se emit documente de conformitate și certificat de punere în funcțiune.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">4. Montaj contor bidițrecțional</h3>
+            <p class="text-sm text-slate-600">Operatorul de distribuție înlocuiește contorul vechi cu unul smart, bidițrecțional, care măsoară atât consumul cât și injecția.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-blue-700 mb-2">5. Contract cu furnizorul</h3>
+            <p class="text-sm text-slate-600">Semnezi anexa de prosumator cu furnizorul tău de energie. De aici, beneficiezi de compensare cantitativă.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>💡</span> Cum funcționează compensarea?
+        </h2>
+        <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+          <p class="text-slate-700 mb-3">Sistemul de <strong>net metering</strong> (compensare cantitativă) funcționează astfel:</p>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li>• Ce produci și nu consumi instant → se injectează în rețea</li>
+            <li>• Ce injectezi → se scade din consumul tău din aceeași lună sau lunile următoare</li>
+            <li>• Plătești doar diferența (consum - producție injectată)</li>
+            <li>• Surplusul neconsumpensat se reportează de la o factură la alta (valabil pe o perioadă de compensare)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📊</span> Cât economisești real?
+        </h2>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <p class="text-sm text-slate-500 mb-1">Consum anual mediu</p>
+              <p class="text-xl font-bold text-slate-900">4.000 kWh</p>
+            </div>
+            <div>
+              <p class="text-sm text-slate-500 mb-1">Producție sistem 5 kW</p>
+              <p class="text-xl font-bold text-emerald-600">~6.500 kWh/an</p>
+            </div>
+            <div>
+              <p class="text-sm text-slate-500 mb-1">Economie anuală (tarif 1.3 lei/kWh)</p>
+              <p class="text-xl font-bold text-blue-600">~5.200 lei/an</p>
+            </div>
+            <div>
+              <p class="text-sm text-slate-500 mb-1">Amortizare investiție</p>
+              <p class="text-xl font-bold text-slate-900">4-6 ani</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei să devii prosumator?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt te ghidează prin tot procesul — de la dimensionare la punerea în funcțiune și obținerea statutului de prosumator.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-emerald-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-emerald-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită consultanță gratuită
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

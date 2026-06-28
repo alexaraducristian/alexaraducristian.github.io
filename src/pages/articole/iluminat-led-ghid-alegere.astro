@@ -1,0 +1,265 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Iluminat LED: cum să alegi becurile potrivite pentru fiecare cameră | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Ghid iluminat LED" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Iluminat <span class="text-amber-500">LED</span>: cum să alegi becurile potrivite pentru fiecare cameră
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ghid complet: lumeni, temperatură de culoare, CRI și recomandări concrete pe cameră.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>💡</span> Lumeni vs Wați — ce contează de fapt
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          La LED, <strong>wații nu mai spun mare lucru</strong>. Un LED de 10W luminează
+          cât un bec incandescent de 75W. Ce contează e câți <strong>lumeni (lm)</strong>
+          produce — asta e unitatea reală de luminozitate.
+        </p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Bec incandescent (W)</th>
+                <th class="p-3 text-left">LED echivalent (W)</th>
+                <th class="p-3 text-left rounded-tr-lg">Lumeni (lm)</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3">25W</td>
+                <td class="p-3">3-4W</td>
+                <td class="p-3">~250 lm</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">40W</td>
+                <td class="p-3">5-6W</td>
+                <td class="p-3">~470 lm</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">60W</td>
+                <td class="p-3">8-10W</td>
+                <td class="p-3">~800 lm</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">75W</td>
+                <td class="p-3">10-12W</td>
+                <td class="p-3">~1,100 lm</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3">100W</td>
+                <td class="p-3">13-15W</td>
+                <td class="p-3">~1,500 lm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🌡️</span> Temperatura de culoare (Kelvin)
+        </h2>
+        <p class="text-slate-600 mb-6 leading-relaxed">
+          Temperatura de culoare determină „atmosfera" luminii. Se măsoară în Kelvin (K) — cu cât e mai mic, cu atât lumina e mai caldă (gălbuie).
+        </p>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200">
+            <h3 class="font-bold text-amber-800 mb-2">2700K — Warm White</h3>
+            <p class="text-sm text-slate-600 mb-2">Lumină caldă, gălbuie, relaxantă. Similară becului clasic cu filament.</p>
+            <p class="text-xs text-slate-500"><strong>Ideal:</strong> dormitor, living, sufragerie</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">4000K — Neutral White</h3>
+            <p class="text-sm text-slate-600 mb-2">Lumină neutră, echilibrată. Nu e nici caldă, nici rece. Concentrare bună.</p>
+            <p class="text-xs text-slate-500"><strong>Ideal:</strong> bucătărie, baie, birou, hol</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200">
+            <h3 class="font-bold text-blue-800 mb-2">6500K — Cool/Daylight</h3>
+            <p class="text-sm text-slate-600 mb-2">Lumină rece, albăstruie, energizantă. Similară luminii de zi la amiază.</p>
+            <p class="text-xs text-slate-500"><strong>Ideal:</strong> garaj, atelier, spații tehnice</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🎨</span> CRI — Indicele de redare a culorilor
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          <strong>CRI (Color Rendering Index)</strong> arată cât de fidel redă lumina culorile obiectelor. Scala e de la 0 la 100 (soarele = 100). Cu cât CRI-ul e mai mare, cu atât culorile arată mai naturale.
+        </p>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-red-500 font-bold">•</span> <strong>CRI < 80:</strong> Evită — culorile arată „spălăcite", pielea pare nesănătoasă</li>
+            <li class="flex items-start gap-3"><span class="text-amber-500 font-bold">•</span> <strong>CRI 80-89:</strong> Acceptabil pentru zone de trecere (hol, scări)</li>
+            <li class="flex items-start gap-3"><span class="text-emerald-500 font-bold">•</span> <strong>CRI ≥ 90:</strong> Excelent — ideal pentru living, bucătărie, baie (unde contează cum arată mâncarea, hainele, machiajul)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🏠</span> Recomandări pe cameră
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Cameră</th>
+                <th class="p-3 text-left">Lumeni totali</th>
+                <th class="p-3 text-left">Temperatură</th>
+                <th class="p-3 text-left">CRI minim</th>
+                <th class="p-3 text-left rounded-tr-lg">Observații</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Living</td>
+                <td class="p-3">3,000-4,000 lm</td>
+                <td class="p-3">2700-3000K</td>
+                <td class="p-3">≥90</td>
+                <td class="p-3">Dimmer recomandat</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Dormitor</td>
+                <td class="p-3">1,500-2,000 lm</td>
+                <td class="p-3">2700K</td>
+                <td class="p-3">≥80</td>
+                <td class="p-3">Lumină de ambient, veioza ~300 lm</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Bucătărie</td>
+                <td class="p-3">4,000-5,000 lm</td>
+                <td class="p-3">4000K</td>
+                <td class="p-3">≥90</td>
+                <td class="p-3">Spot-uri sub mobilier pentru blat</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Baie</td>
+                <td class="p-3">2,000-3,000 lm</td>
+                <td class="p-3">4000K</td>
+                <td class="p-3">≥90</td>
+                <td class="p-3">IP44 minim, CRI important la oglindă</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Birou/Home office</td>
+                <td class="p-3">3,000-4,000 lm</td>
+                <td class="p-3">4000K</td>
+                <td class="p-3">≥80</td>
+                <td class="p-3">Evită umbra pe birou</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Hol/Scări</td>
+                <td class="p-3">1,000-1,500 lm</td>
+                <td class="p-3">3000-4000K</td>
+                <td class="p-3">≥80</td>
+                <td class="p-3">Senzor de mișcare recomandat</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Garaj/Atelier</td>
+                <td class="p-3">5,000-8,000 lm</td>
+                <td class="p-3">5000-6500K</td>
+                <td class="p-3">≥80</td>
+                <td class="p-3">Tuburi LED sau panouri</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>⚡</span> LED vs Halogen vs Fluorescent
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Criteriu</th>
+                <th class="p-3 text-left text-amber-700">LED</th>
+                <th class="p-3 text-left">Halogen</th>
+                <th class="p-3 text-left rounded-tr-lg">Fluorescent (CFL)</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Eficiență</td>
+                <td class="p-3 text-emerald-700 font-bold">100-150 lm/W</td>
+                <td class="p-3">15-25 lm/W</td>
+                <td class="p-3">60-80 lm/W</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Durată de viață</td>
+                <td class="p-3 text-emerald-700 font-bold">25,000-50,000h</td>
+                <td class="p-3">2,000-4,000h</td>
+                <td class="p-3">8,000-15,000h</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Pornire</td>
+                <td class="p-3">Instantanee</td>
+                <td class="p-3">Instantanee</td>
+                <td class="p-3">Lentă (30s warm-up)</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Dimmabil</td>
+                <td class="p-3">Da (versiuni speciale)</td>
+                <td class="p-3">Da</td>
+                <td class="p-3">Rar / dificil</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Căldură emisă</td>
+                <td class="p-3">Minimă</td>
+                <td class="p-3">Foarte mare</td>
+                <td class="p-3">Moderată</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Conținut toxic</td>
+                <td class="p-3">Nu</td>
+                <td class="p-3">Nu</td>
+                <td class="p-3">Da (mercur)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-blue-50 p-8 rounded-3xl border border-blue-100">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4">💡 Sfaturi practice</h2>
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Nu pune 6500K în dormitor</strong> — lumina rece inhibă producția de melatonină și afectează somnul</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Amestecă sursele de lumină</strong> — plafonieră + spot-uri + lampă de citit creează stratificări plăcute</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Investește în CRI ≥90 pentru bucătărie</strong> — mâncarea arată mult mai apetisantă</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Alege becuri dimmabile</strong> dacă ai variator — un LED non-dimmabil pe dimmer pâlpâie și se strică</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Verifică unghiul de dispersie</strong> — 36° pentru accent, 60° pentru general, 120° pentru inundare</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei un proiect de iluminat pentru casa ta?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt proiectează schema de iluminat optimă: tipuri de corpuri, poziționare, circuite dedicate și automatizări.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită proiect de iluminat
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

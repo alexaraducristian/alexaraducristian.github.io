@@ -1,0 +1,136 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="De ce am tensiune mică / curent slab în casă și cum rezolv | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Tensiune mică în casă" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          De ce am <span class="text-amber-600">tensiune mică</span> / curent slab în casă și cum rezolv
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Luminile pâlpâie, electrocasnicele nu pornesc corect sau ai sub 200V la priză? Iată cauzele și soluțiile.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔍</span> Simptome tipice ale tensiunii scăzute
+        </h2>
+        <div class="space-y-3">
+          <div class="flex items-start gap-3 bg-amber-50 p-4 rounded-xl border border-amber-100">
+            <span class="text-amber-600 font-bold text-lg">⚡</span>
+            <p class="text-slate-700">Becurile LED pâlpâie sau au luminozitate redusă</p>
+          </div>
+          <div class="flex items-start gap-3 bg-amber-50 p-4 rounded-xl border border-amber-100">
+            <span class="text-amber-600 font-bold text-lg">⚡</span>
+            <p class="text-slate-700">Mașina de spălat sau aerul condiționat nu pornesc sau se opresc</p>
+          </div>
+          <div class="flex items-start gap-3 bg-amber-50 p-4 rounded-xl border border-amber-100">
+            <span class="text-amber-600 font-bold text-lg">⚡</span>
+            <p class="text-slate-700">Încărcătoarele se încălzesc excesiv sau încarcă foarte lent</p>
+          </div>
+          <div class="flex items-start gap-3 bg-amber-50 p-4 rounded-xl border border-amber-100">
+            <span class="text-amber-600 font-bold text-lg">⚡</span>
+            <p class="text-slate-700">Multimetrul arată sub 210V la priză (normal: 220-240V)</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>⚠️</span> Cauze frecvente
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">1. Cablu de alimentare subdimensionat sau prea lung</h3>
+            <p class="text-sm text-slate-600">Dacă distanța de la contor la tablou e mare (>30m) și cablul e subțire (2.5mm² sau mai mic), căderea de tensiune poate fi semnificativă. Formula: ΔU = 2 × L × I × ρ / S.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">2. Conexiuni slabe sau oxidate</h3>
+            <p class="text-sm text-slate-600">Cleme nestrânse la contor, la tablou sau în doze. Fiecare conexiune proastă adaugă rezistență și scade tensiunea, mai ales sub sarcină mare.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">3. Transformator de zonă supraîncărcat</h3>
+            <p class="text-sm text-slate-600">În zonele rurale sau cartierele noi cu mulți consumatori, transformatorul rețelei poate fi subdimensionat. Tensiunea scade în orele de vârf (seara, 18-22).</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">4. Neutru slăbit sau rupt</h3>
+            <p class="text-sm text-slate-600">Problema cea mai periculoasă. Un neutru cu contact intermitent poate cauza supratensiune pe o fază și subtensiune pe alta. Risc de ardere a aparatelor!</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">5. Cablaj din aluminiu vechi</h3>
+            <p class="text-sm text-slate-600">Aluminiul se oxidează în timp, crește rezistența la contacte. Casele construite înainte de 1990 cu cablaj din Al sunt predispuse la această problemă.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🛠️</span> Ce poți verifica singur
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <ol class="space-y-4 text-slate-700">
+            <li><strong>Pasul 1:</strong> Măsoară tensiunea la tablou cu un multimetru (sau o priză cu indicator). Normal: 220-240V.</li>
+            <li><strong>Pasul 2:</strong> Măsoară atât fără sarcină (totul oprit) cât și cu sarcină (cuptor + AC pornite). Dacă scade mult sub sarcină → cablu subdimensionat sau conexiune proastă.</li>
+            <li><strong>Pasul 3:</strong> Verifică dacă problema e doar pe un circuit sau pe toată casa. Doar pe un circuit → problema e internă (doză, cablu). Pe toată casa → problema e la intrare sau la rețea.</li>
+            <li><strong>Pasul 4:</strong> Întreabă vecinii. Dacă și ei au aceeași problemă → transformator supraîncărcat. Sună la distribuitor (e-Distribuție, Distribuție Energie Oltenia, etc.).</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>✅</span> Soluții definitive
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Modernizare cablu de alimentare</h3>
+            <p class="text-sm text-slate-600">Înlocuire cu secțiune adecvată (minim 10mm² Cu pentru distanțe mari). Elimină căderea de tensiune la intrare.</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Refacerea conexiunilor</h3>
+            <p class="text-sm text-slate-600">Strângere/înlocuire cleme la contor, tablou și doze. O conexiune proastă = punct de supraîncălzire + cădere de tensiune.</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Sesizare la operatorul de distribuție</h3>
+            <p class="text-sm text-slate-600">Dacă problema e din rețea, depui reclamație. Distribuitorul e obligat să mențină tensiunea în limite (±10% din 230V).</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Stabilizator de tensiune (soluție temporară)</h3>
+            <p class="text-sm text-slate-600">Pentru echipamente sensibile, un stabilizator poate ajuta, dar nu rezolvă cauza. E un „plasture" până la rezolvarea reală.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4">⚠️ Când e urgent</h2>
+        <ul class="space-y-3 text-slate-300">
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">!</span> Tensiunea variază brusc (sare de la 180V la 260V) → neutru rupt, risc de ardere aparate</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">!</span> Miros de ars la tablou sau contor → conexiune supraîncălzită</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">!</span> Scântei vizibile la prize → arc electric, pericol de incendiu</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai tensiune mică și nu știi de ce?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt vine cu aparatură de măsură profesională, identifică cauza exactă și propune soluția optimă.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită diagnostic
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

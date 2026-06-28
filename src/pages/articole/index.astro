@@ -6,6 +6,36 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const categorii = [
   {
+    titlu: "🔥 Top Articole (Cele Mai Căutate)",
+    articole: [
+      {
+        titlu: "De ce îmi sare diferențialul (RCD) și cum rezolv",
+        descriere: "Troubleshooting pas cu pas pentru cea mai frecventă problemă electrică.",
+        href: `${base}/articole/de-ce-imi-sare-diferentialul`,
+      },
+      {
+        titlu: "Cât costă o instalație electrică completă pentru o casă nouă",
+        descriere: "Deviz estimativ pe tipuri de locuințe — materiale, manoperă și factori de preț.",
+        href: `${base}/articole/cat-costa-instalatie-electrica-casa`,
+      },
+      {
+        titlu: "Ghid prosumator 2025: tot ce trebuie să știi",
+        descriere: "Legislație, compensare, pași pentru a deveni prosumator în România.",
+        href: `${base}/articole/ghid-prosumator`,
+      },
+      {
+        titlu: "Schneider vs ABB vs Hager — ce aparataj electric să alegi",
+        descriere: "Comparație obiectivă între cele trei mărci premium de pe piața din România.",
+        href: `${base}/articole/schneider-vs-abb-vs-hager`,
+      },
+      {
+        titlu: "Ce fac când nu am curent doar pe o parte din casă",
+        descriere: "Ghid de diagnostic rapid — identifică și rezolvă problema.",
+        href: `${base}/articole/nu-am-curent-pe-o-parte-din-casa`,
+      },
+    ]
+  },
+  {
     titlu: "⚡ Tablouri Electrice",
     articole: [
       {
@@ -36,7 +66,7 @@ const categorii = [
     ]
   },
   {
-    titlu: "☀️ Panouri Fotovoltaice",
+    titlu: "☀️ Panouri Fotovoltaice & Energie Verde",
     articole: [
       {
         titlu: "Cum să calculezi câte panouri fotovoltaice ai nevoie",
@@ -62,6 +92,26 @@ const categorii = [
         titlu: "Panouri monocristaline vs. policristaline — diferențe",
         descriere: "Comparație practică și recomandare.",
         href: `${base}/articole/panouri-monocristaline-vs-policristaline`,
+      },
+      {
+        titlu: "Subvenții fotovoltaice 2025-2026: ce programe mai sunt disponibile",
+        descriere: "Casa Verde, TVA 0%, credit verde și alternative.",
+        href: `${base}/articole/subventii-fotovoltaice-2025`,
+      },
+      {
+        titlu: "În cât timp se amortizează un sistem fotovoltaic",
+        descriere: "Calcul real cu tarife actuale și exemple concrete.",
+        href: `${base}/articole/amortizare-sistem-fotovoltaic`,
+      },
+      {
+        titlu: "Huawei vs SolarEdge vs Fronius — ce invertor să alegi",
+        descriere: "Comparație detaliată cu pro/contra fiecare brand.",
+        href: `${base}/articole/huawei-vs-solaredge-vs-fronius`,
+      },
+      {
+        titlu: "Panouri fotovoltaice cu baterie vs fără — merită stocarea?",
+        descriere: "Calcul ROI și când are sens investiția în baterii.",
+        href: `${base}/articole/fotovoltaice-cu-baterie-vs-fara`,
       },
     ]
   },
@@ -94,11 +144,61 @@ const categorii = [
         href: `${base}/articole/checklist-electric-locuinta-noua`,
       },
     ]
+  },
+  {
+    titlu: "🚨 Probleme & Urgențe",
+    articole: [
+      {
+        titlu: "De ce am tensiune mică / curent slab în casă",
+        descriere: "Cauze, simptome și cum rezolvi — ghid complet.",
+        href: `${base}/articole/tensiune-mica-in-casa`,
+      },
+      {
+        titlu: "Miros de ars de la priză sau tablou — ce trebuie să faci imediat",
+        descriere: "Pași de urgență și prevenție.",
+        href: `${base}/articole/miros-de-ars-priza-tablou`,
+      },
+    ]
+  },
+  {
+    titlu: "📜 Legislație & Conformitate",
+    articole: [
+      {
+        titlu: "Ce este autorizarea ANRE și de ce contează pentru tine",
+        descriere: "Tipuri de autorizare, riscuri fără autorizat, cum verifici.",
+        href: `${base}/articole/ce-este-autorizarea-anre`,
+      },
+      {
+        titlu: "Buletin de verificare PRAM — când e obligatoriu și ce conține",
+        descriere: "La vânzare, racordare, renovare — tot ce trebuie să știi.",
+        href: `${base}/articole/buletin-verificare-pram`,
+      },
+      {
+        titlu: "Normativul I7 pe înțelesul tuturor",
+        descriere: "Regulile esențiale pentru instalația casei tale, explicate simplu.",
+        href: `${base}/articole/normativul-i7-pe-intelesul-tuturor`,
+      },
+    ]
+  },
+  {
+    titlu: "🏠 Smart Home & Iluminat",
+    articole: [
+      {
+        titlu: "Cum să faci casa smart fără să refaci instalația electrică",
+        descriere: "Soluții retrofit: Shelly, Sonoff, smart plugs și protocoale.",
+        href: `${base}/articole/smart-home-fara-renovare`,
+      },
+      {
+        titlu: "Iluminat LED: cum să alegi becurile potrivite pentru fiecare cameră",
+        descriere: "Lumeni, temperatură culoare, CRI și recomandări per cameră.",
+        href: `${base}/articole/iluminat-led-ghid-alegere`,
+      },
+    ]
   }
 ];
 ---
 
-<Layout title="Articole & Ghiduri | AlexaVolt">
+<Layout title="Articole & Ghiduri Electrice | AlexaVolt">
   <Header />
 
   <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">

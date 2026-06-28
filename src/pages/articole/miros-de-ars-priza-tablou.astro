@@ -1,0 +1,136 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Miros de ars de la priză sau tablou — ce trebuie să faci imediat | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Miros de ars priză/tablou" />
+
+    <article>
+      <header class="mb-12 border-b border-red-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Miros de ars de la priză sau tablou — <span class="text-red-600">ce trebuie să faci imediat</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Un miros de plastic ars, cauciuc topit sau ozon lângă prize sau tabloul electric e semnal de alarmă. Nu ignora.
+        </p>
+      </header>
+
+      <section class="mb-12 bg-red-50 p-8 rounded-3xl border-2 border-red-200">
+        <h2 class="text-2xl font-bold text-red-800 mb-6 flex items-center gap-2">
+          <span>🚨</span> PAȘI IMEDIAȚI — fă asta ACUM
+        </h2>
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4 bg-white p-4 rounded-xl border border-red-100">
+            <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+            <div>
+              <h3 class="font-bold text-slate-800">Deconectează aparatele din prizele din zona mirosului</h3>
+              <p class="text-sm text-slate-600">Scoate fizic fișele. Nu trage de cablu — apucă fișa.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 bg-white p-4 rounded-xl border border-red-100">
+            <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+            <div>
+              <h3 class="font-bold text-slate-800">Oprește disjunctorul general (sau cel din zona afectată)</h3>
+              <p class="text-sm text-slate-600">Coboară maneta principală din tablou. Dacă nu știi care e, oprește-le pe toate.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 bg-white p-4 rounded-xl border border-red-100">
+            <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+            <div>
+              <h3 class="font-bold text-slate-800">NU pune mâna pe prize sau cabluri calde!</h3>
+              <p class="text-sm text-slate-600">O priză fierbinte poate indica arc electric activ. Risc de electrocutare sau arsură.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 bg-white p-4 rounded-xl border border-red-100">
+            <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</span>
+            <div>
+              <h3 class="font-bold text-slate-800">Ventilează încăperea</h3>
+              <p class="text-sm text-slate-600">Deschide ferestrele. Fumul de la plastic/PVC ars e toxic (conține acid clorhidric).</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 bg-white p-4 rounded-xl border border-red-100">
+            <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</span>
+            <div>
+              <h3 class="font-bold text-slate-800">Cheamă un electrician autorizat</h3>
+              <p class="text-sm text-slate-600">Nu reconecta nimic până nu vine un specialist. Problema nu dispare singură — se agravează.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🔍</span> De ce miroase a ars? Cauze frecvente
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Contact imperfect (arc electric)</h3>
+            <p class="text-sm text-slate-600">Cea mai frecventă cauză. O clemă nestrânsă, un fir oxidat sau o priză cu arcuri uzate creează un arc electric intermitent. Temperatura la punctul de contact poate depăși 3,000°C — suficient să topească cuprul și să aprindă plasticul.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Suprasarcină pe circuit</h3>
+            <p class="text-sm text-slate-600">Prea multe aparate de putere mare pe același circuit: cuptor electric + fier de călcat + aeroterma pe un circuit de 16A. Cablul se încălzește progresiv, izolația se degradează.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Cablu subdimensionat</h3>
+            <p class="text-sm text-slate-600">Cablu de 1.5mm² folosit pentru prize (trebuie minim 2.5mm²) sau cablu de 2.5mm² folosit pentru cuptor electric (trebuie 4-6mm²). Cablul lucrează la limită permanentă.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Priză veche sau de calitate proastă</h3>
+            <p class="text-sm text-slate-600">Prizele ieftine au arcuri de contact slabe. După câțiva ani de utilizare, contactul devine intermitent → arc → căldură → miros.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Disjunctor defect sau subdimensionat</h3>
+            <p class="text-sm text-slate-600">Un disjunctor care nu declanșează la suprasarcină (uzat sau prea mare) lasă circuitul să se supraîncălzească fără protecție.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔥</span> De ce e periculos
+        </h2>
+        <div class="bg-red-50 p-6 rounded-2xl border border-red-200">
+          <p class="text-slate-700 mb-4">
+            Un miros de ars ignorat poate evolua în <strong>incendiu de natură electrică</strong> — una din principalele cauze de incendiu rezidențial în România.
+          </p>
+          <ul class="space-y-2 text-slate-600">
+            <li class="flex items-start gap-3"><span class="text-red-600 font-bold">•</span> Incendiile electrice pot arde ore în perete înainte să fie vizibile</li>
+            <li class="flex items-start gap-3"><span class="text-red-600 font-bold">•</span> Nu se sting cu apă (risc de electrocutare)</li>
+            <li class="flex items-start gap-3"><span class="text-red-600 font-bold">•</span> Se propagă rapid prin canalele de cablu</li>
+            <li class="flex items-start gap-3"><span class="text-red-600 font-bold">•</span> Asigurarea poate refuza despăgubirea dacă instalația nu era conformă</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
+        <h2 class="text-2xl font-bold text-emerald-800 mb-4">✅ Prevenție</h2>
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Verifică periodic strângerea clemelor din tablou (la 2-3 ani)</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Folosește prize de calitate (Schneider, Legrand, Vimar) cu arcuri puternice</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Nu supraîncărca circuitele — max 3,500W pe circuit de 16A</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Instalează protecție AFDD (arc fault detection) pe circuitele critice</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Solicită un buletin PRAM la fiecare 10 ani sau după renovare</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-red-700">Urgență electrică?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          Dacă simți miros de ars și ai oprit curentul, sună acum. AlexaVolt oferă intervenții rapide pentru situații de urgență electrică.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-red-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-red-700 transition-all shadow-xl hover:-translate-y-1">
+          Urgență electrică — sună acum
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

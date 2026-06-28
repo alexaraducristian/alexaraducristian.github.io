@@ -1,0 +1,101 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="De ce îmi sare diferențialul (RCD) și cum rezolv | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="De ce îmi sare diferențialul" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          De ce îmi sare <span class="text-red-600">diferențialul (RCD)</span> și cum rezolv
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Diferențialul declanșează din senin? Iată cauzele cele mai frecvente și ce poți face pas cu pas.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔍</span> Ce face de fapt RCD-ul când „sare"?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          RCD-ul detectează o diferență între curentul de pe fază și cel de pe neutru. Dacă diferența depășește 30 mA, deconectează circuitul. Asta înseamnă că <strong>undeva, curentul „fuge" pe o cale neautorizată</strong> — prin izolație deteriorată, apă, sau chiar prin corpul uman.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>⚡</span> Cauze frecvente
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">1. Electrocasnic cu defect de izolație</h3>
+            <p class="text-sm text-slate-600">Mașina de spălat, frigiderul sau boilerul au un conductor deteriorat intern. Curentul fuge prin carcasă sau prin apă.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">2. Umezeală în doze sau prize</h3>
+            <p class="text-sm text-slate-600">O doză de conexiune din perete expusă la infiltrații creează un traseu de scurgere către pământ.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">3. Cablu deteriorat mecanic</h3>
+            <p class="text-sm text-slate-600">Un șurub care a perforat izolația, un cablu ros de rozătoare sau o deteriorare la renovare.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">4. Prea multe aparate pe un singur RCD</h3>
+            <p class="text-sm text-slate-600">Fiecare aparat are o mică scurgere naturală (sub 3.5 mA). 10+ aparate pe un RCD → scurgerile se adună → declanșare.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">5. RCD uzat sau defect</h3>
+            <p class="text-sm text-slate-600">După 10-15 ani, mecanismul intern se poate degrada și declanșa la praguri mai mici decât cele nominale.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🛠️</span> Troubleshooting pas cu pas
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <ol class="space-y-4 text-slate-700">
+            <li><strong>Pasul 1:</strong> Deconectează TOATE aparatele din prize (scoate fizic fișele).</li>
+            <li><strong>Pasul 2:</strong> Rearmează RCD-ul (ridică maneta în sus).</li>
+            <li><strong>Pasul 3:</strong> Dacă rămâne armat → problema e la un aparat. Conectează-le pe rând până identifici vinovatul.</li>
+            <li><strong>Pasul 4:</strong> Dacă declanșează imediat fără nimic conectat → problema e în instalația fixă (cablu, doză). Cheamă un electrician.</li>
+            <li><strong>Pasul 5:</strong> Dacă declanșează doar la ploaie/umezeală → verifică dozele exterioare și prizele din baie/bucătărie.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
+        <h2 class="text-2xl font-bold text-emerald-800 mb-4">✅ Soluția permanentă</h2>
+        <p class="text-slate-700 mb-4">
+          Un tablou modern are <strong>mai multe RCD-uri</strong> (unul pe fiecare grup de circuite). Astfel:
+        </p>
+        <ul class="space-y-2 text-slate-600">
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Dacă sare un RCD, restul casei rămâne cu curent</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Identifici instant care grup are problema</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> Scurgerile naturale se împart pe grupe — nu se mai adună</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Diferențialul sare frecvent?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt identifică cauza cu instrumente profesionale (megohmetru) și rezolvă problema definitiv.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită diagnostic
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

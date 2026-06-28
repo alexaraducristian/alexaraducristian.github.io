@@ -1,0 +1,100 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Ce fac când nu am curent doar pe o parte din casă | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Nu am curent pe o parte din casă" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Ce fac când <span class="text-red-600">nu am curent</span> doar pe o parte din casă
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ghid de diagnostic rapid — identifică problema și decide dacă o poți rezolva singur sau ai nevoie de electrician.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🔍</span> Diagnostic în 5 pași
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-700 mb-2">Pasul 1: Verifică tabloul electric</h3>
+            <p class="text-sm text-slate-600">Deschide capacul tabloului. Dacă un disjunctor sau RCD este în poziție „jos" (declanșat), l-ai găsit pe vinovat.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-700 mb-2">Pasul 2: Încearcă să rearmezi</h3>
+            <p class="text-sm text-slate-600">Ridică maneta în sus. Dacă rămâne sus → problema a fost momentană. Dacă sare imediat → ai un defect activ.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-700 mb-2">Pasul 3: Identifică circuitul afectat</h3>
+            <p class="text-sm text-slate-600">Citește eticheta de pe disjunctorul declanșat. „Prize dormitor"? „Iluminat bucătărie"? Asta îți arată zona.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-700 mb-2">Pasul 4: Deconectează tot de pe acel circuit</h3>
+            <p class="text-sm text-slate-600">Scoate din priză toate aparatele de pe circuitul respectiv. Rearmează. Dacă ține → un aparat e defect.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-700 mb-2">Pasul 5: Reconectează pe rând</h3>
+            <p class="text-sm text-slate-600">Conectează câte un aparat. Cel care face disjunctorul să sară = aparatul defect.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚡</span> Cauze posibile
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-1">Suprasarcină pe circuit</h4>
+            <p class="text-xs text-slate-600">Prea multe aparate pe același circuit (plită + fier de călcat + AC)</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-1">Scurtcircuit</h4>
+            <p class="text-xs text-slate-600">Fază atinge neutrul — disjunctorul declanșează instant</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-1">Defect de izolație</h4>
+            <p class="text-xs text-slate-600">Cablu deteriorat, priză spartă, umiditate în doze</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <h4 class="font-bold text-sm mb-1">Neutru întrerupt</h4>
+            <p class="text-xs text-slate-600">O conexiune slăbită pe firul neutru — lumina pâlpâie sau nu merge deloc</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-red-50 p-6 rounded-2xl border border-red-100">
+        <h2 class="text-xl font-bold text-red-800 mb-3">🚨 Când să chemi electricianul URGENT</h2>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li>• Disjunctorul sare repetat fără să ai nimic conectat</li>
+          <li>• Miros de ars din perete sau tablou</li>
+          <li>• Scântei vizibile la priză</li>
+          <li>• Peretele e cald în zona prizelor</li>
+          <li>• Nu identifici sursa problemei după pașii de mai sus</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Nu reușești să identifici problema?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt diagnostichează rapid cu aparatură profesională și rezolvă defectul pe loc.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită depanare
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

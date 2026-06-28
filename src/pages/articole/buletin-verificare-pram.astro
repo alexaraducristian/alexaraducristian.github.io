@@ -1,0 +1,184 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Buletin de verificare PRAM — când e obligatoriu și ce conține | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Buletin PRAM" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Buletin de verificare <span class="text-blue-600">PRAM</span> — când e obligatoriu și ce conține
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Tot ce trebuie să știi despre buletinul de verificare a instalațiilor electrice:
+          când îl ceri, ce se măsoară și cât costă.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📋</span> Ce este buletinul PRAM?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          <strong>PRAM</strong> = Proces-verbal de verificare a rezistenței de izolație și a
+          instalației de protecție prin legare la pământ. Este documentul oficial care atestă
+          că o instalație electrică este <strong>sigură și conformă</strong> cu normativele în
+          vigoare.
+        </p>
+        <p class="text-slate-600 leading-relaxed">
+          Poate fi emis doar de un electrician cu autorizare <strong>ANRE tip C1</strong>
+          (verificator de instalații electrice).
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📅</span> Când e obligatoriu
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">🏠 Vânzare/cumpărare imobil</h3>
+            <p class="text-sm text-slate-600">La tranzacția imobiliară, notarul sau cumpărătorul poate solicita buletinul PRAM ca dovadă că instalația e sigură. Băncile îl cer frecvent la creditele ipotecare.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">⚡ Racordare nouă sau mărire putere</h3>
+            <p class="text-sm text-slate-600">La obținerea avizului tehnic de racordare sau la mărirea puterii contractate, distribuitorul solicită buletinul PRAM actualizat.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">🔨 După renovare majoră</h3>
+            <p class="text-sm text-slate-600">Orice modificare substanțială a instalației electrice (adăugare circuite, schimbare tablou, extindere) necesită reverificarea conformității.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">🛡️ La cererea asigurătorului</h3>
+            <p class="text-sm text-slate-600">Companiile de asigurări pot solicita PRAM la emiterea poliței sau în investigarea unui sinistru. Fără document valid, despăgubirea poate fi refuzată.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">🏢 Spații comerciale — periodic</h3>
+            <p class="text-sm text-slate-600">Pentru spații comerciale și birouri, verificarea e obligatorie periodic (la 2-4 ani, în funcție de categoria de risc).</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🔬</span> Ce se măsoară la verificare
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Măsurare</th>
+                <th class="p-3 text-left">Ce verifică</th>
+                <th class="p-3 text-left rounded-tr-lg">Valoare admisibilă</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Rezistența izolației</td>
+                <td class="p-3">Dacă izolația cablurilor e intactă</td>
+                <td class="p-3">≥ 1 MΩ (megaohm)</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Continuitatea PE</td>
+                <td class="p-3">Conductorul de protecție e continuu</td>
+                <td class="p-3">< 1 Ω între orice punct și tablou</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Impedanța buclei de defect</td>
+                <td class="p-3">Dacă protecția declanșează la timp</td>
+                <td class="p-3">Depinde de calibrul protecției</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Praguri RCD</td>
+                <td class="p-3">Diferențialul declanșează corect</td>
+                <td class="p-3">≤ 30 mA, timp < 300 ms</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Rezistența prizei de pământ</td>
+                <td class="p-3">Împământarea e eficientă</td>
+                <td class="p-3">≤ 4 Ω (rezidențial)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>💰</span> Cost orientativ și valabilitate
+        </h2>
+        <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <h3 class="font-bold text-emerald-800 mb-3">Cost</h3>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li><strong>Apartament (2-3 camere):</strong> 300-500 lei</li>
+                <li><strong>Casă (3-5 camere):</strong> 500-1,000 lei</li>
+                <li><strong>Casă mare / vilă:</strong> 1,000-2,000 lei</li>
+                <li><strong>Spațiu comercial:</strong> de la 1,000 lei</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold text-emerald-800 mb-3">Valabilitate</h3>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li><strong>Rezidențial:</strong> Nelimitată (dacă nu se modifică instalația)</li>
+                <li><strong>Comercial:</strong> 2-4 ani (verificare periodică)</li>
+                <li><strong>La vânzare:</strong> Unii notari cer max 1 an vechime</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚙️</span> Cum decurge verificarea
+        </h2>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <ol class="space-y-4 text-slate-700">
+            <li><strong>1. Programare</strong> — se stabilește data vizitei (durează 1-3 ore)</li>
+            <li><strong>2. Inspecție vizuală</strong> — se verifică tabloul, dozele, prizele, cablurile vizibile</li>
+            <li><strong>3. Măsurători</strong> — cu aparatură calibrată (megohmetru, loop tester, RCD tester)</li>
+            <li><strong>4. Rezultat</strong> — ADMIS (totul e ok) sau RESPINS (cu lista deficiențelor)</li>
+            <li><strong>5. Emitere buletin</strong> — document oficial cu semnătură și ștampilă verificator C1</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4">⚠️ Ce se întâmplă dacă buletinul e RESPINS?</h2>
+        <p class="text-slate-300 mb-4">
+          Dacă se identifică neconformități, primești un raport cu deficiențele care trebuie remediate:
+        </p>
+        <ul class="space-y-3 text-slate-300">
+          <li class="flex items-start gap-3"><span class="text-amber-400 font-bold">→</span> Izolație sub limită pe anumite circuite</li>
+          <li class="flex items-start gap-3"><span class="text-amber-400 font-bold">→</span> Lipsa protecției diferențiale pe circuite obligatorii</li>
+          <li class="flex items-start gap-3"><span class="text-amber-400 font-bold">→</span> Împământare lipsă sau ineficientă</li>
+          <li class="flex items-start gap-3"><span class="text-amber-400 font-bold">→</span> Secțiuni de cablu neconforme</li>
+        </ul>
+        <p class="text-slate-400 mt-4 text-sm">
+          După remediere, se face o nouă verificare (de obicei la cost redus) pentru emiterea buletinului ADMIS.
+        </p>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai nevoie de buletin PRAM?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt efectuează verificări PRAM cu aparatură calibrată și emite buletine conform legislației în vigoare.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită buletin PRAM
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

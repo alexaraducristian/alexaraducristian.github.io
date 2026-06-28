@@ -1,0 +1,210 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum să faci casa smart fără să refaci instalația electrică | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Smart home fără renovare" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum să faci casa <span class="text-blue-600">smart</span> fără să refaci instalația electrică
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Soluții retrofit care se montează în instalația existentă — fără spargeri,
+          fără electrician pe termen lung, buget de la 500 lei.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>💡</span> Principiul de bază
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Un smart home <strong>nu necesită neapărat renovare</strong>. Există dispozitive
+          miniaturale care se montează în dozele existente (în spatele întrerupătoarelor sau
+          prizelor) și transformă orice circuit clasic în unul controlabil de pe telefon.
+        </p>
+        <p class="text-slate-600 leading-relaxed">
+          Singura condiție importantă: <strong>unele dispozitive necesită fir de neutru</strong>
+          în doza întrerupătorului. Casele construite după 2000 au de obicei neutru în doză.
+          Casele vechi (pre-1990) de obicei nu — dar există soluții și pentru ele.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🔌</span> Dispozitive retrofit populare
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Shelly (relee WiFi)</h3>
+            <p class="text-sm text-slate-600 mb-2">Mici relee WiFi care se montează în doza întrerupătorului. Controlezi iluminatul sau prizele de pe telefon, prin automatizări sau voce.</p>
+            <ul class="text-xs text-slate-500 space-y-1">
+              <li>• Shelly 1 / 1PM — cu neutru, 1 canal, ~60-80 lei</li>
+              <li>• Shelly 1 Mini Gen3 — ultra-compact, WiFi + Bluetooth</li>
+              <li>• Shelly 2PM — 2 canale (2 grupuri de lumini), ~100 lei</li>
+              <li>• Shelly Dimmer — pentru reglarea intensității luminii</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Sonoff (relee WiFi/Zigbee)</h3>
+            <p class="text-sm text-slate-600 mb-2">Alternativă mai ieftină. Gamă variată: relee, dimmer-e, senzori. Funcționează cu eWeLink sau Home Assistant.</p>
+            <ul class="text-xs text-slate-500 space-y-1">
+              <li>• Sonoff Mini R4 — nu necesită neutru (!), ~40-50 lei</li>
+              <li>• Sonoff ZBMINI — Zigbee, ultra-compact, ~35 lei</li>
+              <li>• Sonoff TH Elite — releu + senzor temperatură/umiditate</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Smart plugs (prize inteligente)</h3>
+            <p class="text-sm text-slate-600 mb-2">Se introduc în priză, nu necesită montaj. Ideale pentru: boiler, calorifer, lampă, încărcător EV portabil.</p>
+            <ul class="text-xs text-slate-500 space-y-1">
+              <li>• TP-Link Tapo P110 — cu monitorizare consum, ~50 lei</li>
+              <li>• Shelly Plug S — compact, 12A, monitorizare, ~70 lei</li>
+              <li>• Sonoff S26R2 — simplu și fiabil, ~35 lei</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Becuri smart (Philips Hue, IKEA, Yeelight)</h3>
+            <p class="text-sm text-slate-600 mb-2">Schimbi becul clasic cu unul smart. Zero montaj electric. Controlezi culoare, intensitate, programări.</p>
+            <ul class="text-xs text-slate-500 space-y-1">
+              <li>• Philips Hue — premium, ecosistem complet, de la 80 lei/bec</li>
+              <li>• IKEA TRÅDFRI — Zigbee, preț bun, de la 40 lei/bec</li>
+              <li>• Yeelight — WiFi, fără hub, de la 50 lei/bec</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📡</span> Protocoale: WiFi vs Zigbee vs Z-Wave
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Protocol</th>
+                <th class="p-3 text-left">Avantaje</th>
+                <th class="p-3 text-left">Dezavantaje</th>
+                <th class="p-3 text-left rounded-tr-lg">Ideal pentru</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">WiFi</td>
+                <td class="p-3">Nu necesită hub, setup rapid</td>
+                <td class="p-3">Consumă mai mult, ocupă router</td>
+                <td class="p-3">1-15 dispozitive</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Zigbee</td>
+                <td class="p-3">Consum mic, rețea mesh, rapid</td>
+                <td class="p-3">Necesită hub (dongle USB ~100 lei)</td>
+                <td class="p-3">15-100+ dispozitive</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Z-Wave</td>
+                <td class="p-3">Fiabil, fără interferențe WiFi</td>
+                <td class="p-3">Produse mai scumpe, mai puțin populare în RO</td>
+                <td class="p-3">Sisteme premium</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Matter/Thread</td>
+                <td class="p-3">Standard universal, viitorul</td>
+                <td class="p-3">Încă puține produse disponibile</td>
+                <td class="p-3">Instalații noi (2025+)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>💰</span> Estimare buget
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-emerald-50 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Nivel</th>
+                <th class="p-3 text-left">Ce include</th>
+                <th class="p-3 text-left rounded-tr-lg">Cost estimat</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold text-emerald-700">Starter</td>
+                <td class="p-3">3-5 smart plugs + 2-3 becuri smart</td>
+                <td class="p-3">500-800 lei</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold text-emerald-700">Mediu</td>
+                <td class="p-3">Shelly pe 5-8 circuite + senzori + smart plugs</td>
+                <td class="p-3">1,000-2,000 lei</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold text-emerald-700">Avansat</td>
+                <td class="p-3">Toată casa (15-20 circuite) + hub + automatizări complexe</td>
+                <td class="p-3">2,000-3,500 lei</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-slate-500 mt-3">
+          * Prețuri fără manoperă. Cu montaj profesional, adaugă 200-500 lei.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚠️</span> Problema firului de neutru
+        </h2>
+        <div class="bg-amber-50 p-6 rounded-2xl border border-amber-200">
+          <p class="text-slate-700 mb-4">
+            Multe relee smart au nevoie de <strong>fază + neutru</strong> în doza întrerupătorului.
+            Dar în multe case vechi, în doză ajunge doar faza (neutrul merge direct la corpul de iluminat).
+          </p>
+          <h3 class="font-bold text-amber-800 mb-2">Soluții:</h3>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> <strong>Sonoff Mini R4:</strong> funcționează fără neutru</li>
+            <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> <strong>Shelly cu bypass:</strong> se adaugă un condensator bypass la corpul de iluminat</li>
+            <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> <strong>Becuri smart:</strong> se montează direct în corpul de iluminat, nu necesită releu</li>
+            <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> <strong>Tragi un fir suplimentar:</strong> dacă tubul permite, se poate trage neutrul ulterior</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
+        <h2 class="text-2xl font-bold text-emerald-800 mb-4">✅ Automatizări utile fără renovare</h2>
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Boiler smart:</strong> pornește doar când e nevoie (economie 30-40%)</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Lumini programate:</strong> se aprind la apus, se sting la culcare</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Simulare prezență:</strong> aprinde lumini aleatoriu când ești plecat</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Monitorizare consum:</strong> vezi exact cât consumă fiecare aparat</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">•</span> <strong>Încălzire inteligentă:</strong> termostat smart + valve calorifer</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei să îți faci casa smart?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt te ajută să alegi dispozitivele potrivite, verifică dacă ai neutru în doze și montează totul profesional.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită consultanță smart home
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

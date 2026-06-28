@@ -1,0 +1,146 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Schneider vs ABB vs Hager — ce aparataj electric să alegi | AlexaVolt">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Schneider vs ABB vs Hager" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          <span class="text-blue-600">Schneider</span> vs <span class="text-red-600">ABB</span> vs <span class="text-emerald-600">Hager</span> — ce aparataj electric să alegi
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Comparație obiectivă între cele trei mărci premium disponibile pe piața din România.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">📊 Comparație generală</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="p-3 text-left rounded-tl-lg">Criteriu</th>
+                <th class="p-3 text-left text-blue-700">Schneider</th>
+                <th class="p-3 text-left text-red-700">ABB</th>
+                <th class="p-3 text-left text-emerald-700 rounded-tr-lg">Hager</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Origine</td>
+                <td class="p-3">Franța 🇫🇷</td>
+                <td class="p-3">Suedia/Elveția 🇸🇪🇨🇭</td>
+                <td class="p-3">Germania 🇩🇪</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Gamă rezidențială</td>
+                <td class="p-3">Acti9 / Resi9</td>
+                <td class="p-3">S200 / DS200</td>
+                <td class="p-3">MBN / MCN</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Disponibilitate RO</td>
+                <td class="p-3">⭐⭐⭐⭐⭐ Excelentă</td>
+                <td class="p-3">⭐⭐⭐⭐ Foarte bună</td>
+                <td class="p-3">⭐⭐⭐ Bună</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Preț nivel</td>
+                <td class="p-3">Mediu-premium</td>
+                <td class="p-3">Premium</td>
+                <td class="p-3">Mediu</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Suport tehnic RO</td>
+                <td class="p-3">Sediu local, training-uri</td>
+                <td class="p-3">Sediu local, suport online</td>
+                <td class="p-3">Distribuitori autorizați</td>
+              </tr>
+              <tr class="border-t border-slate-100">
+                <td class="p-3 font-semibold">Calitate conectică</td>
+                <td class="p-3">Excelentă (Everlink)</td>
+                <td class="p-3">Excelentă</td>
+                <td class="p-3">Foarte bună</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">🏆 Puncte forte per brand</h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-700 mb-3">Schneider Electric</h3>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>✓ Cea mai largă gamă rezidențială</li>
+              <li>✓ Conexiuni Everlink (fără slăbire)</li>
+              <li>✓ Ușor de găsit oriunde în RO</li>
+              <li>✓ Software de configurare gratuit</li>
+              <li>✓ Raport preț/calitate excelent</li>
+            </ul>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-700 mb-3">ABB</h3>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>✓ Fiabilitate industrială legendară</li>
+              <li>✓ RCD-uri cu prag foarte precis</li>
+              <li>✓ Design compact (economie spațiu)</li>
+              <li>✓ Soluții smart home integrate</li>
+              <li>✓ Gamă extinsă tip B (EV/PV)</li>
+            </ul>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-700 mb-3">Hager</h3>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>✓ Cel mai bun preț din cele 3</li>
+              <li>✓ Tablouri pre-echipate disponibile</li>
+              <li>✓ Calitate germană consistentă</li>
+              <li>✓ Sistem de etichetare inclus</li>
+              <li>✓ Bun pentru bugete moderate</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-blue-50 p-8 rounded-3xl border border-blue-100">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4">🎯 Recomandarea AlexaVolt</h2>
+        <div class="space-y-4 text-slate-700">
+          <p><strong>Pentru majoritatea locuințelor:</strong> Schneider Acti9/Resi9 — cel mai bun echilibru între preț, disponibilitate și calitate. Conexiunile Everlink elimină riscul de slăbire a contactelor în timp.</p>
+          <p><strong>Pentru bugete mai mari / smart home:</strong> ABB S200 — fiabilitate maximă și integrare cu sisteme de automatizare.</p>
+          <p><strong>Pentru bugete moderate, calitate solidă:</strong> Hager — nu compromite siguranța, dar costă cu 15-20% mai puțin.</p>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold mb-4">⚠️ Ce trebuie evitat</h2>
+        <ul class="space-y-3 text-slate-300">
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Aparataj no-name de pe marketplace-uri</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Mixarea brandurilor în același tablou (compatibilitate șine)</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Produse fără marcaj CE și certificare IEC</li>
+          <li class="flex items-start gap-3"><span class="text-red-400 font-bold">✗</span> Achiziții din surse neautorizate (risc de contrafacere)</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei un tablou configurat cu aparataj premium?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt lucrează cu Schneider Electric și oferă garanție extinsă pe aparataj și manoperă.
+        </p>
+        <a href={`${base}/contact`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă personalizată
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>
