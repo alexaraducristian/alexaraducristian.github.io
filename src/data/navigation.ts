@@ -7,6 +7,7 @@ export const headerData = {
     { text: '☀️ Energie Verde', href: `${base}/energie-verde` },
     { text: '📄 Prezentare', href: `${base}/prezentare` },
     { text: '📂 Portofoliu', href: `${base}/portofoliu` },
+    { text: '📚 Ghid Practic', href: `${base}/articole` },
     { text: '📞 Contact', href: `${base}/contact` },
   ],
 };
