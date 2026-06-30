@@ -11,7 +11,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
 
-    <Breadcrumb pagina="Nu am curent pe o parte din casă" />
+    <Breadcrumb pagina="Nu am curent pe o parte din casă" parent="📚 Ghid Practic" parentHref={`${base}/articole`} />
 
     <article>
       <header class="mb-12 border-b border-slate-100 pb-10">
@@ -83,6 +83,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           <li>• Scântei vizibile la priză</li>
           <li>• Peretele e cald în zona prizelor</li>
           <li>• Nu identifici sursa problemei după pașii de mai sus</li>
+        </ul>
+      </section>
+
+      <section class="mb-12 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole similare</h2>
+        <ul class="space-y-2">
+          <li><a href={`${base}/articole/de-ce-imi-sare-diferentialul`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">De ce îmi sare diferențialul și cum rezolv →</a></li>
+          <li><a href={`${base}/articole/miros-de-ars-priza-tablou`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Miros de ars la priză sau tablou — ce faci →</a></li>
         </ul>
       </section>
 

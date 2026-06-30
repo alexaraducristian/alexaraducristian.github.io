@@ -1,0 +1,195 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Întrebări Frecvente | AlexaVolt" description="Întrebări frecvente despre instalații electrice, panouri fotovoltaice și serviciile AlexaVolt Iași. Răspunsuri de la electrician autorizat ANRE.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Întrebări frecvente" />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Întrebări <span class="text-blue-600">Frecvente</span> ❓
+        </h1>
+        <p class="text-xl text-slate-600 max-w-3xl">
+          Răspunsuri rapide la cele mai frecvente întrebări despre serviciile noastre de instalații electrice și panouri fotovoltaice.
+        </p>
+      </header>
+
+      <section class="space-y-4">
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Cât costă o instalație electrică completă?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Costul depinde de suprafața locuinței, numărul de circuite și calitatea materialelor. Pentru o casă de 100-150 m², prețul variază între 5.000 – 12.000 €. Oferim deviz detaliat gratuit.</p>
+            <p class="mt-2"><a href={`${base}/articole/cat-costa-instalatie-electrica-casa`} class="text-blue-600 font-semibold hover:text-blue-800">→ Citește ghidul complet de prețuri</a></p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Sunteți autorizați ANRE?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Da, suntem electricieni autorizați ANRE tip B — competență pentru proiectare și execuție instalații electrice interioare la consumatori cu tensiuni până la 1kV.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>În ce zone lucrați?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Lucrăm în Iași și în tot județul Iași. Pentru proiecte mai mari (sisteme fotovoltaice), acoperim și județele învecinate — contactați-ne pentru detalii.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Cât durează montajul unui tablou electric?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Un tablou electric rezidențial se montează în 1-2 zile lucrătoare, în funcție de complexitate (număr de circuite, tip de aparataj). Tabloul vine pre-configurat din atelier pentru eficiență maximă.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Ce garanție oferiți?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Oferim 2 ani garanție pe manoperă și garanția producătorului pe materiale (de obicei 10-25 ani pentru aparataj Schneider Electric). Totul documentat cu certificat de garanție.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Faceți și panouri fotovoltaice?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Da, oferim servicii complete de montaj panouri fotovoltaice — de la simulare cu software profesional Cool-PVT, dimensionare, montaj, până la punerea în funcțiune și obținerea statutului de prosumator.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Ce brand de aparataj folosiți?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Lucrăm predominant cu Schneider Electric — lider mondial în aparataj electric. Oferă fiabilitate dovedită, garanție extinsă și un raport calitate-preț excelent pentru segmentul rezidențial premium.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Am nevoie de buletin PRAM?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Buletinul de verificare PRAM este necesar la vânzarea/cumpărarea unei proprietăți, la renovări majore, la racordarea/re-racordarea la rețea, sau la solicitarea furnizorului de energie. Vă putem ajuta cu tot procesul.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Cât durează montajul panourilor fotovoltaice?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Montajul propriu-zis durează 2-5 zile, în funcție de dimensiunea sistemului. Procesul complet (de la evaluare la punerea în funcțiune) poate dura 2-4 săptămâni, incluzând avize și documentație.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Pot deveni prosumator?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Da, cu sistemul nostru fotovoltaic poți deveni prosumator și vinde surplusul de energie în rețea. Te ghidăm prin tot procesul birocratic — de la documentație la contractul cu furnizorul.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Oferiți evaluare gratuită?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Da, oferim evaluare gratuită la fața locului. Venim, analizăm situația existentă, discutăm necesitățile și vă oferim un deviz detaliat fără obligații.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Lucrați și la apartamente vechi?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Da, facem modernizări complete — inclusiv înlocuirea cablajului din aluminiu cu cupru, montaj tablou nou cu protecții moderne și aducere la standard a întregii instalații electrice.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Ce este un RCD (diferențial)?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>RCD-ul (Residual Current Device) este un dispozitiv de protecție care deconectează circuitul în milisecunde dacă detectează o scurgere de curent — te protejează de electrocutare.</p>
+            <p class="mt-2"><a href={`${base}/articole/ce-este-un-rcd-diferential`} class="text-blue-600 font-semibold hover:text-blue-800">→ Află mai multe despre RCD</a></p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Montați încărcătoare pentru mașini electrice?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Da, instalăm wallbox-uri (stații de încărcare) pentru mașini electrice. Pregătim instalația electrică complet — de la tablou cu protecții dedicate până la punctul de încărcare.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
+            <span>Cum vă contactez pentru urgențe?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Pentru urgențe electrice, sunați direct la numărul de telefon afișat pe pagina de contact. Răspundem rapid și intervenim în cel mai scurt timp posibil în zona Iași.</p>
+            <p class="mt-2"><a href={`${base}/contact`} class="text-blue-600 font-semibold hover:text-blue-800">→ Pagina de contact</a></p>
+          </div>
+        </details>
+
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10 mt-12">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Nu ai găsit răspunsul?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          Contactează-ne direct și îți răspundem în cel mai scurt timp.
+        </p>
+        <a href={`${base}/contact`} class="inline-flex items-center gap-2 bg-blue-600 text-white font-bold py-4 px-8 rounded-xl hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl">
+          📞 Contactează-ne
+        </a>
+      </section>
+    </article>
+
+  </main>
+</Layout>

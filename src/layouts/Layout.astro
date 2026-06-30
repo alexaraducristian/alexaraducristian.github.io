@@ -7,26 +7,30 @@ interface Props {
 }
 
 const { title = 'AlexaVolt | Instalații Electrice Profesionale', description = 'AlexaVolt — electrician autorizat ANRE Iași. Instalații electrice, tablouri Schneider și sisteme fotovoltaice pentru casa ta.' } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
 <html lang="ro">
 	<head>
 		<meta charset="UTF-8" />
-		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-GGBL0JG2KZ"></script>
-			<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'G-GGBL0JG2KZ');
-		</script>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalURL.href} />
+		<link rel="preconnect" href="https://www.googletagmanager.com" />
+		<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-GGBL0JG2KZ"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-GGBL0JG2KZ');
+		</script>
 	</head>
 	<body>
 		<slot />

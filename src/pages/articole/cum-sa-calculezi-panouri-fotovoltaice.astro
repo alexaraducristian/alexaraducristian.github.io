@@ -11,7 +11,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
 
-    <Breadcrumb pagina="Câte panouri fotovoltaice ai nevoie" />
+    <Breadcrumb pagina="Câte panouri fotovoltaice ai nevoie" parent="📚 Ghid Practic" parentHref={`${base}/articole`} />
 
     <article>
       <header class="mb-12 border-b border-slate-100 pb-10">
@@ -95,6 +95,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
           <p class="text-sm text-slate-700"><strong>Exemplu:</strong> 8 panouri × 2 m² = 16 m² necesari pe acoperiș (orientare sud, fără coșuri sau antene care fac umbră).</p>
         </div>
+      </section>
+
+      <section class="mb-12 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole similare</h2>
+        <ul class="space-y-2">
+          <li><a href={`${base}/articole/cum-functioneaza-invertor-hibrid`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Cum funcționează un invertor hibrid →</a></li>
+          <li><a href={`${base}/articole/verificari-inainte-montaj-panouri`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Ce verificări faci înainte de montajul panourilor →</a></li>
+        </ul>
       </section>
 
       <section class="text-center border-t border-slate-100 pt-10">

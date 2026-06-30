@@ -11,7 +11,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
 
-    <Breadcrumb pagina="Cât costă instalația electrică" />
+    <Breadcrumb pagina="Cât costă instalația electrică" parent="📚 Ghid Practic" parentHref={`${base}/articole`} />
 
     <article>
       <header class="mb-12 border-b border-slate-100 pb-10">
@@ -135,6 +135,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           <li class="flex items-start gap-3"><span class="text-red-400 font-bold">•</span> <strong class="text-white">Secțiunea cablului</strong> — subcalibrat = risc de incendiu</li>
           <li class="flex items-start gap-3"><span class="text-red-400 font-bold">•</span> <strong class="text-white">Aparataj tablou</strong> — un RCD ieftin poate să nu declanșeze la nevoie</li>
           <li class="flex items-start gap-3"><span class="text-red-400 font-bold">•</span> <strong class="text-white">Manopera</strong> — un neautorizat nu oferă garanție și nici conformitate legală</li>
+        </ul>
+      </section>
+
+      <section class="mb-12 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole similare</h2>
+        <ul class="space-y-2">
+          <li><a href={`${base}/articole/cum-sa-alegi-un-tablou-electric`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Cum să alegi un tablou electric potrivit →</a></li>
+          <li><a href={`${base}/articole/sectiune-cablu-electrocasnice`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Ce secțiune de cablu folosești pe fiecare electrocasnic →</a></li>
         </ul>
       </section>
 

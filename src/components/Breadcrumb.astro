@@ -1,20 +1,26 @@
 ---
 interface Props {
   pagina: string;
+  parent?: string;
+  parentHref?: string;
 }
 
-const { pagina } = Astro.props;
+const { pagina, parent, parentHref } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
-<nav class="mb-8 flex flex-wrap items-center gap-2 text-sm font-bold">
+<nav class="mb-8 flex flex-wrap items-center gap-2 text-sm font-bold" aria-label="Breadcrumb">
   <a href={`${base}/`} class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-blue-100 hover:text-blue-600 transition-all">
     🏠 Acasă
   </a>
-  <span class="text-slate-300">›</span>
-  <a href={`${base}/articole`} class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-blue-100 hover:text-blue-600 transition-all">
-    📚 Ghid Practic
-  </a>
+  {parent && parentHref && (
+    <>
+      <span class="text-slate-300">›</span>
+      <a href={parentHref} class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-blue-100 hover:text-blue-600 transition-all">
+        {parent}
+      </a>
+    </>
+  )}
   <span class="text-slate-300">›</span>
   <span class="px-3 py-1.5 rounded-lg bg-blue-600 text-white shadow-sm">
     {pagina}

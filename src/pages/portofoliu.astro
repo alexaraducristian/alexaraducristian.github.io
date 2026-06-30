@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import { Image } from 'astro:assets';
 
 // Importuri imagini
@@ -35,6 +36,8 @@ const proiecteElectrice = [
   <Header />
 
   <main class="max-w-7xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Portofoliu" />
     
     <section class="mb-20 text-center">
       <h1 class="text-4xl md:text-6xl font-black text-slate-900 mb-6 uppercase tracking-tighter">
