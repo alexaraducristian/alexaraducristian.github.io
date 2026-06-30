@@ -1,9 +1,16 @@
 ---
 import '../styles/global.css'
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = 'AlexaVolt | Instalații Electrice Profesionale', description = 'AlexaVolt — electrician autorizat ANRE Iași. Instalații electrice, tablouri Schneider și sisteme fotovoltaice pentru casa ta.' } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ro">
 	<head>
 		<meta charset="UTF-8" />
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-GGBL0JG2KZ"></script>
@@ -15,10 +22,11 @@ import '../styles/global.css'
 			gtag('config', 'G-GGBL0JG2KZ');
 		</script>
 		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>AlexaVolt | Instalații Electrice Profesionale</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
