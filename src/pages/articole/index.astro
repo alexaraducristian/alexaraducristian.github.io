@@ -8,6 +8,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const categorii = [
   {
     titlu: "🔥 Top Articole (Cele Mai Căutate)",
+    slug: "top-articole",
     articole: [
       {
         titlu: "De ce îmi sare diferențialul (RCD) și cum rezolv",
@@ -38,6 +39,7 @@ const categorii = [
   },
   {
     titlu: "⚡ Tablouri Electrice",
+    slug: "tablouri-electrice",
     articole: [
       {
         titlu: "Cum să alegi un tablou electric potrivit pentru casa ta",
@@ -68,6 +70,7 @@ const categorii = [
   },
   {
     titlu: "☀️ Panouri Fotovoltaice & Energie Verde",
+    slug: "panouri-fotovoltaice",
     articole: [
       {
         titlu: "Cum să calculezi câte panouri fotovoltaice ai nevoie",
@@ -118,6 +121,7 @@ const categorii = [
   },
   {
     titlu: "🔧 Instalații Electrice Generale",
+    slug: "instalatii-electrice",
     articole: [
       {
         titlu: "De ce e periculos cablajul din aluminiu și când trebuie înlocuit",
@@ -148,6 +152,7 @@ const categorii = [
   },
   {
     titlu: "🚨 Probleme & Urgențe",
+    slug: "probleme-urgente",
     articole: [
       {
         titlu: "De ce am tensiune mică / curent slab în casă",
@@ -168,6 +173,7 @@ const categorii = [
   },
   {
     titlu: "🏠 Sfaturi pentru Proprietari",
+    slug: "sfaturi-proprietari",
     articole: [
       {
         titlu: "Cum alegi un electrician de încredere — red flags și green flags",
@@ -198,6 +204,7 @@ const categorii = [
   },
   {
     titlu: "📜 Legislație & Conformitate",
+    slug: "legislatie-conformitate",
     articole: [
       {
         titlu: "Ce este autorizarea ANRE și de ce contează pentru tine",
@@ -228,6 +235,7 @@ const categorii = [
   },
   {
     titlu: "🏠 Smart Home & Iluminat",
+    slug: "smart-home-iluminat",
     articole: [
       {
         titlu: "Cum să faci casa smart fără să refaci instalația electrică",
@@ -243,6 +251,7 @@ const categorii = [
   },
   {
     titlu: "🔬 Tehnic & Proiectare (Pentru Electricieni)",
+    slug: "tehnic-proiectare",
     articole: [
       {
         titlu: "Cum se dimensionează corect un tablou electric pe faze",
@@ -278,6 +287,7 @@ const categorii = [
   },
   {
     titlu: "☀️🔧 Fotovoltaice — Tehnic Avansat",
+    slug: "fotovoltaice-tehnic",
     articole: [
       {
         titlu: "Cum se configurează un string fotovoltaic corect",
@@ -318,8 +328,8 @@ const categorii = [
     <!-- Category navigation cards -->
     <section class="mb-14">
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-        {categorii.map((cat, i) => (
-          <a href={`#cat-${i}`} class="group p-4 rounded-2xl border border-slate-100 bg-white hover:bg-blue-50 hover:border-blue-200 transition-all text-center shadow-sm hover:shadow-md">
+        {categorii.map((cat) => (
+          <a href={`#${cat.slug}`} class="group p-4 rounded-2xl border border-slate-100 bg-white hover:bg-blue-50 hover:border-blue-200 transition-all text-center shadow-sm hover:shadow-md">
             <div class="text-2xl mb-2">{cat.titlu.split(' ')[0]}</div>
             <p class="text-xs font-bold text-slate-700 group-hover:text-blue-700 leading-tight">{cat.titlu.replace(/^[^\s]+\s/, '')}</p>
             <p class="text-[10px] text-slate-400 mt-1">{cat.articole.length} articole</p>
@@ -329,8 +339,8 @@ const categorii = [
     </section>
 
     <!-- Article sections -->
-    {categorii.map((cat, i) => (
-      <section id={`cat-${i}`} class="mb-10 scroll-mt-24">
+    {categorii.map((cat) => (
+      <section id={cat.slug} class="mb-10 scroll-mt-24">
         <div class="sticky top-[72px] z-10 bg-white/95 backdrop-blur-sm py-3 mb-4 border-b border-slate-100">
           <h2 class="text-xl font-bold text-slate-900">{cat.titlu}</h2>
         </div>
