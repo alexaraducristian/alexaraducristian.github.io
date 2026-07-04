@@ -302,7 +302,7 @@ const categorii = [
 <Layout title="Articole & Ghiduri Electrice | AlexaVolt" description="Ghiduri practice despre instalații electrice, tablouri, panouri fotovoltaice și energie verde. Articole scrise de electricieni autorizați ANRE Iași.">
   <Header />
 
-  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+  <main class="max-w-5xl mx-auto px-6 py-12 font-sans text-slate-800">
 
     <Breadcrumb pagina="Ghid Practic" />
 
@@ -311,18 +311,37 @@ const categorii = [
         📚 Articole & <span class="text-blue-600">Ghiduri Practice</span>
       </h1>
       <p class="text-lg text-slate-600 leading-relaxed">
-        Instrucțiuni pas cu pas despre instalații electrice și sisteme fotovoltaice — scrise de specialiști autorizați ANRE.
+        Instrucțiuni pas cu pas despre instalații electrice și sisteme fotovoltaice — scrise de specialiști autorizați ANRE Iași.
       </p>
     </section>
 
-    {categorii.map((cat) => (
-      <section class="mb-12">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">{cat.titlu}</h2>
-        <div class="space-y-4">
+    <!-- Category navigation cards -->
+    <section class="mb-14">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+        {categorii.map((cat, i) => (
+          <a href={`#cat-${i}`} class="group p-4 rounded-2xl border border-slate-100 bg-white hover:bg-blue-50 hover:border-blue-200 transition-all text-center shadow-sm hover:shadow-md">
+            <div class="text-2xl mb-2">{cat.titlu.split(' ')[0]}</div>
+            <p class="text-xs font-bold text-slate-700 group-hover:text-blue-700 leading-tight">{cat.titlu.replace(/^[^\s]+\s/, '')}</p>
+            <p class="text-[10px] text-slate-400 mt-1">{cat.articole.length} articole</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- Article sections -->
+    {categorii.map((cat, i) => (
+      <section id={`cat-${i}`} class="mb-10 scroll-mt-24">
+        <div class="sticky top-[72px] z-10 bg-white/95 backdrop-blur-sm py-3 mb-4 border-b border-slate-100">
+          <h2 class="text-xl font-bold text-slate-900">{cat.titlu}</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-3">
           {cat.articole.map((art) => (
-            <a href={art.href} class="block bg-slate-50 p-5 rounded-2xl border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all">
-              <h3 class="text-lg font-bold text-slate-900 mb-1">{art.titlu}</h3>
-              <p class="text-sm text-slate-600">{art.descriere}</p>
+            <a href={art.href} class="group flex gap-3 p-4 rounded-xl border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-md hover:border-blue-200 transition-all">
+              <div class="flex-shrink-0 w-1 rounded-full bg-blue-200 group-hover:bg-blue-500 transition-colors"></div>
+              <div class="min-w-0">
+                <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug mb-1">{art.titlu}</h3>
+                <p class="text-xs text-slate-500 leading-relaxed line-clamp-2">{art.descriere}</p>
+              </div>
             </a>
           ))}
         </div>
