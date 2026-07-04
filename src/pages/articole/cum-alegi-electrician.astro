@@ -1,0 +1,130 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum alegi un electrician de încredere — red flags și green flags | AlexaVolt" description="Ce întrebări să pui, ce documente să ceri și cum recunoști un electrician profesionist vs un amator. Ghid complet.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Cum alegi un electrician" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum alegi un electrician de încredere — <span class="text-emerald-600">green flags</span> și <span class="text-red-600">red flags</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Un electrician prost poate pune casa în pericol. Iată cum deosebești un profesionist de un amator, ce întrebări să pui și ce documente să ceri.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-emerald-800 mb-6 flex items-center gap-2">
+          <span>✅</span> Green flags — semne că ai găsit un profesionist
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Are autorizare ANRE validă</h3>
+            <p class="text-sm text-slate-600">Legitimație tip B (execuție) cu serie și număr verificabile. O poți verifica online pe site-ul ANRE. Fără ea, lucrarea nu e legală.</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Arată lucrări anterioare</h3>
+            <p class="text-sm text-slate-600">Poze cu tablouri echipate, trasee ordonate, etichete pe circuite. Un profesionist e mândru de munca lui.</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Oferă deviz scris detaliat</h3>
+            <p class="text-sm text-slate-600">Materiale, cantități, manoperă — totul transparent, înainte de a începe lucrul. Nu „vedem pe parcurs".</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Folosește materiale de brand</h3>
+            <p class="text-sm text-slate-600">Schneider, ABB, Hager, Legrand — nu „chinezării" fără certificare. Păstrează ambalajele și certificatele.</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Oferă buletin PRAM la final</h3>
+            <p class="text-sm text-slate-600">Proces-Verbal de Recepție a Punerii în Funcțiune — documentul care atestă că instalația e conformă.</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Comunică clar și răspunde la întrebări</h3>
+            <p class="text-sm text-slate-600">Explică ce face și de ce, propune soluții, nu se supără pe întrebări tehnice.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-red-800 mb-6 flex items-center gap-2">
+          <span>🚩</span> Red flags — semne de alarmă
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Nu are acte / refuză să arate autorizarea</h3>
+            <p class="text-sm text-slate-600">„Am pierdut-o", „e la reînnoire", „nu e nevoie pentru așa ceva" — toate sunt semne rele.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">„Merge și așa" / „am mai făcut și fără"</h3>
+            <p class="text-sm text-slate-600">Atitudine de minimizare a riscurilor. Dacă scurtează din siguranță, evită-l.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Folosește cele mai ieftine materiale</h3>
+            <p class="text-sm text-slate-600">Întreruptoare fără marcaj CE, cabluri fără certificat de conformitate, aparataj no-name.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Nu conectează firul de împământare</h3>
+            <p class="text-sm text-slate-600">„Nu e nevoie", „oricum n-ai priză de pământ" — pericol grav de electrocutare.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Preț suspect de mic</h3>
+            <p class="text-sm text-slate-600">Dacă un electrician e cu 50% sub piață, fie scurtează din materiale, fie nu face treaba complet.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Nu oferă niciun document la final</h3>
+            <p class="text-sm text-slate-600">Fără schemă unifilară, fără PRAM, fără garanție scrisă — ca și cum lucrarea n-ar fi existat.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>❓</span> Întrebări de pus înainte de angajare
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <ol class="space-y-3 text-slate-700">
+            <li><strong>1.</strong> Aveți autorizare ANRE tip B? Pot vedea legitimația?</li>
+            <li><strong>2.</strong> Ce materiale folosiți? (brand, secțiune cabluri)</li>
+            <li><strong>3.</strong> Faceți schemă unifilară înainte de execuție?</li>
+            <li><strong>4.</strong> Eliberați buletin PRAM la predare?</li>
+            <li><strong>5.</strong> Ce garanție oferiți pe manoperă?</li>
+            <li><strong>6.</strong> Câte circuite separate planificați?</li>
+            <li><strong>7.</strong> Puteți arăta lucrări anterioare similare?</li>
+            <li><strong>8.</strong> Cât durează lucrarea și care e termenul?</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">📄 Documente pe care trebuie să le primești</h2>
+        <ul class="space-y-2 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">1.</span> Schemă unifilară a tabloului electric</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">2.</span> Plan de prize și întrerupătoare</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">3.</span> Buletin de verificare PRAM</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">4.</span> Certificate de conformitate materiale</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">5.</span> Garanție scrisă (minim 2 ani manoperă)</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Cauți un electrician autorizat ANRE?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt oferă toate green flags de mai sus: autorizare ANRE, deviz transparent, materiale de brand, schemă unifilară și PRAM inclus.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Contactează AlexaVolt
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

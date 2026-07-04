@@ -1,0 +1,230 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum se dimensionează corect un tablou electric pe faze | AlexaVolt" description="Calcul de putere, echilibrare faze, coeficient de simultaneitate. Ghid tehnic pentru proiectare corectă.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Dimensionare tablou pe faze" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum se dimensionează corect un <span class="text-blue-600">tablou electric</span> pe faze
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ghid tehnic de proiectare: calcul putere instalată, coeficient de simultaneitate, echilibrare faze și alegerea disjunctorului general.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📐</span> Pasul 1: Calculul puterii instalate (Pi)
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Se însumează puterea tuturor receptoarelor (consumatorilor) din locuință:
+        </p>
+        <div class="overflow-x-auto mb-4">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Circuit</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Putere</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Observații</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Prize generale (per circuit)</td>
+                <td class="p-3 border border-slate-200">3.500W</td>
+                <td class="p-3 border border-slate-200">max 8 prize/circuit</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Iluminat (per circuit)</td>
+                <td class="p-3 border border-slate-200">1.200W</td>
+                <td class="p-3 border border-slate-200">max 10 puncte</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Cuptor electric</td>
+                <td class="p-3 border border-slate-200">3.500W</td>
+                <td class="p-3 border border-slate-200">circuit dedicat 16A</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Plită electrică</td>
+                <td class="p-3 border border-slate-200">7.000W</td>
+                <td class="p-3 border border-slate-200">circuit dedicat 32A</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Aer condiționat</td>
+                <td class="p-3 border border-slate-200">1.500-3.000W</td>
+                <td class="p-3 border border-slate-200">circuit dedicat 16A</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Boiler electric</td>
+                <td class="p-3 border border-slate-200">2.000-3.000W</td>
+                <td class="p-3 border border-slate-200">circuit dedicat 16A</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Mașină de spălat</td>
+                <td class="p-3 border border-slate-200">2.200W</td>
+                <td class="p-3 border border-slate-200">circuit dedicat 16A</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Stație EV (wallbox)</td>
+                <td class="p-3 border border-slate-200">7.400-22.000W</td>
+                <td class="p-3 border border-slate-200">circuit dedicat 32A/3F</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📊</span> Pasul 2: Coeficientul de simultaneitate (Ks)
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Nu toate aparatele funcționează în același timp. Se aplică un coeficient de reducere:
+        </p>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100 mb-4">
+          <p class="font-mono text-center text-lg text-blue-900"><strong>Putere absorbită (Pa) = Pi × Ks</strong></p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Tip locuință</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Ks recomandat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Apartament 2 camere</td>
+                <td class="p-3 border border-slate-200">0.5 – 0.6</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Apartament 3-4 camere</td>
+                <td class="p-3 border border-slate-200">0.5 – 0.7</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Casă P+1 (5+ camere)</td>
+                <td class="p-3 border border-slate-200">0.6 – 0.8</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Casă cu EV + pompă căldură</td>
+                <td class="p-3 border border-slate-200">0.7 – 0.8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚖️</span> Pasul 3: Echilibrarea fazelor (sistem trifazat)
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Într-un sistem trifazat (3×400V), circuitele se repartizează cât mai egal pe cele 3 faze. Regula: diferența între faze să nu depășească <strong>20%</strong>.
+        </p>
+        <div class="bg-amber-50 p-5 rounded-2xl border border-amber-100 mb-4">
+          <h3 class="font-bold text-amber-800 mb-2">Exemplu echilibrare — casă P+1:</h3>
+          <div class="grid md:grid-cols-3 gap-3 text-sm">
+            <div class="bg-white p-3 rounded-xl border border-amber-200">
+              <p class="font-bold text-red-700">Faza L1: ~8 kW</p>
+              <p class="text-slate-600">Prize living + iluminat parter + AC living</p>
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-amber-200">
+              <p class="font-bold text-amber-700">Faza L2: ~7.5 kW</p>
+              <p class="text-slate-600">Prize dormitoare + boiler + iluminat etaj</p>
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-amber-200">
+              <p class="font-bold text-blue-700">Faza L3: ~8.5 kW</p>
+              <p class="text-slate-600">Cuptor + prize bucătărie + mașină spălat</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-sm text-slate-500">* Plita trifazată și stația EV se conectează pe toate cele 3 faze simultan — contribuie egal.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔌</span> Pasul 4: Alegerea disjunctorului general
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Se calculează curentul maxim absorbit și se alege disjunctorul imediat superior:
+        </p>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100 mb-4">
+          <p class="font-mono text-sm text-blue-900">I = Pa / (U × √3) [trifazat] sau I = Pa / U [monofazat]</p>
+          <p class="font-mono text-sm text-blue-900 mt-2">Exemplu: 24 kW trifazat → I = 24000 / (400 × 1.73) = <strong>34.7A → disjunctor 40A/3P</strong></p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Putere absorbită</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Disjunctor general</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Cablu alimentare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">până la 7.4 kW (mono)</td>
+                <td class="p-3 border border-slate-200">32A monofazat</td>
+                <td class="p-3 border border-slate-200">3×6 mm² Cu</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">15-20 kW (tri)</td>
+                <td class="p-3 border border-slate-200">32A trifazat</td>
+                <td class="p-3 border border-slate-200">5×6 mm² Cu</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">20-28 kW (tri)</td>
+                <td class="p-3 border border-slate-200">40A trifazat</td>
+                <td class="p-3 border border-slate-200">5×10 mm² Cu</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">28-44 kW (tri)</td>
+                <td class="p-3 border border-slate-200">63A trifazat</td>
+                <td class="p-3 border border-slate-200">5×16 mm² Cu</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📦</span> Pasul 5: Capacitate de rezervă
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Tabloul trebuie să aibă <strong>minim 20-30% module libere</strong> pentru extinderi viitoare (AC nou, EV, panouri solare). Dacă ai nevoie de 36 module → alege tablou de 48 sau 54 module.
+        </p>
+        <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+          <p class="font-bold text-emerald-800 mb-2">Recomandare AlexaVolt:</p>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>• Apartament 2 camere: tablou 24 module (minim)</li>
+            <li>• Apartament 3-4 camere: tablou 36 module</li>
+            <li>• Casă P+1: tablou 54-72 module</li>
+            <li>• Casă cu PV + EV: tablou 72+ module (sau tablou secundar)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai nevoie de proiectare profesională?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt dimensionează tabloul electric pe baza consumului real, cu echilibrare pe faze și capacitate de extindere.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită proiectare tablou
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

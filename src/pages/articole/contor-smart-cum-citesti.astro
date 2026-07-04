@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Contorul smart: cum să-l citești și ce date îți oferă | AlexaVolt" description="Ghid vizual pentru contoarele smart din România (Sagemcom, Landis+Gyr). Cum citești consumul, indexul și tarifele.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Contor smart — cum citești" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Contorul smart: cum să-l <span class="text-blue-600">citești</span> și ce date îți oferă
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ghid complet pentru contoarele electronice instalate de distribuitori în România. Cum navighezi afișajul, ce înseamnă fiecare valoare și cum verifici dacă funcționează corect.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📟</span> Tipuri de contoare smart în România
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Producător</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Model comun</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Distribuitor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Sagemcom</td>
+                <td class="p-3 border border-slate-200">T210-D, CX2000</td>
+                <td class="p-3 border border-slate-200">E-Distribuție (Electrica)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Landis+Gyr</td>
+                <td class="p-3 border border-slate-200">E450, E360</td>
+                <td class="p-3 border border-slate-200">Distribuție Energie Oltenia</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">ADD Grup / Elster</td>
+                <td class="p-3 border border-slate-200">A1800</td>
+                <td class="p-3 border border-slate-200">Delgaz Grid</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Iskra</td>
+                <td class="p-3 border border-slate-200">MT880</td>
+                <td class="p-3 border border-slate-200">Diverse zone</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🖥️</span> Ce afișează ecranul — ghid de citire
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Index T1 (tarif zi / mono-orar)</h3>
+            <p class="text-sm text-slate-600">Energia totală consumată pe tarif de zi (sau tarif unic dacă nu ai bi-orar). Unitate: kWh. Se afișează ca <code class="bg-white px-1 rounded">1.8.1</code> (cod OBIS).</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Index T2 (tarif noapte)</h3>
+            <p class="text-sm text-slate-600">Energia consumată pe tarif de noapte (22:00-07:00). Cod OBIS: <code class="bg-white px-1 rounded">1.8.2</code>. Apare doar dacă ai contract bi-orar.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Putere instantanee (kW)</h3>
+            <p class="text-sm text-slate-600">Câți kilowați consumă casa TA chiar acum. Cod OBIS: <code class="bg-white px-1 rounded">1.7.0</code>. Util pentru a identifica consumatorii mari.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Tensiune (V) și Curent (A)</h3>
+            <p class="text-sm text-slate-600">Tensiunea pe fază (normal 220-240V) și curentul absorbit. Util la diagnosticare (tensiune sub 210V = problemă rețea).</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Index export (prosumator)</h3>
+            <p class="text-sm text-slate-600">Energia livrată în rețea de la panouri fotovoltaice. Cod OBIS: <code class="bg-white px-1 rounded">2.8.0</code>. Apare doar dacă ai sistem PV racordat.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔘</span> Cum navighezi între ecrane
+        </h2>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-slate-600 font-bold">•</span> <strong>Buton fizic pe contor:</strong> Apasă scurt pentru a trece la ecranul următor (cycle)</li>
+            <li class="flex items-start gap-3"><span class="text-slate-600 font-bold">•</span> <strong>Auto-scroll:</strong> Majoritatea contoarelor parcurg automat ecranele la fiecare 5-10 secunde</li>
+            <li class="flex items-start gap-3"><span class="text-slate-600 font-bold">•</span> <strong>Identificare ecran:</strong> Codul OBIS (ex: 1.8.1) apare în colțul ecranului</li>
+            <li class="flex items-start gap-3"><span class="text-slate-600 font-bold">•</span> <strong>Unitate de măsură:</strong> kWh pentru energie, kW pentru putere, V pentru tensiune</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📊</span> Tariful bi-orar — cum verifici comutarea
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Dacă ai contract bi-orar, contorul comută automat între T1 și T2. Pentru a verifica:
+        </p>
+        <div class="bg-amber-50 p-5 rounded-2xl border border-amber-100">
+          <ol class="space-y-2 text-slate-700 text-sm">
+            <li><strong>1.</strong> La 22:05, verifică ecranul — indicatorul de tarif trebuie să arate T2</li>
+            <li><strong>2.</strong> La 07:05, verifică din nou — trebuie să arate T1</li>
+            <li><strong>3.</strong> Compară indexul T2 de aseară cu cel de dimineață — diferența = consumul nocturn</li>
+            <li><strong>4.</strong> Dacă nu comută, sună la distribuitor (eroare de programare contor)</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📡</span> Comunicare contor — cum verifici
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Contoarele smart transmit automat indexul către distribuitor (prin PLC sau GSM). Dacă primești facturi cu „index estimat":
+        </p>
+        <ul class="space-y-2 text-slate-600">
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> LED-ul de comunicare (dacă există) nu clipește — posibil contor offline</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Verifică dacă nu e blocat de tablă/beton (semnalul nu trece)</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Sună la distribuitor și solicită recitire la distanță</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Transmite tu indexul prin SMS sau portal online (ca backup)</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Probleme cu contorul sau factura?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt te ajută să interpretezi corect datele și să optimizezi consumul pe baza lor.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită consultanță
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

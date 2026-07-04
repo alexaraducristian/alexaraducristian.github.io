@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Selectivitate RCD: cum configurezi cascadarea 300mA / 30mA | AlexaVolt" description="Coordonare timp/curent între diferențiale. Cum asiguri că doar RCD-ul local declanșează, nu cel general.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Selectivitate RCD — cascadare" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Selectivitate RCD: cum configurezi <span class="text-blue-600">cascadarea 300mA / 30mA</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Cum te asiguri că la un defect declanșează doar RCD-ul local (cel de pe grupul afectat), nu cel general care lasă toată casa fără curent.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🎯</span> Ce este selectivitatea?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Selectivitatea înseamnă <strong>coordonarea protecțiilor astfel încât să declanșeze doar protecția cea mai apropiată de defect</strong>. La RCD-uri, asta se obține prin diferență de timp și/sau curent între niveluri.
+        </p>
+        <div class="bg-amber-50 p-5 rounded-2xl border border-amber-100">
+          <p class="text-sm text-amber-800"><strong>Problemă frecventă:</strong> RCD general de 30mA instantaneu + RCD-uri de grup de 30mA instantanee = amândouă declanșează simultan → toată casa rămâne fără curent.</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>⏱️</span> Tipuri de RCD după timp de declanșare
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Tip</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Simbol</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Timp declanșare</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Utilizare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Instantaneu</td>
+                <td class="p-3 border border-slate-200 font-mono">—</td>
+                <td class="p-3 border border-slate-200">&lt; 40 ms</td>
+                <td class="p-3 border border-slate-200">Protecție pe grup (nivel 2)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Selectiv (time-delayed)</td>
+                <td class="p-3 border border-slate-200 font-mono">S</td>
+                <td class="p-3 border border-slate-200">60–200 ms</td>
+                <td class="p-3 border border-slate-200">RCD general (nivel 1)</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Super-selectiv</td>
+                <td class="p-3 border border-slate-200 font-mono">S+</td>
+                <td class="p-3 border border-slate-200">200–500 ms</td>
+                <td class="p-3 border border-slate-200">Nivel 0 (rar în rezidențial)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🏗️</span> Configurație corectă — 300mA(S) + 30mA
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Schema clasică pentru selectivitate în rezidențial:
+        </p>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 mb-4">
+          <div class="text-center font-mono text-sm text-blue-900 space-y-2">
+            <p><strong>Nivel 1 (general):</strong> RCD 300mA tip S (selectiv) — 63A sau 40A</p>
+            <p class="text-2xl">↓</p>
+            <p><strong>Nivel 2 (pe grup):</strong> RCD 30mA instantaneu — 40A sau 25A</p>
+            <p class="text-2xl">↓</p>
+            <p><strong>Nivel 3 (circuite):</strong> Disjunctoare MCB 10A/16A/20A/32A</p>
+          </div>
+        </div>
+        <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+          <p class="text-sm text-emerald-800"><strong>Rezultat:</strong> La un defect de izolație pe un circuit, declanșează doar RCD-ul de 30mA al grupului respectiv. Restul casei rămâne alimentată. RCD-ul de 300mA S acționează ca backup dacă cel de 30mA eșuează.</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📋</span> Când se justifică RCD 300mA selectiv
+        </h2>
+        <ul class="space-y-3 text-slate-600">
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> Tablou cu mai mult de 2 RCD-uri de 30mA aval</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> Case cu 3 faze unde un RCD general protejează trifazat</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> Instalații unde continuitatea alimentării e critică (home office, echipamente medicale)</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> Cerință normativ I7 pentru tablouri de etaj / subtablouri</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🔧</span> Exemple practice de configurare
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Apartament 3 camere (monofazat)</h3>
+            <p class="text-sm text-slate-600">RCD general 63A/300mA/S → 3× RCD 40A/30mA (grup prize, grup iluminat, grup baie+bucătărie)</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Casă P+1 (trifazat)</h3>
+            <p class="text-sm text-slate-600">RCD 4P/63A/300mA/S → per fază: 2× RCD 40A/30mA (prize + dedicat). Plita și EV pe protecție separată.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Iluminat exterior / piscină</h3>
+            <p class="text-sm text-slate-600">RCD dedicat 30mA instantaneu (sau 10mA pentru zonă 1 piscină) — fără a afecta restul casei la declanșare.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-red-50 p-6 rounded-2xl border border-red-100">
+        <h2 class="text-xl font-bold text-red-800 mb-4">⚠️ Greșeli frecvente</h2>
+        <ul class="space-y-2 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">✗</span> RCD general 30mA instantaneu + RCD-uri grup 30mA instantanee (nu se obține selectivitate)</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">✗</span> RCD general prea mic (25A) pentru suma curenților de aval</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">✗</span> Omiterea RCD-ului general „că oricum am pe grup" (pierdere protecție de rezervă)</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">✗</span> Circuite care ocolesc RCD-ul (conectate direct pe disjunctor fără protecție diferențială)</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei selectivitate reală în tabloul tău?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt proiectează tablouri cu cascadare corectă — un defect nu mai lasă toată casa în beznă.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită proiectare tablou
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

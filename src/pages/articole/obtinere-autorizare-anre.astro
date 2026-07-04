@@ -1,0 +1,216 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum să-ți obții autorizarea ANRE — ghid complet pentru electricieni | AlexaVolt" description="Documente necesare, tipuri de autorizare (A, B, C1, C2), examen și reînnoire. Ghid pas cu pas pentru electricieni.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Obținere autorizare ANRE" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum să-ți obții <span class="text-blue-600">autorizarea ANRE</span> — ghid complet pentru electricieni
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Tot ce trebuie să știi: tipuri de autorizare, condiții de experiență, documente necesare, examen și procedura de reînnoire.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📋</span> Tipuri de autorizare electricieni
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Tip</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Denumire</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Ce permite</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Grad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200 font-bold text-blue-700">A</td>
+                <td class="p-3 border border-slate-200">Proiectare</td>
+                <td class="p-3 border border-slate-200">Proiectarea instalațiilor electrice</td>
+                <td class="p-3 border border-slate-200">I, II, III, IV</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200 font-bold text-emerald-700">B</td>
+                <td class="p-3 border border-slate-200">Execuție</td>
+                <td class="p-3 border border-slate-200">Executarea (montajul) instalațiilor electrice</td>
+                <td class="p-3 border border-slate-200">I, II, III, IV</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-bold text-amber-700">C1</td>
+                <td class="p-3 border border-slate-200">Verificare (existente)</td>
+                <td class="p-3 border border-slate-200">Verificarea instalațiilor electrice existente</td>
+                <td class="p-3 border border-slate-200">I, II, III, IV</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200 font-bold text-red-700">C2</td>
+                <td class="p-3 border border-slate-200">Verificare (noi)</td>
+                <td class="p-3 border border-slate-200">Verificarea instalațiilor electrice noi (PRAM)</td>
+                <td class="p-3 border border-slate-200">I, II, III, IV</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 mt-4">
+          <p class="text-sm text-blue-800"><strong>Grad I</strong> = până la 1kV (rezidențial). Cele mai frecvente autorizări pentru electricieni de casă sunt <strong>B gradul I</strong> (execuție joasă tensiune).</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🎓</span> Condiții de studii și experiență
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Studii</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Tip B (execuție)</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Tip A (proiectare)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Inginer electric</td>
+                <td class="p-3 border border-slate-200">2 ani experiență</td>
+                <td class="p-3 border border-slate-200">3 ani experiență</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Subinginer / licență scurtă</td>
+                <td class="p-3 border border-slate-200">3 ani experiență</td>
+                <td class="p-3 border border-slate-200">4 ani experiență</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Tehnician / maistru</td>
+                <td class="p-3 border border-slate-200">4 ani experiență</td>
+                <td class="p-3 border border-slate-200">—</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Calificare profesională (electrician)</td>
+                <td class="p-3 border border-slate-200">5 ani experiență</td>
+                <td class="p-3 border border-slate-200">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-slate-500 mt-2">* Experiența trebuie dovedită prin adeverință de la angajator sau contracte de prestări servicii.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📄</span> Documente necesare
+        </h2>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <ol class="space-y-3 text-slate-700">
+            <li><strong>1.</strong> Cerere tip (formular ANRE, descărcabil de pe site)</li>
+            <li><strong>2.</strong> Diplomă de studii (copie legalizată sau conformă cu originalul)</li>
+            <li><strong>3.</strong> Adeverință experiență profesională (de la angajator)</li>
+            <li><strong>4.</strong> Copie CI/BI</li>
+            <li><strong>5.</strong> Certificat de cazier judiciar (valabil 6 luni)</li>
+            <li><strong>6.</strong> Adeverință medicală (apt pentru lucru în domeniu electric)</li>
+            <li><strong>7.</strong> 2 fotografii tip buletin</li>
+            <li><strong>8.</strong> Dovada plății taxei de autorizare</li>
+            <li><strong>9.</strong> Certificat curs de specializare (pentru anumite tipuri — ex: fotovoltaice)</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📝</span> Examenul ANRE
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Format</h3>
+            <p class="text-sm text-slate-600">Test grilă (30 de întrebări) + proba practică (pentru tipul B). Durata: 1-2 ore. Se susține la sediul ANRE sau la centrele regionale.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Materie de examen</h3>
+            <p class="text-sm text-slate-600">Normativ I7, PE 116, NTE 007, legislație ANRE, protecția muncii, scheme electrice, dimensionare, protecții.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Punctaj de trecere</h3>
+            <p class="text-sm text-slate-600">Minim 70% răspunsuri corecte. La nepromovare, se poate reprograma după 30 de zile.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔄</span> Valabilitate și reînnoire
+        </h2>
+        <div class="bg-amber-50 p-6 rounded-2xl border border-amber-100">
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">•</span> <strong>Valabilitate:</strong> 5 ani de la data emiterii</li>
+            <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">•</span> <strong>Reînnoire:</strong> cerere cu 60 de zile înainte de expirare</li>
+            <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">•</span> <strong>Condiții reînnoire:</strong> dovada activității continue în domeniu (lucrări executate)</li>
+            <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">•</span> <strong>Fără reexaminare</strong> la reînnoire (dacă nu a expirat)</li>
+            <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">•</span> <strong>Dacă a expirat:</strong> se reia procedura de la zero (inclusiv examen)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>💰</span> Costuri orientative
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Element</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Cost estimat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Taxă ANRE autorizare inițială</td>
+                <td class="p-3 border border-slate-200">300-500 lei</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Cazier judiciar</td>
+                <td class="p-3 border border-slate-200">50 lei</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Adeverință medicală</td>
+                <td class="p-3 border border-slate-200">100-200 lei</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Curs pregătitor (opțional)</td>
+                <td class="p-3 border border-slate-200">500-1500 lei</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Taxă reînnoire</td>
+                <td class="p-3 border border-slate-200">200-350 lei</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">AlexaVolt — electrician autorizat ANRE</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          Lucrăm exclusiv cu autorizare ANRE validă. Fiecare lucrare este conformă și documentată.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Contactează AlexaVolt
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

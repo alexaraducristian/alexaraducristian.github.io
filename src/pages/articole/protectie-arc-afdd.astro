@@ -1,0 +1,151 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Protecția la arc electric (AFDD) — merită sau nu în rezidențial? | AlexaVolt" description="Ce este un AFDD, cum detectează arcul electric și când se justifică în locuințe. Cost vs beneficiu analiză completă.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Protecție AFDD — arc electric" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Protecția la arc electric <span class="text-red-600">(AFDD)</span> — merită sau nu în rezidențial?
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          AFDD-ul detectează arcuri electrice pe care nici disjunctorul, nici RCD-ul nu le văd. Dar costă 400-600 lei/bucată. Când se justifică?
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚡</span> Ce este un arc electric?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Arcul electric este o descărcare luminoasă prin aer (sau gaz) între două conductoare. Temperatura la punctul de arc ajunge la <strong>3.000-6.000°C</strong> — suficient să aprindă orice material combustibil.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-red-50 p-4 rounded-xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Arc serie</h3>
+            <p class="text-sm text-slate-600">Conductor rupt/deteriorat. Curentul sare prin aer la locul rupturii. Disjunctorul NU îl detectează (curentul nu crește).</p>
+          </div>
+          <div class="bg-red-50 p-4 rounded-xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Arc paralel</h3>
+            <p class="text-sm text-slate-600">Izolație deteriorată între L și N sau L și PE. Poate cauza curenți mari → disjunctorul declanșează, DAR nu întotdeauna suficient de rapid.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔬</span> Cum funcționează AFDD-ul
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          AFDD-ul (Arc Fault Detection Device) analizează <strong>forma de undă a curentului</strong> în timp real. Arcul produce un „zgomot" electric caracteristic (frecvențe înalte, neregulate) pe care AFDD-ul îl recunoaște prin algoritmi.
+        </p>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <p class="font-bold text-blue-800 mb-2">Pași de detecție:</p>
+          <ol class="space-y-2 text-sm text-slate-700">
+            <li><strong>1.</strong> Monitorizare continuă a formei de undă (curent + tensiune)</li>
+            <li><strong>2.</strong> Analiză frecvențială — arcul produce componente între 1 kHz și 100 kHz</li>
+            <li><strong>3.</strong> Algoritm de discriminare (diferențiază arcul de zgomotul normal al motoarelor/dimmerelor)</li>
+            <li><strong>4.</strong> Declanșare în &lt; 1 secundă dacă arcul e confirmat</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📋</span> Când este recomandat / obligatoriu
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Situație</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Recomandare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Dormitoare (IEC 60364-4-42)</td>
+                <td class="p-3 border border-slate-200 font-semibold text-amber-700">Recomandat (obligatoriu în unele țări)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Construcții din lemn / cadru lemn</td>
+                <td class="p-3 border border-slate-200 font-semibold text-red-700">Foarte recomandat</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Poduri, mansarde (materiale combustibile)</td>
+                <td class="p-3 border border-slate-200 font-semibold text-red-700">Foarte recomandat</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Clădiri monument / patrimoniu</td>
+                <td class="p-3 border border-slate-200 font-semibold text-amber-700">Recomandat</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Instalație nouă, casă standard beton</td>
+                <td class="p-3 border border-slate-200 font-semibold text-emerald-700">Opțional (nice-to-have)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>💰</span> Analiză cost vs beneficiu
+        </h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Argumente PRO</h3>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Detectează incendii pe care nimeni altceva nu le detectează</li>
+              <li>• Protejează împotriva cablurilor îmbătrânite/deteriorate</li>
+              <li>• Protejează la mobilă deasupra cablului (forfecare lentă)</li>
+              <li>• Pace de spirit (inestimabil pentru dormitoare copii)</li>
+            </ul>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Argumente CONTRA</h3>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Cost ridicat: 400-600 lei/bucată × 8-12 circuite = 3.200-7.200 lei</li>
+              <li>• Declanșări intempestive posibile (aspirator, bormaschină)</li>
+              <li>• Ocupă 2 module/circuit în tablou (tablou mai mare)</li>
+              <li>• În România nu este (încă) obligatoriu</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-blue-50 p-6 rounded-2xl border border-blue-100">
+        <h2 class="text-xl font-bold text-blue-900 mb-4">💡 Recomandarea AlexaVolt</h2>
+        <p class="text-slate-700 mb-4">
+          O abordare pragmatică: instalează AFDD <strong>selectiv</strong>, pe circuitele cu risc maxim:
+        </p>
+        <ul class="space-y-2 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">1.</span> Dormitoare (protecție în somn, când nu poți reacționa)</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">2.</span> Circuite care trec prin pod/mansardă din lemn</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">3.</span> Circuite cu trasee lungi, vechi, sau greu accesibile</li>
+        </ul>
+        <p class="text-sm text-slate-600 mt-4">Cost estimat: 3-4 AFDD-uri × 500 lei = <strong>1.500-2.000 lei</strong> — o investiție rezonabilă pentru protecție suplimentară.</p>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei protecție completă la incendiu?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt evaluează riscul și recomandă AFDD doar acolo unde contează cu adevărat.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită evaluare
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

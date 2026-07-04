@@ -1,0 +1,158 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum se configurează un string fotovoltaic corect | AlexaVolt" description="Tensiune min/max invertor, număr panouri în serie și paralel. Ghid tehnic pentru dimensionare corectă.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Configurare string fotovoltaic" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum se configurează un <span class="text-amber-600">string fotovoltaic</span> corect
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Prea multe panouri în serie = arzi invertorul. Prea puține = nu pornește. Iată cum calculezi configurația optimă.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔗</span> Ce este un string?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Un string = mai multe panouri fotovoltaice conectate <strong>în serie</strong>. Tensiunile se adună, curentul rămâne constant. Invertorul are un interval de tensiune (fereastra MPPT) în care funcționează optim.
+        </p>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <p class="text-sm text-blue-800"><strong>Regulă de aur:</strong> Tensiunea string-ului trebuie să fie ÎNTOTDEAUNA între Vmin și Vmax ale invertorului, în orice condiții de temperatură (vară și iarnă).</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📐</span> Parametrii panoului — ce contează
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Parametru</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Simbol</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Exemplu (panou 580W)</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Utilizare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Tensiune circuit deschis</td>
+                <td class="p-3 border border-slate-200 font-mono">Voc</td>
+                <td class="p-3 border border-slate-200">51.8V</td>
+                <td class="p-3 border border-slate-200">Calcul Vmax (iarnă)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Tensiune la putere maximă</td>
+                <td class="p-3 border border-slate-200 font-mono">Vmp</td>
+                <td class="p-3 border border-slate-200">43.5V</td>
+                <td class="p-3 border border-slate-200">Calcul Vmin (vară)</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Coeficient temp. Voc</td>
+                <td class="p-3 border border-slate-200 font-mono">β (Voc)</td>
+                <td class="p-3 border border-slate-200">-0.28%/°C</td>
+                <td class="p-3 border border-slate-200">Corecție temperatură</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Curent scurtcircuit</td>
+                <td class="p-3 border border-slate-200 font-mono">Isc</td>
+                <td class="p-3 border border-slate-200">14.1A</td>
+                <td class="p-3 border border-slate-200">Dimensionare cabluri/siguranțe</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🌡️</span> Corecția de temperatură — de ce contează
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Tensiunea panoului variază invers cu temperatura. Iarna (−15°C) tensiunea crește, vara (+70°C pe celulă) tensiunea scade. Datele din datasheet sunt la 25°C (STC).
+        </p>
+        <div class="bg-amber-50 p-5 rounded-2xl border border-amber-100 mb-4">
+          <p class="font-bold text-amber-800 mb-2">Formule de corecție:</p>
+          <div class="font-mono text-sm text-slate-700 space-y-2">
+            <p><strong>Voc(iarnă)</strong> = Voc × [1 + β × (Tmin − 25)] → tensiune MAXIMĂ</p>
+            <p><strong>Vmp(vară)</strong> = Vmp × [1 + β × (Tmax_celulă − 25)] → tensiune MINIMĂ</p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-3 text-sm">
+          <div class="bg-blue-50 p-3 rounded-xl border border-blue-100">
+            <p class="font-semibold text-blue-800">România — temperaturi de calcul:</p>
+            <p class="text-slate-600">Tmin ambient: −20°C (zone montane) / −15°C (câmpie)</p>
+            <p class="text-slate-600">Tmax celulă: +65°C la +75°C (vara, pe acoperiș)</p>
+          </div>
+          <div class="bg-red-50 p-3 rounded-xl border border-red-100">
+            <p class="font-semibold text-red-800">Risc dacă ignori:</p>
+            <p class="text-slate-600">Iarnă: Voc depășește Vmax invertor → defect permanent</p>
+            <p class="text-slate-600">Vară: Vmp scade sub Vmin → invertorul se oprește</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🧮</span> Exemplu de calcul complet
+        </h2>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <p class="font-bold text-slate-800 mb-3">Date: Panou 580W (Voc=51.8V, Vmp=43.5V, β=-0.28%/°C) + Invertor Huawei SUN2000-10KTL (MPPT: 200-1000V, Vmax=1100V)</p>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-semibold text-red-700">1. Calcul Vmax (iarnă, Tmin = -15°C):</p>
+              <p class="font-mono">Voc(-15°C) = 51.8 × [1 + (-0.0028) × (-15-25)] = 51.8 × 1.112 = <strong>57.6V</strong></p>
+              <p>Nr max panouri = 1100 / 57.6 = <strong>19 panouri</strong> (rotunjit în jos)</p>
+            </div>
+            <div>
+              <p class="font-semibold text-blue-700">2. Calcul Vmin (vară, Tcelulă = 70°C):</p>
+              <p class="font-mono">Vmp(70°C) = 43.5 × [1 + (-0.0028) × (70-25)] = 43.5 × 0.874 = <strong>38.0V</strong></p>
+              <p>Nr min panouri = 200 / 38.0 = <strong>6 panouri</strong> (rotunjit în sus)</p>
+            </div>
+            <div class="bg-emerald-50 p-3 rounded-xl border border-emerald-100">
+              <p class="font-semibold text-emerald-800">Rezultat: String-ul poate avea între 6 și 19 panouri.</p>
+              <p class="text-slate-600">Configurație tipică: 2 string-uri × 10 panouri = 20 panouri × 580W = 11.6 kWp</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔀</span> Serie vs Paralel — când faci mai multe string-uri
+        </h2>
+        <ul class="space-y-3 text-slate-600">
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>String-uri în paralel</strong> pe același MPPT: curenții se adună. Verifică Imax MPPT.</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>String-uri cu orientări diferite</strong>: OBLIGATORIU pe MPPT-uri separate (est + vest = 2 MPPT)</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Mismatch</strong>: panouri diferite pe același string → pierderi. Aceeași serie + lot pe un string!</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Umbrire parțială</strong>: un panou umbrit pe string reduce tot string-ul. Soluție: optimizere sau micro-invertoare.</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Configurare profesională a sistemului PV</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt dimensionează string-urile optim, cu simulare termică pentru România.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită dimensionare PV
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

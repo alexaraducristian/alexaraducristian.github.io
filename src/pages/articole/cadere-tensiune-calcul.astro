@@ -1,0 +1,180 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum se calculează căderea de tensiune pe traseu lung | AlexaVolt" description="Formula de calcul, tabel cu valori practice și exemple. Maxim admis: 3% iluminat, 5% prize (normativ I7).">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Cădere de tensiune — calcul" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum se calculează <span class="text-blue-600">căderea de tensiune</span> pe traseu lung
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          De ce luminile din garaj sunt mai slabe? De ce pompa nu pornește? Probabil căderea de tensiune e prea mare. Iată cum o calculezi și cum o rezolvi.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📐</span> Formula de calcul
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 mb-4">
+          <p class="font-mono text-center text-lg text-blue-900 mb-2"><strong>ΔU = 2 × I × L × ρ / S</strong></p>
+          <div class="text-sm text-slate-700 space-y-1">
+            <p><strong>ΔU</strong> = căderea de tensiune (V)</p>
+            <p><strong>I</strong> = curentul absorbit (A)</p>
+            <p><strong>L</strong> = lungimea traseului (m) — distanța tablou → consumator</p>
+            <p><strong>ρ</strong> = rezistivitatea (0.0175 Ω·mm²/m pentru cupru)</p>
+            <p><strong>S</strong> = secțiunea conductorului (mm²)</p>
+          </div>
+        </div>
+        <div class="bg-amber-50 p-4 rounded-xl border border-amber-100">
+          <p class="text-sm text-amber-800"><strong>Alternativ (formula simplificată):</strong> ΔU% = (200 × P × L) / (γ × S × U²), unde P = puterea în W, γ = conductivitatea (57 pentru Cu), U = 230V.</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📏</span> Limite maxime admise (normativ I7)
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Tip circuit</th>
+                <th class="p-3 text-left font-bold border border-slate-200">ΔU max admis</th>
+                <th class="p-3 text-left font-bold border border-slate-200">La 230V</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Iluminat</td>
+                <td class="p-3 border border-slate-200 font-bold text-red-700">3%</td>
+                <td class="p-3 border border-slate-200">6.9V (minim 223V la bec)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Prize / forță</td>
+                <td class="p-3 border border-slate-200 font-bold text-amber-700">5%</td>
+                <td class="p-3 border border-slate-200">11.5V (minim 218.5V la priză)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📊</span> Tabel practic — căderea de tensiune la 16A
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Secțiune</th>
+                <th class="p-3 text-left font-bold border border-slate-200">10m</th>
+                <th class="p-3 text-left font-bold border border-slate-200">20m</th>
+                <th class="p-3 text-left font-bold border border-slate-200">30m</th>
+                <th class="p-3 text-left font-bold border border-slate-200">50m</th>
+                <th class="p-3 text-left font-bold border border-slate-200">100m</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold">1.5 mm²</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">3.7V (1.6%)</td>
+                <td class="p-3 border border-slate-200 text-amber-700">7.5V (3.2%)</td>
+                <td class="p-3 border border-slate-200 text-red-700">11.2V (4.9%)</td>
+                <td class="p-3 border border-slate-200 text-red-700">18.7V (8.1%)</td>
+                <td class="p-3 border border-slate-200 text-red-700">37.3V (16.2%)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200 font-semibold">2.5 mm²</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">2.2V (1.0%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">4.5V (1.9%)</td>
+                <td class="p-3 border border-slate-200 text-amber-700">6.7V (2.9%)</td>
+                <td class="p-3 border border-slate-200 text-amber-700">11.2V (4.9%)</td>
+                <td class="p-3 border border-slate-200 text-red-700">22.4V (9.7%)</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold">4 mm²</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">1.4V (0.6%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">2.8V (1.2%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">4.2V (1.8%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">7.0V (3.0%)</td>
+                <td class="p-3 border border-slate-200 text-amber-700">14.0V (6.1%)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200 font-semibold">6 mm²</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">0.9V (0.4%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">1.9V (0.8%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">2.8V (1.2%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">4.7V (2.0%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">9.3V (4.1%)</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold">10 mm²</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">0.6V (0.2%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">1.1V (0.5%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">1.7V (0.7%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">2.8V (1.2%)</td>
+                <td class="p-3 border border-slate-200 text-emerald-700">5.6V (2.4%)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-slate-500 mt-2">* Valori calculate pentru cupru, monofazat, la 16A. Verde = OK, galben = la limită, roșu = depășit.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📝</span> Exemple practice
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Exemplu 1: Garaj la 50m de tablou</h3>
+            <p class="text-sm text-slate-600 mb-2">Circuit priză 16A, cablu 2.5 mm²: ΔU = 2×16×50×0.0175/2.5 = <strong>11.2V (4.9%)</strong></p>
+            <p class="text-sm text-emerald-700 font-semibold">→ La limită pentru prize (5%). OK, dar fără rezervă.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Exemplu 2: Iluminat grădină la 80m</h3>
+            <p class="text-sm text-slate-600 mb-2">Circuit 6A (LED-uri), cablu 1.5 mm²: ΔU = 2×6×80×0.0175/1.5 = <strong>11.2V (4.9%)</strong></p>
+            <p class="text-sm text-red-700 font-semibold">→ Depășit pentru iluminat (max 3%)! Soluție: cablu de 2.5 mm² → ΔU = 6.7V (2.9%) ✓</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔧</span> Soluții când căderea e prea mare
+        </h2>
+        <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">1.</span> <strong>Mărește secțiunea cablului</strong> — cel mai simplu (2.5→4, 4→6 mm²)</li>
+            <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">2.</span> <strong>Subtablou local</strong> — alimentat cu cablu gros, circuitele finale sunt scurte</li>
+            <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">3.</span> <strong>Reducere curent</strong> — aparate mai eficiente, LED în loc de halogen</li>
+            <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">4.</span> <strong>Alimentare trifazată</strong> — la tensiune de 400V, căderea e proporțional mai mică</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Traseu lung? Dimensionăm corect.</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt calculează căderea de tensiune pe fiecare traseu și dimensionează cablul optim — fără surprize.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită dimensionare
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

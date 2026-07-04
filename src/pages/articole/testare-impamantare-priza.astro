@@ -1,0 +1,139 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum să testezi dacă prizele tale au împământare corectă | AlexaVolt" description="Cum verifici împământarea prizelor cu un tester de priză de 30 lei. Ghid pas cu pas cu interpretarea LED-urilor.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Testare împământare priză" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum să testezi dacă prizele tale au <span class="text-yellow-600">împământare corectă</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Un tester de priză de 30 lei îți spune în 2 secunde dacă instalația ta electrică e sigură. Iată cum îl folosești și ce înseamnă fiecare combinație de LED-uri.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔌</span> Ce este un tester de priză?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Este un dispozitiv mic, cu trei LED-uri, care se introduce direct în priză. Costă între <strong>25–40 lei</strong> (găsești pe Dedeman, eMAG sau la orice magazin electric) și nu necesită cunoștințe tehnice. Modelele comune sunt de la HT Instruments, Habotest sau generic cu 3 LED-uri (roșu, galben, verde).
+        </p>
+        <div class="bg-amber-50 p-5 rounded-2xl border border-amber-100 mb-4">
+          <p class="text-sm text-amber-800"><strong>⚠️ Important:</strong> Testerul verifică doar prezența împământării și polaritatea. Nu măsoară rezistența de dispersie (pentru asta e nevoie de un megohmetru profesional).</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📋</span> Cum se folosește — pas cu pas
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <ol class="space-y-4 text-slate-700">
+            <li><strong>Pasul 1:</strong> Asigură-te că priza este sub tensiune (un aparat funcționează pe ea).</li>
+            <li><strong>Pasul 2:</strong> Introdu testerul în priză — verifică să intre complet pe ambii pini + împământare.</li>
+            <li><strong>Pasul 3:</strong> Citește combinația de LED-uri aprinse (vezi tabelul de mai jos).</li>
+            <li><strong>Pasul 4:</strong> Testează TOATE prizele din casă, nu doar una.</li>
+            <li><strong>Pasul 5:</strong> Notează prizele cu probleme și contactează un electrician.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>💡</span> Interpretarea LED-urilor
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold text-slate-900 border border-slate-200">LED-uri aprinse</th>
+                <th class="p-3 text-left font-bold text-slate-900 border border-slate-200">Semnificație</th>
+                <th class="p-3 text-left font-bold text-slate-900 border border-slate-200">Acțiune</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-emerald-50">
+                <td class="p-3 border border-slate-200 font-mono">🟡 🟢 ⚫</td>
+                <td class="p-3 border border-slate-200 text-emerald-800 font-semibold">✅ Corect — totul e în regulă</td>
+                <td class="p-3 border border-slate-200">Nicio acțiune necesară</td>
+              </tr>
+              <tr class="bg-red-50">
+                <td class="p-3 border border-slate-200 font-mono">🟡 ⚫ ⚫</td>
+                <td class="p-3 border border-slate-200 text-red-800 font-semibold">❌ Lipsește împământarea</td>
+                <td class="p-3 border border-slate-200">Cheamă electrician — pericol de electrocutare</td>
+              </tr>
+              <tr class="bg-red-50">
+                <td class="p-3 border border-slate-200 font-mono">🔴 🟡 ⚫</td>
+                <td class="p-3 border border-slate-200 text-red-800 font-semibold">❌ Polaritate inversată (L/N schimbate)</td>
+                <td class="p-3 border border-slate-200">Cheamă electrician — conexiune greșită</td>
+              </tr>
+              <tr class="bg-red-50">
+                <td class="p-3 border border-slate-200 font-mono">🔴 ⚫ ⚫</td>
+                <td class="p-3 border border-slate-200 text-red-800 font-semibold">❌ Polaritate inversată + fără împământare</td>
+                <td class="p-3 border border-slate-200">Cheamă electrician urgent</td>
+              </tr>
+              <tr class="bg-red-50">
+                <td class="p-3 border border-slate-200 font-mono">🔴 🟡 🟢</td>
+                <td class="p-3 border border-slate-200 text-red-800 font-semibold">❌ Împământare pe fază (pericol grav!)</td>
+                <td class="p-3 border border-slate-200">NU folosi priza — cheamă electrician imediat</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200 font-mono">⚫ ⚫ ⚫</td>
+                <td class="p-3 border border-slate-200 text-slate-800 font-semibold">— Fără tensiune</td>
+                <td class="p-3 border border-slate-200">Verifică dacă priza e alimentată</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-slate-500 mt-3">* Ordinea LED-urilor poate varia în funcție de model. Consultă instrucțiunile testerului tău.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🏠</span> De ce e importantă împământarea?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Împământarea oferă un traseu sigur pentru curentul de defect. Fără ea:
+        </p>
+        <ul class="space-y-3 text-slate-600">
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">•</span> Carcasa metalică a unui electrocasnic defect rămâne sub tensiune</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">•</span> RCD-ul (diferențialul) nu poate declanșa corect</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">•</span> Risc de electrocutare la atingerea aparatului</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">•</span> Protecția la supratensiune (SPD) nu funcționează</li>
+        </ul>
+      </section>
+
+      <section class="mb-12 bg-amber-50 p-6 rounded-2xl border border-amber-100">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">🚨 Când să chemi electricianul</h2>
+        <ul class="space-y-2 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Orice priză fără împământare (LED verde nu se aprinde)</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Polaritate inversată pe mai multe prize</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Instalație veche (pre-2000) care nu a fost verificată</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Senzație de „curent" la atingerea carcasei aparatelor</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Prize fără împământare?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt verifică profesional întreaga instalație și aduce împământarea la zi, conform normativelor în vigoare.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită verificare
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

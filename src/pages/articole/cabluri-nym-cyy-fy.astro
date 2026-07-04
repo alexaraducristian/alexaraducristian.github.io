@@ -1,0 +1,200 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cabluri NYM vs CYY vs FY — când folosești fiecare tip | AlexaVolt" description="Comparație cabluri electrice: NYM pentru interior, CYY pentru exterior, FY pentru tablou. Aplicații și normativ I7.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Cabluri NYM vs CYY vs FY" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cabluri <span class="text-blue-600">NYM</span> vs <span class="text-emerald-600">CYY</span> vs <span class="text-amber-600">FY</span> — când folosești fiecare
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Ghid complet pentru alegerea cablurilor electrice conform normativului I7: aplicații, avantaje și limitări pentru fiecare tip.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📊</span> Comparație rapidă
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Caracteristică</th>
+                <th class="p-3 text-left font-bold border border-slate-200">NYM-J</th>
+                <th class="p-3 text-left font-bold border border-slate-200">CYY-F</th>
+                <th class="p-3 text-left font-bold border border-slate-200">FY / H07V-K</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold">Conductor</td>
+                <td class="p-3 border border-slate-200">Cupru rigid (solid)</td>
+                <td class="p-3 border border-slate-200">Cupru rigid (solid)</td>
+                <td class="p-3 border border-slate-200">Cupru flexibil (lițat)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200 font-semibold">Izolație</td>
+                <td class="p-3 border border-slate-200">PVC + manta PVC</td>
+                <td class="p-3 border border-slate-200">PVC + manta PVC</td>
+                <td class="p-3 border border-slate-200">PVC (fără manta)</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold">Montaj</td>
+                <td class="p-3 border border-slate-200">Îngropat / aparent</td>
+                <td class="p-3 border border-slate-200">Exterior / subteran</td>
+                <td class="p-3 border border-slate-200">În tub / tablou</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200 font-semibold">UV rezistent</td>
+                <td class="p-3 border border-slate-200">❌ Nu</td>
+                <td class="p-3 border border-slate-200">✅ Da</td>
+                <td class="p-3 border border-slate-200">❌ Nu</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200 font-semibold">Flexibilitate</td>
+                <td class="p-3 border border-slate-200">Medie (rigid)</td>
+                <td class="p-3 border border-slate-200">Scăzută (rigid)</td>
+                <td class="p-3 border border-slate-200">Înaltă (flexibil)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200 font-semibold">Preț relativ</td>
+                <td class="p-3 border border-slate-200">Mediu-mare</td>
+                <td class="p-3 border border-slate-200">Mediu</td>
+                <td class="p-3 border border-slate-200">Mic</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4 flex items-center gap-2">
+          <span>🔵</span> NYM-J — cablul standard pentru interior
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Cel mai folosit cablu în instalații rezidențiale din România. Rigid, ușor de tras prin canale și de conectat în doze.
+        </p>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <p class="font-bold text-blue-800 mb-2">Aplicații tipice:</p>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>• Trasee îngropate în tencuială (prize, întrerupătoare)</li>
+            <li>• Montaj aparent pe pat de cabluri / jgheab</li>
+            <li>• Alimentare tablou secundar (secțiuni mari: 3×6, 5×6)</li>
+          </ul>
+          <p class="font-bold text-blue-800 mb-2 mt-4">Secțiuni comune:</p>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>• 3×1.5 mm² — iluminat (max 10A)</li>
+            <li>• 3×2.5 mm² — prize (max 16A)</li>
+            <li>• 3×4 mm² — circuit dedicat (cuptor, AC)</li>
+            <li>• 5×2.5 mm² — circuite trifazate</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-emerald-800 mb-4 flex items-center gap-2">
+          <span>🟢</span> CYY-F — cablul de exterior
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Manta neagră rezistentă UV și umezeală. Proiectat pentru montaj în exterior sau subteran (în tub).
+        </p>
+        <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+          <p class="font-bold text-emerald-800 mb-2">Aplicații tipice:</p>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>• Alimentare garaj, foisor, anexe</li>
+            <li>• Iluminat exterior / grădină</li>
+            <li>• Traseu subteran (în tub PVC sau copex)</li>
+            <li>• Alimentare tablou secundar exterior</li>
+          </ul>
+          <p class="font-bold text-emerald-800 mb-2 mt-4">Atenție:</p>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>• Montaj subteran: adâncime minimă 70 cm + tub de protecție + bandă de avertizare</li>
+            <li>• Nu se montează direct în beton (fără tub)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-amber-800 mb-4 flex items-center gap-2">
+          <span>🟡</span> FY (H07V-K) — conductor flexibil
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Conductor individual flexibil, fără manta exterioară. Se folosește obligatoriu în tub de protecție sau în interiorul tablourilor.
+        </p>
+        <div class="bg-amber-50 p-5 rounded-2xl border border-amber-100">
+          <p class="font-bold text-amber-800 mb-2">Aplicații tipice:</p>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>• Cablare interioară tablou electric (între aparataj)</li>
+            <li>• Trasee în tub rigid/copex (unde se trag fire individual)</li>
+            <li>• Circuite de comandă și automatizare</li>
+          </ul>
+          <p class="font-bold text-amber-800 mb-2 mt-4">Important:</p>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>• Obligatoriu cu papuc (ferrule) la capete — nu se introduce niciodată dezizolat în clemă</li>
+            <li>• Niciodată fără tub/canal de protecție în perete</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🎨</span> Cod culori România (standard HD 308)
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Funcție</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Culoare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Fază L1</td>
+                <td class="p-3 border border-slate-200"><span class="inline-block w-4 h-4 bg-yellow-900 rounded mr-2 align-middle"></span>Maro</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Fază L2</td>
+                <td class="p-3 border border-slate-200"><span class="inline-block w-4 h-4 bg-black rounded mr-2 align-middle"></span>Negru</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Fază L3</td>
+                <td class="p-3 border border-slate-200"><span class="inline-block w-4 h-4 bg-gray-400 rounded mr-2 align-middle"></span>Gri</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Neutru N</td>
+                <td class="p-3 border border-slate-200"><span class="inline-block w-4 h-4 bg-blue-500 rounded mr-2 align-middle"></span>Albastru</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Protecție PE</td>
+                <td class="p-3 border border-slate-200"><span class="inline-block w-4 h-4 bg-green-500 rounded mr-2 align-middle border-2 border-yellow-400"></span>Galben-verde</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai nevoie de cablaj corect dimensionat?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt folosește exclusiv cabluri certificate, dimensionate conform normativului I7.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

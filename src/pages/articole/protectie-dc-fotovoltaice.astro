@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Protecție DC în instalații fotovoltaice — ce nu trebuie ignorat | AlexaVolt" description="Separator DC, siguranțe string, SPD DC și cablaj corect. Siguranța părții de curent continuu explicată.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Protecție DC fotovoltaice" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Protecție DC în instalații fotovoltaice — <span class="text-red-600">ce nu trebuie ignorat</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Partea DC a unui sistem fotovoltaic e cea mai periculoasă — tensiuni de până la 1000V care nu se pot opri din întrerupător. Iată cum o protejezi corect.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚠️</span> De ce DC-ul e mai periculos decât AC-ul?
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Arcul electric nu se auto-stinge</h3>
+            <p class="text-sm text-slate-600">La AC, curentul trece prin zero de 100 ori/secundă — arcul se stinge natural. La DC, odată format, arcul arde continuu până se topește ceva. Temperaturi de 3000°C+.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Nu poți „opri" panourile</h3>
+            <p class="text-sm text-slate-600">Cât timp e lumină, panourile produc tensiune. Nu există un întrerupător care oprește soarele. Chiar și iarna, cu cer acoperit, tensiunea poate fi 500-600V.</p>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">Tensiuni ridicate (600-1000V)</h3>
+            <p class="text-sm text-slate-600">Un string de 15 panouri produce ~750V. Suficient pentru a fi letal la atingere directă.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🛡️</span> Elementele de protecție DC obligatorii
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">1. Separator DC (DC isolator / disconnect switch)</h3>
+            <p class="text-sm text-slate-600 mb-2">Obligatoriu prin normativ. Se montează între panouri și invertor. Permite deconectarea în siguranță a string-urilor pentru mentenanță sau urgență.</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>• Certificat IEC 60947-3 (pentru DC!)</li>
+              <li>• Tensiune nominală ≥ Voc max string × 1.2</li>
+              <li>• Curent ≥ Isc × 1.25</li>
+              <li>• Se montează accesibil (la baza acoperișului sau lângă invertor)</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">2. Siguranțe string (fuse)</h3>
+            <p class="text-sm text-slate-600 mb-2">Necesare când ai <strong>3 sau mai multe string-uri în paralel</strong> pe același MPPT. Protejează un string de curentul invers al celorlalte.</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>• Valoare: 1.5 × Isc ≤ Ifuse ≤ 2.4 × Isc</li>
+              <li>• Tip: gPV (specifice fotovoltaic, 1000V DC)</li>
+              <li>• Se montează pe ambele polarități (+/-)</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">3. SPD DC (protecție supratensiune)</h3>
+            <p class="text-sm text-slate-600 mb-2">Protejează invertorul de descărcări atmosferice induse pe cablurile DC (traseu lung pe acoperiș = antenă).</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>• Tip 2 DC (minim) — tip 1+2 dacă nu ai paratrăsnet</li>
+              <li>• Tensiune Uc ≥ 1.2 × Voc max</li>
+              <li>• Se montează cât mai aproape de invertor</li>
+              <li>• Cu indicator vizual de defect (flag verde/roșu)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔌</span> Cablaje DC — cerințe speciale
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Cerință</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Specificație</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Izolație</td>
+                <td class="p-3 border border-slate-200">Dublă izolație (cablu solar H1Z2Z2-K)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Rezistență UV</td>
+                <td class="p-3 border border-slate-200">Obligatorie — traseu expus pe acoperiș</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Secțiune minimă</td>
+                <td class="p-3 border border-slate-200">4 mm² (până la 30m), 6 mm² (peste 30m)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Conectori</td>
+                <td class="p-3 border border-slate-200">MC4 originali (nu compatibili!) + sertizare profesională</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Traseu</td>
+                <td class="p-3 border border-slate-200">+ și - separat (nu în același tub!) pentru a evita arcul</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Etichetare</td>
+                <td class="p-3 border border-slate-200">„ATENȚIE — CURENT CONTINUU SUB TENSIUNE" la fiecare punct accesibil</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-amber-50 p-6 rounded-2xl border border-amber-100">
+        <h2 class="text-xl font-bold text-amber-800 mb-4">🚨 Greșeli frecvente la partea DC</h2>
+        <ul class="space-y-2 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">✗</span> Separator AC folosit pe DC (nu stinge arcul → incendiu)</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">✗</span> Conectori MC4 de calitate proastă / necompatibili între ei</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">✗</span> Cabluri + și - trase în același tub (risc arc la deteriorare)</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">✗</span> Lipsa SPD DC (primul trăsnet indirect distruge invertorul)</li>
+          <li class="flex items-start gap-3"><span class="text-red-600 font-bold">✗</span> Conectori MC4 sertizați cu cleste patent (contact slab → arc)</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Instalație PV sigură, fără compromis</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt instalează protecții DC complete — separator, SPD, siguranțe, conectori originali MC4.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită instalare PV
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

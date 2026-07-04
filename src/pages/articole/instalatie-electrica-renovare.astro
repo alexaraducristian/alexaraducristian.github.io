@@ -1,0 +1,144 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Ce trebuie să știi despre instalația electrică înainte de a renova | AlexaVolt" description="Ghid complet: secvența corectă la renovare, ce se face la roșu vs la alb, ce să ceri electricianului și greșeli de evitat.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Instalație electrică la renovare" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Ce trebuie să știi despre <span class="text-blue-600">instalația electrică</span> înainte de a renova
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Renovarea e momentul perfect să refaci instalația — dar ordinea contează enorm. Iată secvența corectă și ce să planifici din timp.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>🏗️</span> Fazele renovării — ordinea corectă
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Faza 1: Demolare & desfacere</h3>
+            <p class="text-sm text-slate-600">Se dau jos tencuielile, se scot prizele/întrerupătoarele vechi, se identifică traseele existente. Electricianul trebuie să fie prezent pentru deconectarea în siguranță.</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+            <h3 class="font-bold text-blue-800 mb-2">Faza 2: Instalații la roșu (rough-in)</h3>
+            <p class="text-sm text-slate-600">Se trasează canalele în perete, se montează tuburile de protecție (copex/tub rigid), se trag cablurile, se montează dozele de aparat. Tabloul electric se pozitionează. <strong>Aceasta e faza critică — după tencuială nu se mai poate modifica!</strong></p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Faza 3: Tencuială & șapă</h3>
+            <p class="text-sm text-slate-600">Dozele și tuburile sunt acoperite. Din acest moment, orice modificare de traseu devine extrem de costisitoare.</p>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2">Faza 4: Finisaje (la alb)</h3>
+            <p class="text-sm text-slate-600">Se montează prizele, întrerupătoarele, corpurile de iluminat, se echipează tabloul cu aparataj (întreruptoare, RCD-uri), se testează fiecare circuit.</p>
+          </div>
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">Faza 5: Recepție & PRAM</h3>
+            <p class="text-sm text-slate-600">Se efectuează măsurătorile finale (rezistență izolație, impedanță buclă, RCD), se emite buletinul de verificare (PRAM). Obligatoriu la racordare nouă.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📝</span> Ce să planifici ÎNAINTE de faza la roșu
+        </h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Număr de circuite</h3>
+            <p class="text-sm text-slate-600">Minimum 8-10 circuite pentru un apartament cu 2-3 camere. Nu economisi aici — fiecare circuit suplimentar costă puțin la roșu, dar e imposibil după.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Poziția prizelor</h3>
+            <p class="text-sm text-slate-600">Gândește mobilarea finală. Prize la 30 cm de la pardoseală (standard), 110 cm în bucătărie (deasupra blatului), 40 cm pentru TV (ascunse).</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Circuite dedicate</h3>
+            <p class="text-sm text-slate-600">Aer condiționat, cuptor electric, plită, boiler, mașina de spălat — fiecare pe circuit propriu cu protecție dedicată.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Pregătire viitor</h3>
+            <p class="text-sm text-slate-600">Tub gol pentru stație EV (10mm² până în garaj), tub pentru fibră optică, cablu 3×2.5 pentru eventuale prize noi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>❌</span> Greșeli frecvente la renovare
+        </h2>
+        <div class="space-y-3">
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">1.</span>
+            <div>
+              <p class="font-semibold text-red-800">Electricianul vine după tencuială</p>
+              <p class="text-sm text-slate-600">Rezultat: canale tăiate în tencuiala proaspătă, praf, risc de fisuri.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">2.</span>
+            <div>
+              <p class="font-semibold text-red-800">Nu se face plan de prize înainte</p>
+              <p class="text-sm text-slate-600">Rezultat: prize ascunse de mobilă, prelungitoare peste tot, estetică compromisă.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">3.</span>
+            <div>
+              <p class="font-semibold text-red-800">Se păstrează instalația veche „că merge"</p>
+              <p class="text-sm text-slate-600">Rezultat: cablu de aluminiu din 1975 sub tencuiala nouă, fără împământare, risc de incendiu.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">4.</span>
+            <div>
+              <p class="font-semibold text-red-800">Nu se lasă tuburi de rezervă</p>
+              <p class="text-sm text-slate-600">Rezultat: imposibil de tras cablu nou ulterior fără spargere.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">5.</span>
+            <div>
+              <p class="font-semibold text-red-800">Tabloul electric e subdimensionat</p>
+              <p class="text-sm text-slate-600">Rezultat: nu încap toate protecțiile necesare, se renunță la RCD-uri separate.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-blue-50 p-6 rounded-2xl border border-blue-100">
+        <h2 class="text-xl font-bold text-slate-900 mb-4">📋 Ce să ceri electricianului</h2>
+        <ul class="space-y-2 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Schemă unifilară (planul tabloului electric)</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Plan de prize și întrerupătoare pe cameră</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Lista de materiale cu cantități</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Deviz clar (manoperă + materiale separat)</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Autorizare ANRE (legitimație tip B minim)</li>
+          <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Buletin PRAM la final</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Renovezi și vrei instalație electrică la standarde?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt proiectează și execută instalația completă — de la planul de prize până la buletinul PRAM.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Cere ofertă pentru renovare
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

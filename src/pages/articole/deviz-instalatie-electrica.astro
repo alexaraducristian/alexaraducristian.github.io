@@ -1,0 +1,204 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum să faci un deviz corect pentru o instalație electrică | AlexaVolt" description="Structură deviz, norme de deviz, marja de profit și cum să prezinți transparent costurile clientului.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Deviz instalație electrică" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum să faci un <span class="text-blue-600">deviz corect</span> pentru o instalație electrică
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Un deviz clar construiește încredere cu clientul. Iată cum structurezi, calculezi și prezinți costurile transparent.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📋</span> Structura unui deviz profesional
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">1. Antet și date proiect</h3>
+            <p class="text-sm text-slate-600">Nume firmă, CUI, adresă lucrare, nume client, dată, număr deviz, obiectul lucrării.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">2. Lista de materiale (cu cantități)</h3>
+            <p class="text-sm text-slate-600">Fiecare material: denumire exactă, producător, cantitate, unitate de măsură, preț unitar, total. Include fire de rezervă (+10-15%).</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">3. Manoperă (pe operațiuni)</h3>
+            <p class="text-sm text-slate-600">Fiecare operație: trasare canal, montaj doze, tragere cablu, montaj tablou, conexiuni, testare. Cu volum (buc/ml) și preț unitar.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">4. Transport și logistică</h3>
+            <p class="text-sm text-slate-600">Deplasare la/de la șantier, transport materiale. Forfetizat sau la km.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">5. Cheltuieli indirecte (overhead)</h3>
+            <p class="text-sm text-slate-600">Uzura scule, consumabile (brățări, coliere, bandă, spray), asigurare profesională.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">6. Profit</h3>
+            <p class="text-sm text-slate-600">Marjă aplicată la total (10-25%, în funcție de complexitate și piață). Se declară sau se include în prețuri.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📏</span> Cum se măsoară cantitățile
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Element</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Unitate</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Cum se măsoară</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Cablu</td>
+                <td class="p-3 border border-slate-200">metru liniar (ml)</td>
+                <td class="p-3 border border-slate-200">Distanță reală tablou→priză + 50cm rezervă la capete</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Prize / întrerupătoare</td>
+                <td class="p-3 border border-slate-200">bucată (buc)</td>
+                <td class="p-3 border border-slate-200">Numărare pe plan de prize</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Doze aparat</td>
+                <td class="p-3 border border-slate-200">buc</td>
+                <td class="p-3 border border-slate-200">1 per priză/întrerupător</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Doze derivație</td>
+                <td class="p-3 border border-slate-200">buc</td>
+                <td class="p-3 border border-slate-200">1 la fiecare ramificație de traseu</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Canal / tub protecție</td>
+                <td class="p-3 border border-slate-200">ml</td>
+                <td class="p-3 border border-slate-200">Aceeași lungime ca și cablul (orientativ)</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Aparataj tablou</td>
+                <td class="p-3 border border-slate-200">buc</td>
+                <td class="p-3 border border-slate-200">Conform schemă unifilară</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>💰</span> Exemplu deviz simplificat — apartament 3 camere
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Categorie</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Estimare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Materiale (cabluri, doze, prize, tablou, aparataj)</td>
+                <td class="p-3 border border-slate-200 font-semibold">4.000 – 7.000 lei</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Manoperă (trasare, montaj, conexiuni, testare)</td>
+                <td class="p-3 border border-slate-200 font-semibold">3.000 – 5.000 lei</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Transport + consumabile</td>
+                <td class="p-3 border border-slate-200 font-semibold">300 – 600 lei</td>
+              </tr>
+              <tr class="bg-emerald-50">
+                <td class="p-3 border border-slate-200 font-bold">TOTAL orientativ</td>
+                <td class="p-3 border border-slate-200 font-bold text-emerald-800">7.500 – 12.500 lei</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-slate-500 mt-2">* Variază în funcție de: brand materiale, număr circuite, complexitate trasee, finisaje.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🤝</span> Cum prezinți devizul clientului
+        </h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+            <h3 class="font-bold text-emerald-800 mb-2">✅ Abordare transparentă</h3>
+            <ul class="space-y-1 text-sm text-slate-700">
+              <li>• Materiale detaliate cu preț/unitate</li>
+              <li>• Manoperă pe operațiuni (clientul vede ce plătește)</li>
+              <li>• Opțiuni: „varianta standard" vs „varianta premium"</li>
+              <li>• Include ce NU e inclus (zugrăvit după, mobilier)</li>
+            </ul>
+          </div>
+          <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">❌ Abordare opacă</h3>
+            <ul class="space-y-1 text-sm text-slate-700">
+              <li>• „Instalație completă: 10.000 lei" (fără detalii)</li>
+              <li>• Fără specificare materiale (brand/calitate)</li>
+              <li>• Prețuri „la negru" fără factură</li>
+              <li>• „Vedem pe parcurs cât costă" (deschidere la suplimentări)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🛠️</span> Surse de prețuri și software
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Liste distribuitori:</strong> Elco, Rombat Electric, ABB e-shop, Schneider Partner Portal</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Norme de deviz:</strong> Indicatoare de norme (CP, Ts) — dau timpul standard per operație</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Software devizare:</strong> Deviz Online, WinDeviz, Excel structurat cu formule</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">•</span> <strong>Actualizare prețuri:</strong> Verifică lunar (materialele fluctuează cu 5-15% pe an)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-amber-50 p-6 rounded-2xl border border-amber-100">
+        <h2 class="text-xl font-bold text-amber-800 mb-4">💡 Sfaturi pentru electricieni</h2>
+        <ul class="space-y-2 text-slate-700">
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Include 10-15% rezervă pe materiale (pierderi la tăiere, erori)</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Specifică valabilitatea devizului (30 zile — prețurile se schimbă)</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Separă clar ce e inclus și ce nu (ex: spargere canal = inclus, retencuire = nu)</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Oferă 2 variante de preț (standard + premium) — clientul alege</li>
+          <li class="flex items-start gap-3"><span class="text-amber-600 font-bold">→</span> Cere avans 30-50% la acceptarea devizului</li>
+        </ul>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Deviz transparent, fără surprize</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt oferă deviz detaliat gratuit — știi exact ce primești și cât costă, înainte de a începe.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită deviz gratuit
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

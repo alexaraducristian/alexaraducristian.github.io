@@ -1,0 +1,184 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum se face corect sertizarea terminalelor — greșeli frecvente | AlexaVolt" description="Forță corectă, calibru potrivit, verificare vizuală. Ghid tehnic pentru conexiuni fiabile și sigure.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Sertizare terminale — greșeli" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum se face corect <span class="text-blue-600">sertizarea terminalelor</span> — greșeli frecvente
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          O conexiune bine sertizată e mai fiabilă decât una lipită. Dar o sertizare greșită e o bombă cu ceas. Iată cum faci corect.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔗</span> De ce sertizarea, nu răsucirea?
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Conexiunile răsucite (twisted) se slăbesc în timp din cauza vibrațiilor, dilatării termice și oxidării. Rezultatul: punct de încălzire → arc electric → incendiu. Sertizarea creează o conexiune <strong>gas-tight</strong> (ermetică) care nu se oxidează și nu se slăbește.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📦</span> Tipuri de terminale
+        </h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-1">Papuci tubulari (ferrules)</h3>
+            <p class="text-sm text-slate-600">Pentru capete de cablu flexibil introdus în cleme automate sau cu șurub. Cele mai comune în tablouri electrice.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-1">Terminale inel (ring)</h3>
+            <p class="text-sm text-slate-600">Se fixează pe șurub/bolt. Conexiune sigură — nu se poate desprinde accidental.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-1">Terminale furcă (fork/spade)</h3>
+            <p class="text-sm text-slate-600">Se montează/demontează fără a desface complet șurubul. Mai puțin sigure decât ring.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-1">Terminale pin</h3>
+            <p class="text-sm text-slate-600">Pentru inserție în conectori sau cleme. Utilizate în automatizări și panouri de control.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>📏</span> Alegerea dimensiunii corecte
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Terminalul trebuie să corespundă exact secțiunii cablului. Codul de culori standard:
+        </p>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Culoare izolație</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Secțiune cablu</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Matriță clește</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200"><span class="inline-block w-4 h-4 bg-red-500 rounded mr-2 align-middle"></span>Roșu</td>
+                <td class="p-3 border border-slate-200">0.5 – 1.5 mm²</td>
+                <td class="p-3 border border-slate-200">0.5 – 1.5</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200"><span class="inline-block w-4 h-4 bg-blue-500 rounded mr-2 align-middle"></span>Albastru</td>
+                <td class="p-3 border border-slate-200">1.5 – 2.5 mm²</td>
+                <td class="p-3 border border-slate-200">1.5 – 2.5</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200"><span class="inline-block w-4 h-4 bg-yellow-400 rounded mr-2 align-middle"></span>Galben</td>
+                <td class="p-3 border border-slate-200">4 – 6 mm²</td>
+                <td class="p-3 border border-slate-200">4 – 6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🔧</span> Unealta corectă — clește cu clichet
+        </h2>
+        <p class="text-slate-600 mb-4 leading-relaxed">
+          Un clește cu clichet (ratchet crimper) asigură forța constantă și completă. <strong>Nu folosiți clești universali sau patent!</strong>
+        </p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+            <p class="font-bold text-emerald-800 mb-1">✅ Clește cu clichet</p>
+            <p class="text-sm text-slate-600">Forță calibrată, nu se deschide până nu atinge presiunea necesară. Rezultat: sertizare uniformă, gas-tight.</p>
+          </div>
+          <div class="bg-red-50 p-4 rounded-xl border border-red-100">
+            <p class="font-bold text-red-800 mb-1">❌ Clești patent / universali</p>
+            <p class="text-sm text-slate-600">Forță necontrolată, deformare neuniformă. Rezultat: contact parțial, rezistență mare, punct de încălzire.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>❌</span> Greșeli frecvente
+        </h2>
+        <div class="space-y-3">
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">1.</span>
+            <div>
+              <p class="font-semibold text-red-800">Terminal prea mare pentru cablu</p>
+              <p class="text-sm text-slate-600">Contactul e slab, fire rămân necomprimat. Rezistență mare → încălzire.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">2.</span>
+            <div>
+              <p class="font-semibold text-red-800">Izolația prinsă în sertizare</p>
+              <p class="text-sm text-slate-600">Izolația cablului intră sub terminal → contact electric incomplet.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">3.</span>
+            <div>
+              <p class="font-semibold text-red-800">Sertizare incompletă (fără clichet)</p>
+              <p class="text-sm text-slate-600">Terminalul nu e comprimat suficient — se scoate la tracțiune.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">4.</span>
+            <div>
+              <p class="font-semibold text-red-800">Fire tăiate la dezizolare</p>
+              <p class="text-sm text-slate-600">Dezizolarea cu cuțitul taie fire din conductor → secțiune efectivă redusă.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100">
+            <span class="text-red-600 font-bold text-lg">5.</span>
+            <div>
+              <p class="font-semibold text-red-800">Lungime dezizolată greșită</p>
+              <p class="text-sm text-slate-600">Prea scurt = contact insuficient. Prea lung = conductor gol expus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>👁️</span> Verificare vizuală — criterii
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <ul class="space-y-2 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Terminalul nu se scoate la tracțiune (test: trage ferm)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Izolația nu e prinsă sub sertizare</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Conductorul iese ușor din capătul terminalului (1-2mm vizibil)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Deformarea e uniformă (simetrică)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span> Nu există fire fugite în afara terminalului</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Conexiuni profesionale, fără compromis</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt folosește exclusiv clești cu clichet și terminale de brand — fiecare conexiune e verificată.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită ofertă
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>

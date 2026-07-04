@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Cum se comisionează un invertor Huawei SUN2000 — pas cu pas | AlexaVolt" description="Configurare FusionSolar, setări grid code România, conectare WiFi și activare monitorizare. Tutorial complet.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Comisionare invertor Huawei" parent="📚 Ghid Practic" parentHref={`${base}/articole/`} />
+
+    <article>
+      <header class="mb-12 border-b border-slate-100 pb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+          Cum se comisionează un invertor <span class="text-red-600">Huawei SUN2000</span> — pas cu pas
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          De la instalare fizică la monitorizare în telefon. Ghid complet pentru configurarea invertorului Huawei cu FusionSolar.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>✅</span> Verificări pre-comisionare
+        </h2>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <ul class="space-y-2 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">□</span> Invertor montat corect (vertical, ventilat, accesibil)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">□</span> Cabluri DC conectate — polaritate verificată cu multimetru</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">□</span> Tensiune string măsurată (în fereastra MPPT)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">□</span> Cablu AC conectat la tablou (disjunctor AC deschis)</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">□</span> Împământare PE conectată</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">□</span> Dongle WiFi (sau 4G) instalat în portul USB/slot</li>
+            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold">□</span> CT clamp-uri (senzori curent) montați pe fazele de la rețea</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <span>📱</span> Configurare FusionSolar — pas cu pas
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Pasul 1: Descarcă FusionSolar</h3>
+            <p class="text-sm text-slate-600">Disponibil pe App Store și Google Play. Creează cont de instalator (necesită SN invertor + SN dongle).</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Pasul 2: Conectare la invertor</h3>
+            <p class="text-sm text-slate-600">Pornește invertorul (DC switch ON). Conectează telefonul la WiFi-ul invertorului (SSID: SUN2000-xxxxx, parolă inițială: Changeme). Sau scanează QR code-ul de pe invertor.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Pasul 3: Quick Settings</h3>
+            <p class="text-sm text-slate-600">App-ul detectează invertorul. Se deschide wizard-ul de configurare rapidă. Selectează: limba, țara (Romania), tipul de rețea (TN-S / TT).</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Pasul 4: Grid Code — setare critică!</h3>
+            <p class="text-sm text-slate-600">Selectează codul de rețea: <strong>RO-VDE-AR-N 4105:2018</strong> (sau echivalentul cerut de distribuitor). Acesta definește limitele de tensiune/frecvență și comportamentul la deconectare.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Pasul 5: Configurare export limitation</h3>
+            <p class="text-sm text-slate-600">Dacă distribuitorul impune limită de export (ex: 0W, sau % din putere instalată), se setează aici. CT clamp-urile sunt esențiale pentru această funcție.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Pasul 6: Configurare CT clamp</h3>
+            <p class="text-sm text-slate-600">Se selectează tipul de senzor (CT integrat sau extern), se verifică direcția curentului (import = pozitiv, export = negativ). Dacă e inversat → limitarea nu funcționează corect!</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Pasul 7: Conectare WiFi casă</h3>
+            <p class="text-sm text-slate-600">Din meniul de comunicare → WiFi settings → selectează rețeaua casei → introdu parola. Dongle-ul se conectează la internet pentru monitorizare cloud.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-800 mb-2">Pasul 8: Test de funcționare</h3>
+            <p class="text-sm text-slate-600">Închide disjunctorul AC → invertorul pornește și începe sincronizarea cu rețeaua (2-3 minute). Verifică în app: putere generată, tensiune per string, export/import.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>⚙️</span> Setări Grid Code pentru România
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="p-3 text-left font-bold border border-slate-200">Parametru</th>
+                <th class="p-3 text-left font-bold border border-slate-200">Valoare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-slate-200">Grid Code</td>
+                <td class="p-3 border border-slate-200 font-semibold">RO-VDE-AR-N 4105:2018</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Tensiune nominală</td>
+                <td class="p-3 border border-slate-200">230V / 400V</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Frecvență nominală</td>
+                <td class="p-3 border border-slate-200">50 Hz</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 border border-slate-200">Reconectare după deconectare</td>
+                <td class="p-3 border border-slate-200">60 secunde (automată)</td>
+              </tr>
+              <tr>
+                <td class="p-3 border border-slate-200">Anti-islanding</td>
+                <td class="p-3 border border-slate-200">Activ (obligatoriu)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 mt-4">
+          <p class="text-sm text-amber-800"><strong>⚠️ Atenție:</strong> Grid code-ul trebuie să corespundă exact cu cel cerut în Avizul Tehnic de Racordare (ATR). Dacă nu se potrivește, distribuitorul poate refuza recepția.</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span>🤝</span> Predare către client
+        </h2>
+        <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+          <ul class="space-y-2 text-slate-700">
+            <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">✓</span> Transfer cont FusionSolar (owner) către client</li>
+            <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">✓</span> Demonstrație app: producție, consum, export, istoric</li>
+            <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">✓</span> Explicare alarme și ce să facă la fiecare</li>
+            <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">✓</span> Verificare acces remote pentru instalator (support)</li>
+            <li class="flex items-start gap-3"><span class="text-emerald-600 font-bold">✓</span> Documentație: schemă, datasheet-uri, garanții, ATR</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="text-center border-t border-slate-100 pt-10">
+        <h2 class="text-2xl font-bold mb-4 text-slate-900">Instalare + comisionare profesională</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+          AlexaVolt comisionează invertoare Huawei cu configurare completă, grid code corect și predare cu documentație.
+        </p>
+        <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+          Solicită instalare + comisionare
+        </a>
+      </section>
+    </article>
+  </main>
+</Layout>
