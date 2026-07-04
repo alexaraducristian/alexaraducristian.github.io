@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Pagină negăsită | AlexaVolt" description="Pagina căutată nu există. Vei fi redirecționat automat sau poți naviga înapoi la pagina principală.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-20 font-sans text-slate-800 text-center">
+    <h1 class="text-6xl font-black text-slate-200 mb-4">404</h1>
+    <h2 class="text-2xl font-bold text-slate-900 mb-4">Pagină negăsită</h2>
+    <p class="text-slate-600 mb-8">Pagina pe care o cauți nu există sau a fost mutată.</p>
+    <a 
+      href={`${base}/`} 
+      class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition-all shadow-lg"
+    >
+      Înapoi la pagina principală
+    </a>
+  </main>
+</Layout>
+
+<script is:inline>
+  // Redirect URLs without trailing slash to version with trailing slash
+  (function() {
+    var path = window.location.pathname;
+    // If path doesn't end with / and doesn't have a file extension, redirect
+    if (path !== '/' && !path.endsWith('/') && !path.match(/\.\w+$/)) {
+      window.location.replace(path + '/');
+    }
+  })();
+</script>

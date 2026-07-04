@@ -10,6 +10,9 @@ export default defineConfig({
   // nu mai este într-un subfolder precum /playground2
   base: '/',
 
+  // URL-uri cu trailing slash (consistent cu ce a indexat Google)
+  trailingSlash: 'always',
+
   integrations: [sitemap()],
 
   vite: {
