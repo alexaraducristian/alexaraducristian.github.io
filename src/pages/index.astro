@@ -33,6 +33,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 						<li class="flex items-start gap-2"><span>•</span> Montaj doze, prize și corpuri de iluminat.</li>
 						<li class="flex items-start gap-2"><span>•</span> Împământare și protecții la descărcări atmosferice.</li>
 					</ul>
+					<p class="text-xs text-red-600 mt-3 font-medium">⚠️ O instalație executată de personal neautorizat nu oferă nicio garanție legală și poate genera scurtcircuite sau incendii.</p>
 				</div>
 
 				<div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
@@ -42,11 +43,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 						<li class="flex items-start gap-2"><span>•</span> Înlocuirea cablajului de aluminiu cu <strong>cupru</strong> dimensionat corect.</li>
 						<li class="flex items-start gap-2"><span>•</span> Refacerea conexiunilor pentru consumatori moderni (AC, plită, EV).</li>
 					</ul>
+					<p class="text-xs text-red-600 mt-3 font-medium">⚠️ Cablajul de aluminiu vechi se oxidează și generează căldură la conexiuni — cauza nr. 1 a incendiilor electrice în blocuri.</p>
 				</div>
 
 				<div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 md:col-span-2">
 					<h3 class="text-xl font-bold mb-3 text-blue-700">Schimbare Tablou Electric Iași — Montaj și Configurare Schneider</h3>
 					<p class="mb-4">Suntem specializați în montajul și configurarea tablourilor electrice de ultimă generație cu aparataj Schneider Electric.</p>
+					<p class="text-xs text-red-600 mb-4 font-medium">⚠️ Un tablou vechi cu siguranțe fuzibile nu protejează la electrocutare și nu deconectează la suprasarcină — risc permanent de incendiu și electrocutare fatală.</p>
 					<div class="grid md:grid-cols-3 gap-4 text-sm">
 						<a href={`${base}/articole/schneider-vs-abb-vs-hager/`} class="bg-white p-3 rounded-lg shadow-sm font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors block">Schneider Acti9 / Resi9 →</a>
 						<a href={`${base}/articole/ce-este-un-rcd-diferential/`} class="bg-white p-3 rounded-lg shadow-sm font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors block">Protecții RCD (Electrocutare) →</a>
@@ -98,22 +101,22 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 				<span class="text-2xl">🛡️</span> De Ce Să Alegi un Electrician Autorizat ANRE Iași
 			</h2>
 			<div class="grid md:grid-cols-2 gap-8">
-				<div>
-					<h4 class="font-bold text-blue-400 mb-2">Autorizare ANRE Tip B</h4>
+				<a href={`${base}/articole/ce-este-autorizarea-anre/`} class="group block">
+					<h4 class="font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">Autorizare ANRE Tip B →</h4>
 					<p class="text-slate-400 text-sm">Respectăm normativul I7 și toate standardele legale. Oferim documentație completă la recepție.</p>
-				</div>
-				<div>
-					<h4 class="font-bold text-blue-400 mb-2">Transparență Totală</h4>
+				</a>
+				<a href={`${base}/articole/cat-costa-instalatie-electrica-casa/`} class="group block">
+					<h4 class="font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">Transparență Totală →</h4>
 					<p class="text-slate-400 text-sm">Deviz clar cu materiale și manoperă înainte de orice lucrare. Fără costuri ascunse.</p>
-				</div>
-				<div>
-					<h4 class="font-bold text-blue-400 mb-2">Materiale Premium Schneider</h4>
+				</a>
+				<a href={`${base}/articole/schneider-vs-abb-vs-hager/`} class="group block">
+					<h4 class="font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">Materiale Premium Schneider →</h4>
 					<p class="text-slate-400 text-sm">Cabluri cu secțiune corectă și protecții calibrate pe consumul real al locuinței tale.</p>
-				</div>
-				<div>
-					<h4 class="font-bold text-blue-400 mb-2">Garanție Manoperă 2 Ani</h4>
-					<p class="text-slate-400 text-sm">Pe lângă garanția producătorului pe materiale, oferim 2 ani garanție pe execuție.</p>
-				</div>
+				</a>
+				<a href={`${base}/articole/buletin-verificare-pram/`} class="group block">
+					<h4 class="font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">Garanție Manoperă 2 Ani →</h4>
+					<p class="text-slate-400 text-sm">Pe lângă garanția producătorului pe materiale, oferim 2 ani garanție pe execuție + buletin PRAM.</p>
+				</a>
 			</div>
 		</section>
 
