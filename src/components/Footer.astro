@@ -1,0 +1,44 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<footer class="bg-slate-900 text-slate-400 mt-20">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">AlexaVolt</h3>
+        <p class="text-sm leading-relaxed">Electrician autorizat ANRE Iași. Instalații electrice profesionale, tablouri Schneider și sisteme fotovoltaice.</p>
+        <p class="text-sm mt-3">📍 Iași, județul Iași</p>
+        <p class="text-sm">📞 <a href="tel:+40745539432" class="text-blue-400 hover:text-white transition-colors">0745 539 432</a></p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Servicii</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href={`${base}/`} class="hover:text-white transition-colors">Instalații Electrice</a></li>
+          <li><a href={`${base}/energie-verde/`} class="hover:text-white transition-colors">Panouri Fotovoltaice</a></li>
+          <li><a href={`${base}/portofoliu/`} class="hover:text-white transition-colors">Portofoliu</a></li>
+          <li><a href={`${base}/articole/`} class="hover:text-white transition-colors">Ghid Practic</a></li>
+          <li><a href={`${base}/intrebari-frecvente/`} class="hover:text-white transition-colors">Întrebări Frecvente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Articole Populare</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href={`${base}/articole/de-ce-imi-sare-diferentialul/`} class="hover:text-white transition-colors">De ce sare diferențialul</a></li>
+          <li><a href={`${base}/articole/cum-sa-alegi-un-tablou-electric/`} class="hover:text-white transition-colors">Cum alegi tabloul electric</a></li>
+          <li><a href={`${base}/articole/ghid-prosumator/`} class="hover:text-white transition-colors">Ghid Prosumator 2026</a></li>
+          <li><a href={`${base}/articole/cat-costa-instalatie-electrica-casa/`} class="hover:text-white transition-colors">Cât costă instalația electrică</a></li>
+          <li><a href={`${base}/articole/schneider-vs-abb-vs-hager/`} class="hover:text-white transition-colors">Schneider vs ABB vs Hager</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs">© 2026 AlexaVolt — Electrician Autorizat ANRE Iași. Toate drepturile rezervate.</p>
+      <div class="flex items-center gap-4 text-xs">
+        <span>✓ Autorizare ANRE Tip B</span>
+        <span>✓ Normativ I7</span>
+        <span>✓ Schneider Electric</span>
+      </div>
+    </div>
+  </div>
+</footer>

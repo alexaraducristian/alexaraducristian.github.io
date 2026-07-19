@@ -223,5 +223,21 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       </section>
     </article>
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Cât costă o instalație electrică completă?", "acceptedAnswer": {"@type": "Answer", "text": "Costul depinde de suprafața locuinței, numărul de circuite și calitatea materialelor. Pentru o casă de 100-150 m², prețul variază între 5.000 – 12.000 €."}},
+      {"@type": "Question", "name": "Sunteți autorizați ANRE?", "acceptedAnswer": {"@type": "Answer", "text": "Da, suntem electricieni autorizați ANRE tip B — competență pentru proiectare și execuție instalații electrice interioare la consumatori cu tensiuni până la 1kV."}},
+      {"@type": "Question", "name": "Ce risc dacă angajez un electrician fără autorizare ANRE?", "acceptedAnswer": {"@type": "Answer", "text": "Riscurile sunt multiple: instalația nu respectă normativul I7, asigurarea locuinței devine invalidă, nu primești buletin PRAM, iar ANRE poate aplica sancțiuni contravenționale."}},
+      {"@type": "Question", "name": "În ce zone lucrați?", "acceptedAnswer": {"@type": "Answer", "text": "Lucrăm în Iași și în tot județul Iași. Pentru proiecte mai mari acoperim și județele învecinate."}},
+      {"@type": "Question", "name": "Cât durează montajul unui tablou electric?", "acceptedAnswer": {"@type": "Answer", "text": "Un tablou electric rezidențial se montează în 1-2 zile lucrătoare, în funcție de complexitate."}},
+      {"@type": "Question", "name": "Ce garanție oferiți?", "acceptedAnswer": {"@type": "Answer", "text": "Oferim 2 ani garanție pe manoperă și garanția producătorului pe materiale (10-25 ani pentru aparataj Schneider Electric)."}},
+      {"@type": "Question", "name": "Faceți și panouri fotovoltaice?", "acceptedAnswer": {"@type": "Answer", "text": "Da, oferim servicii complete de montaj panouri fotovoltaice — de la simulare cu software Cool-PVT până la obținerea statutului de prosumator."}},
+      {"@type": "Question", "name": "Ce brand de aparataj folosiți?", "acceptedAnswer": {"@type": "Answer", "text": "Lucrăm predominant cu Schneider Electric — lider mondial în aparataj electric, cu fiabilitate dovedită și garanție extinsă."}},
+      {"@type": "Question", "name": "Asigurarea casei acoperă incendii cauzate de instalații neautorizate?", "acceptedAnswer": {"@type": "Answer", "text": "În majoritatea cazurilor, NU. Companiile de asigurări solicită dovada că instalația a fost executată de personal autorizat ANRE."}},
+      {"@type": "Question", "name": "Pot deveni prosumator?", "acceptedAnswer": {"@type": "Answer", "text": "Da, cu sistemul nostru fotovoltaic poți deveni prosumator și vinde surplusul de energie în rețea. Te ghidăm prin tot procesul."}}
+    ]
+  })} />
   </main>
 </Layout>

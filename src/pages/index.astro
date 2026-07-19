@@ -154,4 +154,32 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 		</section>
 
 	</main>
+
+	<script type="application/ld+json" set:html={JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "Electrician",
+		"name": "AlexaVolt",
+		"description": "Electrician autorizat ANRE Iași - instalații electrice profesionale, tablouri Schneider, sisteme fotovoltaice",
+		"url": "https://www.alexavolt.ro",
+		"telephone": "+40745539432",
+		"email": "alexamarius@yahoo.com",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Iași",
+			"addressRegion": "Iași",
+			"addressCountry": "RO"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 47.1585,
+			"longitude": 27.6014
+		},
+		"areaServed": {
+			"@type": "City",
+			"name": "Iași"
+		},
+		"priceRange": "$$",
+		"openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-14:00",
+		"sameAs": ["https://wa.me/40745539432"]
+	})} />
 </Layout>
