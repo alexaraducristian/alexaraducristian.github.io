@@ -344,17 +344,16 @@ const categorii = [
         <div class="sticky top-[72px] z-10 bg-white/95 backdrop-blur-sm py-3 mb-4 border-b border-slate-100">
           <h2 class="text-xl font-bold text-slate-900">{cat.titlu}</h2>
         </div>
-        <div class="grid md:grid-cols-2 gap-3">
+        <ul class="space-y-1">
           {cat.articole.map((art) => (
-            <a href={art.href} class="group flex gap-3 p-4 rounded-xl border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-md hover:border-blue-200 transition-all">
-              <div class="flex-shrink-0 w-1 rounded-full bg-blue-200 group-hover:bg-blue-500 transition-colors"></div>
-              <div class="min-w-0">
-                <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug mb-1">{art.titlu}</h3>
-                <p class="text-xs text-slate-500 leading-relaxed line-clamp-2">{art.descriere}</p>
-              </div>
-            </a>
+            <li>
+              <a href={art.href} class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-blue-50 transition-colors group">
+                <span class="text-blue-400 group-hover:text-blue-600 transition-colors">→</span>
+                <span class="text-base text-slate-800 group-hover:text-blue-700 font-medium transition-colors">{art.titlu}</span>
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
     ))}
 
