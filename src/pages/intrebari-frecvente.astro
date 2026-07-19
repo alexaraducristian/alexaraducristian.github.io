@@ -46,6 +46,38 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           </div>
         </details>
 
+        <details class="group bg-white border border-red-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-red-50 group-open:text-red-700 transition-colors">
+            <span>Ce risc dacă angajez un electrician fără autorizare ANRE?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Riscurile sunt multiple și grave: instalația nu respectă normativul I7, deci nu oferă protecție la electrocutare sau incendiu. Nu primești documentație legală (buletin PRAM), asigurarea locuinței devine invalidă în caz de daune, iar la vânzarea imobilului nu vei avea documentele necesare. În plus, ANRE poate aplica sancțiuni contravenționale.</p>
+            <p class="mt-2"><a href={`${base}/articole/ce-este-autorizarea-anre/`} class="text-blue-600 font-semibold hover:text-blue-800">→ Ce înseamnă autorizarea ANRE</a></p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-red-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-red-50 group-open:text-red-700 transition-colors">
+            <span>Asigurarea casei acoperă incendii cauzate de instalații neautorizate?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>În majoritatea cazurilor, NU. Companiile de asigurări solicită dovada că instalația electrică a fost executată de personal autorizat ANRE. Dacă un incendiu este cauzat de o instalație neconformă, asigurătorul are temei legal să refuze despăgubirea integrală. Practic, plătești polița degeaba.</p>
+          </div>
+        </details>
+
+        <details class="group bg-white border border-red-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-red-50 group-open:text-red-700 transition-colors">
+            <span>Pot vinde casa fără buletin de verificare electrică?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-slate-600 leading-relaxed">
+            <p>Tehnic poți, dar cumpărătorii informați și agenții imobiliari solicită buletinul de verificare PRAM ca dovadă a conformității instalației. Lipsa acestui document scade semnificativ valoarea proprietății și poate bloca tranzacția. Este recomandat să ai instalația verificată și documentată înainte de listare.</p>
+            <p class="mt-2"><a href={`${base}/articole/buletin-verificare-pram/`} class="text-blue-600 font-semibold hover:text-blue-800">→ Ce este buletinul de verificare PRAM</a></p>
+          </div>
+        </details>
+
         <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
           <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-bold text-slate-900 text-lg group-open:bg-blue-50 group-open:text-blue-700 transition-colors">
             <span>În ce zone lucrați?</span>

@@ -50,6 +50,55 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       </div>
     </section>
 
+    <section class="mb-16 bg-red-50 border border-red-100 p-8 md:p-10 rounded-3xl">
+      <h2 class="text-2xl md:text-3xl font-bold text-red-800 mb-6 flex items-center gap-3">
+        ⚠️ Riscuri Instalații Electrice Neautorizate
+      </h2>
+      <p class="text-slate-700 mb-6">Angajarea unui electrician fără autorizare ANRE te expune la riscuri grave, cu consecințe financiare și asupra siguranței familiei:</p>
+      <ul class="space-y-4">
+        <li class="flex gap-3 items-start">
+          <span class="text-red-600 font-bold text-lg">🔥</span>
+          <div>
+            <strong class="text-red-900">Risc de incendiu</strong>
+            <p class="text-sm text-slate-600">Aproximativ 30% din incendiile rezidențiale au cauză electrică — conexiuni necorespunzătoare, secțiuni subdimensionate, lipsa protecțiilor.</p>
+          </div>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-red-600 font-bold text-lg">📋</span>
+          <div>
+            <strong class="text-red-900">Invalidarea asigurării locuinței</strong>
+            <p class="text-sm text-slate-600">Asigurătorul refuză despăgubirea dacă instalația electrică a fost executată de personal neautorizat — pierzi toată investiția.</p>
+          </div>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-red-600 font-bold text-lg">🏠</span>
+          <div>
+            <strong class="text-red-900">Lipsa documentației la vânzarea imobilului</strong>
+            <p class="text-sm text-slate-600">Fără buletin de verificare PRAM și documentație conformă, vânzarea proprietății devine extrem de dificilă.</p>
+          </div>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-red-600 font-bold text-lg">⚖️</span>
+          <div>
+            <strong class="text-red-900">Amendă ANRE pentru executare fără autorizație</strong>
+            <p class="text-sm text-slate-600">Legislația prevede sancțiuni contravenționale pentru executarea de instalații electrice fără personal autorizat.</p>
+          </div>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-red-600 font-bold text-lg">⚡</span>
+          <div>
+            <strong class="text-red-900">Zero protecție la electrocutare fără RCD</strong>
+            <p class="text-sm text-slate-600">Fără dispozitive diferențiale (RCD) corect dimensionate, nu există protecție împotriva electrocutării — risc fatal pentru toată familia.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="mt-6 pt-6 border-t border-red-200">
+        <a href={`${base}/contact/`} class="inline-block bg-red-700 text-white px-8 py-3 rounded-full font-bold hover:bg-red-800 transition-colors shadow-lg text-sm">
+          Solicită instalație autorizată ANRE →
+        </a>
+      </div>
+    </section>
+
     <hr class="border-slate-100 mb-16" />
 
     <section class="mb-20">
@@ -123,10 +172,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <section class="text-center py-12">
       <a 
         href={`${base}/contact/`} 
-        class="inline-block bg-slate-900 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-600 transition-all shadow-xl"
+        class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1"
       >
-        Solicită o Consultanță Tehnică
+        Solicită Evaluare Gratuită la Domiciliu →
       </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Fără obligații · ✓ Răspuns în max. 2 ore</p>
     </section>
   </main>
 </Layout>
