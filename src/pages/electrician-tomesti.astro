@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Electrician Tomești — Instalații Electrice Autorizat ANRE | AlexaVolt" description="Electrician autorizat ANRE în Tomești, Iași. Instalații electrice case noi, tablouri Schneider, fotovoltaice. Acoperim Tomești Parc și toate cartierele noi.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Electrician Tomești" parent="🛠️ Servicii" parentHref={`${base}/servicii/`} />
+
+    <section class="mb-12 border-b border-slate-100 pb-10">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+        Electrician Autorizat ANRE <span class="text-emerald-600">Tomești</span> — AlexaVolt Iași
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed">
+        Tomești este comuna de la vestul Iașiului care a explodat rezidențial în ultimii ani. La doar ~7 km de centru și în imediata apropiere a centurii Iași, cartierele noi precum Tomești Parc atrag familii tinere care construiesc case moderne cu nevoi electrice complexe — aer condiționat pe fiecare cameră, plite inductie, stații de încărcare EV.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">⚡ Servicii electrice în Tomești</h2>
+      <p class="text-slate-600 mb-6">
+        Casele noi din Tomești au suprafețe generoase (150-250 mp) și consumatori de putere mare. Instalația electrică trebuie dimensionată corect de la început pentru a evita suprasarcini și riscuri. Oferim:
+      </p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Instalații electrice la cheie</h3>
+          <p class="text-sm text-slate-600">Proiectare pe planul arhitectural, execuție la roșu și finisaj. Circuite dedicate pentru AC, plită, boiler, mașini de spălat și stație EV.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Tablouri electrice profesionale</h3>
+          <p class="text-sm text-slate-600">Tablouri Schneider Acti9 cu module suficiente pentru toate circuitele unei case moderne. Selectivitate completă RCD.</p>
+        </div>
+        <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+          <h3 class="font-bold text-emerald-700 mb-2">Fotovoltaice + stație EV</h3>
+          <p class="text-sm text-slate-600">Combinația ideală: panouri fotovoltaice pe acoperiș + wallbox pentru mașina electrică. Încarci gratis cu energia soarelui.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Buletin PRAM</h3>
+          <p class="text-sm text-slate-600">Verificare PRAM la finalizarea construcției — obligatorie pentru procesul-verbal de recepție. Intervenție rapidă în Tomești.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">🏘️ De ce AlexaVolt în Tomești?</h2>
+      <p class="text-slate-600 mb-4">
+        Apropierea de centura Iași face din Tomești o zonă ideală pentru familii cu mașini electrice. O casă nouă din Tomești Parc necesită o instalație electrică gândită pentru viitor — cu circuite de 6 mmp pentru plită și AC, alimentare trifazată pentru stația EV, și tablou electric dimensionat generos.
+      </p>
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Experiență cu case noi din Tomești Parc și împrejurimi</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Proiectare pentru consumatori de putere mare (trifazat)</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Pregătire infrastructură stație EV inclusă în proiect</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Deplasare rapidă — 10 minute de la sediu</li>
+      </ul>
+    </section>
+
+    <section class="mb-12 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole utile</h2>
+      <ul class="space-y-2">
+        <li><a href={`${base}/articole/checklist-electric-locuinta-noua/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Checklist electric pentru locuința nouă →</a></li>
+        <li><a href={`${base}/articole/cum-sa-calculezi-panouri-fotovoltaice/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Cum calculezi câte panouri ai nevoie →</a></li>
+        <li><a href={`${base}/servicii/panouri-fotovoltaice/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Serviciu: Panouri fotovoltaice →</a></li>
+      </ul>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-10">
+      <h2 class="text-2xl font-bold mb-4 text-slate-900">Construiești sau renovezi în Tomești?</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Contactează-ne pentru un deviz gratuit. Acoperim toată comuna Tomești și zonele limitrofe de pe centura Iași.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Solicită deviz gratuit
+      </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Răspuns în max. 2 ore · ✓ Deplasare gratuită în Tomești</p>
+    </section>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AlexaVolt — Electrician Tomești",
+    "description": "Electrician autorizat ANRE în Tomești, Iași. Instalații electrice case noi, tablouri Schneider, fotovoltaice, stații EV.",
+    "url": "https://www.alexavolt.ro/electrician-tomesti/",
+    "telephone": "+40745539432",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iași",
+      "addressRegion": "Iași",
+      "addressCountry": "RO"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Tomești, Iași"
+    },
+    "priceRange": "$$"
+  })} />
+</Layout>

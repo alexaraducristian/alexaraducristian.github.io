@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Electrician Copou — Instalații Electrice Autorizat ANRE | AlexaVolt" description="Electrician autorizat ANRE în Copou, Iași. Modernizare vile vechi, instalații apartamente, tablouri electrice. Zona Universitate, Grădina Botanică.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Electrician Copou" parent="🛠️ Servicii" parentHref={`${base}/servicii/`} />
+
+    <section class="mb-12 border-b border-slate-100 pb-10">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+        Electrician Autorizat ANRE <span class="text-emerald-600">Copou</span> — AlexaVolt Iași
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed">
+        Copou este cartierul premium și universitar al Iașiului — zonă cu vile interbelice și postbelice de patrimoniu care necesită modernizare electrică delicată, apartamente în blocuri din diverse perioade, și proximitatea Universității și Grădinii Botanice. Aici, provocarea principală este modernizarea instalațiilor vechi fără a afecta structura și estetica clădirilor de epocă.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">⚡ Servicii electrice în Copou</h2>
+      <p class="text-slate-600 mb-6">
+        Vilele și apartamentele din Copou au provocări unice — pereți groși din cărămidă plină, trasee lungi, și nevoia de a păstra estetica interioară. Avem experiența necesară pentru:
+      </p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Modernizare vile vechi</h3>
+          <p class="text-sm text-slate-600">Înlocuire instalație electrică în vile interbelice — trasare discretă pe canal de cablu sau în tencuială, fără distrugerea elementelor decorative.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Tablouri electrice modernizate</h3>
+          <p class="text-sm text-slate-600">Înlocuire tablouri vechi din vile și apartamente Copou cu tablouri Schneider complet echipate. Protecții complete pentru consumatorii actuali.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Apartamente bloc — upgrade</h3>
+          <p class="text-sm text-slate-600">Blocurile din zona Copou (ani '60-'80) au instalații de aluminiu. Modernizăm complet cu cupru, adăugăm circuite și protecții noi.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Iluminat arhitectural</h3>
+          <p class="text-sm text-slate-600">Circuite dedicate de iluminat ambiental și arhitectural pentru vile renovate — dimmer-uri, spotturi, benzi LED integrate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">🏛️ Specificul zonei Copou</h2>
+      <p class="text-slate-600 mb-4">
+        Vilele din zona Copou — Carol, Sadoveanu, zona Universitate — sunt clădiri cu valoare arhitecturală. Modernizarea electrică aici necesită:
+      </p>
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Trasare cu impact minim asupra finisajelor și stucaturilor originale</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Canal de cablu decorativ sau trasee sub pardoseală acolo unde nu se poate șlițui</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Dimensionare pentru consumatori moderni (AC, boiler termodinamic, iluminat LED)</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Documentație completă — esențială pentru vilele cu statut de patrimoniu</li>
+      </ul>
+    </section>
+
+    <section class="mb-12 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole relevante</h2>
+      <ul class="space-y-2">
+        <li><a href={`${base}/articole/de-ce-e-periculos-cablajul-din-aluminiu/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">De ce e periculos cablajul din aluminiu →</a></li>
+        <li><a href={`${base}/articole/cum-sa-alegi-un-tablou-electric/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Cum alegi un tablou electric →</a></li>
+        <li><a href={`${base}/servicii/instalatii-electrice-complete/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Serviciu: Instalații electrice complete →</a></li>
+      </ul>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-10">
+      <h2 class="text-2xl font-bold mb-4 text-slate-900">Renovezi sau modernizezi în Copou?</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Contactează-ne pentru o evaluare la domiciliu. Avem experiența necesară pentru modernizări electrice în vile de epocă și apartamente din zona Copou.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Solicită evaluare gratuită
+      </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Răspuns în max. 2 ore · ✓ Experiență cu vile Copou</p>
+    </section>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AlexaVolt — Electrician Copou",
+    "description": "Electrician autorizat ANRE în Copou, Iași. Modernizare vile vechi, instalații apartamente, tablouri electrice. Zona Universitate, Grădina Botanică.",
+    "url": "https://www.alexavolt.ro/electrician-copou/",
+    "telephone": "+40745539432",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iași",
+      "addressRegion": "Iași",
+      "addressCountry": "RO"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Copou, Iași"
+    },
+    "priceRange": "$$"
+  })} />
+</Layout>

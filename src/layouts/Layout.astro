@@ -20,7 +20,7 @@ const {
 
 const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : Astro.url.pathname + '/';
 const canonicalURL = canonicalOverride ? new URL(canonicalOverride) : new URL(canonicalPath, Astro.site);
-const ogImage = image || `${Astro.site}favicon.svg`;
+const ogImage = image || `${Astro.site}og-default.svg`;
 ---
 
 <!doctype html>
@@ -44,18 +44,36 @@ const ogImage = image || `${Astro.site}favicon.svg`;
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={ogImage} />
 		<link rel="canonical" href={canonicalURL.href} />
-		<link rel="preconnect" href="https://www.googletagmanager.com" />
-		<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-GGBL0JG2KZ"></script>
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', 'G-GGBL0JG2KZ');
+
+			function loadGA() {
+				if (document.getElementById('ga-script')) return;
+				var s = document.createElement('script');
+				s.id = 'ga-script';
+				s.src = 'https://www.googletagmanager.com/gtag/js?id=G-GGBL0JG2KZ';
+				document.head.appendChild(s);
+			}
+
+			// Load after user interaction or 3 seconds
+			var events = ['scroll', 'click', 'touchstart', 'keydown'];
+			var loaded = false;
+			function onInteraction() {
+				if (loaded) return;
+				loaded = true;
+				loadGA();
+				events.forEach(function(e) { document.removeEventListener(e, onInteraction); });
+			}
+			events.forEach(function(e) { document.addEventListener(e, onInteraction, {once: true, passive: true}); });
+			setTimeout(function() { if (!loaded) { loaded = true; loadGA(); } }, 3000);
 		</script>
 	</head>
 	<body>

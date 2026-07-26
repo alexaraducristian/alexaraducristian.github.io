@@ -1,0 +1,157 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Despre AlexaVolt — Electricieni Autorizați ANRE Iași | Experiență și Profesionalism" description="Echipa AlexaVolt — ingineri electricieni autorizați ANRE din Iași. Absolvenți Universitatea Tehnică Gheorghe Asachi, experiență în instalații electrice, fotovoltaice și tablouri Schneider.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Despre Noi" parent="🏠 Acasă" parentHref={`${base}/`} />
+
+    <section class="mb-12 border-b border-slate-100 pb-10">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+        Despre AlexaVolt — <span class="text-emerald-600">Echipa de Electricieni Autorizați ANRE</span> din Iași
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed">
+        Suntem o echipă de ingineri electricieni pasionați de meserie, dedicați siguranței și calității în fiecare proiect pe care îl realizăm în zona Iași.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <span>👥</span> Cine suntem
+      </h2>
+      <p class="text-slate-600 leading-relaxed mb-4">
+        AlexaVolt este echipă de ingineri electricieni cu experiență, absolvenți ai Facultății de Inginerie Electrică din cadrul <strong>Universității Tehnice „Gheorghe Asachi" din Iași</strong>. Formarea academică ne oferă o bază solidă în proiectarea instalațiilor electrice, dimensionarea protecțiilor și înțelegerea profundă a normativelor tehnice.
+      </p>
+      <p class="text-slate-600 leading-relaxed">
+        Nu suntem simpli executanți — suntem ingineri care gândesc fiecare instalație ca un sistem complet, de la calculul secțiunilor de cablu până la selectivitatea protecțiilor și optimizarea consumului energetic.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <span>📊</span> Experiență
+      </h2>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 text-center">
+          <p class="text-4xl font-black text-blue-700 mb-2">50+</p>
+          <p class="text-sm text-slate-600 font-semibold">Instalații electrice complete</p>
+          <p class="text-xs text-slate-500 mt-1">Case noi, renovări, spații comerciale</p>
+        </div>
+        <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 text-center">
+          <p class="text-4xl font-black text-emerald-700 mb-2">30+</p>
+          <p class="text-sm text-slate-600 font-semibold">Sisteme fotovoltaice</p>
+          <p class="text-xs text-slate-500 mt-1">Rezidențiale și comerciale</p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+          <p class="text-4xl font-black text-slate-700 mb-2">100+</p>
+          <p class="text-sm text-slate-600 font-semibold">Tablouri electrice</p>
+          <p class="text-xs text-slate-500 mt-1">Montaj, configurare, modernizare</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <span>🎓</span> Autorizare și calificări
+      </h2>
+      <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex gap-3 items-start">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <span><strong>Autorizare ANRE Tip B</strong> — legitimăm dreptul de a proiecta și executa instalații electrice de joasă tensiune</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <span><strong>Normativ I7-2011</strong> — proiectarea și execuția instalațiilor electrice de iluminat, prize și forță</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <span><strong>Certificări Schneider Electric</strong> — partener pentru echipamente de protecție și distribuție</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <span><strong>Software Cool-PVT</strong> — simulare profesională sisteme fotovoltaice, validat de Universitatea Tehnică Iași</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <span><strong>Aparatură de măsură calibrată</strong> — megohmetru, telurometru, tester RCD, cu certificate de calibrare valide</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <span>💡</span> Filozofia noastră
+      </h2>
+      <div class="space-y-4">
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Siguranță > Viteză</h3>
+          <p class="text-sm text-slate-600">Nu sacrificăm niciodată calitatea execuției pentru a termina mai repede. Fiecare conexiune este strânsă la cuplu, fiecare cablu este fixat conform normelor.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Transparență prețuri</h3>
+          <p class="text-sm text-slate-600">Primești deviz detaliat cu fiecare material și operație înainte de a începe. Fără costuri ascunse, fără „surprize" la final.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Documentație completă</h3>
+          <p class="text-sm text-slate-600">La predare primești schema electrică, buletin PRAM, certificate materiale și garanție scrisă. Tot ce ai nevoie pentru recepție și asigurare.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Materiale premium</h3>
+          <p class="text-sm text-slate-600">Lucrăm exclusiv cu Schneider Electric pentru protecții și aparataj, și cu cabluri certificate conform standardelor europene. Nu folosim materiale „no-name".</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <span>⭐</span> De ce ne aleg clienții
+      </h2>
+      <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex gap-3"><span class="text-emerald-600 font-bold">•</span> Răspuns rapid la solicitări — în maxim 2 ore în zilele lucrătoare</li>
+          <li class="flex gap-3"><span class="text-emerald-600 font-bold">•</span> Evaluare gratuită la domiciliu — fără obligații</li>
+          <li class="flex gap-3"><span class="text-emerald-600 font-bold">•</span> Garanție 2 ani pe manoperă — nu doar pe materiale</li>
+          <li class="flex gap-3"><span class="text-emerald-600 font-bold">•</span> Programare flexibilă — inclusiv sâmbăta dimineață</li>
+          <li class="flex gap-3"><span class="text-emerald-600 font-bold">•</span> Curățenie la plecare — lăsăm spațiul de lucru impecabil</li>
+          <li class="flex gap-3"><span class="text-emerald-600 font-bold">•</span> Sfaturi oneste — dacă nu ai nevoie de ceva, nu îți vindem</li>
+          <li class="flex gap-3"><span class="text-emerald-600 font-bold">•</span> Documentație fotografică — primești poze cu traseele înainte de astupare</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-10">
+      <h2 class="text-2xl font-bold mb-4 text-slate-900">Hai să discutăm despre proiectul tău</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Suntem aici să te ajutăm cu orice nevoie electrică — de la o consultare rapidă la un proiect complet de la zero.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Contactează-ne
+      </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Răspuns în max. 2 ore · ✓ Consultare gratuită</p>
+    </section>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ing. Marius Alexa",
+    "jobTitle": "Electrician autorizat ANRE",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "AlexaVolt",
+      "url": "https://www.alexavolt.ro"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universitatea Tehnică Gheorghe Asachi Iași"
+    },
+    "knowsAbout": ["Instalații electrice", "Tablouri electrice Schneider", "Sisteme fotovoltaice", "Normativ I7", "Autorizare ANRE"]
+  })} />
+</Layout>

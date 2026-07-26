@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Electrician Ciurea — Instalații Electrice Autorizat ANRE | AlexaVolt" description="Electrician autorizat ANRE în Ciurea, Iași. Modernizare instalații din aluminiu, tablouri electrice noi, verificare PRAM. Deplasare rapidă ~12 km de Iași.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Electrician Ciurea" parent="🛠️ Servicii" parentHref={`${base}/servicii/`} />
+
+    <section class="mb-12 border-b border-slate-100 pb-10">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+        Electrician Autorizat ANRE <span class="text-emerald-600">Ciurea</span> — AlexaVolt Iași
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed">
+        Comuna Ciurea, situată la ~12 km sud de Iași, prezintă un mix interesant de construcții: case vechi cu instalații de aluminiu care necesită modernizare urgentă, și construcții noi în zonele rezidențiale în dezvoltare. Zona industrială Ciurea aduce și cereri pentru instalații electrice comerciale și de producție.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">⚡ Servicii electrice în Ciurea</h2>
+      <p class="text-slate-600 mb-6">
+        Problemele specifice din Ciurea includ case vechi cu cablaj de aluminiu oxidat, tablouri cu siguranțe fuzibile MPR, și lipsa protecțiilor diferențiale. Oferim soluții complete:
+      </p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+          <h3 class="font-bold text-red-700 mb-2">Modernizare instalație aluminiu</h3>
+          <p class="text-sm text-slate-600">Înlocuim complet cablajul vechi de aluminiu cu cupru dimensionat corect. Eliminăm riscul de incendiu de la conexiunile oxidate.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Tablouri electrice noi</h3>
+          <p class="text-sm text-slate-600">Înlocuim tabloul vechi cu siguranțe fuzibile cu un tablou modern Schneider — protecții RCD, disjunctoare calibrate, SPD.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Instalații case noi</h3>
+          <p class="text-sm text-slate-600">Proiectare și execuție completă pentru construcțiile noi din zona rezidențială Ciurea. Conform normativ I7.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Instalații spații comerciale</h3>
+          <p class="text-sm text-slate-600">Zona industrială Ciurea: instalații electrice pentru hale, ateliere și spații de producție cu putere instalată mare.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">🏠 Probleme frecvente în Ciurea</h2>
+      <p class="text-slate-600 mb-4">
+        Multe dintre casele din Ciurea au fost construite în anii '70-'80 cu instalații de aluminiu. Acestea prezintă probleme specifice pe care le rezolvăm zilnic:
+      </p>
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex gap-3"><span class="text-red-600 font-bold">⚠️</span> Cablaj de aluminiu oxidat — risc major de incendiu la conexiuni</li>
+        <li class="flex gap-3"><span class="text-red-600 font-bold">⚠️</span> Siguranțe fuzibile MPR — nicio protecție la electrocutare</li>
+        <li class="flex gap-3"><span class="text-red-600 font-bold">⚠️</span> Secțiuni subdimensionate — nu fac față consumatorilor moderni (AC, plită)</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Soluție: modernizare completă cu garanție 2 ani și buletin PRAM</li>
+      </ul>
+    </section>
+
+    <section class="mb-12 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole relevante</h2>
+      <ul class="space-y-2">
+        <li><a href={`${base}/articole/de-ce-e-periculos-cablajul-din-aluminiu/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">De ce e periculos cablajul din aluminiu →</a></li>
+        <li><a href={`${base}/articole/semne-tablou-electric-depasit/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">5 semne că tabloul tău electric e depășit →</a></li>
+        <li><a href={`${base}/servicii/tablouri-electrice-schneider/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Serviciu: Tablouri electrice Schneider →</a></li>
+      </ul>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-10">
+      <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai nevoie de electrician în Ciurea?</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Fie că modernizezi o instalație veche sau construiești de la zero, suntem la un telefon distanță. Deplasare rapidă în comuna Ciurea.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Solicită evaluare gratuită
+      </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Răspuns în max. 2 ore · ✓ Deplasare gratuită în Ciurea</p>
+    </section>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AlexaVolt — Electrician Ciurea",
+    "description": "Electrician autorizat ANRE în Ciurea, Iași. Modernizare instalații din aluminiu, tablouri electrice noi, verificare PRAM.",
+    "url": "https://www.alexavolt.ro/electrician-ciurea/",
+    "telephone": "+40745539432",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iași",
+      "addressRegion": "Iași",
+      "addressCountry": "RO"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Ciurea, Iași"
+    },
+    "priceRange": "$$"
+  })} />
+</Layout>

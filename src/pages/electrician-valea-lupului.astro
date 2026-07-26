@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Electrician Valea Lupului — Instalații Electrice Autorizat ANRE | AlexaVolt" description="Electrician autorizat ANRE în Valea Lupului, Iași. Instalații electrice apartamente și case, tablouri Schneider, depanări rapide. La 5 km de centrul Iași.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Electrician Valea Lupului" parent="🛠️ Servicii" parentHref={`${base}/servicii/`} />
+
+    <section class="mb-12 border-b border-slate-100 pb-10">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+        Electrician Autorizat ANRE <span class="text-emerald-600">Valea Lupului</span> — AlexaVolt Iași
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed">
+        Valea Lupului este cartierul cu cea mai rapidă dezvoltare din zona metropolitană Iași. La doar ~5 km de centru, aici se găsesc atât blocuri noi cu apartamente de 2-3 camere, cât și case individuale, plus parcuri comerciale importante. Mixul rezidențial-comercial face din Valea Lupului o zonă cu cerere constantă de servicii electrice profesionale.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">⚡ Servicii electrice în Valea Lupului</h2>
+      <p class="text-slate-600 mb-6">
+        Specificul zonei Valea Lupului — apartamente noi de finalizat, case individuale, și spații comerciale — necesită abordări diferite. Acoperim toate scenariile:
+      </p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Finisare apartamente noi</h3>
+          <p class="text-sm text-slate-600">Multe apartamente din blocurile noi din Valea Lupului se predau la gri. Realizăm instalația electrică completă la finisaj — prize, întrerupătoare, iluminat, tablou.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Tablouri electrice apartamente</h3>
+          <p class="text-sm text-slate-600">Upgrade tablou la blocurile noi — multe vin cu tablou minimal de la dezvoltator. Adăugăm protecții RCD per cameră și SPD.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Instalații case rezidențiale</h3>
+          <p class="text-sm text-slate-600">Case P+1 din zonele rezidențiale adiacente. Proiectare completă, execuție autorizată, buletin PRAM la final.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Depanări și urgențe</h3>
+          <p class="text-sm text-slate-600">Intervenții rapide în Valea Lupului — diferențial care sare, lipsă curent, miros de ars. Suntem la 10 minute distanță.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">🏢 Valea Lupului — context specific</h2>
+      <p class="text-slate-600 mb-4">
+        Blocurile noi din Valea Lupului au adesea instalații electrice minimale de la dezvoltator — un singur RCD general, fără circuite dedicate pentru consumatorii mari. Recomandăm proprietarilor de apartamente noi:
+      </p>
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Separarea circuitelor pe grupe (iluminat, prize, bucătărie, baie)</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> RCD dedicat per grup — dacă sare unul, restul apartamentului funcționează</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Circuit dedicat AC pe fiecare cameră (cablu 3x2.5 mmp)</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Descărcător SPD — obligatoriu la etajele superioare</li>
+      </ul>
+    </section>
+
+    <section class="mb-12 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole relevante</h2>
+      <ul class="space-y-2">
+        <li><a href={`${base}/articole/de-ce-imi-sare-diferentialul/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">De ce îmi sare diferențialul (RCD) →</a></li>
+        <li><a href={`${base}/articole/cum-sa-alegi-un-tablou-electric/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Cum alegi un tablou electric →</a></li>
+        <li><a href={`${base}/servicii/tablouri-electrice-schneider/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Serviciu: Tablouri electrice Schneider →</a></li>
+      </ul>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-10">
+      <h2 class="text-2xl font-bold mb-4 text-slate-900">Locuiești în Valea Lupului?</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Contactează-ne pentru orice nevoie electrică — de la finisarea apartamentului nou la depanare urgentă.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Contactează-ne acum
+      </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Răspuns în max. 2 ore · ✓ Intervenție rapidă în Valea Lupului</p>
+    </section>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AlexaVolt — Electrician Valea Lupului",
+    "description": "Electrician autorizat ANRE în Valea Lupului, Iași. Instalații electrice apartamente și case, tablouri Schneider, depanări rapide.",
+    "url": "https://www.alexavolt.ro/electrician-valea-lupului/",
+    "telephone": "+40745539432",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iași",
+      "addressRegion": "Iași",
+      "addressCountry": "RO"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Valea Lupului, Iași"
+    },
+    "priceRange": "$$"
+  })} />
+</Layout>

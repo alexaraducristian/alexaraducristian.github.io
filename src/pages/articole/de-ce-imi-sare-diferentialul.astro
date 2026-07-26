@@ -26,7 +26,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
           De ce îmi sare <span class="text-red-600">diferențialul (RCD)</span> și cum rezolv
         </h1>
-        <p class="text-lg text-slate-600 leading-relaxed">
+        <time datetime="2026-01-15" class="text-sm text-slate-400 font-medium">Actualizat: Ianuarie 2026</time>
+        <p class="text-lg text-slate-600 leading-relaxed mt-4">
           Diferențialul declanșează din senin? Iată cauzele cele mai frecvente și ce poți face pas cu pas.
         </p>
       </header>
@@ -108,10 +109,25 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
           AlexaVolt identifică cauza cu instrumente profesionale (megohmetru) și rezolvă problema definitiv.
         </p>
+        <p class="text-slate-600 mb-4"><a href={`${base}/servicii/tablouri-electrice-schneider/`} class="text-blue-600 font-semibold hover:text-blue-800">→ Vezi serviciul de montaj tablouri electrice</a></p>
         <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
           Solicită diagnostic
         </a>
       </section>
     </article>
   </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cum rezolvi când sare diferențialul (RCD)",
+    "description": "Troubleshooting pas cu pas pentru diferențialul care declanșează frecvent",
+    "step": [
+      {"@type": "HowToStep", "position": 1, "name": "Deconectează aparatele", "text": "Deconectează TOATE aparatele din prize (scoate fizic fișele)."},
+      {"@type": "HowToStep", "position": 2, "name": "Rearmează RCD-ul", "text": "Ridică maneta RCD-ului în sus."},
+      {"@type": "HowToStep", "position": 3, "name": "Testează cu aparate", "text": "Dacă rămâne armat, conectează aparatele pe rând până identifici vinovatul."},
+      {"@type": "HowToStep", "position": 4, "name": "Verifică instalația fixă", "text": "Dacă declanșează imediat fără nimic conectat, problema e în instalația fixă. Cheamă un electrician."},
+      {"@type": "HowToStep", "position": 5, "name": "Verifică umezeala", "text": "Dacă declanșează doar la ploaie/umezeală, verifică dozele exterioare și prizele din baie/bucătărie."}
+    ]
+  })} />
 </Layout>

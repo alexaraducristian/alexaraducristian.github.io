@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Electrician Miroslava — Instalații Electrice Autorizat ANRE | AlexaVolt" description="Electrician autorizat ANRE în Miroslava, Iași. Instalații electrice pentru case noi, tablouri Schneider, sisteme fotovoltaice. Acoperim Horpaz, Brătuleni, Vorovești.">
+  <Header />
+
+  <main class="max-w-4xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Electrician Miroslava" parent="🛠️ Servicii" parentHref={`${base}/servicii/`} />
+
+    <section class="mb-12 border-b border-slate-100 pb-10">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+        Electrician Autorizat ANRE <span class="text-emerald-600">Miroslava</span> — AlexaVolt Iași
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed">
+        Comuna Miroslava este una dintre cele mai dinamice zone rezidențiale din proximitatea Iașiului, cu dezvoltare intensă în cartierele Horpaz, Brătuleni și Vorovești. La doar ~8 km de centrul orașului, aici se construiesc anual zeci de case noi P+1 și P+M care au nevoie de instalații electrice proiectate corect de la zero.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">⚡ Servicii electrice în Miroslava</h2>
+      <p class="text-slate-600 mb-6">
+        Dezvoltarea rezidențială din Miroslava presupune în principal construcții noi — case pe structură de beton sau lemn, cu suprafețe de 120-200 mp. Pentru aceste proiecte, oferim:
+      </p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Instalații electrice case noi</h3>
+          <p class="text-sm text-slate-600">Proiectare completă pe planul arhitectural, execuție la roșu și finisaj, cu circuite dedicate pentru AC, plită inductie și stație EV.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Tablouri electrice Schneider</h3>
+          <p class="text-sm text-slate-600">Montaj tablou complet echipat cu protecții RCD, disjunctoare calibrate și descărcătoare SPD pentru case noi din Horpaz și Brătuleni.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Sisteme fotovoltaice</h3>
+          <p class="text-sm text-slate-600">Casele noi din Miroslava au acoperiș orientat optim pentru panouri. Montaj autorizat ANRE + statut prosumator.</p>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-2">Verificare PRAM</h3>
+          <p class="text-sm text-slate-600">Buletin de verificare obligatoriu la recepția construcției. Aparatură calibrată, document cu valoare juridică.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">🏘️ De ce electrician autorizat în Miroslava?</h2>
+      <p class="text-slate-600 mb-4">
+        Cartierele noi din Miroslava (Horpaz, Brătuleni, Vorovești) se dezvoltă rapid, dar multe dintre construcții sunt realizate cu echipe necalificate electric. O instalație executată corect de la început economisește bani pe termen lung și elimină riscul de incendiu sau electrocutare.
+      </p>
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Autorizare ANRE Tip B — documentație completă la recepție</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Proiectare conform normativ I7 — secțiuni corecte, protecții calibrate</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Garanție 2 ani manoperă + buletin PRAM inclus</li>
+        <li class="flex gap-3"><span class="text-emerald-600 font-bold">✓</span> Deplasare rapidă — suntem la 15 minute de Miroslava</li>
+      </ul>
+    </section>
+
+    <section class="mb-12 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole utile</h2>
+      <ul class="space-y-2">
+        <li><a href={`${base}/articole/cat-costa-instalatie-electrica-casa/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Cât costă o instalație electrică pentru casă →</a></li>
+        <li><a href={`${base}/articole/checklist-electric-locuinta-noua/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Checklist electric pentru locuința nouă →</a></li>
+        <li><a href={`${base}/servicii/instalatii-electrice-complete/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Serviciu: Instalații electrice complete →</a></li>
+      </ul>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-10">
+      <h2 class="text-2xl font-bold mb-4 text-slate-900">Construiești în Miroslava?</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Contactează-ne pentru o evaluare gratuită la domiciliu. Acoperim toate cartierele din comuna Miroslava.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Solicită deviz gratuit
+      </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Răspuns în max. 2 ore · ✓ Deplasare gratuită în Miroslava</p>
+    </section>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AlexaVolt — Electrician Miroslava",
+    "description": "Electrician autorizat ANRE în Miroslava, Iași. Instalații electrice case noi, tablouri Schneider, sisteme fotovoltaice.",
+    "url": "https://www.alexavolt.ro/electrician-miroslava/",
+    "telephone": "+40745539432",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iași",
+      "addressRegion": "Iași",
+      "addressCountry": "RO"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Miroslava, Iași"
+    },
+    "priceRange": "$$"
+  })} />
+</Layout>

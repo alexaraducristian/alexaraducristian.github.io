@@ -116,4 +116,18 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <p class="mt-4 text-sm text-slate-500">✓ Răspuns în max. 2 ore · ✓ Programare în 3 zile lucrătoare</p>
     </section>
   </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Verificare PRAM - buletin de verificare instalații electrice",
+    "provider": {
+      "@type": "Electrician",
+      "name": "AlexaVolt",
+      "telephone": "+40745539432",
+      "url": "https://www.alexavolt.ro"
+    },
+    "areaServed": {"@type": "City", "name": "Iași"},
+    "description": "Verificare PRAM Iași — buletin de verificare a instalațiilor electrice pentru recepția construcțiilor, vânzare imobil și asigurări. Aparatură calibrată, electrician ANRE."
+  })} />
 </Layout>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af"/>
+      <stop offset="100%" style="stop-color:#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="96" font-weight="bold" fill="white">AlexaVolt</text>
+  <text x="600" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="white" opacity="0.95">Electrician Autorizat ANRE Iași</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="white" opacity="0.75">Instalații Electrice • Tablouri Schneider • Fotovoltaice</text>
+  <rect x="100" y="520" width="1000" height="2" fill="white" opacity="0.3"/>
+  <text x="600" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white" opacity="0.6">www.alexavolt.ro</text>
+</svg>
