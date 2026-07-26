@@ -1,0 +1,53 @@
+<svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad10" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#212121;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#424242;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad10b" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD600;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFAB00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark elegant background -->
+  <rect x="10" y="20" width="480" height="160" rx="16" fill="url(#grad10)" />
+
+  <!-- Electric panel icon left -->
+  <rect x="35" y="50" width="50" height="70" rx="4" fill="none" stroke="#FFD600" stroke-width="2" />
+  <rect x="42" y="58" width="15" height="7" rx="2" fill="#FFD600" />
+  <rect x="42" y="71" width="15" height="7" rx="2" fill="#FFD600" />
+  <rect x="42" y="84" width="15" height="7" rx="2" fill="#FFD600" />
+  <rect x="62" y="58" width="15" height="7" rx="2" fill="#FFD600" />
+  <rect x="62" y="71" width="15" height="7" rx="2" fill="#FFD600" />
+  <rect x="62" y="84" width="15" height="7" rx="2" fill="#FFD600" />
+
+  <!-- DIN rail line -->
+  <line x1="35" y1="102" x2="85" y2="102" stroke="#FFAB00" stroke-width="1.5" />
+
+  <!-- Text on dark bg -->
+  <text x="105" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="50" font-weight="900" fill="white" letter-spacing="1">AlexaVolt</text>
+
+  <!-- Yellow accent under text -->
+  <rect x="105" y="106" width="180" height="3" rx="1.5" fill="url(#grad10b)" />
+
+  <!-- Subtitle -->
+  <text x="290" y="140" font-family="Arial, sans-serif" font-size="13" fill="#aaa" text-anchor="middle" letter-spacing="6" font-weight="700">AUTORIZAT ANRE</text>
+
+  <!-- RCD/breaker icons right side -->
+  <rect x="420" y="50" width="14" height="30" rx="2" fill="none" stroke="#FFD600" stroke-width="1.5" />
+  <rect x="424" y="54" width="6" height="4" rx="1" fill="#FFD600" />
+  <line x1="427" y1="62" x2="427" y2="76" stroke="#FFD600" stroke-width="1.5" />
+
+  <rect x="440" y="50" width="14" height="30" rx="2" fill="none" stroke="#FFD600" stroke-width="1.5" />
+  <rect x="444" y="54" width="6" height="4" rx="1" fill="#FFD600" />
+  <line x1="447" y1="62" x2="447" y2="76" stroke="#FFD600" stroke-width="1.5" />
+
+  <rect x="460" y="50" width="14" height="30" rx="2" fill="none" stroke="#FFD600" stroke-width="1.5" />
+  <rect x="464" y="54" width="6" height="4" rx="1" fill="#FFD600" />
+  <line x1="467" y1="62" x2="467" y2="76" stroke="#FFD600" stroke-width="1.5" />
+
+  <!-- Wire connections bottom -->
+  <path d="M427 80 L427 90 L447 90 L447 80" stroke="#FFAB00" stroke-width="1" fill="none" />
+  <path d="M447 90 L467 90 L467 80" stroke="#FFAB00" stroke-width="1" fill="none" />
+</svg>

@@ -1,0 +1,47 @@
+<svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1B5E20;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#43A047;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad8b" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDD835;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F9A825;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sun with rays (solar energy theme) -->
+  <circle cx="65" cy="70" r="25" fill="url(#grad8b)" />
+  <g stroke="#F9A825" stroke-width="3" stroke-linecap="round">
+    <line x1="65" y1="35" x2="65" y2="28" />
+    <line x1="65" y1="105" x2="65" y2="112" />
+    <line x1="30" y1="70" x2="23" y2="70" />
+    <line x1="100" y1="70" x2="107" y2="70" />
+    <line x1="40" y1="45" x2="35" y2="40" />
+    <line x1="90" y1="45" x2="95" y2="40" />
+    <line x1="40" y1="95" x2="35" y2="100" />
+    <line x1="90" y1="95" x2="95" y2="100" />
+  </g>
+
+  <!-- Small bolt in sun center -->
+  <path d="M62 58 L59 72 L64 72 L61 83 L72 68 L66 68 L70 58 Z" fill="#1B5E20" />
+
+  <!-- Text -->
+  <text x="125" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" fill="url(#grad8)" letter-spacing="-1">AlexaVolt</text>
+
+  <!-- Green line separator -->
+  <rect x="125" y="100" width="320" height="3" rx="1.5" fill="#43A047" opacity="0.4" />
+
+  <!-- Subtitle -->
+  <text x="285" y="135" font-family="Arial, sans-serif" font-size="14" fill="#555" text-anchor="middle" letter-spacing="5" font-weight="700">AUTORIZAT ANRE</text>
+
+  <!-- Leaf + bolt combo (green energy) -->
+  <path d="M125 155 Q145 140 165 155 Q145 170 125 155 Z" fill="#43A047" opacity="0.6" />
+  <path d="M143 147 L141 155 L144 155 L142 163 L150 153 L146 153 L149 147 Z" fill="#FDD835" />
+
+  <!-- Panel grid small -->
+  <rect x="400" y="145" width="40" height="25" rx="2" fill="none" stroke="#1B5E20" stroke-width="1.5" />
+  <line x1="413" y1="145" x2="413" y2="170" stroke="#1B5E20" stroke-width="1" />
+  <line x1="427" y1="145" x2="427" y2="170" stroke="#1B5E20" stroke-width="1" />
+  <line x1="400" y1="157" x2="440" y2="157" stroke="#1B5E20" stroke-width="1" />
+</svg>

@@ -1,0 +1,27 @@
+<svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D47A1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E88E5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Shield with bolt -->
+  <path d="M70 30 L120 45 L120 100 Q120 140 70 160 Q20 140 20 100 L20 45 Z" fill="url(#grad3)" stroke="#0D47A1" stroke-width="2" />
+  <path d="M65 55 L55 90 L67 90 L58 125 L90 80 L75 80 L85 55 Z" fill="#FFD600" />
+
+  <!-- Text -->
+  <text x="140" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="54" font-weight="900" fill="#1a1a2e" letter-spacing="-2">AlexaVolt</text>
+
+  <!-- Decorative line with sparks -->
+  <line x1="140" y1="115" x2="420" y2="115" stroke="#1E88E5" stroke-width="2" />
+  <path d="M420 108 L428 115 L420 122" fill="none" stroke="#FFD600" stroke-width="2" stroke-linecap="round" />
+  <path d="M430 105 L435 115 L430 125" fill="none" stroke="#FFD600" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Subtitle -->
+  <text x="280" y="150" font-family="Arial, sans-serif" font-size="16" fill="#555" text-anchor="middle" letter-spacing="5" font-weight="700">AUTORIZAT ANRE</text>
+
+  <!-- Certification badge -->
+  <circle cx="430" cy="150" r="18" fill="none" stroke="#0D47A1" stroke-width="2" />
+  <text x="430" y="155" font-family="Arial" font-size="10" fill="#0D47A1" text-anchor="middle" font-weight="bold">ANRE</text>
+</svg>
