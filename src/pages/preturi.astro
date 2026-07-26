@@ -1,0 +1,205 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Prețuri Orientative Electrician Iași | AlexaVolt" description="Prețuri orientative pentru servicii de electrician autorizat ANRE în Iași: instalații electrice, tablouri Schneider, fotovoltaice, verificare PRAM. Deviz gratuit.">
+  <Header />
+
+  <main class="max-w-5xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Prețuri Orientative" />
+
+    <section class="mb-16 border-b border-slate-100 pb-12">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+        Prețuri Orientative <span class="text-emerald-600">Electrician Iași</span>
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed max-w-3xl">
+        Mai jos găsești prețuri orientative pentru serviciile noastre. Fiecare proiect este unic — prețul final depinde de complexitate, materiale alese și suprafață. Solicită o evaluare gratuită pentru un deviz exact.
+      </p>
+      <div class="mt-6 bg-amber-50 border border-amber-200 p-4 rounded-xl">
+        <p class="text-sm text-amber-800 font-medium">⚠️ Prețurile de mai jos sunt estimative și includ materiale + manoperă. Prețul final se stabilește după evaluarea la domiciliu — fără obligații.</p>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span>🏠</span> Instalație Electrică Completă — Casă
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-100">
+              <th class="p-4 font-bold text-slate-900 rounded-tl-xl">Tip locuință</th>
+              <th class="p-4 font-bold text-slate-900">Suprafață</th>
+              <th class="p-4 font-bold text-slate-900 rounded-tr-xl">Preț orientativ</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Apartament 2 camere</td>
+              <td class="p-4 text-slate-600">50-60 mp</td>
+              <td class="p-4 font-bold text-blue-700">3.500 – 5.000 €</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Apartament 3-4 camere</td>
+              <td class="p-4 text-slate-600">70-100 mp</td>
+              <td class="p-4 font-bold text-blue-700">5.000 – 7.500 €</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Casă mică (parter)</td>
+              <td class="p-4 text-slate-600">80-120 mp</td>
+              <td class="p-4 font-bold text-blue-700">5.500 – 8.000 €</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Casă P+1</td>
+              <td class="p-4 text-slate-600">150-200 mp</td>
+              <td class="p-4 font-bold text-blue-700">8.000 – 13.000 €</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Vilă mare P+1+M</td>
+              <td class="p-4 text-slate-600">250+ mp</td>
+              <td class="p-4 font-bold text-blue-700">13.000 – 20.000+ €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Include: proiectare, materiale (cabluri, tablou, prize, întrerupătoare), execuție și buletin PRAM.</p>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span>⚡</span> Montaj Tablou Electric
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-100">
+              <th class="p-4 font-bold text-slate-900 rounded-tl-xl">Serviciu</th>
+              <th class="p-4 font-bold text-slate-900 rounded-tr-xl">Preț orientativ</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Tablou monofazat (apartament)</td>
+              <td class="p-4 font-bold text-blue-700">800 – 1.500 €</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Tablou trifazat (casă)</td>
+              <td class="p-4 font-bold text-blue-700">1.200 – 2.500 €</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Upgrade tablou existent + RCD-uri</td>
+              <td class="p-4 font-bold text-blue-700">600 – 1.200 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Include: carcasă Schneider, aparataj (disjunctoare, RCD, SPD), montaj, etichetare și testare.</p>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span>☀️</span> Sisteme Fotovoltaice
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-emerald-50">
+              <th class="p-4 font-bold text-slate-900 rounded-tl-xl">Putere sistem</th>
+              <th class="p-4 font-bold text-slate-900">Nr. panouri (aprox.)</th>
+              <th class="p-4 font-bold text-slate-900 rounded-tr-xl">Preț orientativ</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-4">3 kW (on-grid)</td>
+              <td class="p-4 text-slate-600">6-7 panouri</td>
+              <td class="p-4 font-bold text-emerald-700">3.000 – 4.500 €</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-4">5 kW (on-grid)</td>
+              <td class="p-4 text-slate-600">10-12 panouri</td>
+              <td class="p-4 font-bold text-emerald-700">4.500 – 6.500 €</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-4">8 kW (on-grid)</td>
+              <td class="p-4 text-slate-600">15-18 panouri</td>
+              <td class="p-4 font-bold text-emerald-700">6.500 – 9.000 €</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-4">10 kW (on-grid)</td>
+              <td class="p-4 text-slate-600">20-22 panouri</td>
+              <td class="p-4 font-bold text-emerald-700">8.500 – 12.000 €</td>
+            </tr>
+            <tr class="hover:bg-emerald-50/50">
+              <td class="p-4">+ Baterie stocare (5 kWh)</td>
+              <td class="p-4 text-slate-600">—</td>
+              <td class="p-4 font-bold text-emerald-700">+ 2.500 – 4.000 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Include: panouri Tier 1, invertor (Huawei/Sungrow), structură montaj, cabluri DC, protecții, manoperă și comisionare.</p>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span>📋</span> Verificare PRAM
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-100">
+              <th class="p-4 font-bold text-slate-900 rounded-tl-xl">Serviciu</th>
+              <th class="p-4 font-bold text-slate-900 rounded-tr-xl">Preț orientativ</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Verificare PRAM apartament</td>
+              <td class="p-4 font-bold text-blue-700">150 – 250 €</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Verificare PRAM casă</td>
+              <td class="p-4 font-bold text-blue-700">200 – 400 €</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">Verificare PRAM spațiu comercial</td>
+              <td class="p-4 font-bold text-blue-700">300 – 600 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Include: deplasare, toate măsurările conform normativelor, buletin oficial cu semnătură și ștampilă.</p>
+    </section>
+
+    <section class="mb-16 bg-blue-50 border border-blue-100 p-8 rounded-3xl">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">💡 Ce influențează prețul final?</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <ul class="space-y-3 text-slate-700 text-sm">
+          <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Suprafața utilă a locuinței</li>
+          <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Numărul de circuite și consumatori</li>
+          <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Calitatea materialelor alese (standard vs premium)</li>
+        </ul>
+        <ul class="space-y-3 text-slate-700 text-sm">
+          <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Complexitatea traseelor (construcție nouă vs renovare)</li>
+          <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Tipul alimentării (monofazat vs trifazat)</li>
+          <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Circuite speciale (EV charger, AC, plită inductie)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-12">
+      <h2 class="text-2xl font-bold mb-4 text-slate-900">Vrei un deviz exact pentru proiectul tău?</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Contactează-ne pentru o evaluare gratuită la domiciliu. Primești deviz detaliat cu prețuri fixe pentru materiale și manoperă — fără surprize.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Solicită evaluare gratuită
+      </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Fără obligații · ✓ Deviz fix în 24-48 ore · ✓ Fără costuri ascunse</p>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Verificare PRAM Iași — Buletin de Verificare Instalații Electrice | AlexaVolt" description="Verificare PRAM Iași — buletin de verificare a instalațiilor electrice pentru recepția construcțiilor, vânzare imobil și asigurări. Aparatură calibrată, electrician ANRE.">
+  <Header />
+
+  <main class="max-w-5xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Verificare PRAM" parent="🛠️ Servicii" parentHref={`${base}/servicii/`} />
+
+    <section class="mb-16 border-b border-slate-100 pb-12">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+        Verificare PRAM Iași — <span class="text-blue-600">Buletin de Verificare</span> Instalații Electrice
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed max-w-3xl">
+        Buletinul de verificare PRAM (Proces-verbal de Recepție și Admitere a Măsurărilor) atestă oficial că instalația electrică este conformă cu normativele în vigoare. Este obligatoriu la recepția construcțiilor noi, la vânzarea imobilelor și pentru încheierea asigurărilor de locuință.
+      </p>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span>📋</span> Când ai nevoie de verificare PRAM?
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-3">🏠 Recepția construcției noi</h3>
+          <p class="text-sm text-slate-600">La finalizarea unei case sau a unui spațiu comercial, buletinul PRAM este obligatoriu pentru obținerea procesului-verbal de recepție la terminarea lucrărilor.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-3">🏪 Vânzare/Cumpărare imobil</h3>
+          <p class="text-sm text-slate-600">Cumpărătorii solicită tot mai des un buletin PRAM valid. Demonstrează că instalația electrică nu prezintă riscuri și este conformă.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-3">🛡️ Asigurare locuință</h3>
+          <p class="text-sm text-slate-600">Companiile de asigurări pot solicita buletinul PRAM. Fără el, despăgubirea în caz de incendiu electric poate fi refuzată.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-3">🔄 După renovare electrică</h3>
+          <p class="text-sm text-slate-600">Orice modificare semnificativă a instalației electrice necesită o nouă verificare PRAM pentru a certifica conformitatea lucrărilor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span>🔬</span> Ce măsurăm la verificarea PRAM?
+      </h2>
+      <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-bold text-slate-900 mb-3">Măsurări efectuate:</h3>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li class="flex gap-2"><span class="text-emerald-600 font-bold">✓</span> Rezistența izolației (megohmetru)</li>
+              <li class="flex gap-2"><span class="text-emerald-600 font-bold">✓</span> Rezistența prizei de pământ</li>
+              <li class="flex gap-2"><span class="text-emerald-600 font-bold">✓</span> Continuitatea conductoarelor de protecție (PE)</li>
+              <li class="flex gap-2"><span class="text-emerald-600 font-bold">✓</span> Impedanța buclei de defect</li>
+              <li class="flex gap-2"><span class="text-emerald-600 font-bold">✓</span> Testarea dispozitivelor diferențiale (RCD)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 mb-3">Aparatură utilizată:</h3>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Megohmetru digital calibrat</li>
+              <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Telurometru pentru priza de pământ</li>
+              <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Tester RCD multifuncțional</li>
+              <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Aparat de măsură impedanță buclă</li>
+              <li class="flex gap-2"><span class="text-blue-600 font-bold">•</span> Toate aparatele cu certificat de calibrare valid</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16 bg-emerald-50 border border-emerald-100 p-8 rounded-3xl">
+      <h2 class="text-2xl font-bold text-emerald-800 mb-4">✅ Ce primești de la noi</h2>
+      <ul class="space-y-3 text-slate-700">
+        <li class="flex gap-3 items-start">
+          <span class="text-emerald-600 font-bold">✓</span>
+          <span><strong>Buletin PRAM oficial</strong> — document cu valoare juridică, semnat de electrician autorizat ANRE</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-emerald-600 font-bold">✓</span>
+          <span><strong>Raport detaliat</strong> — toate măsurările cu valori concrete și conformitatea cu limitele normativului</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-emerald-600 font-bold">✓</span>
+          <span><strong>Recomandări</strong> — dacă descoperim probleme, primești soluții concrete și prioritizate</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="text-emerald-600 font-bold">✓</span>
+          <span><strong>Intervenție rapidă</strong> — programare în maxim 3 zile lucrătoare în Iași și împrejurimi</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-16 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole utile</h2>
+      <ul class="space-y-2">
+        <li><a href={`${base}/articole/buletin-verificare-pram/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Ce este buletinul de verificare PRAM — ghid complet →</a></li>
+        <li><a href={`${base}/articole/cum-se-face-impamantare-corecta/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Cum se face o împământare corectă →</a></li>
+        <li><a href={`${base}/articole/ce-este-un-rcd-diferential/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Ce este un RCD (diferențial) și de ce e obligatoriu →</a></li>
+      </ul>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-12">
+      <h2 class="text-2xl font-bold mb-4 text-slate-900">Ai nevoie de buletin PRAM?</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Programează verificarea PRAM în Iași. Intervenție rapidă, aparatură calibrată, buletin oficial cu valoare juridică.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Programează verificare PRAM
+      </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Răspuns în max. 2 ore · ✓ Programare în 3 zile lucrătoare</p>
+    </section>
+  </main>
+</Layout>

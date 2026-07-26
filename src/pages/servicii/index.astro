@@ -1,0 +1,81 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Servicii Electrician Autorizat ANRE Iași | AlexaVolt" description="Servicii complete de instalații electrice în Iași: instalații la cheie, tablouri Schneider, panouri fotovoltaice, verificare PRAM. Electrician autorizat ANRE.">
+  <Header />
+
+  <main class="max-w-5xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Servicii" />
+
+    <section class="mb-16 border-b border-slate-100 pb-12">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+        Servicii <span class="text-emerald-600">Electrician Autorizat</span> ANRE Iași
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed max-w-3xl">
+        AlexaVolt oferă soluții electrice complete pentru rezidențial și comercial în Iași și împrejurimi. De la proiectare și execuție la roșu până la sisteme fotovoltaice și verificări PRAM — totul cu autorizare ANRE și materiale premium.
+      </p>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-8 mb-16">
+      <a href={`${base}/servicii/instalatii-electrice-complete/`} class="group bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg hover:border-blue-200 transition-all">
+        <div class="text-3xl mb-4">🏠</div>
+        <h2 class="text-xl font-bold text-blue-700 mb-3 group-hover:text-blue-800">Instalații Electrice Complete</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">Proiectare și execuție instalații electrice pentru case noi, renovări și spații comerciale. Conform normativului I7, cu materiale premium.</p>
+        <span class="inline-block mt-4 text-blue-600 font-semibold text-sm group-hover:translate-x-1 transition-transform">Detalii →</span>
+      </a>
+
+      <a href={`${base}/servicii/tablouri-electrice-schneider/`} class="group bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg hover:border-blue-200 transition-all">
+        <div class="text-3xl mb-4">⚡</div>
+        <h2 class="text-xl font-bold text-blue-700 mb-3 group-hover:text-blue-800">Tablouri Electrice Schneider</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">Montaj și configurare tablouri electrice cu aparataj Schneider Electric. Protecții RCD, SPD și disjunctoare calibrate corect.</p>
+        <span class="inline-block mt-4 text-blue-600 font-semibold text-sm group-hover:translate-x-1 transition-transform">Detalii →</span>
+      </a>
+
+      <a href={`${base}/servicii/panouri-fotovoltaice/`} class="group bg-emerald-50 p-8 rounded-2xl border border-emerald-100 hover:shadow-lg hover:border-emerald-200 transition-all">
+        <div class="text-3xl mb-4">☀️</div>
+        <h2 class="text-xl font-bold text-emerald-700 mb-3 group-hover:text-emerald-800">Panouri Fotovoltaice</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">Sisteme fotovoltaice proiectate cu software profesional. Devii prosumator și economisești mii de lei anual pe factura de curent.</p>
+        <span class="inline-block mt-4 text-emerald-600 font-semibold text-sm group-hover:translate-x-1 transition-transform">Detalii →</span>
+      </a>
+
+      <a href={`${base}/servicii/verificare-pram/`} class="group bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg hover:border-blue-200 transition-all">
+        <div class="text-3xl mb-4">📋</div>
+        <h2 class="text-xl font-bold text-blue-700 mb-3 group-hover:text-blue-800">Verificare PRAM</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">Buletin de verificare PRAM obligatoriu pentru recepția construcțiilor, vânzarea imobilelor și asigurări. Aparatură profesională calibrată.</p>
+        <span class="inline-block mt-4 text-blue-600 font-semibold text-sm group-hover:translate-x-1 transition-transform">Detalii →</span>
+      </a>
+    </section>
+
+    <section class="mb-16 bg-slate-900 text-white p-8 md:p-12 rounded-3xl">
+      <h2 class="text-2xl font-bold mb-6">De ce AlexaVolt?</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div>
+          <h3 class="font-bold text-blue-400 mb-2">✓ Autorizare ANRE Tip B</h3>
+          <p class="text-slate-400 text-sm">Lucrări conforme cu legislația și normativul I7 în vigoare.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-blue-400 mb-2">✓ Materiale Premium</h3>
+          <p class="text-slate-400 text-sm">Schneider Electric, cabluri cu secțiune corectă, protecții calibrate.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-blue-400 mb-2">✓ Garanție 2 Ani</h3>
+          <p class="text-slate-400 text-sm">Garanție pe manoperă plus garanția producătorului pe materiale.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-12">
+      <h2 class="text-2xl font-bold mb-6 text-slate-900">Solicită Evaluare Gratuită</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Contactează-ne pentru o evaluare la domiciliu fără obligații. Primești deviz detaliat în 24-48 ore.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Contactează-ne acum
+      </a>
+    </section>
+  </main>
+</Layout>

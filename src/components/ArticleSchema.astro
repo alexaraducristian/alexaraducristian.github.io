@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+  url: string;
+}
+
+const { title, description, datePublished, dateModified, url } = Astro.props;
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "datePublished": datePublished,
+  "dateModified": dateModified || datePublished,
+  "url": url,
+  "author": {
+    "@type": "Organization",
+    "name": "AlexaVolt"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AlexaVolt",
+    "url": "https://www.alexavolt.ro"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": url
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />

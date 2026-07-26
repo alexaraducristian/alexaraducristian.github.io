@@ -13,7 +13,16 @@ export default defineConfig({
   // URL-uri cu trailing slash (consistent cu ce a indexat Google)
   trailingSlash: 'always',
 
-  integrations: [sitemap()],
+  integrations: [sitemap({
+    filter: (page) => 
+      !page.includes('/energie-verde/') && 
+      !page.includes('/prezentare/') &&
+      !page.includes('/404'),
+    serialize(item) {
+      item.lastmod = new Date().toISOString();
+      return item;
+    }
+  })],
 
   vite: {
     plugins: [tailwindvite()],

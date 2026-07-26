@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Tablouri Electrice Schneider Iași — Montaj și Configurare | AlexaVolt" description="Montaj tablouri electrice Schneider Electric în Iași. Aparataj Acti9/Resi9, protecții RCD, SPD, disjunctoare calibrate. Electrician autorizat ANRE.">
+  <Header />
+
+  <main class="max-w-5xl mx-auto px-6 py-12 font-sans text-slate-800">
+
+    <Breadcrumb pagina="Tablouri Electrice Schneider" parent="🛠️ Servicii" parentHref={`${base}/servicii/`} />
+
+    <section class="mb-16 border-b border-slate-100 pb-12">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+        Tablouri Electrice Schneider Iași — <span class="text-blue-600">Montaj și Configurare</span>
+      </h1>
+      <p class="text-lg text-slate-600 leading-relaxed max-w-3xl">
+        Tabloul electric este „creierul" instalației tale — aici se concentrează toate protecțiile care te apără de electrocutare, incendiu și suprasarcină. Montăm exclusiv aparataj Schneider Electric, lider mondial în echipamente de protecție.
+      </p>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span>🛡️</span> Ce conține un tablou electric modern?
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-3">Protecții diferențiale (RCD)</h3>
+          <p class="text-sm text-slate-600">Detectează scurgerile de curent și deconectează în 30ms — singura protecție reală împotriva electrocutării. Montăm câte un RCD per grup de circuite pentru selectivitate maximă.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-3">Disjunctoare magnetotermice</h3>
+          <p class="text-sm text-slate-600">Protejează cablurile la suprasarcină și scurtcircuit. Calibrăm fiecare disjunctor în funcție de secțiunea reală a cablului pe care îl protejează.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-3">Descărcătoare SPD</h3>
+          <p class="text-sm text-slate-600">Protejează echipamentele electrice la supratensiuni cauzate de descărcări atmosferice sau comutații pe rețea. Obligatorii conform normativelor actuale.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 mb-3">Întreruptor general</h3>
+          <p class="text-sm text-slate-600">Permite deconectarea completă a instalației dintr-o singură mișcare. Esențial pentru urgențe și intervenții de mentenanță.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span>⚡</span> De ce Schneider Electric?
+      </h2>
+      <div class="bg-slate-900 text-white p-8 rounded-3xl">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <h3 class="font-bold text-blue-400 mb-2">Fiabilitate</h3>
+            <p class="text-slate-400 text-sm">Peste 180 de ani de experiență în protecții electrice. Teste la milioane de cicluri de funcționare.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-blue-400 mb-2">Disponibilitate piese</h3>
+            <p class="text-slate-400 text-sm">Componente disponibile imediat pe piața din România. Înlocuire rapidă în caz de defect, fără așteptare.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-blue-400 mb-2">Gamele Acti9 și Resi9</h3>
+            <p class="text-slate-400 text-sm">Acti9 pentru proiecte profesionale, Resi9 pentru rezidențial. Ambele cu indicatoare vizuale de stare și conexiuni sigure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span>🔄</span> Când trebuie schimbat tabloul electric?
+      </h2>
+      <div class="space-y-4">
+        <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+          <h3 class="font-bold text-red-800 mb-2">Siguranțe fuzibile (MPR) în loc de disjunctoare</h3>
+          <p class="text-sm text-slate-600">Siguranțele fuzibile nu protejează la electrocutare și nu deconectează la suprasarcină — un tablou din anii '80 este un pericol real.</p>
+        </div>
+        <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+          <h3 class="font-bold text-red-800 mb-2">Lipsa RCD-ului (diferențial)</h3>
+          <p class="text-sm text-slate-600">Fără RCD, nu ai nicio protecție la electrocutare. O scurgere de curent printr-un electrocasnic defect poate fi fatală.</p>
+        </div>
+        <div class="bg-red-50 p-5 rounded-2xl border border-red-100">
+          <h3 class="font-bold text-red-800 mb-2">Tablou subdimensionat pentru consumatorii actuali</h3>
+          <p class="text-sm text-slate-600">Ai adăugat AC, plită inductie, mașină de spălat rufe + vase, stație EV? Tabloul vechi nu face față — risc de incendiu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">📖 Articole utile</h2>
+      <ul class="space-y-2">
+        <li><a href={`${base}/articole/cum-sa-alegi-un-tablou-electric/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Cum alegi un tablou electric — ghid complet →</a></li>
+        <li><a href={`${base}/articole/schneider-vs-abb-vs-hager/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Schneider vs ABB vs Hager — comparație →</a></li>
+        <li><a href={`${base}/articole/ce-este-un-rcd-diferential/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Ce este un RCD și de ce e obligatoriu →</a></li>
+        <li><a href={`${base}/articole/cum-functioneaza-un-spd/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Cum funcționează un SPD →</a></li>
+        <li><a href={`${base}/articole/semne-tablou-electric-depasit/`} class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">5 semne că tabloul tău electric e depășit →</a></li>
+      </ul>
+    </section>
+
+    <section class="text-center border-t border-slate-100 pt-12">
+      <h2 class="text-2xl font-bold mb-4 text-slate-900">Tabloul tău electric e depășit?</h2>
+      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Contactează-ne pentru o evaluare gratuită. Verificăm starea tabloului actual și propunem soluția optimă pentru nevoile tale.</p>
+      <a href={`${base}/contact/`} class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1">
+        Solicită evaluare tablou
+      </a>
+      <p class="mt-4 text-sm text-slate-500">✓ Evaluare fără obligații · ✓ Răspuns în max. 2 ore</p>
+    </section>
+  </main>
+</Layout>
