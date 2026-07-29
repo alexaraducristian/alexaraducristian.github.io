@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 				Electrician Autorizat ANRE Iași — <span class="text-emerald-600">Instalații Electrice</span> Profesionale
 			</h1>
 			<p class="text-lg md:text-xl leading-relaxed text-slate-600">
-				<span class="font-bold text-slate-900">AlexaVolt</span> este echipa ta de electricieni autorizați ANRE din Iași. Oferim servicii complete de instalații electrice — de la proiectare și execuție la roșu, până la modernizare tablouri electrice și montaj sisteme fotovoltaice. Lucrăm exclusiv cu materiale premium pentru siguranța locuinței sau afacerii tale.
+				<span class="font-bold text-slate-900">AlexaVolt</span> — electricieni autorizați ANRE din Iași. Instalații electrice complete, tablouri Schneider și sisteme fotovoltaice. Materiale premium, garanție 2 ani.
 			</p>
 			<div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-slate-700">
 				<span class="bg-blue-50 border border-blue-200 px-4 py-2 rounded-full">✓ Autorizare ANRE</span>
@@ -26,125 +26,92 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 		</section>
 
 		<section class="mb-16">
-			<h2 class="text-3xl font-bold mb-8 flex items-center gap-3 text-slate-900">
-				<span class="text-2xl">🛠️</span> Servicii Electrician Iași — Ce Oferim
+			<h2 class="text-3xl font-bold mb-8 text-slate-900">
+				🛠️ Servicii
 			</h2>
 
-			<div class="grid gap-8 md:grid-cols-2">
-				<div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
-					<h3 class="text-xl font-bold mb-2 text-blue-700">Instalații Electrice Complete — Case și Apartamente Iași</h3>
-					<p class="text-base text-slate-600 mb-3">Proiectăm și executăm întreaga rețea electrică pentru construcții noi — case, vile, spații comerciale — conform normativului I7.</p>
-					<p class="text-sm text-red-600 font-medium">⚠️ O instalație executată de personal neautorizat nu oferă nicio garanție legală și poate genera scurtcircuite sau incendii.</p>
-				</div>
-
-				<div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
-					<h3 class="text-xl font-bold mb-2 text-blue-700">Modernizare Instalație Electrică — Înlocuire Aluminiu cu Cupru</h3>
-					<p class="text-base text-slate-600 mb-3">Locuiești într-un imobil vechi? Înlocuim complet cablajul de aluminiu cu cupru dimensionat corect pentru consumatorii moderni (AC, plită, EV).</p>
-					<p class="text-sm text-red-600 font-medium">⚠️ Cablajul de aluminiu vechi se oxidează și generează căldură la conexiuni — cauza nr. 1 a incendiilor electrice în blocuri.</p>
-				</div>
-
-				<div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 md:col-span-2">
-					<h3 class="text-xl font-bold mb-3 text-blue-700">Schimbare Tablou Electric Iași — Montaj și Configurare Schneider</h3>
-					<p class="mb-4">Suntem specializați în montajul și configurarea tablourilor electrice de ultimă generație cu aparataj Schneider Electric.</p>
-					<p class="text-xs text-red-600 mb-4 font-medium">⚠️ Un tablou vechi cu siguranțe fuzibile nu protejează la electrocutare și nu deconectează la suprasarcină — risc permanent de incendiu și electrocutare fatală.</p>
-					<div class="grid md:grid-cols-3 gap-4 text-sm">
-						<a href={`${base}/articole/schneider-vs-abb-vs-hager/`} class="bg-white p-3 rounded-lg shadow-sm font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors block">Schneider Acti9 / Resi9 →</a>
-						<a href={`${base}/articole/ce-este-un-rcd-diferential/`} class="bg-white p-3 rounded-lg shadow-sm font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors block">Protecții RCD (Electrocutare) →</a>
-						<a href={`${base}/articole/cum-functioneaza-un-spd/`} class="bg-white p-3 rounded-lg shadow-sm font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors block">Protecții SPD (Supratensiune) →</a>
-					</div>
-				</div>
-
-				<div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 md:col-span-2">
-					<h3 class="text-xl font-bold mb-3 text-emerald-700">Panouri Fotovoltaice Iași — Montaj și Proiectare</h3>
-					<p class="mb-4">Montăm sisteme fotovoltaice proiectate cu software profesional Cool-PVT. Devii prosumator și economisești mii de lei anual.</p>
-					<div class="flex flex-wrap gap-3">
-						<a href={`${base}/servicii/panouri-fotovoltaice/`} class="inline-block bg-emerald-600 text-white px-5 py-2.5 rounded-full font-bold hover:bg-emerald-700 transition-colors shadow-md text-sm">
-							Vezi oferta Fotovoltaice →
-						</a>
-						<a href={`${base}/articole/ghid-prosumator/`} class="inline-block bg-white text-emerald-700 px-5 py-2.5 rounded-full font-bold hover:bg-emerald-100 transition-colors border border-blue-200 text-sm">
-							Ghid Prosumator →
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="mb-16">
-			<h2 class="text-3xl font-bold mb-4 flex items-center gap-3 text-slate-900">
-				<span class="text-2xl">⚡</span> Depanări Electrice și Urgențe Iași
-			</h2>
-			<p class="text-lg text-red-700 font-semibold mb-8">⏱️ Intervenție rapidă în Iași — disponibilitate extinsă pentru urgențe electrice</p>
 			<div class="grid gap-6 md:grid-cols-2">
-				<div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-					<h3 class="text-lg font-bold text-red-800 mb-2">Depanare Tablou Electric</h3>
-					<p class="text-sm text-slate-600">Diferențialul sare? Disjunctorul declanșează? Intervenim rapid pentru diagnostic și rezolvare.</p>
-				</div>
-				<div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-					<h3 class="text-lg font-bold text-red-800 mb-2">Lipsă Curent Parțială</h3>
-					<p class="text-sm text-slate-600">Nu ai curent pe o parte din casă? Identificăm cauza cu aparatură profesională și rezolvăm pe loc.</p>
-				</div>
-				<div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-					<h3 class="text-lg font-bold text-red-800 mb-2">Miros de Ars la Priză sau Tablou</h3>
-					<p class="text-sm text-slate-600">Situație de urgență — contactează-ne imediat. Intervenim în regim prioritar în zona Iași.</p>
-				</div>
-				<div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-					<h3 class="text-lg font-bold text-red-800 mb-2">Tensiune Mică / Fluctuații</h3>
-					<p class="text-sm text-slate-600">Becurile pâlpâie sau electrocasnicele nu pornesc? Diagnosticăm și remediem defectul.</p>
-				</div>
-			</div>
-		</section>
+				<a href={`${base}/servicii/instalatii-electrice-complete/`} class="group bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-lg hover:border-blue-200 transition-all">
+					<h3 class="text-lg font-bold mb-2 text-blue-700 group-hover:text-blue-800">Instalații Electrice Complete</h3>
+					<p class="text-sm text-slate-600">Proiectare și execuție pentru case noi, apartamente și spații comerciale — conform normativului I7.</p>
+					<span class="inline-block mt-3 text-blue-600 font-semibold text-sm group-hover:translate-x-1 transition-transform">Detalii →</span>
+				</a>
 
-		<section class="mb-16 bg-slate-900 text-white p-8 md:p-12 rounded-3xl">
-			<h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-				<span class="text-2xl">🛡️</span> De Ce Să Alegi un Electrician Autorizat ANRE Iași
-			</h2>
-			<div class="grid md:grid-cols-2 gap-8">
-				<a href={`${base}/articole/ce-este-autorizarea-anre/`} class="group block">
-					<h4 class="font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">Autorizare ANRE Tip B →</h4>
-					<p class="text-slate-400 text-sm">Respectăm normativul I7 și toate standardele legale. Oferim documentație completă la recepție.</p>
+				<a href={`${base}/servicii/tablouri-electrice-schneider/`} class="group bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-lg hover:border-blue-200 transition-all">
+					<h3 class="text-lg font-bold mb-2 text-blue-700 group-hover:text-blue-800">Tablouri Electrice Schneider</h3>
+					<p class="text-sm text-slate-600">Montaj și configurare tablouri cu aparataj Schneider Electric — protecții RCD, SPD, disjunctoare calibrate.</p>
+					<span class="inline-block mt-3 text-blue-600 font-semibold text-sm group-hover:translate-x-1 transition-transform">Detalii →</span>
 				</a>
-				<a href={`${base}/articole/cat-costa-instalatie-electrica-casa/`} class="group block">
-					<h4 class="font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">Transparență Totală →</h4>
-					<p class="text-slate-400 text-sm">Deviz clar cu materiale și manoperă înainte de orice lucrare. Fără costuri ascunse.</p>
+
+				<a href={`${base}/servicii/panouri-fotovoltaice/`} class="group bg-emerald-50 p-6 rounded-2xl border border-emerald-100 hover:shadow-lg hover:border-emerald-200 transition-all">
+					<h3 class="text-lg font-bold mb-2 text-emerald-700 group-hover:text-emerald-800">Panouri Fotovoltaice</h3>
+					<p class="text-sm text-slate-600">Sisteme fotovoltaice la cheie — devii prosumator și economisești mii de lei anual.</p>
+					<span class="inline-block mt-3 text-emerald-600 font-semibold text-sm group-hover:translate-x-1 transition-transform">Detalii →</span>
 				</a>
-				<a href={`${base}/articole/schneider-vs-abb-vs-hager/`} class="group block">
-					<h4 class="font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">Materiale Premium Schneider →</h4>
-					<p class="text-slate-400 text-sm">Cabluri cu secțiune corectă și protecții calibrate pe consumul real al locuinței tale.</p>
-				</a>
-				<a href={`${base}/articole/buletin-verificare-pram/`} class="group block">
-					<h4 class="font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">Garanție Manoperă 2 Ani →</h4>
-					<p class="text-slate-400 text-sm">Pe lângă garanția producătorului pe materiale, oferim 2 ani garanție pe execuție + buletin PRAM.</p>
+
+				<a href={`${base}/servicii/verificare-pram/`} class="group bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-lg hover:border-blue-200 transition-all">
+					<h3 class="text-lg font-bold mb-2 text-blue-700 group-hover:text-blue-800">Verificare PRAM</h3>
+					<p class="text-sm text-slate-600">Buletin de verificare obligatoriu la vânzare imobil, racordare sau renovare majoră.</p>
+					<span class="inline-block mt-3 text-blue-600 font-semibold text-sm group-hover:translate-x-1 transition-transform">Detalii →</span>
 				</a>
 			</div>
 		</section>
 
 		<section class="mb-16">
-			<h2 class="text-3xl font-bold mb-8 flex items-center gap-3 text-slate-900">
-				<span class="text-2xl">📍</span> Electrician Iași — Zonă de Acoperire
+			<h2 class="text-3xl font-bold mb-6 text-slate-900">
+				⚡ Depanări și Urgențe Electrice
 			</h2>
-			<p class="text-slate-600 mb-6 leading-relaxed">
-				Deservim municipiul Iași și toate localitățile din județul Iași: Miroslava, Ciurea, Bucium, Tomești, Popricani, Valea Lupului, Galata, Rediu, Copou, Tătărași, Nicolina, CUG, Podu Roș și toate cartierele.
-			</p>
-			<div class="grid sm:grid-cols-3 gap-4">
+			<p class="text-slate-600 mb-6">Intervenție rapidă în Iași și împrejurimi. Diagnosticăm și rezolvăm:</p>
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 				<div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center">
-					<p class="font-bold text-blue-700">Rezidențial</p>
-					<p class="text-xs text-slate-500 mt-1">Case, vile, apartamente</p>
+					<p class="font-bold text-sm text-slate-800">Diferențial / disjunctor</p>
 				</div>
 				<div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center">
-					<p class="font-bold text-blue-700">Comercial</p>
-					<p class="text-xs text-slate-500 mt-1">Magazine, birouri, clinici</p>
+					<p class="font-bold text-sm text-slate-800">Lipsă curent parțială</p>
 				</div>
 				<div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center">
-					<p class="font-bold text-blue-700">Industrial</p>
-					<p class="text-xs text-slate-500 mt-1">Hale, depozite, ateliere</p>
+					<p class="font-bold text-sm text-slate-800">Miros de ars</p>
+				</div>
+				<div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center">
+					<p class="font-bold text-sm text-slate-800">Tensiune mică</p>
 				</div>
 			</div>
 		</section>
 
+		<section class="mb-16 bg-slate-900 text-white p-8 md:p-10 rounded-3xl">
+			<h2 class="text-2xl font-bold mb-6">🛡️ De ce AlexaVolt</h2>
+			<div class="grid md:grid-cols-2 gap-6">
+				<div>
+					<h4 class="font-bold text-blue-400 mb-1">Autorizare ANRE Tip B</h4>
+					<p class="text-slate-400 text-sm">Conformitate legală, documentație completă la recepție.</p>
+				</div>
+				<div>
+					<h4 class="font-bold text-blue-400 mb-1">Transparență prețuri</h4>
+					<p class="text-slate-400 text-sm">Deviz clar înainte de orice lucrare. Fără surprize.</p>
+				</div>
+				<div>
+					<h4 class="font-bold text-blue-400 mb-1">Materiale Schneider Electric</h4>
+					<p class="text-slate-400 text-sm">Protecții calibrate pe consumul real al locuinței.</p>
+				</div>
+				<div>
+					<h4 class="font-bold text-blue-400 mb-1">Garanție 2 ani manoperă</h4>
+					<p class="text-slate-400 text-sm">+ garanția producătorului pe materiale + buletin PRAM.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="mb-16">
+			<h2 class="text-2xl font-bold mb-4 text-slate-900">
+				📍 Zonă de acoperire
+			</h2>
+			<p class="text-slate-600 leading-relaxed">
+				Iași și tot județul: Miroslava, Ciurea, Tomești, Valea Lupului, Copou, Bucium, Galata, Popricani, Rediu, Nicolina, CUG, Tătărași și toate cartierele. Rezidențial, comercial și industrial.
+			</p>
+		</section>
 
 		<section class="text-center border-t border-slate-100 pt-12">
-			<h2 class="text-2xl font-bold mb-6">📞 Solicită Evaluare Gratuită — Electrician Iași</h2>
-			<p class="mb-8 text-slate-600">Nu lăsa siguranța familiei tale pe mâna amatorilor. Un tablou electric corect instalat salvează vieți.</p>
+			<h2 class="text-2xl font-bold mb-4">Solicită evaluare gratuită</h2>
+			<p class="mb-8 text-slate-600">Venim la fața locului, analizăm și oferim deviz detaliat — fără obligații.</p>
 			<a 
 				href={`${base}/contact/`} 
 				class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all shadow-xl hover:-translate-y-1"
