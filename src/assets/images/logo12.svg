@@ -1,0 +1,34 @@
+<svg width="500" height="160" viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#004D40;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00897B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad12b" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD600;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8F00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Larger rounded square with A -->
+  <rect x="10" y="10" width="120" height="120" rx="24" fill="url(#grad12)" />
+
+  <!-- Bold stylized A - larger and thicker for mobile visibility -->
+  <path d="M70 25 L35 120 L48 120 L55 100 L85 100 L92 120 L105 120 Z" 
+        fill="url(#grad12b)" />
+  <!-- A crossbar - thick and visible -->
+  <rect x="52" y="85" width="36" height="7" rx="3" fill="#004D40" />
+
+  <!-- Text "lexaVolt" - larger, bolder -->
+  <text x="145" y="88" font-family="'Segoe UI', Arial, sans-serif" 
+        font-size="62" font-weight="900" fill="#004D40" 
+        letter-spacing="-2">lexaVolt</text>
+
+  <!-- Thick separator line -->
+  <rect x="145" y="100" width="300" height="3" rx="1.5" fill="#00897B" opacity="0.6" />
+
+  <!-- Subtitle - larger for mobile readability -->
+  <text x="295" y="132" font-family="Arial, sans-serif" font-size="18" 
+        fill="#555" text-anchor="middle" letter-spacing="5" 
+        font-weight="700">AUTORIZAT ANRE</text>
+</svg>
