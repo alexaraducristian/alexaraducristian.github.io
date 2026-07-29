@@ -8,7 +8,6 @@ export const headerData = {
     { text: '☀️ Fotovoltaice', href: `${base}/servicii/panouri-fotovoltaice/` },
     { text: '📂 Portofoliu', href: `${base}/portofoliu/` },
     { text: '📚 Ghid Practic', href: `${base}/articole/` },
-    { text: '⚡ CoolPVT', href: `${base}/coolpvt/` },
     { text: '❓ FAQ', href: `${base}/intrebari-frecvente/` },
     { text: '📞 Contact', href: `${base}/contact/` },
   ],
