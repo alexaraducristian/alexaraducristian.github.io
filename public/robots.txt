@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /404
 
+Sitemap: https://www.alexavolt.ro/sitemap.xml
 Sitemap: https://www.alexavolt.ro/sitemap-index.xml
-Sitemap: https://www.alexavolt.ro/sitemap-0.xml
+Sitemap: https://www.alexavolt.ro/sitemap-coolpvt.xml
