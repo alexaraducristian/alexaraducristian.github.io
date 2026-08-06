@@ -77,8 +77,43 @@ const ogImage = image || `${Astro.site}og-default.svg`;
 		</script>
 	</head>
 	<body>
+		<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[200] focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Salt la conținut</a>
 		<slot />
 		<Footer />
+		<!-- Cookie consent banner -->
+		<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] bg-slate-900 text-white px-6 py-4 shadow-2xl transform translate-y-full transition-transform duration-500" style="display:none;">
+			<div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-4">
+				<p class="text-sm text-slate-300 flex-1">Acest site folosește cookies pentru analiză (Google Analytics). Continuarea navigării implică acordul tău.</p>
+				<div class="flex gap-3">
+					<button id="cookie-accept" class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition-colors">Accept</button>
+					<button id="cookie-reject" class="bg-slate-700 text-slate-300 px-5 py-2 rounded-lg text-sm font-medium hover:bg-slate-600 transition-colors">Refuz</button>
+				</div>
+			</div>
+		</div>
+		<script is:inline>
+			(function() {
+				var consent = localStorage.getItem('cookie-consent');
+				if (consent === null) {
+					var banner = document.getElementById('cookie-banner');
+					if (banner) {
+						banner.style.display = '';
+						setTimeout(function() { banner.classList.remove('translate-y-full'); }, 100);
+					}
+				}
+				document.getElementById('cookie-accept')?.addEventListener('click', function() {
+					localStorage.setItem('cookie-consent', 'accepted');
+					document.getElementById('cookie-banner')?.classList.add('translate-y-full');
+					setTimeout(function() { document.getElementById('cookie-banner')!.style.display = 'none'; }, 500);
+				});
+				document.getElementById('cookie-reject')?.addEventListener('click', function() {
+					localStorage.setItem('cookie-consent', 'rejected');
+					document.getElementById('cookie-banner')?.classList.add('translate-y-full');
+					setTimeout(function() { document.getElementById('cookie-banner')!.style.display = 'none'; }, 500);
+					// Disable GA
+					window['ga-disable-G-GGBL0JG2KZ'] = true;
+				});
+			})();
+		</script>
 		<!-- WhatsApp floating button -->
 		<a 
 			href="https://wa.me/40745539432" 

@@ -9,6 +9,7 @@ export const headerData = {
     { text: '📂 Portofoliu', href: `${base}/portofoliu/` },
     { text: '📚 Ghid Practic', href: `${base}/articole/` },
     { text: '❓ FAQ', href: `${base}/intrebari-frecvente/` },
+    { text: '💰 Prețuri', href: `${base}/preturi/` },
     { text: '📞 Contact', href: `${base}/contact/` },
   ],
 };
