@@ -3,12 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # Permite pornirea manuală din interfața GitHub
+  # Pornire manuală din interfața GitHub.
+  # Rulează și pentru a publica modificările din repo-ul separat
+  # irinaungureanu (construit sub /irinaungureanu/ de job-ul de build).
   workflow_dispatch:
-  # Permite ca repo-ul irinaungureanu să declanșeze acest deploy
-  # (prin repository_dispatch cu event-type: deploy-irinaungureanu)
-  repository_dispatch:
-    types: [deploy-irinaungureanu]
 
 permissions:
   contents: read
