@@ -5,6 +5,10 @@ on:
     branches: [main]
   # Permite pornirea manuală din interfața GitHub
   workflow_dispatch:
+  # Permite ca repo-ul irinaungureanu să declanșeze acest deploy
+  # (prin repository_dispatch cu event-type: deploy-irinaungureanu)
+  repository_dispatch:
+    types: [deploy-irinaungureanu]
 
 permissions:
   contents: read
@@ -15,21 +19,43 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout site principal (alexavolt.ro)
         uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm'
 
-      - name: Install dependencies
+      # ── Site principal AlexaVolt (rădăcina domeniului) ──
+      - name: Install dependencies (principal)
         # Am păstrat flag-ul pentru a evita erorile de compatibilitate Astro 6 / Tailwind
         run: npm install --legacy-peer-deps
 
-      - name: Build Astro
+      - name: Build Astro (principal)
         run: npm run build
+
+      # ── Site secundar: Psihoterapeut Corina Ungureanu (/irinaungureanu/) ──
+      # Rămâne într-un repo separat; îl combinăm doar la momentul deploy-ului.
+      - name: Checkout site secundar (irinaungureanu)
+        uses: actions/checkout@v4
+        with:
+          repository: alexaraducristian/irinaungureanu
+          ref: main
+          path: .irinaungureanu-src
+
+      - name: Install dependencies (irinaungureanu)
+        working-directory: .irinaungureanu-src
+        run: npm install --legacy-peer-deps
+
+      - name: Build Astro (irinaungureanu)
+        working-directory: .irinaungureanu-src
+        run: npm run build
+
+      - name: Adaugă site-ul secundar sub /irinaungureanu/
+        run: |
+          mkdir -p dist/irinaungureanu
+          cp -r .irinaungureanu-src/dist/. dist/irinaungureanu/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
