@@ -52,8 +52,17 @@ jobs:
 
       - name: Adaugă site-ul secundar sub /irinaungureanu/
         run: |
+          set -e
+          if [ ! -f .irinaungureanu-src/dist/index.html ]; then
+            echo "::error::Build-ul irinaungureanu nu a produs dist/index.html"
+            ls -la .irinaungureanu-src/dist || echo "(folderul dist lipsește)"
+            exit 1
+          fi
           mkdir -p dist/irinaungureanu
           cp -r .irinaungureanu-src/dist/. dist/irinaungureanu/
+          echo "--- Conținut dist/irinaungureanu/ ---"
+          ls -la dist/irinaungureanu/
+          test -f dist/irinaungureanu/index.html && echo "OK: dist/irinaungureanu/index.html există"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
