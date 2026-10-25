@@ -3,9 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # Pornire manuală din interfața GitHub.
-  # Rulează și pentru a publica modificările din repo-ul separat
-  # irinaungureanu (construit sub /irinaungureanu/ de job-ul de build).
+  # Permite pornirea manuală din interfața GitHub
   workflow_dispatch:
 
 permissions:
@@ -17,52 +15,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout site principal (alexavolt.ro)
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: 'npm'
 
-      # ── Site principal AlexaVolt (rădăcina domeniului) ──
-      - name: Install dependencies (principal)
+      - name: Install dependencies
         # Am păstrat flag-ul pentru a evita erorile de compatibilitate Astro 6 / Tailwind
         run: npm install --legacy-peer-deps
 
-      - name: Build Astro (principal)
+      - name: Build Astro
         run: npm run build
-
-      # ── Site secundar: Psihoterapeut Corina Ungureanu (/irinaungureanu/) ──
-      # Rămâne într-un repo separat; îl combinăm doar la momentul deploy-ului.
-      - name: Checkout site secundar (irinaungureanu)
-        uses: actions/checkout@v4
-        with:
-          repository: alexaraducristian/irinaungureanu
-          ref: main
-          path: .irinaungureanu-src
-
-      - name: Install dependencies (irinaungureanu)
-        working-directory: .irinaungureanu-src
-        run: npm install --legacy-peer-deps
-
-      - name: Build Astro (irinaungureanu)
-        working-directory: .irinaungureanu-src
-        run: npm run build
-
-      - name: Adaugă site-ul secundar sub /irinaungureanu/
-        run: |
-          set -e
-          if [ ! -f .irinaungureanu-src/dist/index.html ]; then
-            echo "::error::Build-ul irinaungureanu nu a produs dist/index.html"
-            ls -la .irinaungureanu-src/dist || echo "(folderul dist lipsește)"
-            exit 1
-          fi
-          mkdir -p dist/irinaungureanu
-          cp -r .irinaungureanu-src/dist/. dist/irinaungureanu/
-          echo "--- Conținut dist/irinaungureanu/ ---"
-          ls -la dist/irinaungureanu/
-          test -f dist/irinaungureanu/index.html && echo "OK: dist/irinaungureanu/index.html există"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
